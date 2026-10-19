@@ -107,18 +107,20 @@ if len(photos) < want and b.get("stock", True):
         mf = os.path.join(a.kit, "stock", key, "manifest.json")
         if os.path.exists(mf):
             lib = json.load(open(mf, encoding="utf-8"))
-            tags = set(b.get("stock_tags", []))
-            if tags:
-                lib.sort(key=lambda s: -len(tags & set(s.get("tags", []))))
+            tags = set(t.lower() for t in b.get("stock_tags", []))
             rnd = random.Random(b["slug"])
-            head, tail = lib[:10], lib[10:]
-            rnd.shuffle(head)
-            for j, s in enumerate(head + tail):
+            # photos tagged "explicit" (e.g. bakery) are only used when the lead asks for one of their tags
+            match = [s for s in lib if tags & set(s.get("tags", []))]
+            general = [s for s in lib if "explicit" not in s.get("tags", []) and s not in match]
+            rnd.shuffle(match)
+            rnd.shuffle(general)
+            pool = match if len(match) >= 3 else match + general
+            for j, s in enumerate(pool):
                 if len(photos) >= want:
                     break
                 rel = fetch(os.path.join("stock", key, s["file"]), f"sample-{j+1}")
                 if rel:
-                    photos.append({"path": rel, "alt": s.get("alt", ""), "credit": s.get("credit", ""), "sample": True})
+                    photos.append({"path": rel, "alt": s.get("alt", ""), "credit": s.get("credit", ""), "sample": True, "tags": s.get("tags", [])})
                     stock_used = True
             break
 
@@ -130,6 +132,21 @@ items = b.get("items", [])[:16]
 for i, it in enumerate(items):
     if it.get("photo"):
         it["photo_path"] = fetch(it["photo"], f"item-{i+1}")
+# give items a matching sample photo when a photo's tag appears in the item name (e.g. "birria", "burritos")
+def _names(v):
+    return " ".join(v.values()).lower() if isinstance(v, dict) else str(v).lower()
+used = set()
+for it in items:
+    if it.get("photo_path"):
+        continue
+    nm = _names(it.get("name", ""))
+    for k, ph in enumerate(photos):
+        if not ph.get("sample") or k in used:
+            continue
+        if any(len(tg) > 3 and tg.rstrip("s") in nm for tg in ph.get("tags", []) if tg not in ("mexican", "plate", "explicit", "salon")):
+            it["photo_path"], it["photo_sample"] = ph["path"], True
+            used.add(k)
+            break
 groups = []
 for it in items:
     g = it.get("group") or ""

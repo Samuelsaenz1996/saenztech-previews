@@ -89,7 +89,7 @@ img{display:block;max-width:100%}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 3px 0 var(--accent-dark)}
 .btn.ghost{background:var(--card)}
 .btn.light{background:#fff;border-color:#fff;color:var(--ink)}
-.btn.outline-light{border-color:rgba(255,255,255,.6);color:#fff}
+.btn.outline-light{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.06);position:relative;z-index:1}
 .btn svg{width:18px;height:18px;flex:none}
 /* hero */
 .hero{display:grid;gap:30px;padding:30px 0 48px;align-items:center}
@@ -216,6 +216,8 @@ form .btn{justify-content:center;cursor:pointer;font-family:inherit}
 .about p{font-size:17px;margin-bottom:14px}
 .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .gal .ph{aspect-ratio:1;border-radius:14px}
+.gal.g4{grid-template-columns:repeat(2,1fr)}
+@media (min-width:900px){.gal.g4{grid-template-columns:repeat(4,1fr)}}
 .gal .ph.wide{grid-column:span 2;aspect-ratio:16/9}
 footer{background:var(--ink);color:var(--bg);padding:50px 0 96px;font-size:14.5px}
 footer .cols{display:grid;gap:30px}
@@ -304,10 +306,10 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
   <div class="wrap">
    <div class="sec-head"><div><span class="kicker">{{ L(th.labels.items_nav) }}</span><h2>{{ L(b.items_title or th.labels.items_title) }}</h2></div><a class="more" href="{{ root }}{{ items_page.dir }}/">{{ L(th.labels.see_all) }} {{ icon('arrow') }}</a></div>
    <div class="cards">
-    {% for it in items[:3] %}
+    {% set home_photos = (items[:3]|selectattr('photo_path')|list|length) == (items[:3]|length) %}{% for it in items[:3] %}
     <article class="card-i">
-     {% if it.photo_path %}{{ photo({'path': it.photo_path, 'alt': it.name}) }}{% elif gallery|length > 5 + loop.index0 and th.item_photos %}{{ photo(gallery[5 + loop.index0]) }}{% endif %}
-     <div class="body">{% if not it.photo_path and not (gallery|length > 5 + loop.index0 and th.item_photos) %}<span class="num">{{ loop.index }}</span>{% endif %}<h3>{{ L(it.name) }}</h3>{% if it.desc %}<p>{{ L(it.desc) }}</p>{% endif %}{% if th.show_price and it.price %}<div class="price">{{ it.price }}</div>{% endif %}</div>
+     {% if home_photos %}{{ photo({'path': it.photo_path, 'alt': it.name, 'sample': it.photo_sample}) }}{% endif %}
+     <div class="body">{% if not home_photos %}<span class="num">{{ loop.index }}</span>{% endif %}<h3>{{ L(it.name) }}</h3>{% if it.desc %}<p>{{ L(it.desc) }}</p>{% endif %}{% if th.show_price and it.price %}<div class="price">{{ it.price }}</div>{% endif %}</div>
     </article>
     {% endfor %}
    </div>
@@ -327,7 +329,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  <section>
   <div class="wrap">
    <div class="sec-head"><div><span class="kicker">{{ L(gal_page.label) }}</span><h2>{{ L(gal_page.label) }}</h2></div><a class="more" href="{{ root }}{{ gal_page.dir }}/">{{ L(th.labels.see_all) }} {{ icon('arrow') }}</a></div>
-   <div class="grid-g">{% for p in gallery[:5] %}{{ photo(p) }}{% endfor %}</div>
+   {% if gallery|length >= 5 %}<div class="grid-g">{% for p in gallery[:5] %}{{ photo(p) }}{% endfor %}</div>{% else %}<div class="gal g4">{% for p in gallery[:4] %}{{ photo(p) }}{% endfor %}</div>{% endif %}
   </div>
  </section>
  {% endif %}
@@ -420,7 +422,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  <section class="cta">
   <div class="wrap"><div class="cta-box">
    <div><h2>{{ L(th.labels.cta_title) }}</h2>{% if (th.labels.cta_text.es if th.labels.cta_text is mapping else th.labels.cta_text) %}<p>{{ L(th.labels.cta_text) }}</p>{% endif %}</div>
-   <div class="ctas">{{ primary_btn('light') }}{% if primary.icon != 'phone' and b.phone %}<a class="btn outline-light" href="tel:{{ b.phone }}">{{ icon('phone') }}{{ b.phone_display }}</a>{% elif page != 'contact' %}<a class="btn outline-light" href="{{ root }}contact/">{{ L(th.labels.nav_contact) }}</a>{% endif %}</div>
+   <div class="ctas">{{ primary_btn('light') }}{% if primary.icon != 'phone' and b.phone %}<a class="btn outline-light" href="tel:{{ b.phone }}">{{ icon('phone') }}{{ b.phone_display }}</a>{% elif not primary.internal %}<a class="btn outline-light" href="{{ root }}contact/">{{ L(th.labels.nav_contact) }}</a>{% elif b.email %}<a class="btn outline-light" href="mailto:{{ b.email }}">{{ icon('mail') }}{{ L(th.labels.write_us) }}</a>{% endif %}</div>
   </div></div>
  </section>
 {% endif %}

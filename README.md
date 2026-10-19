@@ -71,8 +71,14 @@ Text fields can be a plain string (same in both languages) or `{"es": "...", "en
 
 - Use free stock photos (Unsplash / Pexels license) that match the business type, marked `"sample": true`.
   They show a small "Foto de muestra / Sample photo" tag, and the gallery explains they get replaced with the owner's photos.
-- A stock library can also live in `kit/stock/<category>/` with `manifest.json` = `[{"file","alt","credit","tags"}]`;
-  the builder fills up to 7 photos from it automatically when the lead has fewer.
+- A starter stock library lives in `kit/stock/<category>/` (food, trades, salon) with `manifest.json` = `[{"file","alt","credit","source","tags"}]`.
+  The builder fills up to 7 photos from it automatically when the lead has fewer. Set `stock_tags` on the lead
+  (e.g. `["tacos","birria"]`, `["bakery","pan dulce"]`, `["roofing"]`, `["hair"]`, `["nails"]`) so it picks matching photos;
+  photos tagged `explicit` (bakery) are only used when asked for. If 3+ photos match the tags, only matching photos are used.
+- Item photos are matched automatically when a photo tag appears in the item name (e.g. "Burritos" gets a burrito photo).
+- To add photos for a new kind of business, download from images.pexels.com
+  (`https://images.pexels.com/photos/<id>/pexels-photo-<id>.jpeg?auto=compress&cs=tinysrgb&w=1200`), look at each one,
+  save it into the right `kit/stock/<category>/` folder and add it to that manifest with honest tags. Commit new stock photos with the day's previews.
 - Do NOT copy photos from the business's Facebook/Instagram/Google/Yelp onto these public pages.
 - Without any photos the hero shows a designed sign with the business name, and the gallery page is skipped.
 
