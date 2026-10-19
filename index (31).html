@@ -8,13 +8,13 @@
 
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Hours &amp; location · Percheron Mexican Grill — Design concept</title>
-<meta property="og:title" content="Percheron Mexican Grill — Design concept by Saenztech">
+<title>Menú · Comedor Guadalajara — Concepto de diseño</title>
+<meta property="og:title" content="Comedor Guadalajara — Concepto de diseño por Saenztech">
 <meta property="og:image" content="../preview.png">
 <style>
 @font-face{font-family:"Bricolage Grotesque";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/bricolage-grotesque-latin-600-normal.woff2) format("woff2")}
@@ -67,7 +67,7 @@ img{display:block;max-width:100%}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 3px 0 var(--accent-dark)}
 .btn.ghost{background:var(--card)}
 .btn.light{background:#fff;border-color:#fff;color:var(--ink)}
-.btn.outline-light{border-color:rgba(255,255,255,.6);color:#fff}
+.btn.outline-light{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.06);position:relative;z-index:1}
 .btn svg{width:18px;height:18px;flex:none}
 /* hero */
 .hero{display:grid;gap:30px;padding:30px 0 48px;align-items:center}
@@ -194,6 +194,8 @@ form .btn{justify-content:center;cursor:pointer;font-family:inherit}
 .about p{font-size:17px;margin-bottom:14px}
 .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .gal .ph{aspect-ratio:1;border-radius:14px}
+.gal.g4{grid-template-columns:repeat(2,1fr)}
+@media (min-width:900px){.gal.g4{grid-template-columns:repeat(4,1fr)}}
 .gal .ph.wide{grid-column:span 2;aspect-ratio:16/9}
 footer{background:var(--ink);color:var(--bg);padding:50px 0 96px;font-size:14.5px}
 footer .cols{display:grid;gap:30px}
@@ -224,41 +226,69 @@ footer .concept{border-top:1px solid rgba(255,255,255,.14);margin-top:34px;paddi
  .rows.twocol{grid-template-columns:1fr 1fr}
 }
 
-[data-es]{display:none!important}
-html[lang=es] [data-en]{display:none!important}
-html[lang=es] [data-es]{display:revert!important}
+[data-en]{display:none!important}
+html[lang=en] [data-es]{display:none!important}
+html[lang=en] [data-en]{display:revert!important}
 
 </style>
 </head>
 <body>
-<div class="ribbon"><span data-es><b>Concepto de diseño</b> por Saenztech · no es el sitio oficial de Percheron Mexican Grill</span><span data-en><b>Design concept</b> by Saenztech · not the official site of Percheron Mexican Grill</span></div>
+<div class="ribbon"><span data-es><b>Concepto de diseño</b> por Saenztech · no es el sitio oficial de Comedor Guadalajara</span><span data-en><b>Design concept</b> by Saenztech · not the official site of Comedor Guadalajara</span></div>
 <div class="deco" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 
 <header class="top">
  <div class="wrap">
   <div class="bar">
-   <a class="logo" href="../"><span class="mono">PM</span><div><span class="logo-name">Percheron Mexican Grill</span><small><span data-es>Food truck sonorense · Tucson, AZ</span><span data-en>Sonoran food truck · Tucson, AZ</span></small></div></a>
-   <nav class="links" aria-label="Main"><a href="../" class=""><span data-es>Inicio</span><span data-en>Home</span></a><a href="../menu" class=""><span data-es>Menú</span><span data-en>Menu</span></a><a href="../visit" class="on"><span data-es>Ubicación y horario</span><span data-en>Hours & location</span></a><a href="../contact" class=""><span data-es>Contacto</span><span data-en>Contact</span></a></nav>
-   <div class="lang" role="group" aria-label="Idioma / Language"><button class="" data-set="es">ES</button><button class="on" data-set="en">EN</button></div>
-   <a class="btn primary" href="tel:+15202725490"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-es>Llamar</span><span data-en>Call</span></a>
-   <button class="burger" aria-label="Menu" aria-expanded="false"><span></span></button>
+   <a class="logo" href="../"><span class="mono">CG</span><div><span class="logo-name">Comedor Guadalajara</span><small><span data-es>Restaurante sonorense · Phoenix, AZ</span><span data-en>Sonoran restaurant · Phoenix, AZ</span></small></div></a>
+   <nav class="links" aria-label="Main"><a href="../" class=""><span data-es>Inicio</span><span data-en>Home</span></a><a href="../menu" class="on"><span data-es>Menú</span><span data-en>Menu</span></a><a href="../gallery" class=""><span data-es>Galería</span><span data-en>Gallery</span></a><a href="../visit" class=""><span data-es>Ubicación y horario</span><span data-en>Hours & location</span></a><a href="../contact" class=""><span data-es>Contacto</span><span data-en>Contact</span></a></nav>
+   <div class="lang" role="group" aria-label="Idioma / Language"><button class="on" data-set="es">ES</button><button class="" data-set="en">EN</button></div>
+   <a class="btn primary" href="tel:+16022538299"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-es>Llamar</span><span data-en>Call</span></a>
+   <button class="burger" aria-label="Menú" aria-expanded="false"><span></span></button>
   </div>
-  <div class="drawer"><div class="lang m" role="group" aria-label="Idioma / Language"><button class="" data-set="es">Español</button><button class="on" data-set="en">English</button></div><a href="../" class=""><span data-es>Inicio</span><span data-en>Home</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="../menu" class=""><span data-es>Menú</span><span data-en>Menu</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="../visit" class="on"><span data-es>Ubicación y horario</span><span data-en>Hours & location</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="../contact" class=""><span data-es>Contacto</span><span data-en>Contact</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn primary" href="tel:+15202725490"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-es>Llamar</span><span data-en>Call</span></a></div>
+  <div class="drawer"><div class="lang m" role="group" aria-label="Idioma / Language"><button class="on" data-set="es">Español</button><button class="" data-set="en">English</button></div><a href="../" class=""><span data-es>Inicio</span><span data-en>Home</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="../menu" class="on"><span data-es>Menú</span><span data-en>Menu</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="../gallery" class=""><span data-es>Galería</span><span data-en>Gallery</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="../visit" class=""><span data-es>Ubicación y horario</span><span data-en>Hours & location</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="../contact" class=""><span data-es>Contacto</span><span data-en>Contact</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn primary" href="tel:+16022538299"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-es>Llamar</span><span data-en>Call</span></a></div>
  </div>
 </header>
 
 <main>
 
- <div class="sub-hero"><div class="wrap"><div class="crumb"><a href="../"><span data-es>Inicio</span><span data-en>Home</span></a> / <span data-es>Ubicación y horario</span><span data-en>Hours & location</span></div><h1><span data-es>Ubicación y horario</span><span data-en>Hours & location</span></h1><p>4860 South 12th Avenue, Tucson, AZ 85714</p></div></div>
+ <div class="sub-hero"><div class="wrap"><div class="crumb"><a href="../"><span data-es>Inicio</span><span data-en>Home</span></a> / <span data-es>Menú</span><span data-en>Menu</span></div><h1><span data-es>El menú</span><span data-en>The menu</span></h1><p><span data-es>Lo que más recomiendan sus clientes. Los precios y el resto del menú se agregan con ustedes.</span><span data-en>Customer favorites. Prices and the full menu get added with you.</span></p></div></div>
  <section>
-  <div class="wrap info">
-   <div class="card"><h3><span data-es>Horario</span><span data-en>Hours</span></h3><ul class="hours"><li data-day="1"><span><span data-es>Lunes</span><span data-en>Monday</span></span><span>10:30 am–11 pm</span></li><li data-day="2"><span><span data-es>Martes</span><span data-en>Tuesday</span></span><span>10:30 am–11 pm</span></li><li data-day="3"><span><span data-es>Miércoles</span><span data-en>Wednesday</span></span><span>10:30 am–11 pm</span></li><li data-day="4"><span><span data-es>Jueves</span><span data-en>Thursday</span></span><span>10:30 am–11 pm</span></li><li data-day="5"><span><span data-es>Viernes</span><span data-en>Friday</span></span><span>10:30 am–11 pm</span></li><li data-day="6"><span><span data-es>Sábado</span><span data-en>Saturday</span></span><span>10:30 am–11 pm</span></li></ul><p class="note"><span data-es>Datos de listados públicos; se confirman con ustedes.</span><span data-en>Details from public listings; to be confirmed with you.</span></p></div>
-   <div class="card"><h3><span data-es>Dónde estamos</span><span data-en>Find us</span></h3>
-    <p>4860 South 12th Avenue, Tucson, AZ 85714</p>
-    <div class="mapbox"><span class="pin">Percheron Mexican Grill</span><iframe src="https://www.google.com/maps?q=4860+South+12th+Avenue%2C+Tucson%2C+AZ+85714&amp;output=embed" loading="lazy" title="Map" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-    <div class="ctas"><a class="btn primary" href="https://www.google.com/maps/search/?api=1&amp;query=4860+South+12th+Avenue%2C+Tucson%2C+AZ+85714" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-es>Abrir en Google Maps</span><span data-en>Open in Google Maps</span></a><a class="btn ghost" href="tel:+15202725490"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>(520) 272-5490</a></div>
-    
+  <div class="wrap">
+   
+   <div class="menu-group">
+    <h3 class="gt"><span data-es>Platillos</span><span data-en>Plates</span></h3>
+    <div class="rows ">
+     
+     <div class="row noimg"><div><h4>Burritos</h4></div><span class="price"></span></div>
+     
+     <div class="row noimg"><div><h4>Chimichangas</h4></div><span class="price"></span></div>
+     
+     <div class="row noimg"><div><h4>Parrilladas</h4></div><span class="price"></span></div>
+     
+    </div>
    </div>
+   
+   <div class="menu-group">
+    <h3 class="gt"><span data-es>Mariscos</span><span data-en>Seafood</span></h3>
+    <div class="rows ">
+     
+     <div class="row noimg"><div><h4><span data-es>Platillos de mariscos</span><span data-en>Seafood plates</span></h4></div><span class="price"></span></div>
+     
+    </div>
+   </div>
+   
+   <div class="menu-group">
+    <h3 class="gt"><span data-es>Postres</span><span data-en>Desserts</span></h3>
+    <div class="rows ">
+     
+     <div class="row noimg"><div><h4><span data-es>Capirotada (de temporada)</span><span data-en>Capirotada (seasonal)</span></h4></div><span class="price"></span></div>
+     
+     <div class="row noimg"><div><h4>Flan</h4></div><span class="price"></span></div>
+     
+    </div>
+   </div>
+   
+   
   </div>
  </section>
 
@@ -268,7 +298,7 @@ html[lang=es] [data-es]{display:revert!important}
  <section class="cta">
   <div class="wrap"><div class="cta-box">
    <div><h2><span data-es>Los esperamos</span><span data-en>Come hungry</span></h2><p><span data-es>Pase a visitarnos o llame para pedir para llevar.</span><span data-en>Stop by or call ahead for takeout.</span></p></div>
-   <div class="ctas"><a class="btn light" href="tel:+15202725490"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-es>Llamar</span><span data-en>Call</span></a><a class="btn outline-light" href="../contact/"><span data-es>Contacto</span><span data-en>Contact</span></a></div>
+   <div class="ctas"><a class="btn light" href="tel:+16022538299"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-es>Llamar</span><span data-en>Call</span></a><a class="btn outline-light" href="../contact/"><span data-es>Contacto</span><span data-en>Contact</span></a></div>
   </div></div>
  </section>
 
@@ -277,26 +307,26 @@ html[lang=es] [data-es]{display:revert!important}
 <footer>
  <div class="wrap">
   <div class="cols">
-   <div><span class="logo-name">Percheron Mexican Grill</span><p style="margin-top:10px"><span data-es>Food truck sonorense · Tucson, AZ</span><span data-en>Sonoran food truck · Tucson, AZ</span></p><div class="social" style="margin-top:16px"><a href="https://facebook.com/percheronmexicangrill" target="_blank" rel="noopener" aria-label="facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21z"/></svg></a></div></div>
-   <div><h4><span data-es>Páginas</span><span data-en>Pages</span></h4><ul><li><a href="../"><span data-es>Inicio</span><span data-en>Home</span></a></li><li><a href="../menu"><span data-es>Menú</span><span data-en>Menu</span></a></li><li><a href="../visit"><span data-es>Ubicación y horario</span><span data-en>Hours & location</span></a></li><li><a href="../contact"><span data-es>Contacto</span><span data-en>Contact</span></a></li></ul></div>
-   <div><h4><span data-es>Contacto</span><span data-en>Contact</span></h4><ul><li><a href="tel:+15202725490">(520) 272-5490</a></li><li><a href="mailto:percheronmexicangrill@gmail.com">percheronmexicangrill@gmail.com</a></li><li>4860 South 12th Avenue, Tucson, AZ 85714</li></ul></div>
-   <div><h4><span data-es>Horario</span><span data-en>Hours</span></h4><ul><li><span data-es>Lun</span><span data-en>Mon</span> · 10:30 am–11 pm</li><li><span data-es>Mar</span><span data-en>Tue</span> · 10:30 am–11 pm</li><li><span data-es>Mié</span><span data-en>Wed</span> · 10:30 am–11 pm</li><li><span data-es>Jue</span><span data-en>Thu</span> · 10:30 am–11 pm</li><li><span data-es>Vie</span><span data-en>Fri</span> · 10:30 am–11 pm</li><li><span data-es>Sáb</span><span data-en>Sat</span> · 10:30 am–11 pm</li></ul></div>
+   <div><span class="logo-name">Comedor Guadalajara</span><p style="margin-top:10px"><span data-es>Restaurante sonorense · Phoenix, AZ</span><span data-en>Sonoran restaurant · Phoenix, AZ</span></p><div class="social" style="margin-top:16px"><a href="https://facebook.com/comedorguadalajaraphx" target="_blank" rel="noopener" aria-label="facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21z"/></svg></a><a href="https://instagram.com/comedorguadalajara" target="_blank" rel="noopener" aria-label="instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a></div></div>
+   <div><h4><span data-es>Páginas</span><span data-en>Pages</span></h4><ul><li><a href="../"><span data-es>Inicio</span><span data-en>Home</span></a></li><li><a href="../menu"><span data-es>Menú</span><span data-en>Menu</span></a></li><li><a href="../gallery"><span data-es>Galería</span><span data-en>Gallery</span></a></li><li><a href="../visit"><span data-es>Ubicación y horario</span><span data-en>Hours & location</span></a></li><li><a href="../contact"><span data-es>Contacto</span><span data-en>Contact</span></a></li></ul></div>
+   <div><h4><span data-es>Contacto</span><span data-en>Contact</span></h4><ul><li><a href="tel:+16022538299">602-253-8299</a></li><li><a href="mailto:cguadalajara1830@gmail.com">cguadalajara1830@gmail.com</a></li><li>1830 S. Central Ave, Phoenix, AZ 85004</li></ul></div>
+   <div><h4><span data-es>Horario</span><span data-en>Hours</span></h4><ul><li><span data-es>Dom</span><span data-en>Sun</span> · 10 am–5 pm</li><li><span data-es>Mié</span><span data-en>Wed</span> · 11 am–5 pm</li><li><span data-es>Jue</span><span data-en>Thu</span> · 11 am–5 pm</li><li><span data-es>Vie</span><span data-en>Fri</span> · 10 am–7 pm</li><li><span data-es>Sáb</span><span data-en>Sat</span> · 10 am–7 pm</li></ul></div>
   </div>
-  <div class="concept"><span data-es>Este es un concepto de diseño preparado por Saenztech (saenz-tech.com) para mostrarle a Percheron Mexican Grill cómo podría verse su sitio. No es el sitio oficial del negocio. Fotos, precios y textos se definen con el dueño.</span><span data-en>This is a design concept prepared by Saenztech (saenz-tech.com) to show Percheron Mexican Grill what their site could look like. It is not the business's official site. Photos, prices and copy are finalized with the owner.</span></div>
+  <div class="concept"><span data-es>Este es un concepto de diseño preparado por Saenztech (saenz-tech.com) para mostrarle a Comedor Guadalajara cómo podría verse su sitio. No es el sitio oficial del negocio. Fotos, precios y textos se definen con el dueño.</span><span data-en>This is a design concept prepared by Saenztech (saenz-tech.com) to show Comedor Guadalajara what their site could look like. It is not the business's official site. Photos, prices and copy are finalized with the owner.</span></div>
  </div>
 </footer>
 
 
 <div class="callbar">
  
- <a class="btn primary" href="tel:+15202725490"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-es>Llamar</span><span data-en>Call</span></a>
+ <a class="btn primary" href="tel:+16022538299"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-es>Llamar</span><span data-en>Call</span></a>
  <a class="btn ghost" href="../contact/"><span data-es>Contacto</span><span data-en>Contact</span></a>
 </div>
 
 
 <script>
 (function(){
- var K='st-lang-percheron-mexican-grill-tucson',h=document.documentElement;
+ var K='st-lang-comedor-guadalajara-phoenix',h=document.documentElement;
  function set(l){h.lang=l;document.querySelectorAll('.lang button').forEach(function(x){x.classList.toggle('on',x.dataset.set===l)});try{localStorage.setItem(K,l)}catch(e){}}
  var q=new URLSearchParams(location.search).get('lang'),s=null;try{s=localStorage.getItem(K)}catch(e){}
  if(q==='es'||q==='en')set(q);else if(s==='es'||s==='en')set(s);
@@ -305,7 +335,7 @@ html[lang=es] [data-es]{display:revert!important}
  if(bg)bg.addEventListener('click',function(){var o=dr.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
  var d=new Date().getDay();
  document.querySelectorAll('.hours li').forEach(function(li){if(+li.dataset.day===d)li.classList.add('today')});
- var hrs=[{"day": 1, "en": "Monday", "es": "Lunes", "time": "10:30 am\u201311 pm"}, {"day": 2, "en": "Tuesday", "es": "Martes", "time": "10:30 am\u201311 pm"}, {"day": 3, "en": "Wednesday", "es": "Mi\u00e9rcoles", "time": "10:30 am\u201311 pm"}, {"day": 4, "en": "Thursday", "es": "Jueves", "time": "10:30 am\u201311 pm"}, {"day": 5, "en": "Friday", "es": "Viernes", "time": "10:30 am\u201311 pm"}, {"day": 6, "en": "Saturday", "es": "S\u00e1bado", "time": "10:30 am\u201311 pm"}],th=document.querySelector('.today-hours');
+ var hrs=[{"day": 0, "en": "Sunday", "es": "Domingo", "time": "10 am\u20135 pm"}, {"day": 3, "en": "Wednesday", "es": "Mi\u00e9rcoles", "time": "11 am\u20135 pm"}, {"day": 4, "en": "Thursday", "es": "Jueves", "time": "11 am\u20135 pm"}, {"day": 5, "en": "Friday", "es": "Viernes", "time": "10 am\u20137 pm"}, {"day": 6, "en": "Saturday", "es": "S\u00e1bado", "time": "10 am\u20137 pm"}],th=document.querySelector('.today-hours');
  if(th){var m=hrs.filter(function(x){return x.day===d})[0];th.textContent=m?m.time:th.dataset.closed}
 })();
 </script>
