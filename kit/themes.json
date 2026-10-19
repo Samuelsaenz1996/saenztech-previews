@@ -47,6 +47,142 @@
   "add_item": {
    "es": "Agreguen aquí otro servicio.",
    "en": "Add another service here."
+  },
+  "nav_home": {
+   "es": "Inicio",
+   "en": "Home"
+  },
+  "nav_about": {
+   "es": "Nosotros",
+   "en": "About"
+  },
+  "nav_visit": {
+   "es": "Ubicación y horario",
+   "en": "Hours & location"
+  },
+  "nav_contact": {
+   "es": "Contacto",
+   "en": "Contact"
+  },
+  "items_nav": {
+   "es": "Servicios",
+   "en": "Services"
+  },
+  "gallery_nav": {
+   "es": "Galería",
+   "en": "Gallery"
+  },
+  "order": {
+   "es": "Ordenar en línea",
+   "en": "Order online"
+  },
+  "menu_toggle": {
+   "es": "Menú",
+   "en": "Menu"
+  },
+  "see_all": {
+   "es": "Ver todo",
+   "en": "See all"
+  },
+  "open_today": {
+   "es": "Horario de hoy",
+   "en": "Today's hours"
+  },
+  "closed_today": {
+   "es": "Cerrado",
+   "en": "Closed"
+  },
+  "call_us": {
+   "es": "Llámenos",
+   "en": "Call us"
+  },
+  "write_us": {
+   "es": "Escríbanos",
+   "en": "Send us a message"
+  },
+  "form_name": {
+   "es": "Nombre",
+   "en": "Name"
+  },
+  "form_phone": {
+   "es": "Teléfono",
+   "en": "Phone"
+  },
+  "form_email": {
+   "es": "Correo",
+   "en": "Email"
+  },
+  "form_msg": {
+   "es": "¿En qué le podemos ayudar?",
+   "en": "How can we help?"
+  },
+  "form_send": {
+   "es": "Enviar mensaje",
+   "en": "Send message"
+  },
+  "form_demo": {
+   "es": "Este formulario es parte del concepto de diseño. En el sitio real, los mensajes le llegan directo a su correo.",
+   "en": "This form is part of the design concept. On the real site, messages go straight to your inbox."
+  },
+  "follow": {
+   "es": "Síganos",
+   "en": "Follow us"
+  },
+  "pages": {
+   "es": "Páginas",
+   "en": "Pages"
+  },
+  "address": {
+   "es": "Dirección",
+   "en": "Address"
+  },
+  "service_area_t": {
+   "es": "Área de servicio",
+   "en": "Service area"
+  },
+  "sample_photo": {
+   "es": "Foto de muestra",
+   "en": "Sample photo"
+  },
+  "sample_note": {
+   "es": "Fotos de muestra (Unsplash/Pexels). En el sitio real van sus propias fotos.",
+   "en": "Sample photos (Unsplash/Pexels). Your own photos go on the real site."
+  },
+  "cta_title": {
+   "es": "¿Listo para visitarnos?",
+   "en": "Ready to stop by?"
+  },
+  "about_title": {
+   "es": "Nuestra historia",
+   "en": "Our story"
+  },
+  "reviews_cta": {
+   "es": "Ver reseñas",
+   "en": "Read reviews"
+  },
+  "hours_short": {
+   "es": "Horario",
+   "en": "Hours"
+  },
+  "phone_t": {
+   "es": "Teléfono",
+   "en": "Phone"
+  },
+  "email_t": {
+   "es": "Correo",
+   "en": "Email"
+  },
+  "directions_long": {
+   "es": "Abrir en Google Maps",
+   "en": "Open in Google Maps"
+  },
+  "highlights": {
+   "es": "Por qué elegirnos",
+   "en": "Why choose us"
+  },
+  "cta_text": {
+   "es": "Llame o escríbanos.",
+   "en": "Call or send us a message."
   }
  },
  "food": {
@@ -111,7 +247,32 @@
       "en": "Aguas frescas, sodas and more."
      }
     }
-   ]
+   ],
+   "items_nav": {
+    "es": "Menú",
+    "en": "Menu"
+   },
+   "gallery_nav": {
+    "es": "Galería",
+    "en": "Gallery"
+   },
+   "cta_title": {
+    "es": "Los esperamos",
+    "en": "Come hungry"
+   },
+   "cta_text": {
+    "es": "Pase a visitarnos o llame para pedir para llevar.",
+    "en": "Stop by or call ahead for takeout."
+   },
+   "highlights": {
+    "es": "Lo que nos distingue",
+    "en": "What we're known for"
+   }
+  },
+  "pages": {
+   "items_dir": "menu",
+   "gallery_dir": "gallery",
+   "visit": true
   }
  },
  "food_plain": {
@@ -180,7 +341,27 @@
       "en": "Add another service here."
      }
     }
-   ]
+   ],
+   "items_nav": {
+    "es": "Servicios",
+    "en": "Services"
+   },
+   "gallery_nav": {
+    "es": "Galería",
+    "en": "Gallery"
+   },
+   "cta_title": {
+    "es": "Reserve su cita",
+    "en": "Book your appointment"
+   },
+   "cta_text": {
+    "es": "Escoja su servicio y el horario que le quede mejor.",
+    "en": "Pick your service and a time that works for you."
+   }
+  },
+  "pages": {
+   "items_dir": "services",
+   "gallery_dir": "gallery"
   }
  },
  "trades": {
@@ -240,7 +421,32 @@
       "en": "Add another service here."
      }
     }
-   ]
+   ],
+   "items_nav": {
+    "es": "Servicios",
+    "en": "Services"
+   },
+   "gallery_nav": {
+    "es": "Proyectos",
+    "en": "Projects"
+   },
+   "cta_title": {
+    "es": "Pida su cotización",
+    "en": "Get your quote"
+   },
+   "cta_text": {
+    "es": "Cuéntenos sobre su proyecto y le respondemos pronto.",
+    "en": "Tell us about your project and we'll get back to you soon."
+   },
+   "form_msg": {
+    "es": "Cuéntenos sobre su proyecto",
+    "en": "Tell us about your project"
+   }
+  },
+  "pages": {
+   "items_dir": "services",
+   "gallery_dir": "projects",
+   "quote": true
   }
  },
  "events": {
@@ -299,7 +505,32 @@
       "en": "Add another package here."
      }
     }
-   ]
+   ],
+   "items_nav": {
+    "es": "Paquetes",
+    "en": "Packages"
+   },
+   "gallery_nav": {
+    "es": "Galería",
+    "en": "Gallery"
+   },
+   "cta_title": {
+    "es": "Cotice su evento",
+    "en": "Plan your event"
+   },
+   "cta_text": {
+    "es": "Díganos la fecha, el lugar y cuántos invitados espera.",
+    "en": "Tell us the date, venue and guest count."
+   },
+   "form_msg": {
+    "es": "Fecha, lugar y número de invitados",
+    "en": "Date, venue and guest count"
+   }
+  },
+  "pages": {
+   "items_dir": "packages",
+   "gallery_dir": "gallery",
+   "quote": true
   }
  },
  "services": {
@@ -358,7 +589,23 @@
       "en": "Add another service here."
      }
     }
-   ]
+   ],
+   "items_nav": {
+    "es": "Servicios",
+    "en": "Services"
+   },
+   "cta_title": {
+    "es": "Hablemos",
+    "en": "Let's talk"
+   },
+   "cta_text": {
+    "es": "Llame o escríbanos y le respondemos pronto.",
+    "en": "Call or send a message and we'll get back to you soon."
+   }
+  },
+  "pages": {
+   "items_dir": "services",
+   "gallery_dir": "gallery"
   }
  },
  "_fonts": {
