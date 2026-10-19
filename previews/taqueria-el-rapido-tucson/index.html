@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Taquería El Rápido — Concepto de diseño</title>
+<meta property="og:title" content="Taquería El Rápido — Concepto de diseño por Saenztech">
+<meta property="og:image" content="preview.png">
+<style>
+@font-face{font-family:"Bricolage Grotesque";font-weight:600;font-style:normal;font-display:swap;src:url(fonts/bricolage-grotesque-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-weight:800;font-style:normal;font-display:swap;src:url(fonts/bricolage-grotesque-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:400;font-style:normal;font-display:swap;src:url(fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;font-style:normal;font-display:swap;src:url(fonts/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:600;font-style:normal;font-display:swap;src:url(fonts/inter-latin-600-normal.woff2) format("woff2")}
+:root{ --bg:#FFF6E9;--card:#FFFFFF;--ink:#1F1A17;--muted:#6B5E55;--line:#EADBC6;--accent:#B3261E;--accent-dark:#7E1A15;--accent2:#F2A900;--accent3:#2F6B3A;--accent4:#E86F2C;--band:#B3261E;--ph1:#F7E3C4;--ph2:#F3D9B1;--ph3:#D9B98A;--ph-ink:#8A6A43; }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.logo{font-family:"Bricolage Grotesque","Inter",serif;line-height:1.06;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.ribbon{background:var(--ink);color:var(--bg);font-size:12.5px;text-align:center;padding:7px 16px;opacity:.96}
+.ribbon b{color:var(--accent2);font-weight:600}
+.deco{height:30px;display:flex;gap:4px;padding:0 2px}
+.deco span{flex:1}
+
+.deco span{height:30px;clip-path:polygon(0 0,100% 0,100% 72%,85% 100%,70% 72%,50% 100%,30% 72%,15% 100%,0 72%);-webkit-mask:radial-gradient(circle at 50% 40%,transparent 4px,#000 5px);mask:radial-gradient(circle at 50% 40%,transparent 4px,#000 5px)}
+
+.deco span:nth-child(4n+1){background:var(--accent)}
+.deco span:nth-child(4n+2){background:var(--accent2)}
+.deco span:nth-child(4n+3){background:var(--accent3)}
+.deco span:nth-child(4n+4){background:var(--accent4)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:12px}
+.logo{font-weight:800;font-size:26px;color:var(--accent)}
+.logo small{display:block;font-family:"Inter",sans-serif;font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.lang{display:flex;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden;flex-shrink:0}
+.lang button{border:0;background:transparent;font:600 13px "Inter",sans-serif;padding:7px 12px;cursor:pointer;color:var(--ink)}
+.lang button.on{background:var(--ink);color:var(--bg)}
+.hero{display:grid;gap:28px;padding:18px 0 44px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent3)}
+.hero h1{font-size:clamp(42px,8.5vw,80px);font-weight:800;margin:16px 0 14px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:30em}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.ctas .btn{flex:1 1 auto;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:16px;padding:14px 20px;border-radius:14px;border:2px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 4px 0 var(--accent-dark)}
+.btn.ghost{background:var(--card)}
+.btn svg{width:18px;height:18px}
+.photo{position:relative;border-radius:22px;aspect-ratio:4/3;overflow:hidden;background:repeating-linear-gradient(135deg,var(--ph1) 0 18px,var(--ph2) 18px 36px);border:2px dashed var(--ph3);display:grid;place-items:center;text-align:center;color:var(--ph-ink);font-weight:600;font-size:14px}
+.photo .tag{background:rgba(255,255,255,.85);padding:8px 14px;border-radius:999px}
+.hero .photo{transform:rotate(1.5deg)}
+.rating{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:14px;color:var(--muted)}
+.stars{color:var(--star,var(--accent2));letter-spacing:2px;font-size:18px}
+section{padding:56px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(32px,5vw,46px);font-weight:800}
+.sec-head p{color:var(--muted);max-width:28em}
+.items{display:grid;gap:16px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center}
+.item .photo{aspect-ratio:1;border-radius:14px;font-size:11px}
+.item h3{font-size:22px;font-weight:800}
+.item p{color:var(--muted);font-size:14.5px;margin-top:4px}
+.price{font-weight:600;color:var(--accent);margin-top:6px;font-size:14px}
+.item.placeholder{background:transparent;border-style:dashed}
+.item.placeholder h3{color:var(--ph-ink)}
+.band{background:var(--band);color:#fff}
+.band .wrap{display:grid;gap:22px}
+.band h2{font-size:clamp(28px,4.5vw,40px);font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:9px 15px;font-weight:500}
+.band small{opacity:.85;font-size:13px}
+.info{display:grid;gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px}
+.card h3{font-size:24px;font-weight:800;margin-bottom:14px}
+.hours{list-style:none}
+.hours li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
+.hours li:last-child{border:0}
+.hours li.today{font-weight:600;color:var(--accent)}
+.map{display:grid;place-items:center;margin-top:14px;border-radius:14px;aspect-ratio:16/9;text-decoration:none;background:linear-gradient(90deg,transparent 48%,var(--line) 48% 52%,transparent 52%),linear-gradient(0deg,transparent 46%,var(--line) 46% 54%,transparent 54%),linear-gradient(30deg,transparent 60%,var(--ph1) 60% 63%,transparent 63%),var(--bg)}
+.pin{background:var(--accent);color:#fff;font-weight:600;font-size:13px;padding:8px 12px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.15)}
+.note{font-size:12.5px;color:var(--muted);margin-top:10px}
+.contact p{margin-bottom:8px}
+footer{background:var(--ink);color:var(--bg);padding:36px 0 90px;font-size:14px}
+footer .wrap{display:grid;gap:10px}
+footer .logo{color:var(--accent2)}
+footer .concept{border-top:1px solid rgba(255,255,255,.15);margin-top:12px;padding-top:14px;font-size:12.5px;opacity:.75}
+.callbar{position:fixed;left:12px;right:12px;bottom:12px;display:flex;gap:10px;z-index:5}
+.callbar a{flex:1;justify-content:center}
+@media (min-width:820px){
+  .hero{grid-template-columns:1.1fr .9fr;padding:40px 0 70px}
+  .items{grid-template-columns:repeat(2,1fr)}
+  .band .wrap{grid-template-columns:1fr 1.2fr;align-items:center}
+  .info{grid-template-columns:1fr 1fr}
+  .callbar{display:none}
+  footer{padding-bottom:36px}
+}
+
+[data-en]{display:none!important}
+html[lang=en] [data-es]{display:none!important}
+html[lang=en] [data-en]{display:revert!important}
+html[lang=en] .logo small[data-en]{display:block!important}
+
+</style>
+</head>
+<body>
+
+
+
+
+
+<div class="ribbon"><span data-es><b>Concepto de diseño</b> por Saenztech · no es el sitio oficial de Taquería El Rápido</span><span data-en><b>Design concept</b> by Saenztech · not the official site of Taquería El Rápido</span></div>
+<div class="deco" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+<div class="wrap">
+  <nav>
+    <div class="logo">Taquería El Rápido<small>Taquería · Tucson, AZ</small></div>
+    <div class="lang" role="group" aria-label="Idioma / Language"><button class="on" data-set="es">ES</button><button class="" data-set="en">EN</button></div>
+  </nav>
+  <header class="hero">
+    <div>
+      
+      <h1><span data-es>Birria, lengua y tacos <em>sin esperar</em></span><span data-en>Birria, lengua and tacos, <em>no wait</em></span></h1>
+      <p class="lead"><span data-es>Birria, lengua, tacos, burritos, tortas y quesadillas, con ubicación y contacto claros.</span><span data-en>Birria, lengua, tacos, burritos, tortas and quesadillas, with location and contact up front.</span></p>
+      <div class="ctas">
+        
+        
+        
+        
+      </div>
+      
+    </div>
+    <div class="photo"><span class="tag"><span data-es>Aquí va la foto de su comida</span><span data-en>Your food photo goes here</span></span></div>
+  </header>
+</div>
+
+<section id="items">
+  <div class="wrap">
+    <div class="sec-head"><h2><span data-es>El menú</span><span data-en>The menu</span></h2><p><span data-es>Lo que más recomiendan sus clientes. Los precios y el resto del menú se agregan con ustedes.</span><span data-en>Customer favorites. Prices and the full menu get added with you.</span></p></div>
+    <div class="items">
+      
+      <div class="item"><div class="photo"><span data-es>Foto</span><span data-en>Photo</span></div><div><h3>Birria</h3><div class="price">$ —</div></div></div>
+      
+      <div class="item"><div class="photo"><span data-es>Foto</span><span data-en>Photo</span></div><div><h3>Lengua</h3><div class="price">$ —</div></div></div>
+      
+      <div class="item"><div class="photo"><span data-es>Foto</span><span data-en>Photo</span></div><div><h3>Tacos</h3><div class="price">$ —</div></div></div>
+      
+      <div class="item"><div class="photo"><span data-es>Foto</span><span data-en>Photo</span></div><div><h3>Burritos</h3><div class="price">$ —</div></div></div>
+      
+      <div class="item"><div class="photo"><span data-es>Foto</span><span data-en>Photo</span></div><div><h3>Tortas</h3><div class="price">$ —</div></div></div>
+      
+      <div class="item"><div class="photo"><span data-es>Foto</span><span data-en>Photo</span></div><div><h3>Quesadillas</h3><div class="price">$ —</div></div></div>
+      
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section id="visit">
+  <div class="wrap info">
+    <div class="card">
+      
+      <h3><span data-es>Contacto</span><span data-en>Contact</span></h3>
+      <div class="contact">
+        
+        <p>Tucson, AZ</p>
+        
+        <p class="note"><span data-es>Datos de listados públicos; se confirman con ustedes.</span><span data-en>Details from public listings; to be confirmed with you.</span></p>
+      </div>
+      
+    </div>
+    <div class="card">
+      <h3><span data-es>Dónde estamos</span><span data-en>Find us</span></h3>
+      <p>Tucson, AZ</p>
+      <div class="map"><span class="pin">Tucson, AZ</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo">Taquería El Rápido</div>
+    <div>Tucson, AZ</div>
+    <div class="concept"><span data-es>Este es un concepto de diseño preparado por Saenztech (saenz-tech.com) para mostrarle a Taquería El Rápido cómo podría verse su sitio. No es el sitio oficial del negocio. Fotos, precios y textos se definen con el dueño.</span><span data-en>This is a design concept prepared by Saenztech (saenz-tech.com) to show Taquería El Rápido what their site could look like. It is not the business's official site. Photos, prices and copy are finalized with the owner.</span></div>
+  </div>
+</footer>
+
+
+
+<script>
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>{document.documentElement.lang=b.dataset.set;document.querySelectorAll('.lang button').forEach(x=>x.classList.toggle('on',x===b));}));
+const d=new Date().getDay();document.querySelectorAll('.hours li').forEach(li=>{if(+li.dataset.day===d)li.classList.add('today')});
+</script>
+</body>
+</html>
