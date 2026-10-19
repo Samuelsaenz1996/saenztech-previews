@@ -67,7 +67,7 @@ img{display:block;max-width:100%}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 3px 0 var(--accent-dark)}
 .btn.ghost{background:var(--card)}
 .btn.light{background:#fff;border-color:#fff;color:var(--ink)}
-.btn.outline-light{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.06);position:relative;z-index:1}
+.btn.outline-light{border-color:rgba(255,255,255,.6);color:#fff}
 .btn svg{width:18px;height:18px;flex:none}
 /* hero */
 .hero{display:grid;gap:30px;padding:30px 0 48px;align-items:center}
@@ -194,8 +194,6 @@ form .btn{justify-content:center;cursor:pointer;font-family:inherit}
 .about p{font-size:17px;margin-bottom:14px}
 .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
 .gal .ph{aspect-ratio:1;border-radius:14px}
-.gal.g4{grid-template-columns:repeat(2,1fr)}
-@media (min-width:900px){.gal.g4{grid-template-columns:repeat(4,1fr)}}
 .gal .ph.wide{grid-column:span 2;aspect-ratio:16/9}
 footer{background:var(--ink);color:var(--bg);padding:50px 0 96px;font-size:14.5px}
 footer .cols{display:grid;gap:30px}
@@ -240,12 +238,12 @@ html[lang=en] [data-en]{display:revert!important}
  <div class="wrap">
   <div class="bar">
    <a class="logo" href="./"><span class="mono">T</span><div><span class="logo-name">Tacolicioso</span><small><span data-es>Taquería · Glendale, AZ</span><span data-en>Taquería · Glendale, AZ</span></small></div></a>
-   <nav class="links" aria-label="Main"><a href="" class="on"><span data-es>Inicio</span><span data-en>Home</span></a><a href="menu" class=""><span data-es>Menú</span><span data-en>Menu</span></a><a href="gallery" class=""><span data-es>Galería</span><span data-en>Gallery</span></a><a href="visit" class=""><span data-es>Ubicación y horario</span><span data-en>Hours & location</span></a><a href="contact" class=""><span data-es>Contacto</span><span data-en>Contact</span></a></nav>
+   <nav class="links" aria-label="Main"><a href="" class="on"><span data-es>Inicio</span><span data-en>Home</span></a><a href="menu" class=""><span data-es>Menú</span><span data-en>Menu</span></a><a href="visit" class=""><span data-es>Ubicación y horario</span><span data-en>Hours & location</span></a><a href="contact" class=""><span data-es>Contacto</span><span data-en>Contact</span></a></nav>
    <div class="lang" role="group" aria-label="Idioma / Language"><button class="on" data-set="es">ES</button><button class="" data-set="en">EN</button></div>
    <a class="btn primary" href="tel:+16025276017"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-es>Llamar</span><span data-en>Call</span></a>
    <button class="burger" aria-label="Menú" aria-expanded="false"><span></span></button>
   </div>
-  <div class="drawer"><div class="lang m" role="group" aria-label="Idioma / Language"><button class="on" data-set="es">Español</button><button class="" data-set="en">English</button></div><a href="" class="on"><span data-es>Inicio</span><span data-en>Home</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="menu" class=""><span data-es>Menú</span><span data-en>Menu</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="gallery" class=""><span data-es>Galería</span><span data-en>Gallery</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="visit" class=""><span data-es>Ubicación y horario</span><span data-en>Hours & location</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="contact" class=""><span data-es>Contacto</span><span data-en>Contact</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn primary" href="tel:+16025276017"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-es>Llamar</span><span data-en>Call</span></a></div>
+  <div class="drawer"><div class="lang m" role="group" aria-label="Idioma / Language"><button class="on" data-set="es">Español</button><button class="" data-set="en">English</button></div><a href="" class="on"><span data-es>Inicio</span><span data-en>Home</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="menu" class=""><span data-es>Menú</span><span data-en>Menu</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="visit" class=""><span data-es>Ubicación y horario</span><span data-en>Hours & location</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="contact" class=""><span data-es>Contacto</span><span data-en>Contact</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn primary" href="tel:+16025276017"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span data-es>Llamar</span><span data-en>Call</span></a></div>
  </div>
 </header>
 
@@ -264,7 +262,7 @@ html[lang=en] [data-en]{display:revert!important}
     
    </div>
    <div class="visual">
-    <figure class="ph "><img src="img/sample-1.jpg" alt="Tacos con verduras" loading="lazy"><figcaption class="sample"><span data-es>Foto de muestra</span><span data-en>Sample photo</span></figcaption></figure>
+    <div class="art" aria-hidden="true"><div class="big"><div class="sign"><span class="sn">Tacolicioso</span><span class="ss">Taquería · Glendale, AZ</span></div></div></div>
     <div class="float f1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small><span data-es>Horario de hoy</span><span data-en>Today's hours</span></small><b class="today-hours" data-closed="Cerrado">10 am–10 pm</b></div></div>
     
     <div class="float f2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><small><span data-es>Menú</span><span data-en>Menu</span></small><b>Tacos</b></div></div>
@@ -285,18 +283,18 @@ html[lang=en] [data-en]{display:revert!important}
    <div class="cards">
     
     <article class="card-i">
-     <figure class="ph "><img src="img/sample-1.jpg" alt="Tacos" loading="lazy"><figcaption class="sample"><span data-es>Foto de muestra</span><span data-en>Sample photo</span></figcaption></figure>
-     <div class="body"><h3>Tacos</h3><p><span data-es>Lo que más mencionan sus clientes.</span><span data-en>What customers mention most.</span></p></div>
+     
+     <div class="body"><span class="num">1</span><h3>Tacos</h3><p><span data-es>Lo que más mencionan sus clientes.</span><span data-en>What customers mention most.</span></p></div>
     </article>
     
     <article class="card-i">
-     <figure class="ph "><img src="img/sample-2.jpg" alt="Quesadillas" loading="lazy"><figcaption class="sample"><span data-es>Foto de muestra</span><span data-en>Sample photo</span></figcaption></figure>
-     <div class="body"><h3>Quesadillas</h3></div>
+     
+     <div class="body"><span class="num">2</span><h3>Quesadillas</h3></div>
     </article>
     
     <article class="card-i">
-     <figure class="ph "><img src="img/sample-7.jpg" alt="Burritos" loading="lazy"><figcaption class="sample"><span data-es>Foto de muestra</span><span data-en>Sample photo</span></figcaption></figure>
-     <div class="body"><h3>Burritos</h3></div>
+     
+     <div class="body"><span class="num">3</span><h3>Burritos</h3></div>
     </article>
     
    </div>
@@ -312,13 +310,6 @@ html[lang=en] [data-en]{display:revert!important}
  </section>
  
 
- 
- <section>
-  <div class="wrap">
-   <div class="sec-head"><div><span class="kicker"><span data-es>Galería</span><span data-en>Gallery</span></span><h2><span data-es>Galería</span><span data-en>Gallery</span></h2></div><a class="more" href="gallery/"><span data-es>Ver todo</span><span data-en>See all</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-   <div class="grid-g"><figure class="ph "><img src="img/sample-2.jpg" alt="Tacos y quesadillas" loading="lazy"><figcaption class="sample"><span data-es>Foto de muestra</span><span data-en>Sample photo</span></figcaption></figure><figure class="ph "><img src="img/sample-3.jpg" alt="Tacos con salsas" loading="lazy"><figcaption class="sample"><span data-es>Foto de muestra</span><span data-en>Sample photo</span></figcaption></figure><figure class="ph "><img src="img/sample-4.jpg" alt="Tacos de birria con consomé" loading="lazy"><figcaption class="sample"><span data-es>Foto de muestra</span><span data-en>Sample photo</span></figcaption></figure><figure class="ph "><img src="img/sample-5.jpg" alt="Nachos con salsas" loading="lazy"><figcaption class="sample"><span data-es>Foto de muestra</span><span data-en>Sample photo</span></figcaption></figure><figure class="ph "><img src="img/sample-6.jpg" alt="Tacos con arroz y frijoles" loading="lazy"><figcaption class="sample"><span data-es>Foto de muestra</span><span data-en>Sample photo</span></figcaption></figure></div>
-  </div>
- </section>
  
 
 
@@ -337,7 +328,7 @@ html[lang=en] [data-en]{display:revert!important}
  <div class="wrap">
   <div class="cols">
    <div><span class="logo-name">Tacolicioso</span><p style="margin-top:10px"><span data-es>Taquería · Glendale, AZ</span><span data-en>Taquería · Glendale, AZ</span></p><div class="social" style="margin-top:16px"><a href="https://www.facebook.com/tacoliciosoaz/" target="_blank" rel="noopener" aria-label="facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21z"/></svg></a></div></div>
-   <div><h4><span data-es>Páginas</span><span data-en>Pages</span></h4><ul><li><a href=""><span data-es>Inicio</span><span data-en>Home</span></a></li><li><a href="menu"><span data-es>Menú</span><span data-en>Menu</span></a></li><li><a href="gallery"><span data-es>Galería</span><span data-en>Gallery</span></a></li><li><a href="visit"><span data-es>Ubicación y horario</span><span data-en>Hours & location</span></a></li><li><a href="contact"><span data-es>Contacto</span><span data-en>Contact</span></a></li></ul></div>
+   <div><h4><span data-es>Páginas</span><span data-en>Pages</span></h4><ul><li><a href=""><span data-es>Inicio</span><span data-en>Home</span></a></li><li><a href="menu"><span data-es>Menú</span><span data-en>Menu</span></a></li><li><a href="visit"><span data-es>Ubicación y horario</span><span data-en>Hours & location</span></a></li><li><a href="contact"><span data-es>Contacto</span><span data-en>Contact</span></a></li></ul></div>
    <div><h4><span data-es>Contacto</span><span data-en>Contact</span></h4><ul><li><a href="tel:+16025276017">(602) 527-6017</a></li><li><a href="mailto:tacoliciosophx@gmail.com">tacoliciosophx@gmail.com</a></li><li>9031 West Northern Avenue, Glendale, AZ 85305</li></ul></div>
    <div><h4><span data-es>Horario</span><span data-en>Hours</span></h4><ul><li><span data-es>Mar</span><span data-en>Tue</span> · 10 am–10 pm</li><li><span data-es>Mié</span><span data-en>Wed</span> · 10 am–10 pm</li><li><span data-es>Jue</span><span data-en>Thu</span> · 10 am–10 pm</li><li><span data-es>Vie</span><span data-en>Fri</span> · 10 am–11 pm</li><li><span data-es>Sáb</span><span data-en>Sat</span> · 10 am–11 pm</li></ul></div>
   </div>
