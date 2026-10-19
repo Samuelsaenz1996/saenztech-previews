@@ -1,0 +1,658 @@
+{
+ "_common_labels": {
+  "directions": {
+   "es": "Cómo llegar",
+   "en": "Directions"
+  },
+  "call": {
+   "es": "Llamar",
+   "en": "Call"
+  },
+  "book": {
+   "es": "Reservar cita",
+   "en": "Book now"
+  },
+  "photo": {
+   "es": "Aquí va su foto",
+   "en": "Your photo goes here"
+  },
+  "photo_short": {
+   "es": "Foto",
+   "en": "Photo"
+  },
+  "reviews_title": {
+   "es": "Lo que dicen sus clientes",
+   "en": "What customers say"
+  },
+  "reviews_note": {
+   "es": "Temas que se repiten en sus reseñas públicas.",
+   "en": "Themes that come up in public reviews."
+  },
+  "hours": {
+   "es": "Horario",
+   "en": "Hours"
+  },
+  "hours_note": {
+   "es": "Datos de listados públicos; se confirman con ustedes.",
+   "en": "Details from public listings; to be confirmed with you."
+  },
+  "contact": {
+   "es": "Contacto",
+   "en": "Contact"
+  },
+  "find_us": {
+   "es": "Dónde estamos",
+   "en": "Find us"
+  },
+  "add_item": {
+   "es": "Agreguen aquí otro servicio.",
+   "en": "Add another service here."
+  },
+  "nav_home": {
+   "es": "Inicio",
+   "en": "Home"
+  },
+  "nav_about": {
+   "es": "Nosotros",
+   "en": "About"
+  },
+  "nav_visit": {
+   "es": "Ubicación y horario",
+   "en": "Hours & location"
+  },
+  "nav_contact": {
+   "es": "Contacto",
+   "en": "Contact"
+  },
+  "items_nav": {
+   "es": "Servicios",
+   "en": "Services"
+  },
+  "gallery_nav": {
+   "es": "Galería",
+   "en": "Gallery"
+  },
+  "order": {
+   "es": "Ordenar en línea",
+   "en": "Order online"
+  },
+  "menu_toggle": {
+   "es": "Menú",
+   "en": "Menu"
+  },
+  "see_all": {
+   "es": "Ver todo",
+   "en": "See all"
+  },
+  "open_today": {
+   "es": "Horario de hoy",
+   "en": "Today's hours"
+  },
+  "closed_today": {
+   "es": "Cerrado",
+   "en": "Closed"
+  },
+  "call_us": {
+   "es": "Llámenos",
+   "en": "Call us"
+  },
+  "write_us": {
+   "es": "Escríbanos",
+   "en": "Send us a message"
+  },
+  "form_name": {
+   "es": "Nombre",
+   "en": "Name"
+  },
+  "form_phone": {
+   "es": "Teléfono",
+   "en": "Phone"
+  },
+  "form_email": {
+   "es": "Correo",
+   "en": "Email"
+  },
+  "form_msg": {
+   "es": "¿En qué le podemos ayudar?",
+   "en": "How can we help?"
+  },
+  "form_send": {
+   "es": "Enviar mensaje",
+   "en": "Send message"
+  },
+  "form_demo": {
+   "es": "Este formulario es parte del concepto de diseño. En el sitio real, los mensajes le llegan directo a su correo.",
+   "en": "This form is part of the design concept. On the real site, messages go straight to your inbox."
+  },
+  "follow": {
+   "es": "Síganos",
+   "en": "Follow us"
+  },
+  "pages": {
+   "es": "Páginas",
+   "en": "Pages"
+  },
+  "address": {
+   "es": "Dirección",
+   "en": "Address"
+  },
+  "service_area_t": {
+   "es": "Área de servicio",
+   "en": "Service area"
+  },
+  "sample_photo": {
+   "es": "Foto de muestra",
+   "en": "Sample photo"
+  },
+  "sample_note": {
+   "es": "Fotos de muestra (Unsplash/Pexels). En el sitio real van sus propias fotos.",
+   "en": "Sample photos (Unsplash/Pexels). Your own photos go on the real site."
+  },
+  "cta_title": {
+   "es": "¿Listo para visitarnos?",
+   "en": "Ready to stop by?"
+  },
+  "about_title": {
+   "es": "Nuestra historia",
+   "en": "Our story"
+  },
+  "reviews_cta": {
+   "es": "Ver reseñas",
+   "en": "Read reviews"
+  },
+  "hours_short": {
+   "es": "Horario",
+   "en": "Hours"
+  },
+  "phone_t": {
+   "es": "Teléfono",
+   "en": "Phone"
+  },
+  "email_t": {
+   "es": "Correo",
+   "en": "Email"
+  },
+  "directions_long": {
+   "es": "Abrir en Google Maps",
+   "en": "Open in Google Maps"
+  },
+  "highlights": {
+   "es": "Por qué elegirnos",
+   "en": "Why choose us"
+  },
+  "cta_text": {
+   "es": "Llame o escríbanos.",
+   "en": "Call or send us a message."
+  }
+ },
+ "food": {
+  "head_font": "Bricolage Grotesque",
+  "body_font": "Inter",
+  "head_weight": 800,
+  "tracking": "-.01em",
+  "em_style": "normal",
+  "radius": "14px",
+  "tilt": "1.5deg",
+  "deco": "picado",
+  "item_photos": true,
+  "show_price": true,
+  "colors": {
+   "bg": "#FFF6E9",
+   "card": "#FFFFFF",
+   "ink": "#1F1A17",
+   "muted": "#6B5E55",
+   "line": "#EADBC6",
+   "accent": "#B3261E",
+   "accent-dark": "#7E1A15",
+   "accent2": "#F2A900",
+   "accent3": "#2F6B3A",
+   "accent4": "#E86F2C",
+   "band": "#B3261E",
+   "ph1": "#F7E3C4",
+   "ph2": "#F3D9B1",
+   "ph3": "#D9B98A",
+   "ph-ink": "#8A6A43"
+  },
+  "labels": {
+   "items_title": {
+    "es": "El menú",
+    "en": "The menu"
+   },
+   "items_note": {
+    "es": "Lo que más recomiendan sus clientes. Los precios y el resto del menú se agregan con ustedes.",
+    "en": "Customer favorites. Prices and the full menu get added with you."
+   },
+   "photo": {
+    "es": "Aquí va la foto de su comida",
+    "en": "Your food photo goes here"
+   },
+   "placeholders": [
+    {
+     "name": {
+      "es": "Su especialidad",
+      "en": "Your specialty"
+     },
+     "desc": {
+      "es": "Agreguen aquí otro platillo.",
+      "en": "Add another dish here."
+     }
+    },
+    {
+     "name": {
+      "es": "Bebidas",
+      "en": "Drinks"
+     },
+     "desc": {
+      "es": "Aguas frescas, refrescos y más.",
+      "en": "Aguas frescas, sodas and more."
+     }
+    }
+   ],
+   "items_nav": {
+    "es": "Menú",
+    "en": "Menu"
+   },
+   "gallery_nav": {
+    "es": "Galería",
+    "en": "Gallery"
+   },
+   "cta_title": {
+    "es": "Los esperamos",
+    "en": "Come hungry"
+   },
+   "cta_text": {
+    "es": "Pase a visitarnos o llame para pedir para llevar.",
+    "en": "Stop by or call ahead for takeout."
+   },
+   "highlights": {
+    "es": "Lo que nos distingue",
+    "en": "What we're known for"
+   }
+  },
+  "pages": {
+   "items_dir": "menu",
+   "gallery_dir": "gallery",
+   "visit": true
+  }
+ },
+ "food_plain": {
+  "_extends": "food",
+  "deco": "bar",
+  "colors": {
+   "bg": "#FBF7F2",
+   "accent": "#C2410C",
+   "accent-dark": "#8A2E08",
+   "accent2": "#EAB308",
+   "accent3": "#15803D",
+   "accent4": "#1E3A8A",
+   "band": "#1E3A8A"
+  }
+ },
+ "salon": {
+  "head_font": "Fraunces",
+  "body_font": "Inter",
+  "head_weight": 600,
+  "tracking": "-.015em",
+  "em_style": "italic",
+  "radius": "999px",
+  "tilt": "-1.2deg",
+  "deco": "bar",
+  "item_photos": false,
+  "show_price": true,
+  "colors": {
+   "bg": "#FBF4F1",
+   "card": "#FFFFFF",
+   "ink": "#2B1B24",
+   "muted": "#74606A",
+   "line": "#EFDCD5",
+   "accent": "#9D3A63",
+   "accent-dark": "#6E2845",
+   "accent2": "#E7B7A3",
+   "accent3": "#C98A6B",
+   "accent4": "#5B3A55",
+   "band": "#5B3A55",
+   "ph1": "#F6E4DD",
+   "ph2": "#F1D7CD",
+   "ph3": "#DDB6A7",
+   "ph-ink": "#8C5F52",
+   "star": "#C98A3B"
+  },
+  "labels": {
+   "items_title": {
+    "es": "Servicios",
+    "en": "Services"
+   },
+   "items_note": {
+    "es": "Su menú de servicios, con enlace directo para reservar.",
+    "en": "Your service menu, with a direct link to book."
+   },
+   "photo": {
+    "es": "Aquí va una foto de su trabajo",
+    "en": "A photo of your work goes here"
+   },
+   "placeholders": [
+    {
+     "name": {
+      "es": "Otro servicio",
+      "en": "Another service"
+     },
+     "desc": {
+      "es": "Agreguen aquí otro servicio.",
+      "en": "Add another service here."
+     }
+    }
+   ],
+   "items_nav": {
+    "es": "Servicios",
+    "en": "Services"
+   },
+   "gallery_nav": {
+    "es": "Galería",
+    "en": "Gallery"
+   },
+   "cta_title": {
+    "es": "Reserve su cita",
+    "en": "Book your appointment"
+   },
+   "cta_text": {
+    "es": "Escoja su servicio y el horario que le quede mejor.",
+    "en": "Pick your service and a time that works for you."
+   }
+  },
+  "pages": {
+   "items_dir": "services",
+   "gallery_dir": "gallery"
+  }
+ },
+ "trades": {
+  "head_font": "Archivo",
+  "body_font": "Inter",
+  "head_weight": 800,
+  "tracking": "-.02em",
+  "em_style": "normal",
+  "radius": "10px",
+  "tilt": "0deg",
+  "deco": "bar",
+  "item_photos": false,
+  "show_price": false,
+  "colors": {
+   "bg": "#F5F6F8",
+   "card": "#FFFFFF",
+   "ink": "#121A2A",
+   "muted": "#5A6475",
+   "line": "#DDE2EA",
+   "accent": "#E8590C",
+   "accent-dark": "#A63E06",
+   "accent2": "#FFC24B",
+   "accent3": "#1F6F4A",
+   "accent4": "#1D3557",
+   "band": "#1D3557",
+   "ph1": "#E7EBF1",
+   "ph2": "#DCE2EA",
+   "ph3": "#B7C1CF",
+   "ph-ink": "#566175",
+   "star": "#F2A900"
+  },
+  "labels": {
+   "items_title": {
+    "es": "Servicios",
+    "en": "Services"
+   },
+   "items_note": {
+    "es": "Lo que hacen, explicado claro. Cada servicio puede llevar fotos de antes y después.",
+    "en": "What you do, explained clearly. Each service can show before-and-after photos."
+   },
+   "photo": {
+    "es": "Aquí va una foto de un trabajo terminado",
+    "en": "A finished-job photo goes here"
+   },
+   "book": {
+    "es": "Pedir cotización",
+    "en": "Request a quote"
+   },
+   "placeholders": [
+    {
+     "name": {
+      "es": "Otro servicio",
+      "en": "Another service"
+     },
+     "desc": {
+      "es": "Agreguen aquí otro servicio.",
+      "en": "Add another service here."
+     }
+    }
+   ],
+   "items_nav": {
+    "es": "Servicios",
+    "en": "Services"
+   },
+   "gallery_nav": {
+    "es": "Proyectos",
+    "en": "Projects"
+   },
+   "cta_title": {
+    "es": "Pida su cotización",
+    "en": "Get your quote"
+   },
+   "cta_text": {
+    "es": "Cuéntenos sobre su proyecto y le respondemos pronto.",
+    "en": "Tell us about your project and we'll get back to you soon."
+   },
+   "form_msg": {
+    "es": "Cuéntenos sobre su proyecto",
+    "en": "Tell us about your project"
+   }
+  },
+  "pages": {
+   "items_dir": "services",
+   "gallery_dir": "projects",
+   "quote": true
+  }
+ },
+ "events": {
+  "head_font": "Playfair Display",
+  "body_font": "Inter",
+  "head_weight": 700,
+  "tracking": "-.01em",
+  "em_style": "italic",
+  "radius": "12px",
+  "tilt": "1deg",
+  "deco": "bar",
+  "item_photos": true,
+  "show_price": false,
+  "colors": {
+   "bg": "#FBF8F3",
+   "card": "#FFFFFF",
+   "ink": "#1E1B2E",
+   "muted": "#6A6578",
+   "line": "#E9E2D6",
+   "accent": "#0F6E6E",
+   "accent-dark": "#0A4C4C",
+   "accent2": "#D4A72C",
+   "accent3": "#B5476B",
+   "accent4": "#3B2F63",
+   "band": "#3B2F63",
+   "ph1": "#EFE8DB",
+   "ph2": "#E8DECD",
+   "ph3": "#CDBE9F",
+   "ph-ink": "#7D6B4A"
+  },
+  "labels": {
+   "items_title": {
+    "es": "Paquetes y servicios",
+    "en": "Packages & services"
+   },
+   "items_note": {
+    "es": "Sus paquetes con fotos de eventos reales y un botón para cotizar.",
+    "en": "Your packages with real event photos and a quote button."
+   },
+   "photo": {
+    "es": "Aquí va una foto de uno de sus eventos",
+    "en": "A photo from one of your events goes here"
+   },
+   "book": {
+    "es": "Pedir cotización",
+    "en": "Get a quote"
+   },
+   "placeholders": [
+    {
+     "name": {
+      "es": "Otro paquete",
+      "en": "Another package"
+     },
+     "desc": {
+      "es": "Agreguen aquí otro paquete.",
+      "en": "Add another package here."
+     }
+    }
+   ],
+   "items_nav": {
+    "es": "Paquetes",
+    "en": "Packages"
+   },
+   "gallery_nav": {
+    "es": "Galería",
+    "en": "Gallery"
+   },
+   "cta_title": {
+    "es": "Cotice su evento",
+    "en": "Plan your event"
+   },
+   "cta_text": {
+    "es": "Díganos la fecha, el lugar y cuántos invitados espera.",
+    "en": "Tell us the date, venue and guest count."
+   },
+   "form_msg": {
+    "es": "Fecha, lugar y número de invitados",
+    "en": "Date, venue and guest count"
+   }
+  },
+  "pages": {
+   "items_dir": "packages",
+   "gallery_dir": "gallery",
+   "quote": true
+  }
+ },
+ "services": {
+  "head_font": "Manrope",
+  "body_font": "Inter",
+  "head_weight": 800,
+  "tracking": "-.02em",
+  "em_style": "normal",
+  "radius": "10px",
+  "tilt": "0deg",
+  "deco": "bar",
+  "item_photos": false,
+  "show_price": false,
+  "colors": {
+   "bg": "#F6F8F7",
+   "card": "#FFFFFF",
+   "ink": "#14211D",
+   "muted": "#58665F",
+   "line": "#DCE5E0",
+   "accent": "#1D6B57",
+   "accent-dark": "#124537",
+   "accent2": "#C9A227",
+   "accent3": "#2F80ED",
+   "accent4": "#14211D",
+   "band": "#14211D",
+   "ph1": "#E5ECE8",
+   "ph2": "#DAE4DF",
+   "ph3": "#B5C6BD",
+   "ph-ink": "#52685D"
+  },
+  "labels": {
+   "items_title": {
+    "es": "Servicios",
+    "en": "Services"
+   },
+   "items_note": {
+    "es": "Lo que ofrecen, en un lugar claro y en los dos idiomas.",
+    "en": "What you offer, in one clear place and in both languages."
+   },
+   "photo": {
+    "es": "Aquí va una foto de su oficina o equipo",
+    "en": "A photo of your office or team goes here"
+   },
+   "book": {
+    "es": "Agendar cita",
+    "en": "Book an appointment"
+   },
+   "placeholders": [
+    {
+     "name": {
+      "es": "Otro servicio",
+      "en": "Another service"
+     },
+     "desc": {
+      "es": "Agreguen aquí otro servicio.",
+      "en": "Add another service here."
+     }
+    }
+   ],
+   "items_nav": {
+    "es": "Servicios",
+    "en": "Services"
+   },
+   "cta_title": {
+    "es": "Hablemos",
+    "en": "Let's talk"
+   },
+   "cta_text": {
+    "es": "Llame o escríbanos y le respondemos pronto.",
+    "en": "Call or send a message and we'll get back to you soon."
+   }
+  },
+  "pages": {
+   "items_dir": "services",
+   "gallery_dir": "gallery"
+  }
+ },
+ "_fonts": {
+  "Bricolage Grotesque": {
+   "pkg": "bricolage-grotesque",
+   "weights": [
+    600,
+    800
+   ]
+  },
+  "Inter": {
+   "pkg": "inter",
+   "weights": [
+    400,
+    500,
+    600
+   ]
+  },
+  "Fraunces": {
+   "pkg": "fraunces",
+   "weights": [
+    600
+   ],
+   "italic": [
+    600
+   ]
+  },
+  "Archivo": {
+   "pkg": "archivo",
+   "weights": [
+    800
+   ]
+  },
+  "Playfair Display": {
+   "pkg": "playfair-display",
+   "weights": [
+    700
+   ],
+   "italic": [
+    700
+   ]
+  },
+  "Manrope": {
+   "pkg": "manrope",
+   "weights": [
+    800
+   ]
+  }
+ }
+}
