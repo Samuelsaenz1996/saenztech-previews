@@ -385,5 +385,131 @@
    "remodeling",
    "repair"
   ]
+ },
+ {
+  "file": "pexels-8478206.jpg",
+  "alt": {
+   "es": "Mecánico revisando el motor de un auto",
+   "en": "Mechanic working in a car's engine bay"
+  },
+  "credit": "Pexels photo 8478206",
+  "source": "https://www.pexels.com/photo/8478206/",
+  "tags": [
+   "auto repair",
+   "mechanic",
+   "engine"
+  ]
+ },
+ {
+  "file": "pexels-8478259.jpg",
+  "alt": {
+   "es": "Mecánico trabajando bajo el cofre",
+   "en": "Mechanic working under the hood"
+  },
+  "credit": "Pexels photo 8478259",
+  "source": "https://www.pexels.com/photo/8478259/",
+  "tags": [
+   "auto repair",
+   "mechanic",
+   "engine"
+  ]
+ },
+ {
+  "file": "pexels-3806249.jpg",
+  "alt": {
+   "es": "Mecánico cambiando una llanta en el taller",
+   "en": "Mechanic changing a tire in the shop"
+  },
+  "credit": "Pexels photo 3806249",
+  "source": "https://www.pexels.com/photo/3806249/",
+  "tags": [
+   "auto repair",
+   "mechanic",
+   "tires"
+  ]
+ },
+ {
+  "file": "pexels-7568431.jpg",
+  "alt": {
+   "es": "Mecánico con piezas de freno en el banco de trabajo",
+   "en": "Mechanic with brake parts on the workbench"
+  },
+  "credit": "Pexels photo 7568431",
+  "source": "https://www.pexels.com/photo/7568431/",
+  "tags": [
+   "auto repair",
+   "mechanic",
+   "brakes"
+  ]
+ },
+ {
+  "file": "pexels-33405139.jpg",
+  "alt": {
+   "es": "Cuadrilla colando concreto para una entrada de casa",
+   "en": "Crew pouring a concrete driveway from a mixer truck"
+  },
+  "credit": "Pexels photo 33405139",
+  "source": "https://www.pexels.com/photo/33405139/",
+  "tags": [
+   "concrete",
+   "driveway",
+   "pouring"
+  ]
+ },
+ {
+  "file": "pexels-37121398.jpg",
+  "alt": {
+   "es": "Nivelando concreto fresco con regla vibratoria",
+   "en": "Leveling fresh concrete with a power screed"
+  },
+  "credit": "Pexels photo 37121398",
+  "source": "https://www.pexels.com/photo/37121398/",
+  "tags": [
+   "concrete",
+   "finishing",
+   "slab"
+  ]
+ },
+ {
+  "file": "pexels-4134382.jpg",
+  "alt": {
+   "es": "Trabajador nivelando concreto en la cimbra",
+   "en": "Worker screeding concrete in the forms"
+  },
+  "credit": "Pexels photo 4134382",
+  "source": "https://www.pexels.com/photo/4134382/",
+  "tags": [
+   "concrete",
+   "finishing",
+   "forms"
+  ]
+ },
+ {
+  "file": "pexels-33513858.jpg",
+  "alt": {
+   "es": "Pintores trabajando en la fachada de una casa de ladrillo",
+   "en": "Painters working on a brick house exterior"
+  },
+  "credit": "Pexels photo 33513858",
+  "source": "https://www.pexels.com/photo/33513858/",
+  "tags": [
+   "painting",
+   "exterior",
+   "house painting"
+  ]
+ },
+ {
+  "file": "pexels-17014386.jpg",
+  "alt": {
+   "es": "Pintor pintando el marco de una ventana exterior",
+   "en": "Painter painting an exterior window frame"
+  },
+  "credit": "Pexels photo 17014386",
+  "source": "https://www.pexels.com/photo/17014386/",
+  "tags": [
+   "painting",
+   "exterior",
+   "trim"
+  ]
  }
 ]

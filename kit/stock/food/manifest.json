@@ -352,5 +352,75 @@
    "taco stand",
    "tacos"
   ]
+ },
+ {
+  "file": "pexels-31843944.jpg",
+  "alt": {
+   "es": "Concha y pan dulce en una canasta",
+   "en": "Concha and pan dulce in a basket"
+  },
+  "credit": "Pexels photo 31843944",
+  "source": "https://www.pexels.com/photo/31843944/",
+  "tags": [
+   "bakery",
+   "pan dulce",
+   "explicit"
+  ]
+ },
+ {
+  "file": "pexels-35152905.jpg",
+  "alt": {
+   "es": "Concha y pan dulce sobre mantel a cuadros",
+   "en": "Concha and pan dulce on a checkered cloth"
+  },
+  "credit": "Pexels photo 35152905",
+  "source": "https://www.pexels.com/photo/35152905/",
+  "tags": [
+   "bakery",
+   "pan dulce",
+   "explicit"
+  ]
+ },
+ {
+  "file": "pexels-37663508.jpg",
+  "alt": {
+   "es": "Estante de pan recién horneado en la panadería",
+   "en": "Shelves of fresh bread in a bakery"
+  },
+  "credit": "Pexels photo 37663508",
+  "source": "https://www.pexels.com/photo/37663508/",
+  "tags": [
+   "bakery",
+   "pan dulce",
+   "explicit"
+  ]
+ },
+ {
+  "file": "pexels-12927172.jpg",
+  "alt": {
+   "es": "Pasteles decorados en la vitrina de la pastelería",
+   "en": "Decorated cakes on display in a bakery"
+  },
+  "credit": "Pexels photo 12927172",
+  "source": "https://www.pexels.com/photo/12927172/",
+  "tags": [
+   "bakery",
+   "cake",
+   "explicit"
+  ]
+ },
+ {
+  "file": "pexels-19301032.jpg",
+  "alt": {
+   "es": "Pastel decorado con flores y velas",
+   "en": "Cake decorated with flowers and candles"
+  },
+  "credit": "Pexels photo 19301032",
+  "source": "https://www.pexels.com/photo/19301032/",
+  "tags": [
+   "bakery",
+   "cake",
+   "explicit"
+  ]
  }
 ]
