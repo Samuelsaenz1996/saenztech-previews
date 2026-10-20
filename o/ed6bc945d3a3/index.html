@@ -76,6 +76,7 @@ svg{width:18px;height:18px;flex:none}
     </div>
   </div>
 
+  <p class="note" id="inapp" hidden><b>You opened this inside another app.</b> Tap the <b>⋯</b> or share menu and choose <b>Open in Safari</b> (or Chrome) so the Text buttons can open Messages.</p>
   <p class="note">If tapping <b>Text</b> doesn't open Messages, use <b>Copy message</b>, then paste it into a new text to the number shown. Numbers marked "Likely landline" may not take texts. Call those instead.</p>
 
   <div class="table" role="table" aria-label="Businesses">
@@ -151,13 +152,14 @@ function render(){
     if(filter==="todo"&&isSent)return;
     if((filter==="es"||filter==="en")&&lang!==filter)return;
     const row=document.createElement("div");row.className="row"+(isSent?" sent":"");row.setAttribute("role","row");
-    const sms="sms:"+phone+"?&body="+encodeURIComponent(msg);
+    const ua=navigator.userAgent||"", ios=/iPhone|iPad|iPod/.test(ua)||(/Macintosh/.test(ua)&&"ontouchend" in document);
+    const sms=ios ? "sms:"+phone+"&body="+encodeURIComponent(msg) : "sms:"+phone+"?body="+encodeURIComponent(msg);
     row.innerHTML=`
       <div class="biz"><strong>${name}</strong><span class="meta">${desc} · <span style="user-select:all">${disp}</span></span><br>
         <span class="tag">${lang==="es"?"Español":"English"}</span>${line?' <span class="tag warn">Likely landline · call</span>':''}</div>
       <div class="actions"><a class="btn" href="${BASE+slug}/" target="_blank" rel="noopener">${ICON_EYE}View site</a></div>
       <div class="actions">
-        <a class="btn primary" href="${sms}">${ICON_MSG}Text</a>
+        <a class="btn primary" href="${sms}" target="_top">${ICON_MSG}Text</a><a class="btn small" href="tel:${phone}" target="_top">Call</a>
         <button type="button" class="btn small" data-copy="${i}" id="copy-${slug}">Copy message</button>
         <button type="button" class="btn small" data-sent="${slug}" id="sent-${slug}" aria-pressed="${isSent}">${isSent?"Sent ✓":"Mark sent"}</button>
       </div>
@@ -176,6 +178,7 @@ document.addEventListener("click",e=>{
   if(f){filter=f.dataset.f;document.querySelectorAll("[data-f]").forEach(b=>b.setAttribute("aria-pressed",b===f));render();}
 });
 render();
+(function(){var ua=navigator.userAgent||"";if(/FBAN|FBAV|Instagram|Line\/|GSA\/|Claude|wv\)|WebView/i.test(ua)||(/iPhone|iPad/.test(ua)&&!/Safari/.test(ua)))document.getElementById("inapp").hidden=false;})();
 </script>
 </body>
 </html>
