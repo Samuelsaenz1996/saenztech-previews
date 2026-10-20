@@ -38,6 +38,12 @@ if "_extends" in th:
     th = merge(themes[th["_extends"]], {k: v for k, v in th.items() if k != "_extends"})
 th = copy.deepcopy(th)
 th["labels"] = merge(themes["_common_labels"], th.get("labels", {}))
+# per-lead style override: {"colors": {...}, "head_font", "body_font", "head_weight", "deco", "radius", "tilt", "em_style", "tracking"}
+for _k, _v in (b.get("style") or {}).items():
+    if _k == "colors":
+        th["colors"].update(_v)
+    elif _k in ("head_font", "body_font", "head_weight", "deco", "radius", "tilt", "em_style", "tracking"):
+        th[_k] = _v
 L = th["labels"]
 
 for f in ("slug", "business", "headline", "lead", "subtitle"):
@@ -114,6 +120,9 @@ if len(photos) < want and b.get("stock", True):
             general = [s for s in lib if "explicit" not in s.get("tags", []) and s not in match]
             rnd.shuffle(match)
             rnd.shuffle(general)
+            used = {os.path.basename(str((x.get("src") if isinstance(x, dict) else x) or "")) for x in b.get("photos", [])}
+            match = [s for s in match if s["file"] not in used]
+            general = [s for s in general if s["file"] not in used]
             pool = match if len(match) >= 3 else match + general
             for j, s in enumerate(pool):
                 if len(photos) >= want:

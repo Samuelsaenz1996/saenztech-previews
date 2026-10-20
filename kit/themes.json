@@ -653,6 +653,51 @@
    "weights": [
     800
    ]
+  },
+  "Oswald": {
+   "pkg": "oswald",
+   "weights": [
+    600,
+    700
+   ]
+  },
+  "DM Serif Display": {
+   "pkg": "dm-serif-display",
+   "weights": [
+    400
+   ],
+   "italic": [
+    400
+   ]
+  },
+  "Space Grotesk": {
+   "pkg": "space-grotesk",
+   "weights": [
+    500,
+    700
+   ]
+  },
+  "Rubik": {
+   "pkg": "rubik",
+   "weights": [
+    700,
+    800
+   ]
+  },
+  "Outfit": {
+   "pkg": "outfit",
+   "weights": [
+    400,
+    500,
+    600,
+    800
+   ]
+  },
+  "Lobster": {
+   "pkg": "lobster",
+   "weights": [
+    400
+   ]
   }
  }
 }

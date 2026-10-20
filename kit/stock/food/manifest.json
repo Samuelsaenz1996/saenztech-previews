@@ -190,5 +190,167 @@
    "bakery",
    "explicit"
   ]
+ },
+ {
+  "file": "pexels-5943973.jpg",
+  "alt": {
+   "es": "Pupusas en comal con curtido y salsa de tomate",
+   "en": "Pupusas on a stone griddle with curtido and tomato salsa"
+  },
+  "credit": "Pexels photo 5943973",
+  "source": "https://www.pexels.com/photo/5943973/",
+  "tags": [
+   "pupusas",
+   "salvadoran",
+   "curtido"
+  ]
+ },
+ {
+  "file": "pexels-33490827.jpg",
+  "alt": {
+   "es": "Pupusa con guacamole y platos al fondo",
+   "en": "Pupusa topped with guacamole, more dishes behind"
+  },
+  "credit": "Pexels photo 33490827",
+  "source": "https://www.pexels.com/photo/33490827/",
+  "tags": [
+   "pupusas",
+   "salvadoran"
+  ]
+ },
+ {
+  "file": "pexels-14179987.jpg",
+  "alt": {
+   "es": "Tamal en hoja de plátano con salsa",
+   "en": "Tamale in a banana leaf with salsa"
+  },
+  "credit": "Pexels photo 14179987",
+  "source": "https://www.pexels.com/photo/14179987/",
+  "tags": [
+   "tamales",
+   "mexican"
+  ]
+ },
+ {
+  "file": "pexels-10949543.jpg",
+  "alt": {
+   "es": "Tamales en hoja de maíz sobre tabla de madera",
+   "en": "Corn-husk tamales on a wooden board"
+  },
+  "credit": "Pexels photo 10949543",
+  "source": "https://www.pexels.com/photo/10949543/",
+  "tags": [
+   "tamales",
+   "mexican"
+  ]
+ },
+ {
+  "file": "pexels-12334113.jpg",
+  "alt": {
+   "es": "Manos preparando tamales con masa y hojas",
+   "en": "Hands preparing tamales with masa and husks"
+  },
+  "credit": "Pexels photo 12334113",
+  "source": "https://www.pexels.com/photo/12334113/",
+  "tags": [
+   "tamales",
+   "mexican",
+   "masa"
+  ]
+ },
+ {
+  "file": "pexels-31843933.jpg",
+  "alt": {
+   "es": "Tamal servido en hoja de plátano",
+   "en": "Plated tamale in a banana leaf"
+  },
+  "credit": "Pexels photo 31843933",
+  "source": "https://www.pexels.com/photo/31843933/",
+  "tags": [
+   "tamales",
+   "mexican",
+   "plate"
+  ]
+ },
+ {
+  "file": "pexels-12333179.jpg",
+  "alt": {
+   "es": "Tamales y caldo en la mesa",
+   "en": "Tamales and soup on a table"
+  },
+  "credit": "Pexels photo 12333179",
+  "source": "https://www.pexels.com/photo/12333179/",
+  "tags": [
+   "tamales",
+   "mexican"
+  ]
+ },
+ {
+  "file": "pexels-12276364.jpg",
+  "alt": {
+   "es": "Gorditas de masa con salsa roja y verde",
+   "en": "Griddled masa gorditas with red and green salsa"
+  },
+  "credit": "Pexels photo 12276364",
+  "source": "https://www.pexels.com/photo/12276364/",
+  "tags": [
+   "gorditas",
+   "masa",
+   "mexican"
+  ]
+ },
+ {
+  "file": "pexels-12326196.jpg",
+  "alt": {
+   "es": "Gorditas de masa en el comal",
+   "en": "Masa gorditas cooking on a comal"
+  },
+  "credit": "Pexels photo 12326196",
+  "source": "https://www.pexels.com/photo/12326196/",
+  "tags": [
+   "gorditas",
+   "masa",
+   "comal"
+  ]
+ },
+ {
+  "file": "pexels-13111720.jpg",
+  "alt": {
+   "es": "Ventana de un food truck con menú de tacos",
+   "en": "Food truck window with a hand-written taco menu"
+  },
+  "credit": "Pexels photo 13111720",
+  "source": "https://www.pexels.com/photo/13111720/",
+  "tags": [
+   "food truck",
+   "taco truck",
+   "tacos"
+  ]
+ },
+ {
+  "file": "pexels-14646397.jpg",
+  "alt": {
+   "es": "Food truck estacionado al aire libre",
+   "en": "Food truck trailer parked outdoors"
+  },
+  "credit": "Pexels photo 14646397",
+  "source": "https://www.pexels.com/photo/14646397/",
+  "tags": [
+   "food truck"
+  ]
+ },
+ {
+  "file": "pexels-12203728.jpg",
+  "alt": {
+   "es": "Puesto de tacos en la calle",
+   "en": "Street taco stand"
+  },
+  "credit": "Pexels photo 12203728",
+  "source": "https://www.pexels.com/photo/12203728/",
+  "tags": [
+   "food truck",
+   "taco stand",
+   "tacos"
+  ]
  }
 ]

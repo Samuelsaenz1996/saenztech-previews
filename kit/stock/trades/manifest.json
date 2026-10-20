@@ -63,5 +63,327 @@
    "painting",
    "interior"
   ]
+ },
+ {
+  "file": "pexels-7546775.jpg",
+  "alt": {
+   "es": "Jardín con césped recién cortado y patio",
+   "en": "Freshly mowed lawn and covered patio"
+  },
+  "credit": "Pexels photo 7546775",
+  "source": "https://www.pexels.com/photo/7546775/",
+  "tags": [
+   "landscaping",
+   "lawn",
+   "sod",
+   "patio"
+  ]
+ },
+ {
+  "file": "pexels-7587880.jpg",
+  "alt": {
+   "es": "Césped verde junto a casa moderna",
+   "en": "Green striped lawn beside a modern house"
+  },
+  "credit": "Pexels photo 7587880",
+  "source": "https://www.pexels.com/photo/7587880/",
+  "tags": [
+   "landscaping",
+   "lawn",
+   "sod"
+  ]
+ },
+ {
+  "file": "pexels-6728933.jpg",
+  "alt": {
+   "es": "Cortando el césped con podadora",
+   "en": "Mowing a lawn with a push mower"
+  },
+  "credit": "Pexels photo 6728933",
+  "source": "https://www.pexels.com/photo/6728933/",
+  "tags": [
+   "landscaping",
+   "lawn",
+   "lawn care"
+  ]
+ },
+ {
+  "file": "pexels-4162016.jpg",
+  "alt": {
+   "es": "Podadora sobre césped verde",
+   "en": "Lawn mower on green grass"
+  },
+  "credit": "Pexels photo 4162016",
+  "source": "https://www.pexels.com/photo/4162016/",
+  "tags": [
+   "landscaping",
+   "lawn",
+   "lawn care"
+  ]
+ },
+ {
+  "file": "pexels-12558900.jpg",
+  "alt": {
+   "es": "Casa con jardín y entrada de adoquín",
+   "en": "Home with landscaped garden and paver driveway"
+  },
+  "credit": "Pexels photo 12558900",
+  "source": "https://www.pexels.com/photo/12558900/",
+  "tags": [
+   "landscaping",
+   "pavers",
+   "yard"
+  ]
+ },
+ {
+  "file": "pexels-8583822.jpg",
+  "alt": {
+   "es": "Patio de adoquín con fogata y jardín",
+   "en": "Paver patio with fire pit and landscaped yard"
+  },
+  "credit": "Pexels photo 8583822",
+  "source": "https://www.pexels.com/photo/8583822/",
+  "tags": [
+   "patio",
+   "pavers",
+   "hardscape",
+   "landscaping"
+  ]
+ },
+ {
+  "file": "pexels-10855255.jpg",
+  "alt": {
+   "es": "Patio de piedra con cocina exterior",
+   "en": "Stone patio with outdoor kitchen"
+  },
+  "credit": "Pexels photo 10855255",
+  "source": "https://www.pexels.com/photo/10855255/",
+  "tags": [
+   "patio",
+   "hardscape",
+   "landscaping"
+  ]
+ },
+ {
+  "file": "pexels-4509092.jpg",
+  "alt": {
+   "es": "Colocando adoquines de ladrillo",
+   "en": "Laying brick pavers on sand"
+  },
+  "credit": "Pexels photo 4509092",
+  "source": "https://www.pexels.com/photo/4509092/",
+  "tags": [
+   "patio",
+   "pavers",
+   "concrete",
+   "hardscape"
+  ]
+ },
+ {
+  "file": "pexels-25283561.jpg",
+  "alt": {
+   "es": "Aspersor regando el césped",
+   "en": "Pop-up sprinkler watering a lawn"
+  },
+  "credit": "Pexels photo 25283561",
+  "source": "https://www.pexels.com/photo/25283561/",
+  "tags": [
+   "sprinklers",
+   "irrigation",
+   "lawn"
+  ]
+ },
+ {
+  "file": "pexels-37720375.jpg",
+  "alt": {
+   "es": "Aspersor de jardín en acción",
+   "en": "Garden sprinkler spraying water"
+  },
+  "credit": "Pexels photo 37720375",
+  "source": "https://www.pexels.com/photo/37720375/",
+  "tags": [
+   "sprinklers",
+   "irrigation"
+  ]
+ },
+ {
+  "file": "pexels-32974053.jpg",
+  "alt": {
+   "es": "Aspersor automático en césped",
+   "en": "Automatic lawn sprinkler head"
+  },
+  "credit": "Pexels photo 32974053",
+  "source": "https://www.pexels.com/photo/32974053/",
+  "tags": [
+   "sprinklers",
+   "irrigation",
+   "lawn"
+  ]
+ },
+ {
+  "file": "pexels-257736.jpg",
+  "alt": {
+   "es": "Electricista revisando un tablero eléctrico",
+   "en": "Electrician working on a breaker panel"
+  },
+  "credit": "Pexels photo 257736",
+  "source": "https://www.pexels.com/photo/257736/",
+  "tags": [
+   "electrical",
+   "electrician",
+   "panel"
+  ]
+ },
+ {
+  "file": "pexels-32497160.jpg",
+  "alt": {
+   "es": "Electricista trabajando en panel de casa",
+   "en": "Electrician working on a home breaker panel"
+  },
+  "credit": "Pexels photo 32497160",
+  "source": "https://www.pexels.com/photo/32497160/",
+  "tags": [
+   "electrical",
+   "electrician",
+   "panel"
+  ]
+ },
+ {
+  "file": "pexels-5691588.jpg",
+  "alt": {
+   "es": "Instalación de contactos eléctricos",
+   "en": "Installing wall outlets"
+  },
+  "credit": "Pexels photo 5691588",
+  "source": "https://www.pexels.com/photo/5691588/",
+  "tags": [
+   "electrical",
+   "electrician",
+   "outlets"
+  ]
+ },
+ {
+  "file": "pexels-5691589.jpg",
+  "alt": {
+   "es": "Atornillando un contacto en la pared",
+   "en": "Screwing in a wall outlet"
+  },
+  "credit": "Pexels photo 5691589",
+  "source": "https://www.pexels.com/photo/5691589/",
+  "tags": [
+   "electrical",
+   "electrician",
+   "outlets"
+  ]
+ },
+ {
+  "file": "pexels-6419128.jpg",
+  "alt": {
+   "es": "Plomero instalando tubería",
+   "en": "Plumber installing pipe fittings"
+  },
+  "credit": "Pexels photo 6419128",
+  "source": "https://www.pexels.com/photo/6419128/",
+  "tags": [
+   "plumbing",
+   "plumber",
+   "pipes"
+  ]
+ },
+ {
+  "file": "pexels-29226620.jpg",
+  "alt": {
+   "es": "Plomero conectando tubería de radiador",
+   "en": "Plumber connecting a radiator pipe"
+  },
+  "credit": "Pexels photo 29226620",
+  "source": "https://www.pexels.com/photo/29226620/",
+  "tags": [
+   "plumbing",
+   "plumber",
+   "pipes"
+  ]
+ },
+ {
+  "file": "pexels-14953886.jpg",
+  "alt": {
+   "es": "Llave de grifo y mangueras sobre plano",
+   "en": "Faucet, supply hoses and wrench on a floor plan"
+  },
+  "credit": "Pexels photo 14953886",
+  "source": "https://www.pexels.com/photo/14953886/",
+  "tags": [
+   "plumbing",
+   "faucet"
+  ]
+ },
+ {
+  "file": "pexels-39885416.jpg",
+  "alt": {
+   "es": "Doblando tubo de cobre en taller",
+   "en": "Bending copper pipe in a workshop"
+  },
+  "credit": "Pexels photo 39885416",
+  "source": "https://www.pexels.com/photo/39885416/",
+  "tags": [
+   "plumbing",
+   "plumber",
+   "pipes"
+  ]
+ },
+ {
+  "file": "pexels-5484718.jpg",
+  "alt": {
+   "es": "Serrucho, martillo, guantes y cinta métrica",
+   "en": "Saw, hammer, gloves and tape measure"
+  },
+  "credit": "Pexels photo 5484718",
+  "source": "https://www.pexels.com/photo/5484718/",
+  "tags": [
+   "handyman",
+   "tools",
+   "repair"
+  ]
+ },
+ {
+  "file": "pexels-175039.jpg",
+  "alt": {
+   "es": "Herramientas de mano sobre mesa de trabajo",
+   "en": "Hand tools on a workbench"
+  },
+  "credit": "Pexels photo 175039",
+  "source": "https://www.pexels.com/photo/175039/",
+  "tags": [
+   "handyman",
+   "tools",
+   "repair"
+  ]
+ },
+ {
+  "file": "pexels-4312854.jpg",
+  "alt": {
+   "es": "Herramientas de construcción sobre fondo oscuro",
+   "en": "Construction hand tools on a dark surface"
+  },
+  "credit": "Pexels photo 4312854",
+  "source": "https://www.pexels.com/photo/4312854/",
+  "tags": [
+   "handyman",
+   "tools"
+  ]
+ },
+ {
+  "file": "pexels-5691550.jpg",
+  "alt": {
+   "es": "Instalando puertas y ventana en casa",
+   "en": "Handyman installing doors and a window"
+  },
+  "credit": "Pexels photo 5691550",
+  "source": "https://www.pexels.com/photo/5691550/",
+  "tags": [
+   "handyman",
+   "remodeling",
+   "repair"
+  ]
  }
 ]

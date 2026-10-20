@@ -316,6 +316,26 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
   </div>
  </section>
 
+ {% if b.address %}
+ <section class="findus">
+  <div class="wrap">
+   <div class="sec-head"><div><span class="kicker">{{ L(th.labels.find_us) }}</span><h2>{{ t('Dónde encontrarnos','Where to find us') }}</h2></div><a class="more" href="{{ maps }}" target="_blank" rel="noopener">{{ L(th.labels.directions) }} {{ icon('arrow') }}</a></div>
+   <div class="info">
+    <div class="mapbox"><span class="pin">{{ b.business }}</span><iframe src="{{ embed }}" loading="lazy" title="Map" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="card">
+     <ul class="clist">
+      <li><span class="ic">{{ icon('pin') }}</span><div><small>{{ L(th.labels.address) }}</small><a href="{{ maps }}" target="_blank" rel="noopener">{{ b.address }}</a></div></li>
+      {% if b.hours %}<li><span class="ic">{{ icon('clock') }}</span><div><small>{{ L(th.labels.open_today) }}</small><span class="today-hours" data-closed="{{ A(th.labels.closed_today) }}">{{ b.hours[0].time }}</span></div></li>{% endif %}
+      {% if b.phone %}<li><span class="ic">{{ icon('phone') }}</span><div><small>{{ L(th.labels.phone_t) }}</small><a href="tel:{{ b.phone }}">{{ b.phone_display }}</a></div></li>{% endif %}
+      {% if b.rating %}<li><span class="ic">{{ icon('star') }}</span><div><small>{{ b.rating.source }}</small><span>{{ b.rating.value }} / 5 · {{ b.rating.count }} {{ t('reseñas','reviews') }}</span></div></li>{% endif %}
+     </ul>
+     <div class="ctas"><a class="btn primary" href="{{ maps }}" target="_blank" rel="noopener">{{ icon('pin') }}{{ L(th.labels.directions_long) }}</a>{% if b.phone %}<a class="btn ghost" href="tel:{{ b.phone }}">{{ icon('phone') }}{{ L(th.labels.call) }}</a>{% endif %}</div>
+    </div>
+   </div>
+  </div>
+ </section>
+ {% endif %}
+
  {% if b.themes %}
  <section class="band">
   <div class="wrap">
@@ -407,6 +427,8 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
     <form onsubmit="event.preventDefault();this.querySelector('.ok').classList.add('show')">
      <div class="two"><label>{{ L(th.labels.form_name) }}<input name="n" autocomplete="name"></label><label>{{ L(th.labels.form_phone) }}<input name="p" type="tel" autocomplete="tel"></label></div>
      <label>{{ L(th.labels.form_email) }}<input name="e" type="email" autocomplete="email"></label>
+     {% if b.form_topics %}<label>{{ t('Motivo','Reason') }}<select name="t">{% for x in b.form_topics %}<option>{{ A(x) }}</option>{% endfor %}</select></label>{% endif %}
+     {% if b.form_date %}<div class="two"><label>{{ L(b.form_date) }}<input name="d" type="date"></label><label>{{ t('Número de personas','Number of guests') }}<input name="g" type="number" min="1" inputmode="numeric"></label></div>{% endif %}
      {% if items and th.pages.quote %}<label>{{ L(th.labels.items_nav) }}<select name="s">{% for it in items %}<option>{{ A(it.name) }}</option>{% endfor %}<option>{{ t('Otro','Other') }}</option></select></label>{% endif %}
      <label>{{ L(th.labels.form_msg) }}<textarea name="m"></textarea></label>
      <button class="btn primary" type="submit">{{ icon('mail') }}{{ L(th.labels.form_send) }}</button>
@@ -459,8 +481,8 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  if(bg)bg.addEventListener('click',function(){var o=dr.classList.toggle('open');bg.setAttribute('aria-expanded',o)});
  var d=new Date().getDay();
  document.querySelectorAll('.hours li').forEach(function(li){if(+li.dataset.day===d)li.classList.add('today')});
- var hrs={{ (b.hours or [])|tojson }},th=document.querySelector('.today-hours');
- if(th){var m=hrs.filter(function(x){return x.day===d})[0];th.textContent=m?m.time:th.dataset.closed}
+ var hrs={{ (b.hours or [])|tojson }};
+ document.querySelectorAll('.today-hours').forEach(function(th){var m=hrs.filter(function(x){return x.day===d})[0];th.textContent=m?m.time:th.dataset.closed});
 })();
 </script>
 </body>
