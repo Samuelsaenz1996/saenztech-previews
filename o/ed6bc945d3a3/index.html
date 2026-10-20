@@ -77,6 +77,7 @@ svg{width:18px;height:18px;flex:none}
   </div>
 
   <p class="note" id="inapp" hidden><b>You opened this inside another app.</b> Tap the <b>⋯</b> or share menu and choose <b>Open in Safari</b> (or Chrome) so the Text buttons can open Messages.</p>
+  <p class="note"><b>Before you hit send, check the "To:" line in Messages shows the business number</b> listed here (for example (720) 800-3487). If it shows anything else, cancel and use Copy message instead.</p>
   <p class="note">If tapping <b>Text</b> doesn't open Messages, use <b>Copy message</b>, then paste it into a new text to the number shown. Numbers marked "Likely landline" may not take texts. Call those instead.</p>
 
   <div class="table" role="table" aria-label="Businesses">
@@ -153,7 +154,7 @@ function render(){
     if((filter==="es"||filter==="en")&&lang!==filter)return;
     const row=document.createElement("div");row.className="row"+(isSent?" sent":"");row.setAttribute("role","row");
     const ua=navigator.userAgent||"", ios=/iPhone|iPad|iPod/.test(ua)||(/Macintosh/.test(ua)&&"ontouchend" in document);
-    const sms=ios ? "sms:"+phone+"&body="+encodeURIComponent(msg) : "sms:"+phone+"?body="+encodeURIComponent(msg);
+    const sms="sms:"+phone+"?&body="+encodeURIComponent(msg);
     row.innerHTML=`
       <div class="biz"><strong>${name}</strong><span class="meta">${desc} · <span style="user-select:all">${disp}</span></span><br>
         <span class="tag">${lang==="es"?"Español":"English"}</span>${line?' <span class="tag warn">Likely landline · call</span>':''}</div>
