@@ -356,6 +356,7 @@ html.shot h1 .w>span{transform:none;transition:none}html.shot .visual .ph,html.s
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}
  .fe,.float,.rv,.eyebrow,.lead,.hero .ctas,.hero .rating,.sub-hero p,.crumb,h1 .w>span{opacity:1!important;transform:none!important}.visual .ph,.visual .art{clip-path:none!important}.intro{display:none}}
 {% include "arch/" ~ arch ~ ".css" ignore missing %}
+{% if th.sig %}{% include "arch/sig/" ~ th.sig ~ ".css" ignore missing %}{% endif %}
 {% if bilingual %}
 [data-{{ alt }}]{display:none!important}
 html[lang={{ alt }}] [data-{{ lang }}]{display:none!important}
@@ -364,7 +365,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
 </style>
 </head>
 <body>
-{% if page == 'home' %}{% if arch == 'fiesta' %}<div class="intro" aria-hidden="true"><div class="ia">{{ M.ride|safe }}</div><div class="in">{{ b.business }}</div></div>{% else %}{% include "arch/" ~ arch ~ "_intro.html" ignore missing %}{% endif %}{% endif %}
+{% if page == 'home' and th.sig %}{% include ["arch/sig/" ~ th.sig ~ "_intro.html", "arch/" ~ arch ~ "_intro.html"] ignore missing %}{% elif page == 'home' %}{% if arch == 'fiesta' %}<div class="intro" aria-hidden="true"><div class="ia">{{ M.ride|safe }}</div><div class="in">{{ b.business }}</div></div>{% else %}{% include "arch/" ~ arch ~ "_intro.html" ignore missing %}{% endif %}{% endif %}
 <div class="deco" aria-hidden="true">{% for i in range(24) %}<span></span>{% endfor %}</div>
 
 <header class="top">
@@ -415,6 +416,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
 {% macro mqrow() -%}<div class="mq">{% for k in range(2) %}{% for it in items[:6] %}<b class="{{ 'o' if (loop.index0 + k) % 2 else '' }}">{{ L(it.name) }}</b><i>{% if arch == 'fiesta' %}{{ M.tick|safe }}{% else %}/{% endif %}</i>{% endfor %}{% endfor %}</div>{%- endmacro %}
  {% if items %}<div class="marqs" aria-hidden="true"><div class="marq">{{ mqrow() }}{{ mqrow() }}</div><div class="marq alt">{{ mqrow() }}{{ mqrow() }}</div></div>{% endif %}
 
+{% if th.sig %}{% include "arch/sig/" ~ th.sig ~ ".html" ignore missing %}{% endif %}
  <section>
   <div class="wrap">
    <div class="sec-head"><div><span class="kicker">{% if arch == 'fiesta' %}<i class="tk">{{ M.tick|safe }}</i>{% endif %}{{ L(th.labels.items_nav) }}</span><h2>{{ L(b.items_title or th.labels.items_title) }}</h2></div><a class="more" href="{{ root }}{{ items_page.dir }}/">{{ L(th.labels.see_all) }} {{ icon('arrow') }}</a></div>
@@ -636,5 +638,6 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
 })();
 </script>
 {% include "arch/" ~ arch ~ ".js.html" ignore missing %}
+{% if th.sig %}{% include "arch/sig/" ~ th.sig ~ ".js.html" ignore missing %}{% endif %}
 </body>
 </html>

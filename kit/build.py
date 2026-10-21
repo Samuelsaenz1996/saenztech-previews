@@ -42,7 +42,7 @@ th["labels"] = merge(themes["_common_labels"], th.get("labels", {}))
 for _k, _v in (b.get("style") or {}).items():
     if _k == "colors":
         th["colors"].update(_v)
-    elif _k in ("head_font", "body_font", "head_weight", "deco", "radius", "tilt", "em_style", "tracking", "arch", "accent_font", "variant"):
+    elif _k in ("head_font", "body_font", "head_weight", "deco", "radius", "tilt", "em_style", "tracking", "arch", "accent_font", "variant", "sig"):
         th[_k] = _v
 L = th["labels"]
 
