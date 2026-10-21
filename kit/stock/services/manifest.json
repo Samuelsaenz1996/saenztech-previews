@@ -1364,5 +1364,65 @@
    "western",
    "explicit"
   ]
+ },
+ {
+  "file": "unsplash-1630406144797-821be1f35d75.jpg",
+  "alt": {
+   "es": "Instructor de manejo con portapapeles",
+   "en": "Driving instructor with a clipboard"
+  },
+  "credit": "Unsplash photo 1630406144797-821be1f35d75",
+  "tags": [
+   "driving",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1553782097-130fef5d3e27.jpg",
+  "alt": {
+   "es": "Clase de manejo con instructor",
+   "en": "Driving lesson with an instructor"
+  },
+  "credit": "Unsplash photo 1553782097-130fef5d3e27",
+  "tags": [
+   "driving",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1516862523118-a3724eb136d7.jpg",
+  "alt": {
+   "es": "Estudiante al volante",
+   "en": "Student driver behind the wheel"
+  },
+  "credit": "Unsplash photo 1516862523118-a3724eb136d7",
+  "tags": [
+   "driving",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1524114051012-0a2aa8dae4e1.jpg",
+  "alt": {
+   "es": "Manos en el volante",
+   "en": "Hands on the steering wheel"
+  },
+  "credit": "Unsplash photo 1524114051012-0a2aa8dae4e1",
+  "tags": [
+   "driving",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1532004252750-b411a84c8a41.jpg",
+  "alt": {
+   "es": "Manejando en una carretera tranquila",
+   "en": "Driving on a quiet road"
+  },
+  "credit": "Unsplash photo 1532004252750-b411a84c8a41",
+  "tags": [
+   "driving",
+   "explicit"
+  ]
  }
 ]
