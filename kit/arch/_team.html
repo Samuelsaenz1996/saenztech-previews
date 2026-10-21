@@ -1,14 +1,14 @@
-{% if b.team and page == 'home' %}{% set lead_m = b.team|selectattr('lead')|first %}
+{% if b.team and page in ('home','team') %}{% set lead_m = b.team|selectattr('lead')|first %}
 <section class="tm" id="team">
  <div class="wrap">
-  <div class="sec-head rv"><div><span class="kicker">{{ t('Nuestro equipo','Meet the team') }}</span><h2>{{ L(b.team_title) if b.team_title else t('Las manos detrás de cada prueba','The hands behind every fitting') }}</h2></div>{% if b.team_intro %}<p>{{ L(b.team_intro) }}</p>{% endif %}</div>
-  {% if lead_m %}<div class="tm-lead rv">
+  {% if page == 'home' %}<div class="sec-head"><div><span class="kicker">{{ t('Nuestro equipo','Meet the team') }}</span><h2>{{ L(b.team_title) if b.team_title else t('Las manos detrás de cada prueba','The hands behind every fitting') }}</h2></div>{% if b.team_intro %}<p>{{ L(b.team_intro) }}</p>{% endif %}</div>{% endif %}
+  {% if lead_m %}<div class="tm-lead">
    <div class="tm-lead-ph"><img src="{{ lead_m.img }}" alt="{{ lead_m.name }}" loading="lazy"><span class="tm-tag">{{ L(lead_m.role) }}</span></div>
    <div class="tm-lead-tx"><span class="tm-sig">{{ lead_m.name }}</span><p>{{ L(lead_m.bio) }}</p>{% if lead_m.fact %}<p class="tm-fact">{{ L(lead_m.fact) }}</p>{% endif %}</div>
   </div>{% endif %}
   <div class="tm-row">
   {% for m in b.team if not m.lead %}
-   <article class="tm-card rv" style="--d:{{ loop.index0 * 0.08 }}s">
+   <article class="tm-card" style="--d:{{ loop.index0 * 0.08 }}s">
     <div class="tm-ph"><img src="{{ m.img }}" alt="{{ m.name }}" loading="lazy">{% if m.years %}<span class="tm-yrs"><b>{{ m.years }}</b>{{ t('años aquí','yrs here') }}</span>{% endif %}</div>
     <div class="tm-tx"><h3>{{ m.name }}</h3><span class="tm-role">{{ L(m.role) }}</span><p>{{ L(m.bio) }}</p>{% if m.fav %}<p class="tm-fav"><i>♡</i> {{ L(m.fav) }}</p>{% endif %}</div>
    </article>

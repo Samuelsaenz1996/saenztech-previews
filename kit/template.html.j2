@@ -498,6 +498,9 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
   <div class="wrap"><div class="gal">{% for p in gallery %}{{ photo(p, 'wide' if loop.index0 % 5 == 0 else '') }}{% endfor %}</div></div>
  </section>
 
+{% elif page == 'team' %}
+ <div class="sub-hero"><div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(b.team_title) if b.team_title else t('Las manos detrás de cada prueba','The hands behind every fitting') }}</h1>{% if b.team_intro %}<p>{{ L(b.team_intro) }}</p>{% endif %}</div></div>
+ <div class="page-team">{% include "arch/_team.html" %}</div>
 {% elif page == 'about' %}
  <div class="sub-hero">{% if arch == 'fiesta' %}{{ floaters(3, True) }}{% endif %}<div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(th.labels.about_title) }}</h1></div></div>
  <section>
@@ -616,7 +619,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
   var dur=+(intro.dataset.dur||1250);setTimeout(function(){intro.classList.add('out');setTimeout(go,250);setTimeout(function(){intro.remove()},+(intro.dataset.out||900))},dur)}
  else{requestAnimationFrame(function(){requestAnimationFrame(go)})}
  // reveal on scroll
- var sel='.sec-head,.card-i,.hl,.row,.info>.card,.info>.mapbox,.info>.about,.chip,.grid-g .ph,.gal .ph,.cta-box,.menu-group h3,.band h2';
+ var sel='.sec-head,.tm-card,.tm-lead,.card-i,.hl,.row,.info>.card,.info>.mapbox,.info>.about,.chip,.grid-g .ph,.gal .ph,.cta-box,.menu-group h3,.band h2';
  var els=document.querySelectorAll(sel);
  els.forEach(function(e){e.classList.add('rv');var sib=[].filter.call(e.parentNode.children,function(x){return x.matches(sel)});e.style.setProperty('--rd',(sib.indexOf(e)%6*0.09)+'s')});
  var pend=[].slice.call(els);

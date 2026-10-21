@@ -187,6 +187,8 @@ if b.get("about"):
     pages.append({"id": "about", "dir": "about", "label": L["nav_about"]})
 if P.get("visit") and (b.get("hours") or b.get("address")):
     pages.append({"id": "visit", "dir": "visit", "label": L["nav_visit"]})
+if b.get("team"):
+    pages.append({"id": "team", "dir": "team", "label": {"es": "Equipo", "en": "Our team"}})
 pages.append({"id": "contact", "dir": "contact", "label": L["nav_contact"]})
 
 if b.get("order_url"):
