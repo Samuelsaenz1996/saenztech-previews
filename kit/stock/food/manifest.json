@@ -422,5 +422,228 @@
    "cake",
    "explicit"
   ]
+ },
+ {
+  "file": "unsplash-1604331654916-540f76d082bd.jpg",
+  "alt": {
+   "es": "Pescado frito con papas y salsas",
+   "en": "Fried fish with fries and dipping sauces"
+  },
+  "credit": "Unsplash photo 1604331654916-540f76d082bd",
+  "tags": [
+   "cajun",
+   "catfish",
+   "fried fish",
+   "fries",
+   "swamp fries",
+   "soul food",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1569409611632-b87901f4c74a.jpg",
+  "alt": {
+   "es": "Filetes de pescado empanizado",
+   "en": "Crispy fried fish fillets"
+  },
+  "credit": "Unsplash photo 1569409611632-b87901f4c74a",
+  "tags": [
+   "cajun",
+   "catfish",
+   "fried fish",
+   "soul food",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1662041648634-684d7d09ebbf.jpg",
+  "alt": {
+   "es": "Pescado frito con verduras",
+   "en": "Fried catfish plate with greens"
+  },
+  "credit": "Unsplash photo 1662041648634-684d7d09ebbf",
+  "tags": [
+   "cajun",
+   "catfish",
+   "soul food",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1559847844-5315695dadae.jpg",
+  "alt": {
+   "es": "Gumbo de camarón con arroz",
+   "en": "Shrimp gumbo with rice"
+  },
+  "credit": "Unsplash photo 1559847844-5315695dadae",
+  "tags": [
+   "cajun",
+   "gumbo",
+   "shrimp",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1708790303870-452d9f872d1f.jpg",
+  "alt": {
+   "es": "Gumbo con salchicha",
+   "en": "Gumbo with sausage"
+  },
+  "credit": "Unsplash photo 1708790303870-452d9f872d1f",
+  "tags": [
+   "cajun",
+   "gumbo",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1553557202-e8e60357f061.jpg",
+  "alt": {
+   "es": "Camarones fritos en canasta",
+   "en": "Fried shrimp basket"
+  },
+  "credit": "Unsplash photo 1553557202-e8e60357f061",
+  "tags": [
+   "cajun",
+   "shrimp",
+   "fried shrimp",
+   "soul food",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1567620832903-9fc6debc209f.jpg",
+  "alt": {
+   "es": "Alitas de pollo con aderezo",
+   "en": "Chicken wings with dipping sauce"
+  },
+  "credit": "Unsplash photo 1567620832903-9fc6debc209f",
+  "tags": [
+   "wings",
+   "cajun",
+   "soul food",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1565192259022-0427b058f372.jpg",
+  "alt": {
+   "es": "Pescado frito con papas",
+   "en": "Fried fish and fries"
+  },
+  "credit": "Unsplash photo 1565192259022-0427b058f372",
+  "tags": [
+   "cajun",
+   "fried fish",
+   "fries",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1631540223537-8f2d49a4ad9d.jpg",
+  "alt": {
+   "es": "Food truck estacionado",
+   "en": "Food truck parked on the street"
+  },
+  "credit": "Unsplash photo 1631540223537-8f2d49a4ad9d",
+  "tags": [
+   "cajun",
+   "food truck",
+   "soul food",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1774946480409-645ab291d541.jpg",
+  "alt": {
+   "es": "Chef cocinando con llamas en la plancha",
+   "en": "Chef cooking with flames on the grill"
+  },
+  "credit": "Unsplash photo 1774946480409-645ab291d541",
+  "tags": [
+   "hibachi",
+   "grill",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1751638583436-80d9885ce226.jpg",
+  "alt": {
+   "es": "Chef en la plancha teppanyaki",
+   "en": "Chef at the teppanyaki grill"
+  },
+  "credit": "Unsplash photo 1751638583436-80d9885ce226",
+  "tags": [
+   "hibachi",
+   "teppanyaki",
+   "grill",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1625300105749-77d295c0f278.jpg",
+  "alt": {
+   "es": "Llamarada en la plancha",
+   "en": "Flames on the hibachi grill"
+  },
+  "credit": "Unsplash photo 1625300105749-77d295c0f278",
+  "tags": [
+   "hibachi",
+   "grill",
+   "flame",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1785733690836-6f4f638be83a.jpg",
+  "alt": {
+   "es": "Carne en la plancha caliente",
+   "en": "Meat sizzling on a hot griddle"
+  },
+  "credit": "Unsplash photo 1785733690836-6f4f638be83a",
+  "tags": [
+   "hibachi",
+   "grill",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1785733690832-eabe6e6d5c84.jpg",
+  "alt": {
+   "es": "Carne asada en rebanadas",
+   "en": "Sliced grilled steak"
+  },
+  "credit": "Unsplash photo 1785733690832-eabe6e6d5c84",
+  "tags": [
+   "hibachi",
+   "steak",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1731407321637-de010c69ceef.jpg",
+  "alt": {
+   "es": "Chef preparando en la plancha",
+   "en": "Chef preparing food on the griddle"
+  },
+  "credit": "Unsplash photo 1731407321637-de010c69ceef",
+  "tags": [
+   "hibachi",
+   "teppanyaki",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1710887869102-36fd5d1f3352.jpg",
+  "alt": {
+   "es": "Verduras para la plancha",
+   "en": "Vegetables ready for the grill"
+  },
+  "credit": "Unsplash photo 1710887869102-36fd5d1f3352",
+  "tags": [
+   "hibachi",
+   "vegetables",
+   "explicit"
+  ]
  }
 ]

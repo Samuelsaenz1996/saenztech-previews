@@ -141,6 +141,8 @@ items = b.get("items", [])[:16]
 for i, it in enumerate(items):
     if it.get("photo"):
         it["photo_path"] = fetch(it["photo"], f"item-{i+1}")
+        if it["photo_path"] and str(it["photo"]).startswith("stock/"):
+            it["photo_sample"] = True
 # give items a matching sample photo when a photo's tag appears in the item name (e.g. "birria", "burritos")
 def _names(v):
     return " ".join(v.values()).lower() if isinstance(v, dict) else str(v).lower()
