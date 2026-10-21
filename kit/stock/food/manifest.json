@@ -849,5 +849,53 @@
    "peruvian",
    "explicit"
   ]
+ },
+ {
+  "file": "unsplash-1583338917451-face2751d8d5.jpg",
+  "alt": {
+   "es": "Vitrina de pasteles",
+   "en": "Cake display case"
+  },
+  "credit": "Unsplash photo 1583338917451-face2751d8d5",
+  "tags": [
+   "peruvian",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1643944471768-2d2eac3afb6d.jpg",
+  "alt": {
+   "es": "Vitrina de panadería",
+   "en": "Bakery pastry case"
+  },
+  "credit": "Unsplash photo 1643944471768-2d2eac3afb6d",
+  "tags": [
+   "peruvian",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1533134242443-d4fd215305ad.jpg",
+  "alt": {
+   "es": "Rebanada de cheesecake de arándano",
+   "en": "Blueberry cheesecake slice"
+  },
+  "credit": "Unsplash photo 1533134242443-d4fd215305ad",
+  "tags": [
+   "peruvian",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1702925614886-50ad13c88d3f.jpg",
+  "alt": {
+   "es": "Rebanada de cheesecake",
+   "en": "Cheesecake slice"
+  },
+  "credit": "Unsplash photo 1702925614886-50ad13c88d3f",
+  "tags": [
+   "peruvian",
+   "explicit"
+  ]
  }
 ]

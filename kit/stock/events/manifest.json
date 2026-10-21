@@ -418,5 +418,41 @@
    "venue",
    "explicit"
   ]
+ },
+ {
+  "file": "unsplash-1682839520077-686e4902d19e.jpg",
+  "alt": {
+   "es": "Pareja bailando en el salón",
+   "en": "Couple dancing in a ballroom"
+  },
+  "credit": "Unsplash photo 1682839520077-686e4902d19e",
+  "tags": [
+   "choreo",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1765632814488-52e6d0653ebe.jpg",
+  "alt": {
+   "es": "Pasos de baile de salón",
+   "en": "Ballroom dance steps"
+  },
+  "credit": "Unsplash photo 1765632814488-52e6d0653ebe",
+  "tags": [
+   "choreo",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1760331339913-da9637154477.jpg",
+  "alt": {
+   "es": "Pista de baile en evento formal",
+   "en": "Dance floor at a formal event"
+  },
+  "credit": "Unsplash photo 1760331339913-da9637154477",
+  "tags": [
+   "choreo",
+   "explicit"
+  ]
  }
 ]
