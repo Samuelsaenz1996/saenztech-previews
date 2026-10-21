@@ -358,6 +358,7 @@ html.shot h1 .w>span{transform:none;transition:none}html.shot .visual .ph,html.s
 {% include "arch/" ~ arch ~ ".css" ignore missing %}
 {% if th.sig %}{% include "arch/sig/" ~ th.sig ~ ".css" ignore missing %}{% endif %}
 {% if th.intro %}{% include "arch/intro/" ~ th.intro ~ ".css" ignore missing %}{% endif %}
+{% if b.team %}{% include "arch/_team.css" %}{% endif %}
 {% if bilingual %}
 [data-{{ alt }}]{display:none!important}
 html[lang={{ alt }}] [data-{{ lang }}]{display:none!important}
@@ -418,6 +419,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  {% if items %}<div class="marqs" aria-hidden="true"><div class="marq">{{ mqrow() }}{{ mqrow() }}</div><div class="marq alt">{{ mqrow() }}{{ mqrow() }}</div></div>{% endif %}
 
 {% if th.sig %}{% include "arch/sig/" ~ th.sig ~ ".html" ignore missing %}{% endif %}
+{% include "arch/_team.html" %}
  <section>
   <div class="wrap">
    <div class="sec-head"><div><span class="kicker">{% if arch == 'fiesta' %}<i class="tk">{{ M.tick|safe }}</i>{% endif %}{{ L(th.labels.items_nav) }}</span><h2>{{ L(b.items_title or th.labels.items_title) }}</h2></div><a class="more" href="{{ root }}{{ items_page.dir }}/">{{ L(th.labels.see_all) }} {{ icon('arrow') }}</a></div>

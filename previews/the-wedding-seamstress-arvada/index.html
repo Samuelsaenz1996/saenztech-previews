@@ -25,11 +25,11 @@
 <meta property="og:image" content="https://samuelsaenz1996.github.io/saenztech-previews/previews/the-wedding-seamstress-arvada/preview.png">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-@font-face{font-family:"Manrope";font-weight:800;font-style:normal;font-display:swap;src:url(fonts/manrope-latin-800-normal.woff2) format("woff2")}
 @font-face{font-family:"Cormorant Garamond";font-weight:500;font-style:normal;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2")}
 @font-face{font-family:"Cormorant Garamond";font-weight:600;font-style:normal;font-display:swap;src:url(fonts/cormorant-garamond-latin-600-normal.woff2) format("woff2")}
 @font-face{font-family:"Cormorant Garamond";font-weight:500;font-style:italic;font-display:swap;src:url(fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2")}
 @font-face{font-family:"Cormorant Garamond";font-weight:600;font-style:italic;font-display:swap;src:url(fonts/cormorant-garamond-latin-600-italic.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-weight:800;font-style:normal;font-display:swap;src:url(fonts/manrope-latin-800-normal.woff2) format("woff2")}
 :root{ --bg:#FBF7F4;--card:#FFFFFF;--ink:#2A2220;--muted:#776A65;--line:#EDE3DD;--accent:#A26769;--accent-dark:#7E4E50;--accent2:#D4B483;--accent3:#6D9DC5;--accent4:#A26769;--band:#2A2220;--ph1:#EDE3DD;--ph2:#EDE3DD;--ph3:#776A65;--ph-ink:#776A65;--star:#D4B483;--r:14px;--shadow:0 1px 2px rgba(20,16,12,.06),0 8px 28px rgba(20,16,12,.08)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -471,6 +471,34 @@ html.shot .ec-mast{letter-spacing:-.03em;opacity:1}html.shot .ec-lines span{opac
 @keyframes bld{from{transform:scaleY(0)}}
 .bl-n{position:absolute;inset:0;display:grid;place-items:center;font:600 clamp(34px,8vw,90px)/1 "Cormorant Garamond",sans-serif;color:#fff;text-align:center;padding:0 20px;mix-blend-mode:difference;animation:pop .5s ease .45s both}
 .intro.ix-bl.out{transform:none}.intro.ix-bl.out i{transform:scaleY(0);transform-origin:bottom;transition:transform .6s cubic-bezier(.7,0,.3,1) calc(var(--i) * .05s)}.intro.ix-bl.out .bl-n{opacity:0;transition:opacity .2s}
+.tm{padding:clamp(70px,9vw,120px) 0;background:linear-gradient(180deg,var(--bg),color-mix(in srgb,var(--accent) 7%,var(--bg)))}
+.tm .sec-head p{max-width:34em}
+.tm-lead{display:grid;gap:26px;align-items:center;margin-bottom:46px}
+@media (min-width:860px){.tm-lead{grid-template-columns:.8fr 1.2fr;gap:56px}}
+.tm-lead-ph{position:relative;aspect-ratio:4/5;max-width:420px;width:100%;justify-self:center}
+.tm-lead-ph img{width:100%;height:100%;object-fit:cover;border-radius:999px 999px 18px 18px;box-shadow:0 30px 60px rgba(0,0,0,.14)}
+.tm-lead-ph::before{content:"";position:absolute;inset:-14px -14px 14px 14px;border:1px solid var(--accent2);border-radius:999px 999px 18px 18px;z-index:-1}
+.tm-tag{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);background:var(--card);color:var(--ink);padding:8px 16px;border-radius:999px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;box-shadow:0 10px 24px rgba(0,0,0,.1)}
+.tm-sig{display:block;font:italic 600 clamp(44px,6vw,72px)/1 "Cormorant Garamond",serif;color:var(--accent);margin-bottom:14px}
+.tm-lead-tx p{font-size:17px;line-height:1.7;color:var(--ink);max-width:34em}
+.tm-fact{color:var(--muted)!important;font-size:15px!important;border-left:2px solid var(--accent2);padding-left:14px;margin-top:14px}
+.tm-row{display:grid;grid-auto-flow:column;grid-auto-columns:78%;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 18px;scrollbar-width:none}
+.tm-row::-webkit-scrollbar{display:none}
+@media (min-width:700px){.tm-row{grid-auto-columns:44%}}
+@media (min-width:1050px){.tm-row{grid-auto-flow:row;grid-template-columns:repeat(4,1fr);overflow:visible}.tm-tx h3{font-size:24px}}
+.tm-card{scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.tm-card.rv.in{transition-delay:var(--d)}
+.tm-card:hover{transform:translateY(-6px);box-shadow:0 26px 50px rgba(0,0,0,.1)}
+.tm-ph{position:relative;aspect-ratio:4/4.4;overflow:hidden}
+.tm-ph img{width:100%;height:100%;object-fit:cover;object-position:50% 25%;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.tm-card:hover .tm-ph img{transform:scale(1.06)}
+.tm-yrs{position:absolute;right:12px;top:12px;width:64px;height:64px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-content:center;text-align:center;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;line-height:1.1;box-shadow:0 10px 20px rgba(0,0,0,.18)}
+.tm-yrs b{display:block;font:600 24px/1 "Cormorant Garamond",serif;letter-spacing:0}
+.tm-tx{padding:18px 20px 22px;display:grid;gap:6px}
+.tm-tx h3{font-size:28px;margin:0}
+.tm-role{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.tm-tx p{margin:4px 0 0;color:var(--muted);font-size:14.5px;line-height:1.6}
+.tm-fav{color:var(--ink)!important;font-style:italic}.tm-fav i{color:var(--accent);font-style:normal}
 
 [data-es]{display:none!important}
 html[lang=es] [data-en]{display:none!important}
@@ -530,6 +558,55 @@ html[lang=es] [data-es]{display:revert!important}
   <div class="sgx-v" aria-hidden="true"><svg viewBox="0 0 600 440"><path class="br-tape" pathLength="1" d="M60 120 C 200 80, 400 160, 540 110"/><path class="br-dress" pathLength="1" d="M270 60 Q300 80 330 60 L344 150 Q330 170 346 200 L470 420 Q300 440 130 420 L254 200 Q270 170 256 150 Z"/><path class="br-lace" pathLength="1" d="M160 400 Q300 420 440 400"/><g class="br-pin" style="--i:0" transform="translate(262 170)"><path d="M0 0 l-14 -14"/><circle cx="-15" cy="-15" r="5"/></g><g class="br-pin" style="--i:1" transform="translate(338 170)"><path d="M0 0 l-14 -14"/><circle cx="-15" cy="-15" r="5"/></g><g class="br-pin" style="--i:2" transform="translate(250 250)"><path d="M0 0 l-14 -14"/><circle cx="-15" cy="-15" r="5"/></g><g class="br-pin" style="--i:3" transform="translate(350 250)"><path d="M0 0 l-14 -14"/><circle cx="-15" cy="-15" r="5"/></g><g class="br-pin" style="--i:4" transform="translate(300 330)"><path d="M0 0 l-14 -14"/><circle cx="-15" cy="-15" r="5"/></g></svg></div>
  </div>
 </section>
+
+<section class="tm" id="team">
+ <div class="wrap">
+  <div class="sec-head rv"><div><span class="kicker">Meet the team</span><h2>The hands behind every fitting</h2></div><p><span data-es>Costureras expertas en nuestro taller y probadoras capacitadas para ver lo que su vestido necesita, sin alfileres, y acompañarla en cada prueba.</span><span data-en>Master seamstresses in our in-house sew room, and fitters trained to see what your gown needs without pins, and to be in your corner at every fitting.</span></p></div>
+  <div class="tm-lead rv">
+   <div class="tm-lead-ph"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156309833/settings_images/ccd7f-6cb5-5bf-0480-63c5685fc0d_VICORY_0847_SOCIAL.jpg" alt="DeeDee" loading="lazy"><span class="tm-tag"><span data-es>Dueña y diseñadora</span><span data-en>Owner & designer</span></span></div>
+   <div class="tm-lead-tx"><span class="tm-sig">DeeDee</span><p><span data-es>DeeDee diseña y perfecciona vestidos de novia, y se especializa en ajustarlos para que queden impecables el gran día.</span><span data-en>DeeDee designs and perfects bridal wear, and specializes in altering gowns so they fit flawlessly on the big day.</span></p><p class="tm-fact"><span data-es>También es la diseñadora detrás de D'Lola Couture.</span><span data-en>She's also the designer behind D'Lola Couture.</span></p></div>
+  </div>
+  <div class="tm-row">
+  
+   <article class="tm-card rv" style="--d:0.0s">
+    <div class="tm-ph"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156309833/settings_images/b5536f-bbe-6fbd-71ad-4ed14dc718df_unnamed.jpg" alt="Denysse" loading="lazy"><span class="tm-yrs"><b>11</b>yrs here</span></div>
+    <div class="tm-tx"><h3>Denysse</h3><span class="tm-role"><span data-es>Probadora</span><span data-en>Fitter</span></span><p><span data-es>Empezó aquí en la universidad y descubrió su amor por la moda. Lo que más disfruta es ver la emoción de cada novia.</span><span data-en>Started here in college and found her love for fashion. Her favorite part is seeing each bride's excitement.</span></p></div>
+   </article>
+  
+   <article class="tm-card rv" style="--d:0.08s">
+    <div class="tm-ph"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156309833/settings_images/cbe016b-e24d-fa22-c72-24eeb4ade44_IMG_2759.jpeg" alt="Shani" loading="lazy"><span class="tm-yrs"><b>2</b>yrs here</span></div>
+    <div class="tm-tx"><h3>Shani</h3><span class="tm-role"><span data-es>Probadora</span><span data-en>Fitter</span></span><p><span data-es>Llegó del mundo de la tapicería y le fascina cómo los diseñadores construyen sus patrones.</span><span data-en>Came from upholstery and loves seeing how designers construct their patterns.</span></p><p class="tm-fav"><i>♡</i> <span data-es>Vestidos de seda o satín con mangas de campana</span><span data-en>Silk or satin gowns with long bell sleeves</span></p></div>
+   </article>
+  
+   <article class="tm-card rv" style="--d:0.16s">
+    <div class="tm-ph"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156309833/settings_images/684e70-4ea-beb-8241-50237c564bb3_IMG_2591.jpeg" alt="Larisa" loading="lazy"><span class="tm-yrs"><b>16</b>yrs here</span></div>
+    <div class="tm-tx"><h3>Larisa</h3><span class="tm-role"><span data-es>Costurera</span><span data-en>Seamstress</span></span><p><span data-es>Cuarenta años cosiendo; empezó profesionalmente a los 17 en Ucrania. Canta en el coro de su iglesia.</span><span data-en>Forty years of sewing, starting professionally at 17 in Ukraine. Sings in her church choir.</span></p><p class="tm-fav"><i>♡</i> <span data-es>Vestidos de encaje</span><span data-en>Lace gowns</span></p></div>
+   </article>
+  
+   <article class="tm-card rv" style="--d:0.24s">
+    <div class="tm-ph"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156309833/settings_images/ffd5eb8-b63c-85bd-817-b53557ff6a62_IMG_2857.jpeg" alt="Jocelyn" loading="lazy"><span class="tm-yrs"><b>11</b>yrs here</span></div>
+    <div class="tm-tx"><h3>Jocelyn</h3><span class="tm-role"><span data-es>Costurera</span><span data-en>Seamstress</span></span><p><span data-es>Unos 30 años en vestidos de novia; cose desde que jugaba a disfrazarse de niña.</span><span data-en>About 30 years in bridal, sewing since her childhood dress-up days.</span></p><p class="tm-fav"><i>♡</i> <span data-es>Líneas limpias de los años 40</span><span data-en>Clean-lined 1940s gowns</span></p></div>
+   </article>
+  
+   <article class="tm-card rv" style="--d:0.32s">
+    <div class="tm-ph"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156309833/settings_images/d6837e3-f130-8d00-fbe7-7abb88accc6_IMG_2611.jpeg" alt="Anna" loading="lazy"><span class="tm-yrs"><b>4</b>yrs here</span></div>
+    <div class="tm-tx"><h3>Anna</h3><span class="tm-role"><span data-es>Costurera</span><span data-en>Seamstress</span></span><p><span data-es>Ve cada vestido como un rompecabezas, inspirada por el taller de arreglos de su tía.</span><span data-en>Sees every dress as a puzzle, inspired by her aunt's alterations studio.</span></p><p class="tm-fav"><i>♡</i> <span data-es>Vestidos con horsehair braid</span><span data-en>Horsehair-braid gowns</span></p></div>
+   </article>
+  
+   <article class="tm-card rv" style="--d:0.4s">
+    <div class="tm-ph"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156309833/settings_images/0ce80a5-30e0-fdc-6f20-f4f2b18f0604_IMG_2376.jpeg" alt="Debbie" loading="lazy"><span class="tm-yrs"><b>7</b>yrs here</span></div>
+    <div class="tm-tx"><h3>Debbie</h3><span class="tm-role"><span data-es>Costurera</span><span data-en>Seamstress</span></span><p><span data-es>Su mamá le enseñó a coser; regresó al mundo nupcial después de criar a su familia.</span><span data-en>Her mom taught her to sew; she came back to bridal after raising her family.</span></p><p class="tm-fav"><i>♡</i> <span data-es>Encaje con cintura baja</span><span data-en>Lace drop-waist dresses</span></p></div>
+   </article>
+  
+   <article class="tm-card rv" style="--d:0.48s">
+    <div class="tm-ph"><img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156309833/settings_images/f2f0df-2188-4ef4-e5e1-ee62601fc5c2_IMG_2577.jpeg" alt="Mike" loading="lazy"><span class="tm-yrs"><b>2</b>yrs here</span></div>
+    <div class="tm-tx"><h3>Mike</h3><span class="tm-role"><span data-es>Sastre</span><span data-en>Tailor</span></span><p><span data-es>Siete años en vestidos de novia, después de una carrera vendiendo libros.</span><span data-en>Seven years on wedding gowns, after a career in bookselling.</span></p><p class="tm-fav"><i>♡</i> <span data-es>Cortes al bies de los años 30</span><span data-en>1930s bias-cut gowns</span></p></div>
+   </article>
+  
+  </div>
+ </div>
+</section>
+
  <section>
   <div class="wrap">
    <div class="sec-head"><div><span class="kicker"><span data-es>Servicios</span><span data-en>Services</span></span><h2><span data-es>Servicios</span><span data-en>Services</span></h2></div><a class="more" href="services/"><span data-es>Ver todo</span><span data-en>See all</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
