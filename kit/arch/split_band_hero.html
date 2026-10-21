@@ -1,0 +1,9 @@
+<section class="sb">
+ <div class="sb-img">{{ heroimg() }}</div>
+ <div class="sb-band"><div class="wrap"><span class="sp-tag">{{ L(b.subtitle) }}</span><h1 class="sb-h">{{ L(b.headline) }}</h1></div></div>
+ <div class="wrap sb-row">
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  {% if b.rating %}<div class="sb-r"><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span>★</b><small>{{ b.rating.count }} {{ t('reseñas en','reviews on') }} {{ b.rating.source }}</small></div>{% endif %}
+ </div>
+</section>

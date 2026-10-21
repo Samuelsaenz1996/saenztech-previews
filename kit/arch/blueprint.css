@@ -73,6 +73,6 @@ html.go .co b{animation:pop .5s cubic-bezier(.3,1.4,.5,1) calc(var(--cd) + .15s)
 .intro.bx .bp-car .ln{animation:draw 1.1s cubic-bezier(.6,0,.3,1) forwards}
 .bx-name{font:{{ th.head_weight }} clamp(24px,5vw,40px)/1 "{{ th.head_font }}",sans-serif;letter-spacing:-.02em;animation:pop .6s cubic-bezier(.3,1.6,.5,1) .5s both}
 .intro.bx.out{transform:none;opacity:0}
-@media (min-width:900px){.bph{grid-template-columns:1fr 1.05fr;padding:64px 0 56px}}
+@media (min-width:900px){.bph{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);padding:64px 0 56px}}
 @media (max-width:899px){.co b{font-size:11px;padding:5px 8px}}
 html.shot .bp-car .ln{stroke-dashoffset:0;animation:none}html.shot .co i,html.shot .co b{opacity:1;transform:none;animation:none}

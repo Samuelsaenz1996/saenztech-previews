@@ -1,0 +1,8 @@
+<section class="pz wrap">
+ <div class="pz-top"><span class="pz-tag">{{ L(b.subtitle) }}</span>{% if b.rating %}<span class="pz-tag hot">★ {{ b.rating.value }} · {{ b.rating.count }} {{ t('reseñas','reviews') }}</span>{% endif %}</div>
+ <h1 class="pz-h">{{ L(b.headline) }}</h1>
+ <div class="pz-row">
+  <div class="pz-pic">{{ heroimg() }}{{ ring((A(items[0].name) if items else b.business)|upper ~ ' ★ ' ~ b.business|upper ~ ' ★ ', '<text x="100" y="118" text-anchor="middle" class="ring-c">★</text>', 'pz-ring') }}</div>
+  <div class="pz-copy"><p class="lead">{{ L(b.lead) }}</p><div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div></div>
+ </div>
+</section>

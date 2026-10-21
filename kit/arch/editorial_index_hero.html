@@ -1,0 +1,8 @@
+<section class="ei wrap">
+ <span class="ed-tag"><i></i>{{ L(b.subtitle) }}<i></i></span>
+ <h1 class="ei-h">{{ L(b.headline) }}</h1>
+ <div class="ei-pills" aria-hidden="true"><span class="ei-p p1">{{ heroimg() }}</span><span class="ei-p p2">{{ img2() }}</span></div>
+ <p class="lead">{{ L(b.lead) }}</p>
+ <div class="ctas">{{ primary_btn() }}<a class="ed-link" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }} {{ icon('arrow') }}</a></div>
+ {% if items %}<ol class="ei-list">{% for it in items[:5] %}<li><span class="ei-n">{{ '%02d'|format(loop.index) }}</span><span class="ei-t">{{ L(it.name) }}</span>{{ icon('arrow') }}</li>{% endfor %}</ol>{% endif %}
+</section>

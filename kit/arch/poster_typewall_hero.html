@@ -1,0 +1,10 @@
+<section class="pw">
+ <div class="pw-wall" aria-hidden="true">{% for r in range(5) %}<div class="pw-row {{ 'rev' if r % 2 else '' }}"><span>{% for k in range(6) %}{{ b.business|upper }} ✦ {% endfor %}</span><span>{% for k in range(6) %}{{ b.business|upper }} ✦ {% endfor %}</span></div>{% endfor %}</div>
+ <div class="wrap pw-in">
+  <div class="pw-pic">{{ heroimg() }}{{ ring((A(b.subtitle))|upper ~ ' ✦ ', '<text x="100" y="118" text-anchor="middle" class="ring-c">✦</text>', 'pw-ring') }}</div>
+  <span class="pz-tag hot">{% if b.rating %}★ {{ b.rating.value }} · {{ b.rating.count }} {{ t('reseñas','reviews') }}{% else %}{{ L(b.subtitle) }}{% endif %}</span>
+  <h1 class="pw-h">{{ L(b.headline) }}</h1>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+ </div>
+</section>

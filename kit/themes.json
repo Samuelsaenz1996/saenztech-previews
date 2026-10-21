@@ -637,6 +637,9 @@
    "pkg": "archivo",
    "weights": [
     800
+   ],
+   "italic": [
+    800
    ]
   },
   "Playfair Display": {
@@ -697,6 +700,89 @@
    "pkg": "lobster",
    "weights": [
     400
+   ]
+  },
+  "Caveat": {
+   "pkg": "caveat",
+   "weights": [
+    600,
+    700
+   ]
+  },
+  "Permanent Marker": {
+   "pkg": "permanent-marker",
+   "weights": [
+    400
+   ]
+  },
+  "Rye": {
+   "pkg": "rye",
+   "weights": [
+    400
+   ]
+  },
+  "Anton": {
+   "pkg": "anton",
+   "weights": [
+    400
+   ]
+  },
+  "Syne": {
+   "pkg": "syne",
+   "weights": [
+    700,
+    800
+   ]
+  },
+  "Unbounded": {
+   "pkg": "unbounded",
+   "weights": [
+    600,
+    800
+   ]
+  },
+  "Bebas Neue": {
+   "pkg": "bebas-neue",
+   "weights": [
+    400
+   ]
+  },
+  "Cormorant Garamond": {
+   "pkg": "cormorant-garamond",
+   "weights": [
+    500,
+    600
+   ],
+   "italic": [
+    500,
+    600
+   ]
+  },
+  "DM Mono": {
+   "pkg": "dm-mono",
+   "weights": [
+    400,
+    500
+   ]
+  },
+  "Shrikhand": {
+   "pkg": "shrikhand",
+   "weights": [
+    400
+   ]
+  },
+  "Bungee": {
+   "pkg": "bungee",
+   "weights": [
+    400
+   ]
+  },
+  "Fredoka": {
+   "pkg": "fredoka",
+   "weights": [
+    500,
+    600,
+    700
    ]
   }
  }

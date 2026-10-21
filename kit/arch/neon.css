@@ -1,0 +1,99 @@
+/* ===== style: neon (night, glow) ===== */
+.arch-neon body{background:radial-gradient(1200px 600px at 80% -10%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 60%),radial-gradient(900px 600px at -10% 30%,color-mix(in srgb,var(--accent2) 18%,transparent),transparent 60%),var(--bg);background-attachment:fixed}
+.arch-neon .deco{height:3px;display:block;background:linear-gradient(90deg,var(--accent),var(--accent2),var(--accent));background-size:200% 100%;animation:neg 3s linear infinite;box-shadow:0 0 14px var(--accent)}
+.arch-neon .deco span{display:none}
+@keyframes neg{to{background-position:200% 0}}
+.arch-neon .top{background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--line)}
+.arch-neon .mono{background:transparent;border:2px solid var(--accent);color:var(--accent);box-shadow:0 0 12px var(--accent),inset 0 0 8px color-mix(in srgb,var(--accent) 50%,transparent);text-shadow:0 0 8px var(--accent)}
+.arch-neon .btn{border-radius:999px}
+.arch-neon .btn.primary{background:var(--accent);border-color:var(--accent);box-shadow:0 0 22px color-mix(in srgb,var(--accent) 70%,transparent);color:#fff}
+.arch-neon .btn.ghost{background:transparent;color:var(--ink);border-color:var(--accent2);box-shadow:0 0 14px color-mix(in srgb,var(--accent2) 35%,transparent)}
+.ne{position:relative;overflow:hidden;text-align:center;padding:50px 0 30px;isolation:isolate}
+.ne-in{display:grid;justify-items:center;gap:14px}
+.ne-tag{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent2);text-shadow:0 0 10px var(--accent2)}
+.ne-h{font-size:clamp(40px,8.6vw,104px);line-height:.98;max-width:14ch;margin:0}
+.ne-h em{font-style:normal;color:#fff;text-shadow:0 0 6px #fff,0 0 18px var(--accent),0 0 40px var(--accent),0 0 80px var(--accent)}
+html.go .ne-h em{animation:flick 2.4s linear .9s both}
+@keyframes flick{0%,8%,12%,22%,30%{opacity:.25;text-shadow:none}10%,20%,26%,40%,100%{opacity:1}}
+.ne .lead{color:var(--muted);max-width:36em}
+.ne .ctas{justify-content:center}
+.ne-pic{position:relative;width:min(760px,100%);margin-top:30px}
+.ne-glow{position:relative;border-radius:26px;padding:3px;background:conic-gradient(from var(--ang,0deg),var(--accent),var(--accent2),var(--accent3),var(--accent));animation:neang 6s linear infinite;box-shadow:0 0 40px color-mix(in srgb,var(--accent) 45%,transparent)}
+@property --ang{syntax:'<angle>';inherits:false;initial-value:0deg}
+@keyframes neang{to{--ang:360deg}}
+.ne-glow .ph,.ne-glow .art{border-radius:23px;aspect-ratio:16/9}
+.ne-glow .ph img{filter:saturate(1.15) contrast(1.05)}
+.ne-badge{position:absolute;left:50%;bottom:-26px;transform:translateX(-50%);background:color-mix(in srgb,var(--card) 80%,transparent);backdrop-filter:blur(12px);border:1px solid var(--accent);border-radius:999px;padding:10px 22px;display:flex;gap:12px;align-items:center;box-shadow:0 0 22px color-mix(in srgb,var(--accent) 45%,transparent);white-space:nowrap}
+.ne-badge b{font:{{ th.head_weight }} 24px "{{ th.head_font }}",sans-serif;color:#fff;text-shadow:0 0 10px var(--accent)}
+.ne-badge small{color:var(--muted);font-size:12.5px}
+.ne-floor{position:absolute;left:-20%;right:-20%;bottom:-10px;height:46%;z-index:-1;background:linear-gradient(color-mix(in srgb,var(--accent) 45%,transparent) 1.5px,transparent 1.5px) 0 0/100% 46px,linear-gradient(90deg,color-mix(in srgb,var(--accent2) 40%,transparent) 1.5px,transparent 1.5px) 0 0/66px 100%;transform:perspective(380px) rotateX(62deg);transform-origin:50% 100%;-webkit-mask:linear-gradient(transparent,#000 70%);mask:linear-gradient(transparent,#000 70%);animation:floor 2.2s linear infinite}
+@keyframes floor{to{background-position:0 46px,0 0}}
+.arch-neon .ne-pic{opacity:0;transform:translateY(40px) scale(.94)}
+html.go .ne-pic{opacity:1;transform:none;transition:opacity 1s .6s,transform 1.2s cubic-bezier(.2,.9,.2,1) .6s}
+.arch-neon .strip{margin-top:40px}
+.arch-neon .hl,.arch-neon .card,.arch-neon .card-i,.arch-neon .row{background:color-mix(in srgb,var(--card) 70%,transparent);backdrop-filter:blur(10px);border:1px solid var(--line)}
+.arch-neon .hl .ic,.arch-neon .clist .ic,.arch-neon .card-i .num{background:transparent;border:1px solid var(--accent);color:var(--accent);box-shadow:0 0 10px color-mix(in srgb,var(--accent) 40%,transparent)}
+.arch-neon .card-i.rv.in:hover{box-shadow:0 0 0 1px var(--accent),0 0 30px color-mix(in srgb,var(--accent) 45%,transparent)}
+.arch-neon .rv{filter:blur(12px);transform:translateY(24px) scale(.98)}
+.arch-neon .rv.in{filter:none;transition:opacity .9s,transform .9s cubic-bezier(.2,.9,.2,1),filter .9s}
+.arch-neon .marq{background:transparent;border-block:1px solid var(--line);color:var(--ink);box-shadow:none}
+.arch-neon .marq.alt{display:none}
+.arch-neon .mq b{color:transparent;-webkit-text-stroke:1.2px var(--accent2);text-shadow:0 0 12px color-mix(in srgb,var(--accent2) 60%,transparent)}
+.arch-neon .mq b.o{color:#fff;-webkit-text-stroke:0;text-shadow:0 0 10px var(--accent),0 0 24px var(--accent)}
+.arch-neon .mq i{font-size:0;animation:none;width:auto;height:auto}.arch-neon .mq i::before{content:"✦";font-size:22px;color:var(--accent);text-shadow:0 0 10px var(--accent)}
+.arch-neon .kicker{color:var(--accent2);text-shadow:0 0 10px var(--accent2)}
+.arch-neon .sec-head h2{text-shadow:0 0 30px color-mix(in srgb,var(--accent) 35%,transparent)}
+.arch-neon .band{background:transparent;border-block:1px solid var(--line)}
+.arch-neon .band::before{background:radial-gradient(circle,color-mix(in srgb,var(--accent) 40%,transparent),transparent 70%)}
+.arch-neon .chip{border-color:var(--accent);box-shadow:0 0 10px color-mix(in srgb,var(--accent) 35%,transparent);background:transparent}
+.arch-neon .cta-box{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 30%,var(--card)),var(--card));color:var(--ink);border:1px solid var(--accent);box-shadow:0 0 50px color-mix(in srgb,var(--accent) 30%,transparent)}
+.arch-neon .cta-box::after{background:radial-gradient(circle,var(--accent2),transparent 70%);opacity:.5}
+.arch-neon .btn.light{background:var(--accent);border-color:var(--accent);color:#fff}
+.arch-neon .btn.outline-light{border-color:var(--accent2);color:var(--ink)}
+.arch-neon footer{background:#000;color:var(--ink);border-top:1px solid var(--line)}
+.arch-neon .sub-hero{background:transparent}
+.arch-neon .sub-hero h1{text-shadow:0 0 24px color-mix(in srgb,var(--accent) 55%,transparent)}
+.arch-neon input,.arch-neon textarea,.arch-neon select{background:color-mix(in srgb,var(--card) 70%,transparent)}
+.nprog{position:fixed;left:0;right:0;top:0;height:3px;z-index:60;pointer-events:none}
+.nprog span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));transform-origin:left;transform:scaleX(var(--p,0));box-shadow:0 0 14px var(--accent)}
+.intro.nex{background:#030206}
+.nex-n{font:{{ th.head_weight }} clamp(34px,8vw,84px)/1 "{{ th.head_font }}",sans-serif;color:#fff;text-align:center;padding:0 18px;text-shadow:0 0 6px #fff,0 0 20px var(--accent),0 0 50px var(--accent),0 0 90px var(--accent);animation:flick 1.3s linear both}
+.intro.nex.out{transform:none;opacity:0;transition:opacity .6s}
+html.shot .ne-pic{opacity:1;transform:none}html.shot .nprog{display:none}html.shot .arch-neon .rv,.shot .rv{filter:none!important}
+html.shot .ne-h em{animation:none}
+/* --- neon: sign --- */
+.ns{padding:40px 0 50px;position:relative}
+.ns-in{display:grid;gap:34px;align-items:center}
+.ns-sign{position:relative;border:3px solid var(--accent);border-radius:28px;padding:34px 26px 30px;box-shadow:0 0 12px var(--accent),0 0 40px color-mix(in srgb,var(--accent) 50%,transparent),inset 0 0 22px color-mix(in srgb,var(--accent) 40%,transparent);display:grid;gap:12px;text-align:center;justify-items:center}
+html.go .ns-sign{animation:flick 1.8s linear .3s both}
+.ns-crown{width:96px;height:56px;margin-top:-70px;background:var(--bg);padding:0 10px}
+.ns-crown path{fill:none;stroke:var(--accent2);stroke-width:4;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;filter:drop-shadow(0 0 6px var(--accent2))}
+html.go .ns-crown path{animation:draw 1.2s ease .6s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.ns-h{font-size:clamp(38px,6.4vw,82px);line-height:1;margin:0;color:#fff;text-shadow:0 0 8px color-mix(in srgb,var(--accent) 80%,transparent)}
+.ns-h em{font-style:normal;color:var(--accent2);text-shadow:0 0 8px var(--accent2),0 0 30px var(--accent2)}
+.ns-side{display:grid;gap:16px}
+.ns-pic{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 0 30px color-mix(in srgb,var(--accent2) 25%,transparent)}
+.ns-pic .ph,.ns-pic .art{border-radius:0;aspect-ratio:16/10}
+.ns-scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 2px,transparent 2px 4px);pointer-events:none}
+.ns-scan::after{content:"";position:absolute;left:0;right:0;height:30%;background:linear-gradient(transparent,color-mix(in srgb,var(--accent) 25%,transparent),transparent);animation:nsc 4s linear infinite}
+@keyframes nsc{from{top:-30%}to{top:100%}}
+.ns-rate{color:var(--muted);font-size:14px}.ns-rate b{color:var(--accent2);font-size:20px}
+@media (min-width:900px){.ns-in{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}.ns{padding:70px 0}}
+/* --- neon: orbs --- */
+.no{position:relative;overflow:hidden;padding:40px 0 60px;isolation:isolate}
+.no-orbs i{position:absolute;border-radius:50%;filter:blur(60px);opacity:.6;z-index:-2;animation:sfb 12s ease-in-out infinite alternate}
+.no-orbs i:nth-child(1){width:420px;height:420px;background:var(--accent);left:-120px;top:-60px}
+.no-orbs i:nth-child(2){width:360px;height:360px;background:var(--accent2);right:-100px;top:20%;animation-delay:-4s}
+.no-orbs i:nth-child(3){width:300px;height:300px;background:var(--accent3);left:35%;bottom:-140px;animation-delay:-8s}
+@keyframes sfb{50%{transform:translate(60px,40px) scale(1.15)}100%{transform:translate(-30px,70px) scale(.9)}}
+.no-spot{position:absolute;inset:0;z-index:-1;background:radial-gradient(260px circle at var(--mx,70%) var(--my,30%),color-mix(in srgb,#fff 14%,transparent),transparent 70%);pointer-events:none}
+.no-in{display:grid;gap:0;align-items:center}
+.no-pic .ph,.no-pic .art{border-radius:30px;aspect-ratio:4/4.4;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.no-glass{position:relative;margin:-90px 14px 0;background:color-mix(in srgb,var(--card) 45%,transparent);backdrop-filter:blur(22px) saturate(1.4);-webkit-backdrop-filter:blur(22px) saturate(1.4);border:1px solid color-mix(in srgb,#fff 18%,transparent);border-radius:26px;padding:26px;display:grid;gap:12px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.no-h{font-size:clamp(36px,5.6vw,72px);line-height:1;margin:0;color:#fff}
+.no-h em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.no-r{display:flex;gap:3px;align-items:center}.no-r i{font-style:normal;color:var(--accent3);text-shadow:0 0 8px var(--accent3)}.no-r span{margin-left:8px;color:var(--muted);font-size:13.5px}
+.no-glass{opacity:0;transform:translateY(40px)}html.go .no-glass{opacity:1;transform:none;transition:opacity .8s .5s,transform 1s cubic-bezier(.2,.9,.2,1) .5s}
+@media (min-width:900px){.no-in{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}.no-glass{margin:0 0 0 -110px}.no{padding:70px 0}}
+html.shot .no-glass{opacity:1;transform:none}html.shot .ns-sign{animation:none}html.shot .ns-crown path{stroke-dashoffset:0;animation:none}

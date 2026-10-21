@@ -1,0 +1,2 @@
+<script>(function(){var sp=document.querySelector('.no-spot'),no=document.querySelector('.no');if(sp&&no)no.addEventListener('pointermove',function(e){var r=no.getBoundingClientRect();sp.style.setProperty('--mx',(e.clientX-r.left)+'px');sp.style.setProperty('--my',(e.clientY-r.top)+'px')});})();
+(function(){var p=document.querySelector('.nprog');if(!p)return;function u(){p.style.setProperty('--p',Math.min(1,scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight)).toFixed(4))}addEventListener('scroll',u,{passive:true});u()})();</script>

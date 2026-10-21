@@ -113,6 +113,10 @@ SPRAY = _svg('<path d="M20 22h20l6 34H14z" fill="var(--accent)"/><path d="M22 10
              '<circle cx="54" cy="10" r="2" fill="#8ACFF2"/><circle cx="58" cy="16" r="2" fill="#8ACFF2"/><circle cx="54" cy="20" r="1.6" fill="#8ACFF2"/>')
 SQUEEGEE = _svg('<rect x="6" y="28" width="52" height="8" rx="3" fill="var(--accent)"/><rect x="6" y="34" width="52" height="4" rx="2" fill="var(--ink)"/><rect x="29" y="4" width="6" height="26" rx="3" fill="var(--ink)"/>')
 
+MOON = _svg('<path d="M40 6a26 26 0 1 0 18 40A22 22 0 0 1 40 6z" fill="#F6D47A"/><circle cx="26" cy="26" r="3" fill="#E9BD55"/><circle cx="20" cy="40" r="2.2" fill="#E9BD55"/><circle cx="32" cy="48" r="2.6" fill="#E9BD55"/>')
+STAR = _svg('<path d="M32 6l7 17 18 2-14 12 4 18-15-9-15 9 4-18L7 25l18-2z" fill="var(--accent2)"/>')
+LEAF_LINE = _svg('<path d="M10 54C8 28 26 10 54 8c2 26-16 46-44 46z" fill="none" stroke="var(--accent)" stroke-width="2.5"/><path d="M12 52C24 38 34 26 48 14M26 38l-6-10M32 32l8-2M38 24l-4-10" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round"/>')
+
 MOTIFS = {
     "taco":   dict(floaters=[TACO, CHILI, LIME, LEAF_C, AVOCADO, TACO], ride=TACO, trail="salsa", tick=CHILI),
     "bakery": dict(floaters=[CONCHA, CUERNO, COOKIE, CONCHA_Y, WHEAT, COOKIE], ride=CONCHA, trail="sprinkles", tick=CONCHA_Y),
@@ -125,6 +129,8 @@ MOTIFS = {
     "lawn":   dict(floaters=[LEAF, FLOWER, SUN, GRASS, LEAF, FLOWER], ride=MOWER, trail="grass", tick=LEAF),
     "auto":   dict(floaters=[GEAR, WRENCH, TIRE, GEAR2, BOLT, GEAR], ride=CAR, trail="road", tick=GEAR),
     "tools":  dict(floaters=[HAMMER, WRENCH, HOUSE, BOLT, PIPE, GEAR2], ride=ROLLER, trail="paint", tick=HAMMER),
+    "moon":   dict(floaters=[MOON, CONCHA, STAR, TACO, STAR, CONCHA_Y], ride=MOON, trail="sprinkles", tick=STAR),
+    "leafline": dict(floaters=[LEAF_LINE, LEAF_LINE, LEAF_LINE, LEAF_LINE, LEAF_LINE, LEAF_LINE], ride=LEAF_LINE, trail="grass", tick=LEAF_LINE),
     "clean":  dict(floaters=[BUBBLE, SPARKLE, SPRAY, BUBBLE, SPARKLE, BUBBLE], ride=SQUEEGEE, trail="shine", tick=SPARKLE),
 }
 

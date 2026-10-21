@@ -1,0 +1,18 @@
+<section class="mt wrap">
+ <div class="mt-truck">
+  <div class="mt-awn" aria-hidden="true"></div>
+  <div class="mt-win">
+   <div class="mt-t">
+    <span class="mb-tag">{{ L(b.subtitle) }}</span>
+    <h1 class="mb-h">{{ L(b.headline) }}</h1>
+    {% if items %}<ul class="mb-list">{% for it in items[:5] %}<li style="--i:{{ loop.index0 }}"><span>{{ L(it.name) }}</span><i></i><b>★</b></li>{% endfor %}</ul>{% endif %}
+   </div>
+   <div class="mt-side">
+    <div class="mt-pic">{{ heroimg() }}</div>
+    <p class="lead">{{ L(b.lead) }}</p>
+    <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+   </div>
+  </div>
+  <div class="mt-counter" aria-hidden="true"></div>
+ </div>
+</section>

@@ -1,0 +1,17 @@
+<section class="sf">
+ <div class="sf-blobs" aria-hidden="true"><i></i><i></i><i></i></div>
+ <div class="wrap sf-in">
+  {{ floaters() }}
+  <div class="sf-t">
+   <span class="sf-tag">{{ L(b.subtitle) }}</span>
+   <h1 class="sf-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  </div>
+  <div class="sf-pic"><div class="sf-mask">{{ heroimg() }}</div>
+   {% if b.rating %}<div class="sf-pill p1"><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span> ★</b> {{ b.rating.count }} {{ t('reseñas','reviews') }}</div>{% endif %}
+   {% if items %}<div class="sf-pill p2">♥ {{ L(items[0].name) }}</div>{% endif %}
+  </div>
+ </div>
+ <svg class="sf-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 180 0 360 80 540 40 S 900 0 1080 40 S 1440 80 1620 40 S 1980 0 2160 40 S 2520 80 2880 40 V80 H0Z" fill="var(--card)"/></svg>
+</section>

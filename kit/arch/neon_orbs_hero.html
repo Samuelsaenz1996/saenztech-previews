@@ -1,0 +1,14 @@
+<section class="no">
+ <div class="no-orbs" aria-hidden="true"><i></i><i></i><i></i></div>
+ <div class="no-spot" aria-hidden="true"></div>
+ <div class="wrap no-in">
+  <div class="no-pic">{{ heroimg() }}</div>
+  <div class="no-glass">
+   <span class="ne-tag">{{ L(b.subtitle) }}</span>
+   <h1 class="no-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+   {% if b.rating %}<div class="no-r">{% for i in range(5) %}<i>★</i>{% endfor %}<span>{{ b.rating.value }} · {{ b.rating.count }} {{ t('reseñas','reviews') }}</span></div>{% endif %}
+  </div>
+ </div>
+</section>

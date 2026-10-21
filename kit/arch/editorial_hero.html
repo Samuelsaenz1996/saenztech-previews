@@ -1,0 +1,15 @@
+<section class="ed wrap">
+ <div class="ed-t">
+  <span class="ed-tag"><i></i>{{ L(b.subtitle) }}</span>
+  <h1 class="ed-h">{{ L(b.headline) }}</h1>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="ed-link" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }} {{ icon('arrow') }}</a></div>
+  {% if b.rating %}<p class="ed-rate"><b>{{ b.rating.value }}</b><span>★★★★★</span><small>{{ b.rating.count }} {{ t('reseñas','reviews') }} · {{ b.rating.source }}</small></p>{% endif %}
+ </div>
+ <div class="ed-col">
+  <div class="ed-a" data-par="-.06">{{ heroimg() }}</div>
+  <div class="ed-b" data-par=".1">{{ img2() }}</div>
+  <a class="ed-ring" href="{{ (root ~ primary.href) if primary.internal else primary.href }}"{% if primary.ext %} target="_blank" rel="noopener"{% endif %} aria-label="{{ A(primary.label) }}">{{ ring((A(primary.label) ~ ' · ' ~ b.business ~ ' · '), '<path d="M86 114l28-28M92 86h22v22" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>', 'ed-r') }}</a>
+  <span class="ed-vert" aria-hidden="true">{{ b.city }}</span>
+ </div>
+</section>

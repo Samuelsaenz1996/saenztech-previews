@@ -1,0 +1,7 @@
+<section class="pg wrap">
+ <div class="pg-c c1"><span class="pz-tag">{{ L(b.subtitle) }}</span><h1 class="pg-h">{{ L(b.headline) }}</h1></div>
+ <div class="pg-c c2">{{ heroimg() }}</div>
+ {% if b.rating %}<div class="pg-c c3"><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span>★</b><small>{{ b.rating.count }} {{ t('reseñas en','reviews on') }} {{ b.rating.source }}</small></div>{% endif %}
+ <div class="pg-c c4"><p class="lead">{{ L(b.lead) }}</p><div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div></div>
+ {% if items %}<div class="pg-c c5">{% for it in items[:4] %}<span>{{ L(it.name) }}</span>{% endfor %}</div>{% endif %}
+</section>

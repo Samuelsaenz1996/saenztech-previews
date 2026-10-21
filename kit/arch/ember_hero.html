@@ -1,0 +1,11 @@
+<section class="em">
+ <div class="em-bg">{{ heroimg() }}</div>
+ <canvas class="em-c" aria-hidden="true"></canvas>
+ <div class="wrap em-in">
+  <span class="em-tag">{{ L(b.subtitle) }}</span>
+  <h1 class="em-h">{{ L(b.headline) }}</h1>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  {% if b.rating %}<div class="em-r"><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span></b><span>★★★★★<small>{{ b.rating.count }} {{ t('reseñas','reviews') }} · {{ b.rating.source }}</small></span></div>{% endif %}
+ </div>
+</section>

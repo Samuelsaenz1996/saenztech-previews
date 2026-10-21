@@ -1,0 +1,12 @@
+<section class="sp">
+ <div class="sp-l"><div class="sp-t">
+  <span class="sp-tag">{{ L(b.subtitle) }}</span>
+  <h1 class="sp-h">{{ L(b.headline) }}</h1>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn('light') }}<a class="btn outline-light" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+ </div>
+ {% if b.rating %}<div class="sp-glass"><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span>★</b><span>{{ b.rating.count }} {{ t('reseñas en','reviews on') }} {{ b.rating.source }}</span></div>{% endif %}
+ </div>
+ <div class="sp-r"><div class="sp-img" data-par=".18">{{ heroimg() }}</div></div>
+</section>
+{% if gallery|length > 2 %}<div class="sp-strip" aria-hidden="true"><div class="sp-run">{% for k in range(2) %}{% for p in gallery[:8] %}<img src="{{ root }}{{ p.path }}" alt="" loading="lazy">{% endfor %}{% endfor %}</div></div>{% endif %}

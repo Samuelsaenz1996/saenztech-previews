@@ -1,0 +1,12 @@
+<section class="ne">
+ <div class="ne-floor" aria-hidden="true"></div>
+ <div class="wrap ne-in">
+  <span class="ne-tag">{{ L(b.subtitle) }}</span>
+  <h1 class="ne-h">{{ L(b.headline) }}</h1>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  <div class="ne-pic"><div class="ne-glow">{{ heroimg() }}</div>
+   {% if b.rating %}<div class="ne-badge"><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span>★</b><small>{{ b.rating.count }} {{ t('reseñas','reviews') }} · {{ b.rating.source }}</small></div>{% endif %}
+  </div>
+ </div>
+</section>

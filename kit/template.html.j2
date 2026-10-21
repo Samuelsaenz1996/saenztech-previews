@@ -26,6 +26,9 @@
 {% macro photo(p, cls='') -%}
 <figure class="ph {{ cls }}"><img src="{{ root }}{{ p.path }}" alt="{{ A(p.alt) }}" loading="lazy">{% if p.sample %}<figcaption class="sample">{{ L(th.labels.sample_photo) }}</figcaption>{% endif %}</figure>
 {%- endmacro %}
+{% macro heroimg(cls='') -%}{% if hero_photo %}{{ photo(hero_photo, cls) }}{% elif gallery %}{{ photo(gallery[0], cls) }}{% else %}<div class="art {{ cls }}" aria-hidden="true"><div class="big"><div class="sign"><span class="sn">{{ b.business }}</span><span class="ss">{{ A(b.subtitle) }}</span></div></div></div>{% endif %}{%- endmacro %}
+{% macro img2(cls='') -%}{% set pool = (gallery|rejectattr('path','equalto', hero_photo.path if hero_photo else '')|list) %}{% if pool %}{{ photo(pool[0], cls) }}{% elif hero_photo %}{{ photo(hero_photo, cls) }}{% endif %}{%- endmacro %}
+{% macro ring(txt, center='', cls='') -%}<svg class="ring {{ cls }}" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="rp{{ cls|replace(' ','') }}" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs><g class="ring-t"><text><textPath href="#rp{{ cls|replace(' ','') }}" textLength="472" lengthAdjust="spacingAndGlyphs">{{ txt }}</textPath></text></g>{{ center|safe }}</svg>{%- endmacro %}
 {% macro primary_btn(cls='primary') -%}
 <a class="btn {{ cls }}" href="{{ (root ~ primary.href) if primary.internal else primary.href }}"{% if primary.ext %} target="_blank" rel="noopener"{% endif %}>{{ icon(primary.icon) }}{{ L(primary.label) }}</a>
 {%- endmacro %}
@@ -39,7 +42,7 @@
 {% set gal_page = (pages|selectattr('id','equalto','gallery')|first) %}
 {% set has_visit = (pages|selectattr('id','equalto','visit')|list|length) > 0 %}
 <!doctype html>
-<html lang="{{ lang }}" class="arch-{{ arch }}">
+<html lang="{{ lang }}" class="arch-{{ arch }}{{ (' v-' ~ th.variant) if th.variant else '' }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -379,7 +382,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
 
 <main>
 {% if page == 'home' %}
- {% if arch in ('noir','blueprint') %}{% include "arch/" ~ arch ~ "_hero.html" %}<div class="wrap">{% else %}
+ {% if arch not in ('fiesta','classic') %}{% include ["arch/" ~ arch ~ "_" ~ (th.variant or "x") ~ "_hero.html", "arch/" ~ arch ~ "_hero.html"] %}<div class="wrap">{% else %}
  <div class="wrap">
   <div class="hero">
    {% if arch == 'fiesta' %}{{ floaters() }}{% endif %}

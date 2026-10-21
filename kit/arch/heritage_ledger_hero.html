@@ -1,0 +1,15 @@
+<section class="hl2 wrap">
+ <div class="hl2-pic"><div class="hl2-arch">{{ heroimg() }}</div>
+  <div class="hl2-seal"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" fill="var(--accent)" stroke="var(--ink)" stroke-width="2.5"/><circle cx="60" cy="60" r="48" fill="none" stroke="var(--card)" stroke-width="1" stroke-dasharray="3 3"/><text x="60" y="70" text-anchor="middle" class="hz-ini" style="font-size:34px">{{ initials }}</text></svg></div>
+ </div>
+ <div class="hl2-t">
+  <span class="hz-tag">{{ L(b.subtitle) }}</span>
+  <h1 class="hz-h">{{ L(b.headline) }}</h1>
+  <svg class="hl2-orn" viewBox="0 0 220 24" aria-hidden="true"><path pathLength="1" d="M2 12 H86 M134 12 H218 M110 2 C 98 8, 98 16, 110 22 C 122 16, 122 8, 110 2Z M92 12 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 M120 12 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0"/></svg>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  {% if b.rating %}<div class="hl2-r"><b>{{ b.rating.value }}</b><span>★★★★★<small>{{ b.rating.count }} {{ t('reseñas en','reviews on') }} {{ b.rating.source }}</small></span></div>{% endif %}
+  <div class="hl2-ribbon"><span>{{ b.city }}</span></div>
+ </div>
+</section>
+<div class="hz-stripe" aria-hidden="true"></div>

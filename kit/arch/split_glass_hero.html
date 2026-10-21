@@ -1,0 +1,13 @@
+<section class="sg">
+ <div class="sg-img" data-par=".2">{{ heroimg() }}</div>
+ <div class="wrap sg-in">
+  <div class="sg-card">
+   <span class="sg-tag">{{ L(b.subtitle) }}</span>
+   <h1 class="sg-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  </div>
+  {% if b.rating %}<div class="sg-chip"><b>{{ b.rating.value }}</b><span>★★★★★<small>{{ b.rating.count }} {{ t('reseñas','reviews') }}</small></span></div>{% endif %}
+ </div>
+</section>
+{% if gallery|length > 2 %}<div class="sp-strip" aria-hidden="true"><div class="sp-run">{% for k in range(2) %}{% for p in gallery[:8] %}<img src="{{ root }}{{ p.path }}" alt="" loading="lazy">{% endfor %}{% endfor %}</div></div>{% endif %}

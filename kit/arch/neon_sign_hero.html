@@ -1,0 +1,15 @@
+<section class="ns">
+ <div class="wrap ns-in">
+  <div class="ns-sign">
+   <svg class="ns-crown" viewBox="0 0 120 70" aria-hidden="true"><path pathLength="1" d="M10 60 L18 18 L42 42 L60 8 L78 42 L102 18 L110 60 Z"/><path pathLength="1" d="M14 66 H106"/></svg>
+   <span class="ne-tag">{{ L(b.subtitle) }}</span>
+   <h1 class="ns-h">{{ L(b.headline) }}</h1>
+  </div>
+  <div class="ns-side">
+   <div class="ns-pic">{{ heroimg() }}<span class="ns-scan"></span></div>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+   {% if b.rating %}<p class="ns-rate"><b>{{ b.rating.value }}</b> ★ · {{ b.rating.count }} {{ t('reseñas en','reviews on') }} {{ b.rating.source }}</p>{% endif %}
+  </div>
+ </div>
+</section>

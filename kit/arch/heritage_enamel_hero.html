@@ -1,0 +1,15 @@
+<section class="he">
+ <div class="he-bg">{{ heroimg() }}</div>
+ <div class="wrap he-in">
+  <div class="he-sign">
+   <i class="rv1"></i><i class="rv2"></i><i class="rv3"></i><i class="rv4"></i>
+   <span class="he-top">{{ b.business|upper }}</span>
+   <h1 class="he-h">{{ L(b.headline) }}</h1>
+   <span class="he-sub">{{ L(b.subtitle) }}</span>
+  </div>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  {% if b.rating %}<p class="he-r">★★★★★ <b>{{ b.rating.value }}</b> · {{ b.rating.count }} {{ t('reseñas en','reviews on') }} {{ b.rating.source }}</p>{% endif %}
+ </div>
+</section>
+<div class="hz-stripe" aria-hidden="true"></div>

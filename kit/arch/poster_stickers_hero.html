@@ -1,0 +1,9 @@
+<section class="pk">
+ <div class="pk-photo">{{ heroimg() }}</div>
+ <div class="wrap pk-in">
+  <span class="pz-tag">{{ L(b.subtitle) }}</span>
+  <h1 class="pk-h">{{ L(b.headline) }}</h1>
+  <div class="pk-card"><p class="lead">{{ L(b.lead) }}</p><div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div></div>
+  {% if b.rating %}<div class="pk-burst"><b>{{ b.rating.value }}★</b><small>{{ b.rating.count }}<br>{{ t('reseñas','reviews') }}</small></div>{% endif %}
+ </div>
+</section>

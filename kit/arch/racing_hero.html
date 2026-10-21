@@ -1,0 +1,17 @@
+<section class="rc">
+ <div class="rc-lines" aria-hidden="true">{% for i in range(9) %}<i style="--t:{{ 8 + i * 10 }}%;--d:{{ 0.6 + (i % 4) * 0.25 }}s;--dl:-{{ i * 0.37 }}s;--w:{{ 80 + (i % 3) * 70 }}px"></i>{% endfor %}</div>
+ <div class="wrap rc-in">
+  <div class="rc-t">
+   <span class="rc-tag">{{ L(b.subtitle) }}</span>
+   <h1 class="rc-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  </div>
+  <div class="rc-pic">{{ heroimg() }}</div>
+ </div>
+ <div class="wrap rc-stats">
+  {% if b.rating %}<div><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span></b><small>{{ b.rating.source }} ★</small></div><div><b><span class="cnt" data-to="{{ b.rating.count }}">{{ b.rating.count }}</span>+</b><small>{{ t('Reseñas','Reviews') }}</small></div>{% endif %}
+  {% if items %}<div><b>{{ items|length }}</b><small>{{ L(th.labels.items_nav) }}</small></div>{% endif %}
+ </div>
+ <div class="rc-check" aria-hidden="true"></div>
+</section>

@@ -1,0 +1,15 @@
+<section class="md wrap">
+ <div class="md-t">
+  <span class="mb-tag">{{ L(b.subtitle) }}</span>
+  <div class="md-hw"><h1 class="md-h">{{ L(b.headline) }}</h1>
+  <svg class="md-circ" viewBox="0 0 300 120" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M150 8 C 60 6, 8 30, 12 62 C 16 98, 120 116, 190 110 C 260 104, 296 80, 288 50 C 280 18, 200 4, 120 14"/></svg></div>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+ </div>
+ <div class="md-pics">
+  <div class="md-p a">{{ heroimg() }}</div><div class="md-p b">{{ img2() }}</div>
+  <svg class="md-arrow" viewBox="0 0 160 110" aria-hidden="true"><path pathLength="1" d="M8 96 C 30 40, 80 20, 140 24 M120 10 L142 24 L124 40"/></svg>
+  {% if items %}<span class="md-note">{{ L(items[0].name) }}!</span>{% endif %}
+  {% if b.rating %}<span class="md-star">{{ b.rating.value }}★</span>{% endif %}
+ </div>
+</section>

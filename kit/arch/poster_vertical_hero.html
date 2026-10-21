@@ -1,0 +1,12 @@
+<section class="pv">
+ <div class="pv-name" aria-hidden="true" data-par="-.25">{{ b.business|upper }}</div>
+ <div class="wrap pv-in">
+  <div class="pv-pic">{{ heroimg() }}<span class="pv-dots"></span>{{ ring((A(b.subtitle))|upper ~ ' ★ ', '<text x="100" y="118" text-anchor="middle" class="ring-c">★</text>', 'pz-ring') }}</div>
+  <div class="pv-box">
+   <span class="pz-tag hot">{% if b.rating %}★ {{ b.rating.value }} · {{ b.rating.count }} {{ t('reseñas','reviews') }}{% else %}{{ b.city }}{% endif %}</span>
+   <h1 class="pv-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  </div>
+ </div>
+</section>

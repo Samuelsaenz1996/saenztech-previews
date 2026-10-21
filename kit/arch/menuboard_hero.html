@@ -1,0 +1,15 @@
+<section class="mb wrap">
+ <div class="mb-board">
+  <div class="mb-t">
+   <span class="mb-tag">{{ L(b.subtitle) }}</span>
+   <h1 class="mb-h">{{ L(b.headline) }}</h1>
+   <svg class="mb-ul" viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 C 60 2, 120 14, 180 7 S 270 4, 296 9" pathLength="1"/></svg>
+   <p class="lead">{{ L(b.lead) }}</p>
+   {% if items %}<ul class="mb-list">{% for it in items[:5] %}<li style="--i:{{ loop.index0 }}"><span>{{ L(it.name) }}</span><i></i><b>✓</b></li>{% endfor %}</ul>{% endif %}
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  </div>
+  <div class="mb-pic"><span class="tape t1"></span><span class="tape t2"></span>{{ heroimg() }}
+   {% if b.rating %}<span class="mb-note">{{ b.rating.value }}★ · {{ b.rating.count }} {{ t('reseñas','reviews') }}</span>{% endif %}
+  </div>
+ </div>
+</section>

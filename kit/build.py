@@ -42,7 +42,7 @@ th["labels"] = merge(themes["_common_labels"], th.get("labels", {}))
 for _k, _v in (b.get("style") or {}).items():
     if _k == "colors":
         th["colors"].update(_v)
-    elif _k in ("head_font", "body_font", "head_weight", "deco", "radius", "tilt", "em_style", "tracking", "arch"):
+    elif _k in ("head_font", "body_font", "head_weight", "deco", "radius", "tilt", "em_style", "tracking", "arch", "accent_font", "variant"):
         th[_k] = _v
 L = th["labels"]
 
@@ -212,7 +212,8 @@ M = _motifs.MOTIFS[motif]
 fonts_meta = themes["_fonts"]
 os.makedirs(os.path.join(out_dir, "fonts"), exist_ok=True)
 faces = []
-for fam in {th["head_font"], th["body_font"]}:
+th.setdefault("accent_font", th["head_font"])
+for fam in {th["head_font"], th["body_font"], th["accent_font"]}:
     m = fonts_meta[fam]
     for style, weights in (("normal", m.get("weights", [])), ("italic", m.get("italic", []))):
         for w in weights:

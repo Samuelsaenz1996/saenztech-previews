@@ -1,0 +1,22 @@
+<section class="hw">
+ <div class="wrap hw-in">
+  <div class="hw-hang">
+   <span class="hw-rope l"></span><span class="hw-rope r"></span>
+   <div class="hw-sign">
+    <span class="hw-star">★</span>
+    <h1 class="hw-h">{{ L(b.headline) }}</h1>
+    <span class="hw-sub">{{ L(b.subtitle) }}</span>
+   </div>
+  </div>
+  <div class="hw-row">
+   <div class="hw-pic"><div class="hz-frame">{{ heroimg() }}</div></div>
+   <div class="hw-t">
+    <p class="lead">{{ L(b.lead) }}</p>
+    <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+    {% if b.rating %}<p class="hz-rate">★★★★★ <b>{{ b.rating.value }}</b> · {{ b.rating.count }} {{ t('reseñas en','reviews on') }} {{ b.rating.source }}</p>{% endif %}
+    {% if b.service_area %}<p class="hz-rate">{{ L(b.service_area) }}</p>{% endif %}
+   </div>
+  </div>
+ </div>
+</section>
+<div class="hz-stripe" aria-hidden="true"></div>

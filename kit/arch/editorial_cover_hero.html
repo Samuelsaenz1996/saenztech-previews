@@ -1,0 +1,13 @@
+<section class="ec">
+ <div class="ec-img">{{ heroimg() }}</div>
+ <div class="wrap ec-in">
+  <div class="ec-mast">{{ b.business }}</div>
+  <div class="ec-meta"><span>{{ L(b.subtitle) }}</span>{% if b.rating %}<span>{{ b.rating.value }} ★ · {{ b.rating.count }} {{ t('reseñas','reviews') }}</span>{% endif %}</div>
+  <div class="ec-lines">{% for it in items[:3] %}<span style="--i:{{ loop.index0 }}">{{ L(it.name) }}</span>{% endfor %}</div>
+  <div class="ec-main">
+   <h1 class="ec-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn('light') }}<a class="ed-link" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }} {{ icon('arrow') }}</a></div>
+  </div>
+ </div>
+</section>

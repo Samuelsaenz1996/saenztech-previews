@@ -1,0 +1,15 @@
+<section class="nm">
+ <div class="wrap nm-in">
+  <div class="nm-t">
+   <span class="nh-tag">{{ L(b.subtitle) }}</span>
+   <h1 class="nm-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+   <div class="nh-stats">
+    {% if b.rating %}<div><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span>★</b><small>{{ b.rating.source }}</small></div><div><b><span class="cnt" data-to="{{ b.rating.count }}">{{ b.rating.count }}</span></b><small>{{ t('Reseñas','Reviews') }}</small></div>{% endif %}
+    {% if b.hours %}<div><b class="today-hours" data-closed="{{ A(th.labels.closed_today) }}">{{ b.hours[0].time }}</b><small>{{ L(th.labels.open_today) }}</small></div>{% endif %}
+   </div>
+  </div>
+  <div class="nm-pic"><div class="nm-frame">{{ heroimg() }}</div><span class="nm-slash"></span>{{ ring((b.business ~ ' · ' ~ A(b.subtitle) ~ ' · ')|upper, '<text x="100" y="112" text-anchor="middle" class="ring-c">' ~ initials ~ '</text>', 'nring nm-ring') }}</div>
+ </div>
+</section>

@@ -1,0 +1,12 @@
+<section class="sd">
+ <div class="sd-img" data-par=".12">{{ heroimg() }}</div>
+ <div class="sd-panel">
+  <div class="sd-t">
+   <span class="sp-tag">{{ L(b.subtitle) }}</span>
+   <h1 class="sp-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn('light') }}<a class="btn outline-light" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+   {% if b.rating %}<div class="sp-glass"><b>{{ b.rating.value }}★</b><span>{{ b.rating.count }} {{ t('reseñas en','reviews on') }} {{ b.rating.source }}</span></div>{% endif %}
+  </div>
+ </div>
+</section>

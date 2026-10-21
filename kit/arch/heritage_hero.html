@@ -1,0 +1,23 @@
+<section class="hz wrap">
+ <div class="hz-t">
+  <svg class="hz-badge" viewBox="0 0 240 240" aria-hidden="true">
+   <defs><path id="hzt" d="M30,120 A90,90 0 0,1 210,120"/><path id="hzb" d="M38,120 A82,82 0 0,0 202,120"/></defs>
+   <circle cx="120" cy="120" r="114" fill="var(--card)" stroke="var(--ink)" stroke-width="3"/>
+   <circle cx="120" cy="120" r="106" fill="none" stroke="var(--ink)" stroke-width="1"/>
+   <circle cx="120" cy="120" r="66" fill="var(--accent)" stroke="var(--ink)" stroke-width="2.5"/>
+   <circle cx="120" cy="120" r="59" fill="none" stroke="var(--card)" stroke-width="1" stroke-dasharray="3 4"/>
+   <g class="hz-rt"><text class="hz-arc"><textPath href="#hzt" startOffset="50%" text-anchor="middle">{{ b.business|upper }}</textPath></text>
+   <text class="hz-arc sm"><textPath href="#hzb" startOffset="50%" text-anchor="middle" dominant-baseline="hanging">{{ b.city|upper }}</textPath></text></g>
+   <text x="25" y="126" class="hz-star">★</text><text x="203" y="126" class="hz-star">★</text>
+   <text x="120" y="138" text-anchor="middle" class="hz-ini">{{ initials }}</text>
+  </svg>
+  <span class="hz-tag">{{ L(b.subtitle) }}</span>
+  <h1 class="hz-h">{{ L(b.headline) }}</h1>
+  <div class="hz-orn" aria-hidden="true"><span></span>✦<span></span></div>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  {% if b.rating %}<p class="hz-rate">★★★★★ <b>{{ b.rating.value }}</b> · {{ b.rating.count }} {{ t('reseñas en','reviews on') }} {{ b.rating.source }}</p>{% endif %}
+ </div>
+ <div class="hz-pic"><div class="hz-frame">{{ heroimg() }}</div></div>
+</section>
+<div class="hz-stripe {{ 'pole' if motif == 'barber' else '' }}" aria-hidden="true"></div>

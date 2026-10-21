@@ -1,5 +1,6 @@
 <section class="nh">
  {% if hero_photo %}<div class="nh-bg"><img src="{{ root }}{{ hero_photo.path }}" alt="{{ A(hero_photo.alt) }}"></div>{% endif %}
+{% if motif == 'auto' %}
  <svg class="gauge" viewBox="0 0 200 200" aria-hidden="true">
   <circle cx="100" cy="100" r="88" fill="rgba(0,0,0,.35)" stroke="var(--line)" stroke-width="1"/>
   <path class="g-arc" d="M37.8 162.2A88 88 0 1 1 162.2 162.2" fill="none" stroke="var(--line)" stroke-width="2"/>
@@ -10,6 +11,7 @@
   <circle cx="100" cy="100" r="8" fill="var(--ink)"/>
   <text x="100" y="146" text-anchor="middle" font-size="9" letter-spacing="2" fill="var(--muted)">RPM ×1000</text>
  </svg>
+ {% else %}{{ ring((b.business ~ ' · ' ~ A(b.subtitle) ~ ' · ')|upper, '<text x="100" y="112" text-anchor="middle" class="ring-c">' ~ initials ~ '</text>', 'nring') }}{% endif %}
  <div class="wrap nh-in">
   <span class="nh-tag">{{ L(b.subtitle) }}</span>
   <h1>{{ L(b.headline) }}</h1>

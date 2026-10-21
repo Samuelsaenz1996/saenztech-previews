@@ -1,0 +1,15 @@
+<section class="sn">
+ <div class="sn-stars" aria-hidden="true">{% for i in range(40) %}<i style="--x:{{ (i * 37) % 100 }}%;--y:{{ (i * 53) % 90 }}%;--d:{{ 1.5 + (i % 5) * 0.6 }}s;--s:{{ 2 + i % 3 }}px"></i>{% endfor %}</div>
+ <div class="wrap sn-in">
+  {{ floaters() }}
+  <div class="sn-moon"><div class="sn-disc">{{ heroimg() }}</div><span class="sn-halo"></span></div>
+  <div class="sn-t">
+   <span class="sf-tag">{{ L(b.subtitle) }}</span>
+   <h1 class="sn-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+   {% if b.rating %}<p class="sn-r">★ {{ b.rating.value }} · {{ b.rating.count }} {{ t('reseñas en','reviews on') }} {{ b.rating.source }}</p>{% endif %}
+  </div>
+ </div>
+ <svg class="sf-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 180 0 360 80 540 40 S 900 0 1080 40 S 1440 80 1620 40 S 1980 0 2160 40 S 2520 80 2880 40 V80 H0Z" fill="var(--bg)"/></svg>
+</section>
