@@ -202,6 +202,11 @@ stop = {"y", "and", "de", "del", "la", "el", "los", "las", "llc", "inc", "the", 
 words = [w for w in re.findall(r"[A-Za-zÁÉÍÓÚÑáéíóúñ0-9]+", b["business"]) if w.lower() not in stop]
 initials = ("".join(w[0] for w in words[:2]) or b["business"][:1]).upper()
 
+sys.path.insert(0, a.kit)
+import motifs as _motifs
+motif = _motifs.pick(b)
+M = _motifs.MOTIFS[motif]
+
 # ---------- fonts ----------
 fonts_meta = themes["_fonts"]
 os.makedirs(os.path.join(out_dir, "fonts"), exist_ok=True)
@@ -232,7 +237,7 @@ for pg in pages:
         b=b, th=th, lang=lang, alt=alt, bilingual=bilingual, t=t, page=pg["id"], pages=pages,
         root=root, groups=groups, items=items, placeholders=placeholders, maps=maps, embed=embed,
         fontfaces=ff, hero_photo=hero_photo, gallery=gallery, primary=primary, initials=initials,
-        stock_used=stock_used, bn=_h.escape(b['business']))
+        stock_used=stock_used, bn=_h.escape(b['business']), motif=motif, M=M)
     d = os.path.join(out_dir, pg["dir"])
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(html)

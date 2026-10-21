@@ -19,7 +19,7 @@ const { chromium } = require('playwright');
   const overflow = [];
   let fonts = [];
   for (const pg of pages) {
-    const url = 'file://' + path.join(dir, pg, 'index.html');
+    const url = 'file://' + path.join(dir, pg, 'index.html') + '?shot=1';
     const name = pg || 'home';
     const phone = await ctxP.newPage();
     await phone.goto(url, { waitUntil: 'load' });
