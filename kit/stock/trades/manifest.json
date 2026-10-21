@@ -1915,5 +1915,449 @@
    "gutters",
    "explicit"
   ]
+ },
+ {
+  "file": "unsplash-1533628635777-112b2239b1c7.jpg",
+  "alt": {
+   "es": "Textura de estuco en muro",
+   "en": "Stucco wall texture"
+  },
+  "credit": "Unsplash photo 1533628635777-112b2239b1c7",
+  "tags": [
+   "stucco",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1768839725085-829e6ac7ac26.jpg",
+  "alt": {
+   "es": "Aplicando aplanado con llana",
+   "en": "Applying plaster with a trowel"
+  },
+  "credit": "Unsplash photo 1768839725085-829e6ac7ac26",
+  "tags": [
+   "stucco",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1761637823941-0ffae96ec487.jpg",
+  "alt": {
+   "es": "Muro de contención de piedra",
+   "en": "Stone block retaining wall"
+  },
+  "credit": "Unsplash photo 1761637823941-0ffae96ec487",
+  "tags": [
+   "stucco",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1790699021603-1f7c72a513f5.jpg",
+  "alt": {
+   "es": "Muro de contención de bloques",
+   "en": "Concrete block retaining wall"
+  },
+  "credit": "Unsplash photo 1790699021603-1f7c72a513f5",
+  "tags": [
+   "stucco",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1701850009190-2859ba2aeea6.jpg",
+  "alt": {
+   "es": "Albañil colocando bloques",
+   "en": "Mason laying blocks"
+  },
+  "credit": "Unsplash photo 1701850009190-2859ba2aeea6",
+  "tags": [
+   "stucco",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1566474949309-1ecedbf7382e.jpg",
+  "alt": {
+   "es": "Muro de piedra natural",
+   "en": "Natural stone wall"
+  },
+  "credit": "Unsplash photo 1566474949309-1ecedbf7382e",
+  "tags": [
+   "stucco",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1704005445445-2747074be8ac.jpg",
+  "alt": {
+   "es": "Colocando ladrillo con cuchara",
+   "en": "Laying brick with a trowel"
+  },
+  "credit": "Unsplash photo 1704005445445-2747074be8ac",
+  "tags": [
+   "stucco",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1742353980377-b8e42932c590.jpg",
+  "alt": {
+   "es": "Limpiador robótico en la alberca",
+   "en": "Robotic pool cleaner at work"
+  },
+  "credit": "Unsplash photo 1742353980377-b8e42932c590",
+  "tags": [
+   "pool",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1509577330292-0532d33c053e.jpg",
+  "alt": {
+   "es": "Limpieza de alberca",
+   "en": "Cleaning a swimming pool"
+  },
+  "credit": "Unsplash photo 1509577330292-0532d33c053e",
+  "tags": [
+   "pool",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1592345965963-cde4e1c83608.jpg",
+  "alt": {
+   "es": "Agua cristalina de alberca",
+   "en": "Crystal clear pool water"
+  },
+  "credit": "Unsplash photo 1592345965963-cde4e1c83608",
+  "tags": [
+   "pool",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1786051385612-5fac26efaf88.jpg",
+  "alt": {
+   "es": "Alberca en el patio de una casa",
+   "en": "Backyard swimming pool"
+  },
+  "credit": "Unsplash photo 1786051385612-5fac26efaf88",
+  "tags": [
+   "pool",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1634923295030-730da9900a2d.jpg",
+  "alt": {
+   "es": "Alberca con pérgola al atardecer",
+   "en": "Pool with a pergola at sunset"
+  },
+  "credit": "Unsplash photo 1634923295030-730da9900a2d",
+  "tags": [
+   "pool",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1682906324513-5370a2e99e1a.jpg",
+  "alt": {
+   "es": "Jacuzzi con luces",
+   "en": "Hot tub with lights"
+  },
+  "credit": "Unsplash photo 1682906324513-5370a2e99e1a",
+  "tags": [
+   "pool",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1738769527012-375706b0d36c.jpg",
+  "alt": {
+   "es": "Parabrisas estrellado",
+   "en": "Cracked windshield"
+  },
+  "credit": "Unsplash photo 1738769527012-375706b0d36c",
+  "tags": [
+   "autoglass",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1613042964418-89c800809319.jpg",
+  "alt": {
+   "es": "Parabrisas roto por impacto",
+   "en": "Shattered car windshield"
+  },
+  "credit": "Unsplash photo 1613042964418-89c800809319",
+  "tags": [
+   "autoglass",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1651084296894-105edab05b26.jpg",
+  "alt": {
+   "es": "Instalación de parabrisas con sellador",
+   "en": "Installing a windshield with sealant"
+  },
+  "credit": "Unsplash photo 1651084296894-105edab05b26",
+  "tags": [
+   "autoglass",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1529695269502-04a09469a588.jpg",
+  "alt": {
+   "es": "Parabrisas con lluvia",
+   "en": "Windshield in the rain"
+  },
+  "credit": "Unsplash photo 1529695269502-04a09469a588",
+  "tags": [
+   "autoglass",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1508786250378-b165238d6e8b.jpg",
+  "alt": {
+   "es": "Limpiaparabrisas sobre el cristal",
+   "en": "Wiper on a windshield"
+  },
+  "credit": "Unsplash photo 1508786250378-b165238d6e8b",
+  "tags": [
+   "autoglass",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1595977910374-793e731cb36e.jpg",
+  "alt": {
+   "es": "Vista a través del parabrisas",
+   "en": "View through a clear windshield"
+  },
+  "credit": "Unsplash photo 1595977910374-793e731cb36e",
+  "tags": [
+   "autoglass",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1771888703722-ee7ad9143a67.jpg",
+  "alt": {
+   "es": "Cocina con gabinetes de madera",
+   "en": "Kitchen with wood cabinets"
+  },
+  "credit": "Unsplash photo 1771888703722-ee7ad9143a67",
+  "tags": [
+   "cabinets",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1771371282665-545256b20dca.jpg",
+  "alt": {
+   "es": "Gabinetes de cocina a la medida",
+   "en": "Custom kitchen cabinets"
+  },
+  "credit": "Unsplash photo 1771371282665-545256b20dca",
+  "tags": [
+   "cabinets",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1601760561441-16420502c7e0.jpg",
+  "alt": {
+   "es": "Cocina con gabinetes blancos",
+   "en": "Kitchen with white cabinets"
+  },
+  "credit": "Unsplash photo 1601760561441-16420502c7e0",
+  "tags": [
+   "cabinets",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1631396326838-de37e5f8bcbc.jpg",
+  "alt": {
+   "es": "Carpintero trabajando la madera",
+   "en": "Woodworker shaping wood"
+  },
+  "credit": "Unsplash photo 1631396326838-de37e5f8bcbc",
+  "tags": [
+   "cabinets",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1631396328075-9c65a7406f09.jpg",
+  "alt": {
+   "es": "Taller de carpintería",
+   "en": "Woodworking shop"
+  },
+  "credit": "Unsplash photo 1631396328075-9c65a7406f09",
+  "tags": [
+   "cabinets",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1647481045013-8efc5594369d.jpg",
+  "alt": {
+   "es": "Repisas empotradas en arco",
+   "en": "Arched built-in shelves"
+  },
+  "credit": "Unsplash photo 1647481045013-8efc5594369d",
+  "tags": [
+   "cabinets",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1604062527894-55b0712bbee3.jpg",
+  "alt": {
+   "es": "Librero empotrado",
+   "en": "Built-in bookshelves"
+  },
+  "credit": "Unsplash photo 1604062527894-55b0712bbee3",
+  "tags": [
+   "cabinets",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1590820292118-e256c3ac2676.jpg",
+  "alt": {
+   "es": "Podadora de pasto",
+   "en": "Push lawn mower"
+  },
+  "credit": "Unsplash photo 1590820292118-e256c3ac2676",
+  "tags": [
+   "smallengine",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1583956313618-e99e86c35cf8.jpg",
+  "alt": {
+   "es": "Herramientas para reparar podadora",
+   "en": "Tools for lawn mower repair"
+  },
+  "credit": "Unsplash photo 1583956313618-e99e86c35cf8",
+  "tags": [
+   "smallengine",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1608624076549-9e27ec6fd229.jpg",
+  "alt": {
+   "es": "Podadora junto al cobertizo",
+   "en": "Lawn mower by the shed"
+  },
+  "credit": "Unsplash photo 1608624076549-9e27ec6fd229",
+  "tags": [
+   "smallengine",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1576029765637-2931132ba2d4.jpg",
+  "alt": {
+   "es": "Quitanieves en acción",
+   "en": "Snowblower in action"
+  },
+  "credit": "Unsplash photo 1576029765637-2931132ba2d4",
+  "tags": [
+   "smallengine",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1708346061371-4da170d706a9.jpg",
+  "alt": {
+   "es": "Motosierra sobre troncos",
+   "en": "Chainsaw on logs"
+  },
+  "credit": "Unsplash photo 1708346061371-4da170d706a9",
+  "tags": [
+   "smallengine",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1723811898182-aff0c2eca53f.jpg",
+  "alt": {
+   "es": "Motor de podadora de cerca",
+   "en": "Lawn mower engine close-up"
+  },
+  "credit": "Unsplash photo 1723811898182-aff0c2eca53f",
+  "tags": [
+   "smallengine",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1733431772808-82d878e59000.jpg",
+  "alt": {
+   "es": "Tablaroca encintada y resanada",
+   "en": "Taped and mudded drywall"
+  },
+  "credit": "Unsplash photo 1733431772808-82d878e59000",
+  "tags": [
+   "drywall",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1768321903410-54961e343b71.jpg",
+  "alt": {
+   "es": "Estructura metálica y paneles de tablaroca",
+   "en": "Metal studs and drywall sheets"
+  },
+  "credit": "Unsplash photo 1768321903410-54961e343b71",
+  "tags": [
+   "drywall",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1616179283726-e96f7aa16a56.jpg",
+  "alt": {
+   "es": "Instalación de tablaroca",
+   "en": "Drywall installation"
+  },
+  "credit": "Unsplash photo 1616179283726-e96f7aa16a56",
+  "tags": [
+   "drywall",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1693985120993-e9b203ce7631.jpg",
+  "alt": {
+   "es": "Pintando pared con rodillo",
+   "en": "Painting a wall with a roller"
+  },
+  "credit": "Unsplash photo 1693985120993-e9b203ce7631",
+  "tags": [
+   "drywall",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1562259949-e8e7689d7828.jpg",
+  "alt": {
+   "es": "Rodillo con pintura azul",
+   "en": "Roller applying blue paint"
+  },
+  "credit": "Unsplash photo 1562259949-e8e7689d7828",
+  "tags": [
+   "drywall",
+   "explicit"
+  ]
  }
 ]

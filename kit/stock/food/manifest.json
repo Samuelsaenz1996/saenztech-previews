@@ -729,5 +729,125 @@
    "carniceria",
    "explicit"
   ]
+ },
+ {
+  "file": "unsplash-1603751581628-4bf720ded7f5.jpg",
+  "alt": {
+   "es": "Paleta de fresa",
+   "en": "Strawberry ice pop"
+  },
+  "credit": "Unsplash photo 1603751581628-4bf720ded7f5",
+  "tags": [
+   "neveria",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1745470257071-87f9944d1b8d.jpg",
+  "alt": {
+   "es": "Carrito de paletas en la calle",
+   "en": "Ice pop cart on the street"
+  },
+  "credit": "Unsplash photo 1745470257071-87f9944d1b8d",
+  "tags": [
+   "neveria",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1629385701021-fcd568a743e8.jpg",
+  "alt": {
+   "es": "Conos de helado con chispas",
+   "en": "Ice cream cones with sprinkles"
+  },
+  "credit": "Unsplash photo 1629385701021-fcd568a743e8",
+  "tags": [
+   "neveria",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1677513633949-6148b9c6702b.jpg",
+  "alt": {
+   "es": "Paletas de fresa",
+   "en": "Strawberry paletas"
+  },
+  "credit": "Unsplash photo 1677513633949-6148b9c6702b",
+  "tags": [
+   "neveria",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1606169109553-aa8c5e4a62b9.jpg",
+  "alt": {
+   "es": "Paletas de frutas con chile",
+   "en": "Fruit paletas with chili"
+  },
+  "credit": "Unsplash photo 1606169109553-aa8c5e4a62b9",
+  "tags": [
+   "neveria",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1633933037611-f26e54366832.jpg",
+  "alt": {
+   "es": "Paletas de fruta en hielo",
+   "en": "Fruit paletas on ice"
+  },
+  "credit": "Unsplash photo 1633933037611-f26e54366832",
+  "tags": [
+   "neveria",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1673646961362-659b4680b9ee.jpg",
+  "alt": {
+   "es": "Fresas con crema",
+   "en": "Strawberries and cream"
+  },
+  "credit": "Unsplash photo 1673646961362-659b4680b9ee",
+  "tags": [
+   "neveria",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1604953781841-004f1848ed3d.jpg",
+  "alt": {
+   "es": "Alfajores en la rejilla",
+   "en": "Alfajores on a cooling rack"
+  },
+  "credit": "Unsplash photo 1604953781841-004f1848ed3d",
+  "tags": [
+   "peruvian",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1552552492-9c335658343d.jpg",
+  "alt": {
+   "es": "Alfajores apilados",
+   "en": "Stack of alfajores"
+  },
+  "credit": "Unsplash photo 1552552492-9c335658343d",
+  "tags": [
+   "peruvian",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1769254870299-338bfd99aabd.jpg",
+  "alt": {
+   "es": "Empanadas doradas",
+   "en": "Golden empanadas"
+  },
+  "credit": "Unsplash photo 1769254870299-338bfd99aabd",
+  "tags": [
+   "peruvian",
+   "explicit"
+  ]
  }
 ]

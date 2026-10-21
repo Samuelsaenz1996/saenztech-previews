@@ -1292,5 +1292,77 @@
    "taekwondo",
    "explicit"
   ]
+ },
+ {
+  "file": "unsplash-1635779503036-27cbbdcdbbd1.jpg",
+  "alt": {
+   "es": "Botas vaqueras de piel",
+   "en": "Leather cowboy boots"
+  },
+  "credit": "Unsplash photo 1635779503036-27cbbdcdbbd1",
+  "tags": [
+   "western",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1649639763329-dccbd16fbf4d.jpg",
+  "alt": {
+   "es": "Botas y sombrero vaquero",
+   "en": "Cowboy boots and hat"
+  },
+  "credit": "Unsplash photo 1649639763329-dccbd16fbf4d",
+  "tags": [
+   "western",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1525814230241-7f78c608c54c.jpg",
+  "alt": {
+   "es": "Estantes de botas vaqueras",
+   "en": "Shelves of cowboy boots"
+  },
+  "credit": "Unsplash photo 1525814230241-7f78c608c54c",
+  "tags": [
+   "western",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1582908880300-868a0de4e0d8.jpg",
+  "alt": {
+   "es": "Tienda de botas vaqueras",
+   "en": "Western boot store"
+  },
+  "credit": "Unsplash photo 1582908880300-868a0de4e0d8",
+  "tags": [
+   "western",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1721360006396-cb2ffdf8d9fe.jpg",
+  "alt": {
+   "es": "Sombreros vaqueros en la cerca",
+   "en": "Cowboy hats on a fence"
+  },
+  "credit": "Unsplash photo 1721360006396-cb2ffdf8d9fe",
+  "tags": [
+   "western",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1752386296085-fd15d8b46ee7.jpg",
+  "alt": {
+   "es": "Cinto vaquero con hebilla",
+   "en": "Western belt with buckle"
+  },
+  "credit": "Unsplash photo 1752386296085-fd15d8b46ee7",
+  "tags": [
+   "western",
+   "explicit"
+  ]
  }
 ]
