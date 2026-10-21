@@ -24,3 +24,4 @@
 .arch-cinema .cta-box{border-radius:2px;background:#000;border-block:min(4vw,30px) solid #000;box-shadow:inset 0 0 0 1px var(--line)}.arch-cinema .cta-box::after{display:none}
 .arch-cinema .rv{clip-path:inset(50% 0 50% 0)}.arch-cinema .rv.in{opacity:1;transform:none;clip-path:inset(0);transition:opacity .4s,clip-path 1.1s cubic-bezier(.7,0,.2,1)}
 html.shot .cn-bar{height:min(9vh,80px);transition:none}html.shot .cn-grain{display:none}html.shot .cn-frame .ph img{animation:none;transform:none}
+.arch-cinema .btn.light{background:var(--accent);border-color:var(--accent);color:#111}

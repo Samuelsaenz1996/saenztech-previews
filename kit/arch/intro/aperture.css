@@ -1,5 +1,6 @@
-.intro.ix-ap{background:transparent;overflow:hidden}
-.ap-s{position:absolute;width:300vmax;height:300vmax;left:50%;top:50%;margin:-150vmax}
+.intro.ix-ap{background:transparent;overflow:hidden;display:grid;place-items:center}
+.ap-s{pointer-events:none}
+.ap-s{position:absolute;width:160vmax;height:160vmax;left:50%;top:50%;margin:-80vmax}
 .ap-b{fill:#0c0c0c;stroke:#2a2a2a;stroke-width:.6;transform:rotate(var(--a)) translate(0,0);transform-origin:0 0;transition:transform 1s cubic-bezier(.7,0,.2,1)}
 .ap-n{position:relative;font:{{ th.head_weight }} clamp(30px,7vw,74px)/1 "{{ th.head_font }}",serif;color:#fff;text-align:center;padding:0 20px;letter-spacing:.04em;animation:pop .6s ease .2s both}
-.intro.ix-ap.out{transform:none}.intro.ix-ap.out .ap-b{transform:rotate(calc(var(--a) - 40deg)) translate(0,-120px)}.intro.ix-ap.out .ap-n{opacity:0;transition:opacity .2s}
+.intro.ix-ap.out{transform:none}.intro.ix-ap.out .ap-b{transform:rotate(calc(var(--a) - 25deg)) translate(95px,-165px)}.intro.ix-ap.out .ap-n{opacity:0;transition:opacity .2s}

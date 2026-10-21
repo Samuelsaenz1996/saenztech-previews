@@ -1,5 +1,5 @@
 <section class="mk">
- <div class="mk-word" aria-hidden="true" style="background-image:url('{{ root }}{{ (hero_photo or gallery[0]).path if (hero_photo or gallery) else '' }}')">{{ (b.short or b.business.split(' ')[0])|upper }}</div>
+ {% set mw=(b.short or b.business.split(' ')[0])|upper %}<div class="mk-word" aria-hidden="true" style="--n:{{ mw|length }};background-image:url('{{ root }}{{ (hero_photo or gallery[0]).path if (hero_photo or gallery) else '' }}')">{{ mw }}</div>
  <div class="wrap mk-in">
   <span class="mk-tag">{{ L(b.subtitle) }}</span>
   <h1 class="mk-h">{{ L(b.headline) }}</h1>

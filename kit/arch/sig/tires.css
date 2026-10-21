@@ -1,0 +1,7 @@
+{% include "arch/sig/_sgx.css" %}
+.ty-g{stroke:var(--line);stroke-width:4}
+.ty-roll{transform:translate(calc(-120px + var(--v) * 330px),266px) rotate(calc(var(--v) * 540deg))}
+.ty-t{fill:#1a1a1a}.ty-tread{fill:none;stroke:#3a3a3a;stroke-width:18;stroke-dasharray:.02 .015}
+.ty-rim{fill:color-mix(in srgb,var(--accent2) 30%,#c9ced3);stroke:#8b939b;stroke-width:4}.ty-sp{stroke:#8b939b;stroke-width:10;stroke-linecap:round}.ty-hub{fill:var(--accent)}
+.ty-s rect{fill:#1e1e1e}.ty-s path{stroke:#3b3b3b;stroke-width:6;stroke-dasharray:10 8}
+.ty-s{opacity:clamp(0,var(--v) * 6 - var(--i) * 1.2 - .4,1);translate:0 calc(clamp(0,1 - (var(--v) * 6 - var(--i) * 1.2 - .4),1) * -120px)}

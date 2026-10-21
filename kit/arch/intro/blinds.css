@@ -1,5 +1,5 @@
-.intro.ix-bl{background:transparent;display:flex;align-items:stretch;justify-content:stretch}
-.intro.ix-bl i{flex:1;background:var(--accent);transform-origin:top;animation:bld .5s cubic-bezier(.7,0,.3,1) calc(var(--i) * .05s) both}
+.intro.ix-bl{background:transparent;display:flex;align-items:stretch;justify-content:stretch;gap:0}
+.intro.ix-bl i{flex:1;background:var(--accent);transform-origin:top}
 .intro.ix-bl i:nth-child(even){background:var(--ink)}
 @keyframes bld{from{transform:scaleY(0)}}
 .bl-n{position:absolute;inset:0;display:grid;place-items:center;font:{{ th.head_weight }} clamp(34px,8vw,90px)/1 "{{ th.head_font }}",sans-serif;color:#fff;text-align:center;padding:0 20px;mix-blend-mode:difference;animation:pop .5s ease .45s both}

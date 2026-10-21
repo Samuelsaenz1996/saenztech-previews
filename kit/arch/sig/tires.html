@@ -1,0 +1,7 @@
+<section class="sig sgx sg-tires">
+ <div class="wrap sgx-in">
+  <div class="sgx-t"><span class="kicker">{{ t('Llantas','Tires') }}</span><h2>{{ t('Nuevas, usadas y rines','New, used and rims') }}</h2><p class="sgx-p">{{ t('Llantas para todo presupuesto, montadas y balanceadas.','Tires for every budget, mounted and balanced.') }}</p>
+  {% if items %}<ul class="sgx-list">{% for it in items[:6] %}<li style="--i:{{ loop.index0 }}">{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+  <div class="sgx-v" aria-hidden="true"><svg viewBox="0 0 600 400"><path class="ty-g" d="M0 376h600"/><g class="ty-roll"><circle cx="0" cy="0" r="110" class="ty-t"/><circle r="110" class="ty-tread" pathLength="1"/><circle r="64" class="ty-rim"/><path class="ty-sp" d="M0 0 L58 0"/><path class="ty-sp" d="M0 0 L18 55"/><path class="ty-sp" d="M0 0 L-47 34"/><path class="ty-sp" d="M0 0 L-47 -34"/><path class="ty-sp" d="M0 0 L18 -55"/><circle r="16" class="ty-hub"/></g><g class="ty-s" style="--i:0"><rect x="380" y="330" width="150" height="44" rx="14"/><path d="M390 352 h130" /></g><g class="ty-s" style="--i:1"><rect x="380" y="282" width="150" height="44" rx="14"/><path d="M390 304 h130" /></g><g class="ty-s" style="--i:2"><rect x="380" y="234" width="150" height="44" rx="14"/><path d="M390 256 h130" /></g><g class="ty-s" style="--i:3"><rect x="380" y="186" width="150" height="44" rx="14"/><path d="M390 208 h130" /></g></svg></div>
+ </div>
+</section>
