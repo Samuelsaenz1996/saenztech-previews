@@ -42,7 +42,7 @@ th["labels"] = merge(themes["_common_labels"], th.get("labels", {}))
 for _k, _v in (b.get("style") or {}).items():
     if _k == "colors":
         th["colors"].update(_v)
-    elif _k in ("head_font", "body_font", "head_weight", "deco", "radius", "tilt", "em_style", "tracking"):
+    elif _k in ("head_font", "body_font", "head_weight", "deco", "radius", "tilt", "em_style", "tracking", "arch"):
         th[_k] = _v
 L = th["labels"]
 
@@ -205,6 +205,7 @@ initials = ("".join(w[0] for w in words[:2]) or b["business"][:1]).upper()
 sys.path.insert(0, a.kit)
 import motifs as _motifs
 motif = _motifs.pick(b)
+arch = th.get("arch") or ("fiesta" if b.get("category") in ("food",) else "classic")
 M = _motifs.MOTIFS[motif]
 
 # ---------- fonts ----------
@@ -237,7 +238,7 @@ for pg in pages:
         b=b, th=th, lang=lang, alt=alt, bilingual=bilingual, t=t, page=pg["id"], pages=pages,
         root=root, groups=groups, items=items, placeholders=placeholders, maps=maps, embed=embed,
         fontfaces=ff, hero_photo=hero_photo, gallery=gallery, primary=primary, initials=initials,
-        stock_used=stock_used, bn=_h.escape(b['business']), motif=motif, M=M)
+        stock_used=stock_used, bn=_h.escape(b['business']), motif=motif, M=M, arch=arch)
     d = os.path.join(out_dir, pg["dir"])
     os.makedirs(d, exist_ok=True)
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(html)

@@ -39,7 +39,7 @@
 {% set gal_page = (pages|selectattr('id','equalto','gallery')|first) %}
 {% set has_visit = (pages|selectattr('id','equalto','visit')|list|length) > 0 %}
 <!doctype html>
-<html lang="{{ lang }}">
+<html lang="{{ lang }}" class="arch-{{ arch }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -352,6 +352,7 @@ html.shot h1 .w>span{transform:none;transition:none}html.shot .visual .ph,html.s
 @media (max-width:899px){.fl{left:var(--xm);top:var(--ym);width:var(--sm);height:var(--sm)}.marq{padding:10px 0}.mq i{width:26px;height:26px}.ride{padding-top:20px}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}
  .fe,.float,.rv,.eyebrow,.lead,.hero .ctas,.hero .rating,.sub-hero p,.crumb,h1 .w>span{opacity:1!important;transform:none!important}.visual .ph,.visual .art{clip-path:none!important}.intro{display:none}}
+{% include "arch/" ~ arch ~ ".css" ignore missing %}
 {% if bilingual %}
 [data-{{ alt }}]{display:none!important}
 html[lang={{ alt }}] [data-{{ lang }}]{display:none!important}
@@ -360,7 +361,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
 </style>
 </head>
 <body>
-{% if page == 'home' %}<div class="intro" aria-hidden="true"><div class="ia">{{ M.ride|safe }}</div><div class="in">{{ b.business }}</div></div>{% endif %}
+{% if page == 'home' %}{% if arch == 'fiesta' %}<div class="intro" aria-hidden="true"><div class="ia">{{ M.ride|safe }}</div><div class="in">{{ b.business }}</div></div>{% else %}{% include "arch/" ~ arch ~ "_intro.html" ignore missing %}{% endif %}{% endif %}
 <div class="deco" aria-hidden="true">{% for i in range(24) %}<span></span>{% endfor %}</div>
 
 <header class="top">
@@ -378,9 +379,10 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
 
 <main>
 {% if page == 'home' %}
+ {% if arch in ('noir','blueprint') %}{% include "arch/" ~ arch ~ "_hero.html" %}<div class="wrap">{% else %}
  <div class="wrap">
   <div class="hero">
-   {{ floaters() }}
+   {% if arch == 'fiesta' %}{{ floaters() }}{% endif %}
    <div>
     {% if b.eyebrow %}<span class="eyebrow"><span class="dot"></span>{{ L(b.eyebrow) }}</span>{% endif %}
     <h1>{{ L(b.headline) }}</h1>
@@ -398,7 +400,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
     {% if b.rating %}<div class="float f2"><span class="ic">{{ icon('star') }}</span><div><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span> / 5</b><small>{{ b.rating.source }}</small></div></div>
     {% elif items %}<div class="float f2"><span class="ic">{{ icon('check') }}</span><div><small>{{ L(th.labels.items_nav) }}</small><b>{{ L(items[0].name) }}</b></div></div>{% endif %}
    </div>
-  </div>
+  </div>{% endif %}
   <div class="strip">
    {% if b.address %}<a class="hl" href="{{ maps }}" target="_blank" rel="noopener"><span class="ic">{{ icon('pin') }}</span><div><b>{{ b.address.split(',')[0] }}</b><small>{{ b.city }} · {{ L(th.labels.directions) }}</small></div></a>
    {% elif b.service_area %}<div class="hl"><span class="ic">{{ icon('area') }}</span><div><b>{{ L(th.labels.service_area_t) }}</b><small>{{ L(b.service_area) }}</small></div></div>{% endif %}
@@ -407,12 +409,12 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
    {% if not b.hours and b.email %}<a class="hl" href="mailto:{{ b.email }}"><span class="ic">{{ icon('mail') }}</span><div><b>{{ L(th.labels.write_us) }}</b><small>{{ b.email }}</small></div></a>{% endif %}
   </div>
  </div>
-{% macro mqrow() -%}<div class="mq">{% for k in range(2) %}{% for it in items[:6] %}<b class="{{ 'o' if (loop.index0 + k) % 2 else '' }}">{{ L(it.name) }}</b><i>{{ M.tick|safe }}</i>{% endfor %}{% endfor %}</div>{%- endmacro %}
+{% macro mqrow() -%}<div class="mq">{% for k in range(2) %}{% for it in items[:6] %}<b class="{{ 'o' if (loop.index0 + k) % 2 else '' }}">{{ L(it.name) }}</b><i>{% if arch == 'fiesta' %}{{ M.tick|safe }}{% else %}/{% endif %}</i>{% endfor %}{% endfor %}</div>{%- endmacro %}
  {% if items %}<div class="marqs" aria-hidden="true"><div class="marq">{{ mqrow() }}{{ mqrow() }}</div><div class="marq alt">{{ mqrow() }}{{ mqrow() }}</div></div>{% endif %}
 
  <section>
   <div class="wrap">
-   <div class="sec-head"><div><span class="kicker"><i class="tk">{{ M.tick|safe }}</i>{{ L(th.labels.items_nav) }}</span><h2>{{ L(b.items_title or th.labels.items_title) }}</h2></div><a class="more" href="{{ root }}{{ items_page.dir }}/">{{ L(th.labels.see_all) }} {{ icon('arrow') }}</a></div>
+   <div class="sec-head"><div><span class="kicker">{% if arch == 'fiesta' %}<i class="tk">{{ M.tick|safe }}</i>{% endif %}{{ L(th.labels.items_nav) }}</span><h2>{{ L(b.items_title or th.labels.items_title) }}</h2></div><a class="more" href="{{ root }}{{ items_page.dir }}/">{{ L(th.labels.see_all) }} {{ icon('arrow') }}</a></div>
    <div class="cards">
     {% set home_photos = (items[:3]|selectattr('photo_path')|list|length) == (items[:3]|length) %}{% for it in items[:3] %}
     <article class="card-i">
@@ -427,7 +429,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  {% if b.address %}
  <section class="findus">
   <div class="wrap">
-   <div class="sec-head"><div><span class="kicker"><i class="tk">{{ M.tick|safe }}</i>{{ L(th.labels.find_us) }}</span><h2>{{ t('Dónde encontrarnos','Where to find us') }}</h2></div><a class="more" href="{{ maps }}" target="_blank" rel="noopener">{{ L(th.labels.directions) }} {{ icon('arrow') }}</a></div>
+   <div class="sec-head"><div><span class="kicker">{% if arch == 'fiesta' %}<i class="tk">{{ M.tick|safe }}</i>{% endif %}{{ L(th.labels.find_us) }}</span><h2>{{ t('Dónde encontrarnos','Where to find us') }}</h2></div><a class="more" href="{{ maps }}" target="_blank" rel="noopener">{{ L(th.labels.directions) }} {{ icon('arrow') }}</a></div>
    <div class="info">
     <div class="mapbox"><span class="pin">{{ b.business }}</span><iframe src="{{ embed }}" loading="lazy" title="Map" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     <div class="card">
@@ -463,7 +465,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  {% endif %}
 
 {% elif page == 'items' %}
- <div class="sub-hero">{{ floaters(3, True) }}<div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(b.items_title or th.labels.items_title) }}</h1><p>{{ L(b.items_note or th.labels.items_note) }}</p></div></div>
+ <div class="sub-hero">{% if arch == 'fiesta' %}{{ floaters(3, True) }}{% endif %}<div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(b.items_title or th.labels.items_title) }}</h1><p>{{ L(b.items_note or th.labels.items_note) }}</p></div></div>
  <section>
   <div class="wrap">
    {% for g in groups %}
@@ -483,13 +485,13 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  </section>
 
 {% elif page == 'gallery' %}
- <div class="sub-hero">{{ floaters(3, True) }}<div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(cur.label) }}</h1>{% if stock_used %}<p>{{ L(th.labels.sample_note) }}</p>{% endif %}</div></div>
+ <div class="sub-hero">{% if arch == 'fiesta' %}{{ floaters(3, True) }}{% endif %}<div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(cur.label) }}</h1>{% if stock_used %}<p>{{ L(th.labels.sample_note) }}</p>{% endif %}</div></div>
  <section>
   <div class="wrap"><div class="gal">{% for p in gallery %}{{ photo(p, 'wide' if loop.index0 % 5 == 0 else '') }}{% endfor %}</div></div>
  </section>
 
 {% elif page == 'about' %}
- <div class="sub-hero">{{ floaters(3, True) }}<div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(th.labels.about_title) }}</h1></div></div>
+ <div class="sub-hero">{% if arch == 'fiesta' %}{{ floaters(3, True) }}{% endif %}<div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(th.labels.about_title) }}</h1></div></div>
  <section>
   <div class="wrap info">
    <div class="about">{% for para in (b.about if b.about is sequence and b.about is not string and b.about is not mapping else [b.about]) %}<p>{{ L(para) }}</p>{% endfor %}
@@ -500,7 +502,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  </section>
 
 {% elif page == 'visit' %}
- <div class="sub-hero">{{ floaters(3, True) }}<div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(cur.label) }}</h1>{% if b.address %}<p>{{ b.address }}</p>{% endif %}</div></div>
+ <div class="sub-hero">{% if arch == 'fiesta' %}{{ floaters(3, True) }}{% endif %}<div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(cur.label) }}</h1>{% if b.address %}<p>{{ b.address }}</p>{% endif %}</div></div>
  <section>
   <div class="wrap info">
    {% if b.hours %}<div class="card"><h3>{{ L(th.labels.hours) }}</h3><ul class="hours">{% for h in b.hours %}<li data-day="{{ h.day }}"><span>{{ L({'es':h.es,'en':h.en}) }}</span><span>{{ h.time }}</span></li>{% endfor %}</ul><p class="note">{{ L(th.labels.hours_note) }}</p></div>{% endif %}
@@ -514,7 +516,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  </section>
 
 {% elif page == 'contact' %}
- <div class="sub-hero">{{ floaters(3, True) }}<div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(th.labels.cta_title) }}</h1><p>{{ L(th.labels.cta_text) }}</p></div></div>
+ <div class="sub-hero">{% if arch == 'fiesta' %}{{ floaters(3, True) }}{% endif %}<div class="wrap"><div class="crumb"><a href="{{ root }}">{{ L(th.labels.nav_home) }}</a> / {{ L(cur.label) }}</div><h1>{{ L(th.labels.cta_title) }}</h1><p>{{ L(th.labels.cta_text) }}</p></div></div>
  <section>
   <div class="wrap info contact">
    <div class="card">
@@ -548,7 +550,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  </section>
 {% endif %}
 
-<div class="ride t-{{ M.trail }}" aria-hidden="true"><div class="wrap"><div class="rail"><div class="done"></div><div class="rider">{{ M.ride|safe }}</div></div></div></div>
+{% if arch == 'fiesta' %}<div class="ride t-{{ M.trail }}" aria-hidden="true"><div class="wrap"><div class="rail"><div class="done"></div><div class="rider">{{ M.ride|safe }}</div></div></div></div>{% else %}{% include "arch/" ~ arch ~ "_ride.html" ignore missing %}{% endif %}
 {% if page != 'contact' %}
  <section class="cta">
   <div class="wrap"><div class="cta-box">
@@ -628,5 +630,6 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(frame)}},{passive:true});addEventListener('resize',frame);frame();
 })();
 </script>
+{% include "arch/" ~ arch ~ ".js.html" ignore missing %}
 </body>
 </html>

@@ -1,0 +1,5 @@
+<script>
+(function(){var h=document.documentElement,r=document.querySelector('.bp-ruler'),mk=r&&r.querySelector('.mk'),lb=mk&&mk.querySelector('b'),rl=r&&r.querySelector('.rl');if(!r)return;
+ function u(){var p=Math.min(1,scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight));if(h.classList.contains('shot'))p=.6;var W=rl.clientWidth;mk.style.transform='translateX('+(p*W)+'px)';lb.textContent=Math.round(p*100)+'%'}
+ addEventListener('scroll',u,{passive:true});addEventListener('resize',u);u()})();
+</script>

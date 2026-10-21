@@ -1,0 +1,78 @@
+/* ===== style: blueprint (technical, precise, light) ===== */
+.arch-blueprint body{background-color:var(--bg);background-image:linear-gradient(color-mix(in srgb,var(--accent) 9%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--accent) 9%,transparent) 1px,transparent 1px),linear-gradient(color-mix(in srgb,var(--accent) 4%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--accent) 4%,transparent) 1px,transparent 1px);background-size:120px 120px,120px 120px,24px 24px,24px 24px}
+.arch-blueprint .deco{height:10px;display:block;background:linear-gradient(90deg,var(--accent) 1px,transparent 1px) 0 0/12px 6px repeat-x,linear-gradient(90deg,var(--accent) 1px,transparent 1px) 0 0/60px 10px repeat-x;border-top:1px solid var(--accent)}
+.arch-blueprint .deco span{display:none}
+.arch-blueprint .top{background:color-mix(in srgb,var(--bg) 88%,transparent)}
+.arch-blueprint .mono,.arch-blueprint .btn,.arch-blueprint .burger,.arch-blueprint .hl,.arch-blueprint .card,.arch-blueprint .card-i,.arch-blueprint .row,.arch-blueprint input,.arch-blueprint textarea,.arch-blueprint select,.arch-blueprint .float,.arch-blueprint .mapbox,.arch-blueprint .cta-box,.arch-blueprint .ph,.arch-blueprint .eyebrow,.arch-blueprint .chip{border-radius:2px}
+.arch-blueprint .btn{font-size:14.5px;letter-spacing:.02em}
+.arch-blueprint .btn.primary{box-shadow:4px 4px 0 var(--ink)}
+.arch-blueprint .btn.primary:hover{box-shadow:6px 6px 0 var(--ink);transform:translate(-2px,-2px)}
+.arch-blueprint .btn.ghost{background:transparent}
+.bp-lbl{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.bp-lbl::before{content:"";width:10px;height:10px;border:2px solid var(--accent);transform:rotate(45deg)}
+.bph{display:grid;gap:28px;padding:40px 0 34px;align-items:center}
+.bph h1{font-size:clamp(40px,7.4vw,78px);margin:14px 0 14px;letter-spacing:-.03em}
+.bph h1 em{font-style:normal;color:var(--accent);background:linear-gradient(transparent 82%,color-mix(in srgb,var(--accent) 22%,transparent) 82%)}
+.spec{margin-top:26px;border-top:1.5px solid var(--ink);max-width:520px}
+.spec div{display:flex;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px dashed var(--line)}
+.spec dt{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);flex:none}
+.spec div::after{content:"";order:1;flex:1;border-bottom:1px dotted var(--line);transform:translateY(-4px)}
+.spec dd{order:2;font-weight:600;font-variant-numeric:tabular-nums}
+.bp-frame{position:relative;border:1px solid var(--line);background:color-mix(in srgb,var(--card) 70%,transparent);padding:16% 4% 18%;backdrop-filter:blur(2px)}
+.crn{position:absolute;width:18px;height:18px;border:2px solid var(--accent)}
+.c1{left:-1px;top:-1px;border-right:0;border-bottom:0}.c2{right:-1px;top:-1px;border-left:0;border-bottom:0}.c3{left:-1px;bottom:-1px;border-right:0;border-top:0}.c4{right:-1px;bottom:-1px;border-left:0;border-top:0}
+.bp-car{width:100%;display:block;overflow:visible}
+.bp-car .ln{stroke:var(--ink);stroke-width:2.2;stroke-dasharray:1;stroke-dashoffset:1}
+.bp-car .ln.th{stroke-width:1.2;stroke:var(--muted)}
+.bp-car .ln.gl{stroke:var(--line);stroke-width:1.5}
+.bp-car .ln.dim{stroke:var(--accent);stroke-width:1.2}
+html.go .bp-car .ln{animation:draw 1.6s cubic-bezier(.6,0,.3,1) forwards}
+html.go .bp-car .ln.th{animation-delay:.5s}html.go .bp-car .ln.dim{animation-delay:1.2s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.bp-car .whl{transform-origin:var(--cx) var(--cy);transform-box:view-box}
+html.go .bp-car .whl{animation:spin 9s linear 2s infinite}
+.scan{position:absolute;top:8%;bottom:8%;left:0;width:2px;background:var(--accent);box-shadow:0 0 14px var(--accent);opacity:0}
+html.go .scan{animation:scan 4.5s ease-in-out 2.2s infinite}
+@keyframes scan{0%{left:3%;opacity:0}10%{opacity:.8}50%{left:96%;opacity:.8}60%,100%{left:96%;opacity:0}}
+.co{position:absolute;left:var(--x);top:var(--y);width:0;height:0}
+.co i{position:absolute;left:-5px;top:-5px;width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 22%,transparent);transform:scale(0)}
+html.go .co i{animation:pop .5s cubic-bezier(.3,1.6,.5,1) var(--cd) forwards,ping 2.4s ease-out calc(var(--cd) + 1s) infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 45%,transparent)}100%{box-shadow:0 0 0 14px transparent}}
+.co b{position:absolute;white-space:nowrap;font-size:12.5px;font-weight:600;background:var(--ink);color:var(--bg);padding:6px 10px;border-radius:2px;opacity:0;transform:translateY(6px)}
+.co b small{color:var(--accent2);margin-right:7px;font-size:11px;letter-spacing:.1em}
+.bp-cv{position:relative}
+html.go .co b{animation:pop .5s cubic-bezier(.3,1.4,.5,1) calc(var(--cd) + .15s) forwards}
+.arch-blueprint .sec-head .kicker::before{counter-increment:sec;content:"[" counter(sec, decimal-leading-zero) "] ";color:var(--muted)}
+.arch-blueprint main{counter-reset:sec}
+.arch-blueprint .card-i{position:relative;border:1px solid var(--line);background:var(--card);overflow:visible}
+.arch-blueprint .card-i::before,.arch-blueprint .card-i::after{content:"";position:absolute;width:14px;height:14px;border:2px solid var(--accent);transition:all .35s cubic-bezier(.3,1.4,.5,1);z-index:2}
+.arch-blueprint .card-i::before{left:-5px;top:-5px;border-right:0;border-bottom:0}
+.arch-blueprint .card-i::after{right:-5px;bottom:-5px;border-left:0;border-top:0}
+.arch-blueprint .card-i:hover::before{left:-9px;top:-9px;width:30px;height:30px}.arch-blueprint .card-i:hover::after{right:-9px;bottom:-9px;width:30px;height:30px}
+.arch-blueprint .card-i .num{border-radius:2px;background:transparent;border:1.5px solid var(--accent);font-variant-numeric:tabular-nums}
+.arch-blueprint .card-i .ph{overflow:hidden}
+.arch-blueprint .card-i.rv.in:hover{transform:translateY(-4px);box-shadow:8px 8px 0 color-mix(in srgb,var(--ink) 12%,transparent)}
+.arch-blueprint .marqs{display:none}
+.arch-blueprint .hl{border-style:dashed}
+.arch-blueprint .band{background:var(--ink)}
+.arch-blueprint .band::before{border-radius:0;background:transparent;border:1px solid rgba(255,255,255,.15);width:220px;height:220px;transform:rotate(45deg)}
+.arch-blueprint .chip{border-radius:2px}
+.arch-blueprint .cta-box{background:var(--ink);background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:24px 24px}
+.arch-blueprint .cta-box::after{border-radius:0;background:transparent;border:2px solid var(--accent);transform:rotate(45deg);opacity:.6}
+.arch-blueprint footer{background:var(--ink)}
+.arch-blueprint .rv{transform:translateY(20px)}
+/* ruler */
+.bp-ruler{padding:36px 0 14px}
+.rl{position:relative;height:34px;border-bottom:1.5px solid var(--ink);background:linear-gradient(90deg,var(--ink) 1px,transparent 1px) left bottom/12px 8px repeat-x,linear-gradient(90deg,var(--ink) 1.5px,transparent 1.5px) left bottom/60px 16px repeat-x}
+.mk{position:absolute;bottom:-1px;left:0;will-change:transform}
+.mk::before{content:"";position:absolute;left:-7px;bottom:0;border:7px solid transparent;border-bottom:11px solid var(--accent)}
+.mk b{position:absolute;left:-24px;bottom:22px;width:48px;text-align:center;font-size:11px;font-weight:700;background:var(--accent);color:#fff;border-radius:2px;padding:3px 0;font-variant-numeric:tabular-nums}
+/* intro */
+.intro.bx{background-color:var(--bg);background-image:linear-gradient(color-mix(in srgb,var(--accent) 12%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--accent) 12%,transparent) 1px,transparent 1px);background-size:24px 24px;color:var(--ink);transition:opacity .6s,transform .8s cubic-bezier(.8,0,.2,1)}
+.intro.bx .bp-car{width:min(440px,80vw)}
+.intro.bx .bp-car .ln{animation:draw 1.1s cubic-bezier(.6,0,.3,1) forwards}
+.bx-name{font:{{ th.head_weight }} clamp(24px,5vw,40px)/1 "{{ th.head_font }}",sans-serif;letter-spacing:-.02em;animation:pop .6s cubic-bezier(.3,1.6,.5,1) .5s both}
+.intro.bx.out{transform:none;opacity:0}
+@media (min-width:900px){.bph{grid-template-columns:1fr 1.05fr;padding:64px 0 56px}}
+@media (max-width:899px){.co b{font-size:11px;padding:5px 8px}}
+html.shot .bp-car .ln{stroke-dashoffset:0;animation:none}html.shot .co i,html.shot .co b{opacity:1;transform:none;animation:none}

@@ -1,0 +1,25 @@
+<section class="nh">
+ {% if hero_photo %}<div class="nh-bg"><img src="{{ root }}{{ hero_photo.path }}" alt="{{ A(hero_photo.alt) }}"></div>{% endif %}
+ <svg class="gauge" viewBox="0 0 200 200" aria-hidden="true">
+  <circle cx="100" cy="100" r="88" fill="rgba(0,0,0,.35)" stroke="var(--line)" stroke-width="1"/>
+  <path class="g-arc" d="M37.8 162.2A88 88 0 1 1 162.2 162.2" fill="none" stroke="var(--line)" stroke-width="2"/>
+  <path class="g-red" d="M162.2 37.8A88 88 0 0 1 162.2 162.2" fill="none" stroke="var(--accent)" stroke-width="5" pathLength="1"/>
+  {% for i in range(0, 9) %}{% set ang = -225 + i * 33.75 %}<g transform="rotate({{ ang + 90 }} 100 100)"><path d="M100 16v12" stroke="var(--ink)" stroke-width="2"/><text x="100" y="44" text-anchor="middle" font-size="11" fill="var(--muted)" transform="rotate({{ -(ang + 90) }} 100 40)">{{ i }}</text></g>{% endfor %}
+  {% for i in range(0, 33) %}<path d="M100 16v6" stroke="var(--muted)" stroke-width="1" transform="rotate({{ -135 + i * 8.4375 }} 100 100)"/>{% endfor %}
+  <g class="needle"><path d="M100 104L98 100 100 30 102 100z" fill="var(--accent)"/></g>
+  <circle cx="100" cy="100" r="8" fill="var(--ink)"/>
+  <text x="100" y="146" text-anchor="middle" font-size="9" letter-spacing="2" fill="var(--muted)">RPM ×1000</text>
+ </svg>
+ <div class="wrap nh-in">
+  <span class="nh-tag">{{ L(b.subtitle) }}</span>
+  <h1>{{ L(b.headline) }}</h1>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  <div class="nh-stats">
+   {% if b.rating %}<div><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span>★</b><small>{{ b.rating.source }}</small></div>
+   <div><b><span class="cnt" data-to="{{ b.rating.count }}">{{ b.rating.count }}</span></b><small>{{ t('Reseñas','Reviews') }}</small></div>{% endif %}
+   {% if b.hours %}<div><b class="today-hours" data-closed="{{ A(th.labels.closed_today) }}">{{ b.hours[0].time }}</b><small>{{ L(th.labels.open_today) }}</small></div>
+   {% elif items %}<div><b>{{ items|length }}</b><small>{{ L(th.labels.items_nav) }}</small></div>{% endif %}
+  </div>
+ </div>
+</section>

@@ -1,0 +1,15 @@
+<script>
+(function(){
+ var h=document.documentElement,red=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var CH='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#/%';
+ function scramble(el,dur,delay){var fin=el.textContent;if(red||h.classList.contains('shot'))return;var n=fin.length,t0=null;
+  setTimeout(function(){(function st(t){if(!t0)t0=t;var k=Math.min(1,(t-t0)/dur),out='';for(var i=0;i<n;i++){var c=fin[i];out+=(c===' '||i<k*n)?c:CH[(Math.random()*CH.length)|0]}el.textContent=out;if(k<1)requestAnimationFrame(st);else el.textContent=fin})(performance.now())},delay)}
+ var nm=document.querySelector('.nx-name');if(nm)scramble(nm,900,100);
+ document.querySelectorAll('.nh h1 .w>span').forEach(function(s,i){scramble(s,700,(h.classList.contains('intro-on')?1500:250)+i*70)});
+ var g=document.querySelector('.gauge .needle'),pr=document.querySelector('.nprog'),idle=-135,cur=-135;
+ function upd(){var p=Math.min(1,scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight));if(pr)pr.style.setProperty('--p',p.toFixed(4));
+  if(g){var a=-135+Math.min(1,scrollY/700)*200+Math.sin(Date.now()/380)*3;g.parentNode.style.setProperty('--na',a.toFixed(1)+'deg')}}
+ if(!red&&!h.classList.contains('shot')){setTimeout(function(){if(g){g.parentNode.style.setProperty('--na','90deg');setTimeout(upd,650)}},1300);addEventListener('scroll',upd,{passive:true});setInterval(function(){if(scrollY<800)upd()},420)}
+ else if(g){g.parentNode.style.setProperty('--na','-60deg')}
+})();
+</script>

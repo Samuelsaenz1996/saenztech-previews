@@ -9,7 +9,7 @@
 
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="arch-fiesta">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -327,6 +327,7 @@ html.shot h1 .w>span{transform:none;transition:none}html.shot .visual .ph,html.s
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}
  .fe,.float,.rv,.eyebrow,.lead,.hero .ctas,.hero .rating,.sub-hero p,.crumb,h1 .w>span{opacity:1!important;transform:none!important}.visual .ph,.visual .art{clip-path:none!important}.intro{display:none}}
 
+
 [data-en]{display:none!important}
 html[lang=en] [data-es]{display:none!important}
 html[lang=en] [data-en]{display:revert!important}
@@ -449,5 +450,6 @@ html[lang=en] [data-en]{display:revert!important}
  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(frame)}},{passive:true});addEventListener('resize',frame);frame();
 })();
 </script>
+
 </body>
 </html>
