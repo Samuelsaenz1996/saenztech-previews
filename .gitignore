@@ -1,3 +1,4 @@
 node_modules/
 *.json.tmp
 previews/*/shots/
+__pycache__/
