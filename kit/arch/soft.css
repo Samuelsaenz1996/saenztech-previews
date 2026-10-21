@@ -45,7 +45,7 @@ html.go .sf-pic{opacity:1;transform:none;transition:opacity .5s .5s,transform 1s
 .arch-soft .card-i:nth-child(4n+1){background:color-mix(in srgb,var(--accent) 14%,var(--card))}.arch-soft .card-i:nth-child(4n+2){background:color-mix(in srgb,var(--accent2) 30%,var(--card))}.arch-soft .card-i:nth-child(4n+3){background:color-mix(in srgb,var(--accent3) 26%,var(--card))}.arch-soft .card-i:nth-child(4n){background:color-mix(in srgb,var(--accent4) 26%,var(--card))}
 .arch-soft .card-i.rv.in:hover{transform:translateY(-8px) rotate(-1.5deg)}
 .arch-soft .rv{transform:translateY(60px) scale(.8)}
-.arch-soft .rv.in{transition:opacity .6s,transform .9s cubic-bezier(.3,1.6,.5,1)}
+.arch-soft .rv.in{opacity:1;transform:none;transition:opacity .6s,transform .9s cubic-bezier(.3,1.6,.5,1)}
 .arch-soft .marq{background:var(--accent);border-radius:0;box-shadow:none}
 .arch-soft .marq.alt{background:var(--accent2);color:var(--ink)}
 .arch-soft .mq b{text-transform:none}

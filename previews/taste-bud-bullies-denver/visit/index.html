@@ -25,11 +25,11 @@
 <meta property="og:image" content="https://samuelsaenz1996.github.io/saenztech-previews/previews/taste-bud-bullies-denver/preview.png">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-@font-face{font-family:"Caveat";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/caveat-latin-600-normal.woff2) format("woff2")}
-@font-face{font-family:"Caveat";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/caveat-latin-700-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-400-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-500-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Caveat";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/caveat-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Caveat";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/caveat-latin-700-normal.woff2) format("woff2")}
 @font-face{font-family:"Lobster";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/lobster-latin-400-normal.woff2) format("woff2")}
 :root{ --bg:#2A231D;--card:#342B24;--ink:#F4EEE4;--muted:#C3B8A8;--line:#57493D;--accent:#A3D977;--accent-dark:#7FB052;--accent2:#F7C873;--accent3:#F4A3B4;--accent4:#A3D977;--band:#1C1713;--ph1:#57493D;--ph2:#57493D;--ph3:#C3B8A8;--ph-ink:#C3B8A8;--star:#F7C873;--r:10px;--shadow:0 1px 2px rgba(20,16,12,.06),0 8px 28px rgba(20,16,12,.08)}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -526,8 +526,10 @@ html[lang=es] [data-es]{display:revert!important}
  var sel='.sec-head,.card-i,.hl,.row,.info>.card,.info>.mapbox,.info>.about,.chip,.grid-g .ph,.gal .ph,.cta-box,.menu-group h3,.band h2';
  var els=document.querySelectorAll(sel);
  els.forEach(function(e){e.classList.add('rv');var sib=[].filter.call(e.parentNode.children,function(x){return x.matches(sel)});e.style.setProperty('--rd',(sib.indexOf(e)%6*0.09)+'s')});
- if('IntersectionObserver' in window&&!h.classList.contains('shot')){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})}
- else els.forEach(function(e){e.classList.add('in')});
+ var pend=[].slice.call(els);
+ function rvCheck(){if(!pend.length)return;var lim=innerHeight*.94;pend=pend.filter(function(e){var r=e.getBoundingClientRect();if(r.top<lim&&r.bottom>-50){e.classList.add('in');return false}if(r.bottom<=-50){e.classList.add('in');return false}return true})}
+ if(h.classList.contains('shot'))els.forEach(function(e){e.classList.add('in')});
+ else{var rvT=false;addEventListener('scroll',function(){if(!rvT){rvT=true;requestAnimationFrame(function(){rvT=false;rvCheck()})}},{passive:true});addEventListener('resize',rvCheck);setTimeout(rvCheck,80);setTimeout(rvCheck,1400);var rvI=setInterval(function(){rvCheck();if(!pend.length)clearInterval(rvI)},700)}
  // count up
  document.querySelectorAll('.cnt').forEach(function(c){var to=parseFloat(c.dataset.to),dec=(c.dataset.to.split('.')[1]||'').length;if(h.classList.contains('shot')||red)return;c.textContent=(0).toFixed(dec);setTimeout(function(){var t0=performance.now();(function st(t){var k=Math.min(1,(t-t0)/1200),e=1-Math.pow(1-k,3);c.textContent=(to*e).toFixed(dec);if(k<1)requestAnimationFrame(st)})(t0)},1500)});
  // card tilt

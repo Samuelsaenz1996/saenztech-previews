@@ -25,10 +25,10 @@
 <meta property="og:image" content="https://samuelsaenz1996.github.io/saenztech-previews/previews/tacos-los-viejones-thornton/preview.png">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-@font-face{font-family:"Anton";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/anton-latin-400-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-400-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-500-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Anton";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/anton-latin-400-normal.woff2) format("woff2")}
 :root{ --bg:#FFF1DC;--card:#FFFFFF;--ink:#1A1208;--muted:#5C4A36;--line:#1A1208;--accent:#C2410C;--accent-dark:#8A2E09;--accent2:#FFC93C;--accent3:#2F7D4F;--accent4:#C2410C;--band:#1A1208;--ph1:#1A1208;--ph2:#1A1208;--ph3:#5C4A36;--ph-ink:#5C4A36;--star:#FFC93C;--r:10px;--shadow:0 1px 2px rgba(20,16,12,.06),0 8px 28px rgba(20,16,12,.08)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -369,7 +369,7 @@ html.go .pz-pic{opacity:1;transform:rotate(-2.5deg);transition:transform .9s cub
 .arch-poster .card-i .num{border-radius:0;background:var(--ink);color:var(--bg)}
 .arch-poster .card-i p{color:var(--ink);opacity:.8}
 .arch-poster .rv{transform:translateY(50px) rotate(-4deg) scale(.92)}
-.arch-poster .rv.in{transition-timing-function:cubic-bezier(.3,1.4,.5,1)}
+.arch-poster .rv.in{opacity:1;transform:none;transition-timing-function:cubic-bezier(.3,1.4,.5,1)}
 .arch-poster .sec-head h2{font-size:clamp(40px,7vw,76px);line-height:.9}
 .arch-poster .kicker{background:var(--ink);color:var(--bg);padding:4px 10px}
 .arch-poster .band{background:var(--accent);border-block:3px solid var(--ink)}
@@ -581,8 +581,10 @@ html[lang=en] [data-en]{display:revert!important}
  var sel='.sec-head,.card-i,.hl,.row,.info>.card,.info>.mapbox,.info>.about,.chip,.grid-g .ph,.gal .ph,.cta-box,.menu-group h3,.band h2';
  var els=document.querySelectorAll(sel);
  els.forEach(function(e){e.classList.add('rv');var sib=[].filter.call(e.parentNode.children,function(x){return x.matches(sel)});e.style.setProperty('--rd',(sib.indexOf(e)%6*0.09)+'s')});
- if('IntersectionObserver' in window&&!h.classList.contains('shot')){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})}
- else els.forEach(function(e){e.classList.add('in')});
+ var pend=[].slice.call(els);
+ function rvCheck(){if(!pend.length)return;var lim=innerHeight*.94;pend=pend.filter(function(e){var r=e.getBoundingClientRect();if(r.top<lim&&r.bottom>-50){e.classList.add('in');return false}if(r.bottom<=-50){e.classList.add('in');return false}return true})}
+ if(h.classList.contains('shot'))els.forEach(function(e){e.classList.add('in')});
+ else{var rvT=false;addEventListener('scroll',function(){if(!rvT){rvT=true;requestAnimationFrame(function(){rvT=false;rvCheck()})}},{passive:true});addEventListener('resize',rvCheck);setTimeout(rvCheck,80);setTimeout(rvCheck,1400);var rvI=setInterval(function(){rvCheck();if(!pend.length)clearInterval(rvI)},700)}
  // count up
  document.querySelectorAll('.cnt').forEach(function(c){var to=parseFloat(c.dataset.to),dec=(c.dataset.to.split('.')[1]||'').length;if(h.classList.contains('shot')||red)return;c.textContent=(0).toFixed(dec);setTimeout(function(){var t0=performance.now();(function st(t){var k=Math.min(1,(t-t0)/1200),e=1-Math.pow(1-k,3);c.textContent=(to*e).toFixed(dec);if(k<1)requestAnimationFrame(st)})(t0)},1500)});
  // card tilt
@@ -600,6 +602,6 @@ html[lang=en] [data-en]{display:revert!important}
  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(frame)}},{passive:true});addEventListener('resize',frame);frame();
 })();
 </script>
-<script>(function(){var h=document.documentElement;if(h.classList.contains('shot'))return;var ps=[].slice.call(document.querySelectorAll('[data-par]'));if(!ps.length)return;function u(){ps.forEach(function(e){e.style.translate='0 '+(scrollY*parseFloat(e.dataset.par)).toFixed(1)+'px'})}addEventListener('scroll',u,{passive:true});u()})();</script>
+<script>(function(){var h=document.documentElement;if(h.classList.contains('shot')||innerWidth<900)return;var ps=[].slice.call(document.querySelectorAll('[data-par]'));if(!ps.length)return;function u(){ps.forEach(function(e){e.style.translate='0 '+(scrollY*parseFloat(e.dataset.par)).toFixed(1)+'px'})}addEventListener('scroll',u,{passive:true});u()})();</script>
 </body>
 </html>

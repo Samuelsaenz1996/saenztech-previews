@@ -40,7 +40,7 @@ html.go .pz-pic{opacity:1;transform:rotate(-2.5deg);transition:transform .9s cub
 .arch-poster .card-i .num{border-radius:0;background:var(--ink);color:var(--bg)}
 .arch-poster .card-i p{color:var(--ink);opacity:.8}
 .arch-poster .rv{transform:translateY(50px) rotate(-4deg) scale(.92)}
-.arch-poster .rv.in{transition-timing-function:cubic-bezier(.3,1.4,.5,1)}
+.arch-poster .rv.in{opacity:1;transform:none;transition-timing-function:cubic-bezier(.3,1.4,.5,1)}
 .arch-poster .sec-head h2{font-size:clamp(40px,7vw,76px);line-height:.9}
 .arch-poster .kicker{background:var(--ink);color:var(--bg);padding:4px 10px}
 .arch-poster .band{background:var(--accent);border-block:3px solid var(--ink)}

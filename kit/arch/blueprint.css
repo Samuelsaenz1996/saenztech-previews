@@ -60,7 +60,7 @@ html.go .co b{animation:pop .5s cubic-bezier(.3,1.4,.5,1) calc(var(--cd) + .15s)
 .arch-blueprint .cta-box{background:var(--ink);background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:24px 24px}
 .arch-blueprint .cta-box::after{border-radius:0;background:transparent;border:2px solid var(--accent);transform:rotate(45deg);opacity:.6}
 .arch-blueprint footer{background:var(--ink)}
-.arch-blueprint .rv{transform:translateY(20px)}
+.arch-blueprint .rv{transform:translateY(20px)}.arch-blueprint .rv.in{opacity:1;transform:none}
 /* ruler */
 .bp-ruler{padding:36px 0 14px}
 .rl{position:relative;height:34px;border-bottom:1.5px solid var(--ink);background:linear-gradient(90deg,var(--ink) 1px,transparent 1px) left bottom/12px 8px repeat-x,linear-gradient(90deg,var(--ink) 1.5px,transparent 1.5px) left bottom/60px 16px repeat-x}

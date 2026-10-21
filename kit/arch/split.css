@@ -32,7 +32,7 @@ html.go .sp-t>*:nth-child(1){transition-delay:.7s}html.go .sp-t>*:nth-child(2){t
 .arch-split .card-i{border-radius:22px}
 .arch-split .card-i.rv.in:hover{transform:translateY(-6px)}
 .arch-split .rv{transform:translateX(var(--sx,40px))}
-.arch-split .rv:nth-child(odd){--sx:-40px}
+.arch-split .rv:nth-child(odd){--sx:-40px}.arch-split .rv.in{opacity:1;transform:none}
 .arch-split .marqs{display:none}
 .arch-split .band{background:var(--ink)}
 .arch-split .band::before{background:var(--accent);opacity:.25;filter:blur(30px)}

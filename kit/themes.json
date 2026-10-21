@@ -219,35 +219,14 @@
     "en": "The menu"
    },
    "items_note": {
-    "es": "Lo que más recomiendan sus clientes. Los precios y el resto del menú se agregan con ustedes.",
-    "en": "Customer favorites. Prices and the full menu get added with you."
+    "es": "Los favoritos de la casa.",
+    "en": "House favorites."
    },
    "photo": {
     "es": "Aquí va la foto de su comida",
     "en": "Your food photo goes here"
    },
-   "placeholders": [
-    {
-     "name": {
-      "es": "Su especialidad",
-      "en": "Your specialty"
-     },
-     "desc": {
-      "es": "Agreguen aquí otro platillo.",
-      "en": "Add another dish here."
-     }
-    },
-    {
-     "name": {
-      "es": "Bebidas",
-      "en": "Drinks"
-     },
-     "desc": {
-      "es": "Aguas frescas, refrescos y más.",
-      "en": "Aguas frescas, sodas and more."
-     }
-    }
-   ],
+   "placeholders": [],
    "items_nav": {
     "es": "Menú",
     "en": "Menu"
@@ -286,7 +265,8 @@
    "accent3": "#15803D",
    "accent4": "#1E3A8A",
    "band": "#1E3A8A"
-  }
+  },
+  "labels": {}
  },
  "salon": {
   "head_font": "Fraunces",
@@ -323,25 +303,14 @@
     "en": "Services"
    },
    "items_note": {
-    "es": "Su menú de servicios, con enlace directo para reservar.",
-    "en": "Your service menu, with a direct link to book."
+    "es": "Servicios y especialidades.",
+    "en": "Services and specialties."
    },
    "photo": {
     "es": "Aquí va una foto de su trabajo",
     "en": "A photo of your work goes here"
    },
-   "placeholders": [
-    {
-     "name": {
-      "es": "Otro servicio",
-      "en": "Another service"
-     },
-     "desc": {
-      "es": "Agreguen aquí otro servicio.",
-      "en": "Add another service here."
-     }
-    }
-   ],
+   "placeholders": [],
    "items_nav": {
     "es": "Servicios",
     "en": "Services"
@@ -399,8 +368,8 @@
     "en": "Services"
    },
    "items_note": {
-    "es": "Lo que hacen, explicado claro. Cada servicio puede llevar fotos de antes y después.",
-    "en": "What you do, explained clearly. Each service can show before-and-after photos."
+    "es": "Lo que hacemos.",
+    "en": "What we do."
    },
    "photo": {
     "es": "Aquí va una foto de un trabajo terminado",
@@ -410,18 +379,7 @@
     "es": "Pedir cotización",
     "en": "Request a quote"
    },
-   "placeholders": [
-    {
-     "name": {
-      "es": "Otro servicio",
-      "en": "Another service"
-     },
-     "desc": {
-      "es": "Agreguen aquí otro servicio.",
-      "en": "Add another service here."
-     }
-    }
-   ],
+   "placeholders": [],
    "items_nav": {
     "es": "Servicios",
     "en": "Services"
@@ -483,8 +441,8 @@
     "en": "Packages & services"
    },
    "items_note": {
-    "es": "Sus paquetes con fotos de eventos reales y un botón para cotizar.",
-    "en": "Your packages with real event photos and a quote button."
+    "es": "Lo que hacemos.",
+    "en": "What we do."
    },
    "photo": {
     "es": "Aquí va una foto de uno de sus eventos",
@@ -494,18 +452,7 @@
     "es": "Pedir cotización",
     "en": "Get a quote"
    },
-   "placeholders": [
-    {
-     "name": {
-      "es": "Otro paquete",
-      "en": "Another package"
-     },
-     "desc": {
-      "es": "Agreguen aquí otro paquete.",
-      "en": "Add another package here."
-     }
-    }
-   ],
+   "placeholders": [],
    "items_nav": {
     "es": "Paquetes",
     "en": "Packages"
@@ -567,8 +514,8 @@
     "en": "Services"
    },
    "items_note": {
-    "es": "Lo que ofrecen, en un lugar claro y en los dos idiomas.",
-    "en": "What you offer, in one clear place and in both languages."
+    "es": "Lo que hacemos.",
+    "en": "What we do."
    },
    "photo": {
     "es": "Aquí va una foto de su oficina o equipo",
@@ -578,18 +525,7 @@
     "es": "Agendar cita",
     "en": "Book an appointment"
    },
-   "placeholders": [
-    {
-     "name": {
-      "es": "Otro servicio",
-      "en": "Another service"
-     },
-     "desc": {
-      "es": "Agreguen aquí otro servicio.",
-      "en": "Add another service here."
-     }
-    }
-   ],
+   "placeholders": [],
    "items_nav": {
     "es": "Servicios",
     "en": "Services"

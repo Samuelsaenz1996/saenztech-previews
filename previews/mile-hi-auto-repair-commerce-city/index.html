@@ -25,11 +25,11 @@
 <meta property="og:image" content="https://samuelsaenz1996.github.io/saenztech-previews/previews/mile-hi-auto-repair-commerce-city/preview.png">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-@font-face{font-family:"Space Grotesk";font-weight:500;font-style:normal;font-display:swap;src:url(fonts/space-grotesk-latin-500-normal.woff2) format("woff2")}
-@font-face{font-family:"Space Grotesk";font-weight:700;font-style:normal;font-display:swap;src:url(fonts/space-grotesk-latin-700-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:400;font-style:normal;font-display:swap;src:url(fonts/inter-latin-400-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:500;font-style:normal;font-display:swap;src:url(fonts/inter-latin-500-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:600;font-style:normal;font-display:swap;src:url(fonts/inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Space Grotesk";font-weight:500;font-style:normal;font-display:swap;src:url(fonts/space-grotesk-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Space Grotesk";font-weight:700;font-style:normal;font-display:swap;src:url(fonts/space-grotesk-latin-700-normal.woff2) format("woff2")}
 :root{ --bg:#E8EEF4;--card:#F7FAFC;--ink:#0F2438;--muted:#4C6278;--line:#BFCCD9;--accent:#1F5FAE;--accent-dark:#15457F;--accent2:#F2A900;--accent3:#1F6F4A;--accent4:#1F5FAE;--band:#0F2438;--ph1:#DCE5EE;--ph2:#CFDAE5;--ph3:#A9B8C8;--ph-ink:#4C6278;--star:#F2A900;--r:2px;--shadow:0 1px 2px rgba(20,16,12,.06),0 8px 28px rgba(20,16,12,.08)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -390,7 +390,7 @@ html.go .co b{animation:pop .5s cubic-bezier(.3,1.4,.5,1) calc(var(--cd) + .15s)
 .arch-blueprint .cta-box{background:var(--ink);background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:24px 24px}
 .arch-blueprint .cta-box::after{border-radius:0;background:transparent;border:2px solid var(--accent);transform:rotate(45deg);opacity:.6}
 .arch-blueprint footer{background:var(--ink)}
-.arch-blueprint .rv{transform:translateY(20px)}
+.arch-blueprint .rv{transform:translateY(20px)}.arch-blueprint .rv.in{opacity:1;transform:none}
 /* ruler */
 .bp-ruler{padding:36px 0 14px}
 .rl{position:relative;height:34px;border-bottom:1.5px solid var(--ink);background:linear-gradient(90deg,var(--ink) 1px,transparent 1px) left bottom/12px 8px repeat-x,linear-gradient(90deg,var(--ink) 1.5px,transparent 1.5px) left bottom/60px 16px repeat-x}
@@ -608,8 +608,10 @@ html[lang=es] [data-es]{display:revert!important}
  var sel='.sec-head,.card-i,.hl,.row,.info>.card,.info>.mapbox,.info>.about,.chip,.grid-g .ph,.gal .ph,.cta-box,.menu-group h3,.band h2';
  var els=document.querySelectorAll(sel);
  els.forEach(function(e){e.classList.add('rv');var sib=[].filter.call(e.parentNode.children,function(x){return x.matches(sel)});e.style.setProperty('--rd',(sib.indexOf(e)%6*0.09)+'s')});
- if('IntersectionObserver' in window&&!h.classList.contains('shot')){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})}
- else els.forEach(function(e){e.classList.add('in')});
+ var pend=[].slice.call(els);
+ function rvCheck(){if(!pend.length)return;var lim=innerHeight*.94;pend=pend.filter(function(e){var r=e.getBoundingClientRect();if(r.top<lim&&r.bottom>-50){e.classList.add('in');return false}if(r.bottom<=-50){e.classList.add('in');return false}return true})}
+ if(h.classList.contains('shot'))els.forEach(function(e){e.classList.add('in')});
+ else{var rvT=false;addEventListener('scroll',function(){if(!rvT){rvT=true;requestAnimationFrame(function(){rvT=false;rvCheck()})}},{passive:true});addEventListener('resize',rvCheck);setTimeout(rvCheck,80);setTimeout(rvCheck,1400);var rvI=setInterval(function(){rvCheck();if(!pend.length)clearInterval(rvI)},700)}
  // count up
  document.querySelectorAll('.cnt').forEach(function(c){var to=parseFloat(c.dataset.to),dec=(c.dataset.to.split('.')[1]||'').length;if(h.classList.contains('shot')||red)return;c.textContent=(0).toFixed(dec);setTimeout(function(){var t0=performance.now();(function st(t){var k=Math.min(1,(t-t0)/1200),e=1-Math.pow(1-k,3);c.textContent=(to*e).toFixed(dec);if(k<1)requestAnimationFrame(st)})(t0)},1500)});
  // card tilt

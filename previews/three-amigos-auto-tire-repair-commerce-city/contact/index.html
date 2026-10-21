@@ -25,13 +25,13 @@
 <meta property="og:image" content="https://samuelsaenz1996.github.io/saenztech-previews/previews/three-amigos-auto-tire-repair-commerce-city/preview.png">
 <meta name="twitter:card" content="summary_large_image">
 <style>
+@font-face{font-family:"Inter";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-600-normal.woff2) format("woff2")}
 @font-face{font-family:"Outfit";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/outfit-latin-400-normal.woff2) format("woff2")}
 @font-face{font-family:"Outfit";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/outfit-latin-500-normal.woff2) format("woff2")}
 @font-face{font-family:"Outfit";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/outfit-latin-600-normal.woff2) format("woff2")}
 @font-face{font-family:"Outfit";font-weight:800;font-style:normal;font-display:swap;src:url(../fonts/outfit-latin-800-normal.woff2) format("woff2")}
-@font-face{font-family:"Inter";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-400-normal.woff2) format("woff2")}
-@font-face{font-family:"Inter";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-500-normal.woff2) format("woff2")}
-@font-face{font-family:"Inter";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-600-normal.woff2) format("woff2")}
 :root{ --bg:#EEF4EE;--card:#FFFFFF;--ink:#142016;--muted:#536455;--line:#D3DFD4;--accent:#2E7D32;--accent-dark:#1F5A23;--accent2:#F2C14E;--accent3:#A5D6A7;--accent4:#2E7D32;--band:#142016;--ph1:#D3DFD4;--ph2:#D3DFD4;--ph3:#536455;--ph-ink:#536455;--star:#F2C14E;--r:18px;--shadow:0 1px 2px rgba(20,16,12,.06),0 8px 28px rgba(20,16,12,.08)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -364,7 +364,7 @@ html.go .sp-t>*:nth-child(1){transition-delay:.7s}html.go .sp-t>*:nth-child(2){t
 .arch-split .card-i{border-radius:22px}
 .arch-split .card-i.rv.in:hover{transform:translateY(-6px)}
 .arch-split .rv{transform:translateX(var(--sx,40px))}
-.arch-split .rv:nth-child(odd){--sx:-40px}
+.arch-split .rv:nth-child(odd){--sx:-40px}.arch-split .rv.in{opacity:1;transform:none}
 .arch-split .marqs{display:none}
 .arch-split .band{background:var(--ink)}
 .arch-split .band::before{background:var(--accent);opacity:.25;filter:blur(30px)}
@@ -531,8 +531,10 @@ html[lang=en] [data-en]{display:revert!important}
  var sel='.sec-head,.card-i,.hl,.row,.info>.card,.info>.mapbox,.info>.about,.chip,.grid-g .ph,.gal .ph,.cta-box,.menu-group h3,.band h2';
  var els=document.querySelectorAll(sel);
  els.forEach(function(e){e.classList.add('rv');var sib=[].filter.call(e.parentNode.children,function(x){return x.matches(sel)});e.style.setProperty('--rd',(sib.indexOf(e)%6*0.09)+'s')});
- if('IntersectionObserver' in window&&!h.classList.contains('shot')){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})}
- else els.forEach(function(e){e.classList.add('in')});
+ var pend=[].slice.call(els);
+ function rvCheck(){if(!pend.length)return;var lim=innerHeight*.94;pend=pend.filter(function(e){var r=e.getBoundingClientRect();if(r.top<lim&&r.bottom>-50){e.classList.add('in');return false}if(r.bottom<=-50){e.classList.add('in');return false}return true})}
+ if(h.classList.contains('shot'))els.forEach(function(e){e.classList.add('in')});
+ else{var rvT=false;addEventListener('scroll',function(){if(!rvT){rvT=true;requestAnimationFrame(function(){rvT=false;rvCheck()})}},{passive:true});addEventListener('resize',rvCheck);setTimeout(rvCheck,80);setTimeout(rvCheck,1400);var rvI=setInterval(function(){rvCheck();if(!pend.length)clearInterval(rvI)},700)}
  // count up
  document.querySelectorAll('.cnt').forEach(function(c){var to=parseFloat(c.dataset.to),dec=(c.dataset.to.split('.')[1]||'').length;if(h.classList.contains('shot')||red)return;c.textContent=(0).toFixed(dec);setTimeout(function(){var t0=performance.now();(function st(t){var k=Math.min(1,(t-t0)/1200),e=1-Math.pow(1-k,3);c.textContent=(to*e).toFixed(dec);if(k<1)requestAnimationFrame(st)})(t0)},1500)});
  // card tilt
@@ -550,6 +552,6 @@ html[lang=en] [data-en]{display:revert!important}
  addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(frame)}},{passive:true});addEventListener('resize',frame);frame();
 })();
 </script>
-<script>(function(){var h=document.documentElement;if(h.classList.contains('shot'))return;var ps=[].slice.call(document.querySelectorAll('[data-par]'));function u(){ps.forEach(function(e){e.style.translate='0 '+(scrollY*parseFloat(e.dataset.par)).toFixed(1)+'px'})}addEventListener('scroll',u,{passive:true});u()})();</script>
+<script>(function(){var h=document.documentElement;if(h.classList.contains('shot')||innerWidth<900)return;var ps=[].slice.call(document.querySelectorAll('[data-par]'));function u(){ps.forEach(function(e){e.style.translate='0 '+(scrollY*parseFloat(e.dataset.par)).toFixed(1)+'px'})}addEventListener('scroll',u,{passive:true});u()})();</script>
 </body>
 </html>

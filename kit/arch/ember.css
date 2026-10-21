@@ -29,7 +29,7 @@ html.go .em-bg .ph img{transform:scale(1.02)}
 .arch-ember .card-i{transition:transform .5s,box-shadow .5s}
 .arch-ember .card-i.rv.in:hover{transform:translateY(-6px);box-shadow:0 20px 50px color-mix(in srgb,var(--accent) 28%,transparent),0 0 0 1px var(--accent)}
 .arch-ember .rv{transform:translateY(40px);filter:brightness(2) blur(4px)}
-.arch-ember .rv.in{filter:none;transition:opacity .9s,transform 1s cubic-bezier(.2,.9,.2,1),filter 1.2s}
+.arch-ember .rv.in{opacity:1;transform:none;filter:none;transition:opacity .9s,transform 1s cubic-bezier(.2,.9,.2,1),filter 1.2s}
 .arch-ember .marq{background:transparent;border-block:1px solid var(--line);transform:none;margin:0;box-shadow:none}
 .arch-ember .marq.alt{display:none}
 .arch-ember .mq b{background:linear-gradient(90deg,var(--accent2),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}

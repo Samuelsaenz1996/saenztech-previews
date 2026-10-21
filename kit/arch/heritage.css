@@ -51,7 +51,7 @@ html.go .hz-pic{opacity:1;transform:none;transition:opacity .6s .7s,transform 1s
 .arch-heritage .mq b.o{color:var(--accent2);-webkit-text-stroke:0}
 .arch-heritage .mq i{font-size:0;animation:none;width:auto;height:auto}.arch-heritage .mq i::before{content:"✦";font-size:20px;color:var(--accent2)}
 .arch-heritage .rv{opacity:0;transform:scale(1.12) rotate(-2deg)}
-.arch-heritage .rv.in{transition:opacity .4s,transform .6s cubic-bezier(.3,1.4,.5,1)}
+.arch-heritage .rv.in{opacity:1;transform:none;transition:opacity .4s,transform .6s cubic-bezier(.3,1.4,.5,1)}
 .arch-heritage .band{background:var(--accent);border-block:2px solid var(--ink)}
 .arch-heritage .band::before{border-radius:50%;background:transparent;border:3px double rgba(255,255,255,.4)}
 .arch-heritage .chip{border-radius:2px;background:rgba(255,255,255,.12)}

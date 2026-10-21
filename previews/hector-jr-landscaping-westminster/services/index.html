@@ -25,11 +25,11 @@
 <meta property="og:image" content="https://samuelsaenz1996.github.io/saenztech-previews/previews/hector-jr-landscaping-westminster/preview.png">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-@font-face{font-family:"Fraunces";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/fraunces-latin-600-normal.woff2) format("woff2")}
-@font-face{font-family:"Fraunces";font-weight:600;font-style:italic;font-display:swap;src:url(../fonts/fraunces-latin-600-italic.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-400-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-500-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/fraunces-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-weight:600;font-style:italic;font-display:swap;src:url(../fonts/fraunces-latin-600-italic.woff2) format("woff2")}
 :root{ --bg:#F1F0E8;--card:#FAF9F4;--ink:#1F2A1F;--muted:#5E6B5C;--line:#D8DCCB;--accent:#3F6212;--accent-dark:#2D470C;--accent2:#D8B45A;--accent3:#8FB573;--accent4:#3F6212;--band:#1F2A1F;--ph1:#D8DCCB;--ph2:#D8DCCB;--ph3:#5E6B5C;--ph-ink:#5E6B5C;--star:#D8B45A;--r:8px;--shadow:0 1px 2px rgba(20,16,12,.06),0 8px 28px rgba(20,16,12,.08)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -362,7 +362,7 @@ html.go .bo-arch .ph img{transform:scale(1)}
 .arch-botanical .hl .ic,.arch-botanical .clist .ic,.arch-botanical .card-i .num{border-radius:50% 50% 50% 6px;background:color-mix(in srgb,var(--accent) 14%,var(--card))}
 .arch-botanical .card-i.rv.in:hover{transform:translateY(-6px)}
 .arch-botanical .rv{opacity:0;transform:translateY(30px);clip-path:inset(30% 0 0 0 round 22px)}
-.arch-botanical .rv.in{clip-path:inset(0 0 0 0 round 0);transition:opacity 1s,transform 1.2s cubic-bezier(.16,1,.3,1),clip-path 1.2s cubic-bezier(.16,1,.3,1)}
+.arch-botanical .rv.in{opacity:1;transform:none;clip-path:inset(0 0 0 0 round 0);transition:opacity 1s,transform 1.2s cubic-bezier(.16,1,.3,1),clip-path 1.2s cubic-bezier(.16,1,.3,1)}
 .arch-botanical .marq{background:var(--accent);transform:rotate(-1.2deg) skewX(var(--sk,0deg));box-shadow:none}
 .arch-botanical .marq.alt{display:none}
 .arch-botanical .mq b{font-family:"Fraunces",serif;text-transform:none;font-style:italic}
@@ -410,7 +410,7 @@ html[lang=es] [data-es]{display:revert!important}
 
 <main>
 
- <div class="sub-hero"><div class="wrap"><div class="crumb"><a href="../"><span data-es>Inicio</span><span data-en>Home</span></a> / <span data-es>Servicios</span><span data-en>Services</span></div><h1><span data-es>Servicios</span><span data-en>Services</span></h1><p><span data-es>Lo que hacen, explicado claro. Cada servicio puede llevar fotos de antes y después.</span><span data-en>What you do, explained clearly. Each service can show before-and-after photos.</span></p></div></div>
+ <div class="sub-hero"><div class="wrap"><div class="crumb"><a href="../"><span data-es>Inicio</span><span data-en>Home</span></a> / <span data-es>Servicios</span><span data-en>Services</span></div><h1><span data-es>Servicios</span><span data-en>Services</span></h1><p><span data-es>Lo que hacemos.</span><span data-en>What we do.</span></p></div></div>
  <section>
   <div class="wrap">
    
@@ -507,8 +507,10 @@ html[lang=es] [data-es]{display:revert!important}
  var sel='.sec-head,.card-i,.hl,.row,.info>.card,.info>.mapbox,.info>.about,.chip,.grid-g .ph,.gal .ph,.cta-box,.menu-group h3,.band h2';
  var els=document.querySelectorAll(sel);
  els.forEach(function(e){e.classList.add('rv');var sib=[].filter.call(e.parentNode.children,function(x){return x.matches(sel)});e.style.setProperty('--rd',(sib.indexOf(e)%6*0.09)+'s')});
- if('IntersectionObserver' in window&&!h.classList.contains('shot')){var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})}
- else els.forEach(function(e){e.classList.add('in')});
+ var pend=[].slice.call(els);
+ function rvCheck(){if(!pend.length)return;var lim=innerHeight*.94;pend=pend.filter(function(e){var r=e.getBoundingClientRect();if(r.top<lim&&r.bottom>-50){e.classList.add('in');return false}if(r.bottom<=-50){e.classList.add('in');return false}return true})}
+ if(h.classList.contains('shot'))els.forEach(function(e){e.classList.add('in')});
+ else{var rvT=false;addEventListener('scroll',function(){if(!rvT){rvT=true;requestAnimationFrame(function(){rvT=false;rvCheck()})}},{passive:true});addEventListener('resize',rvCheck);setTimeout(rvCheck,80);setTimeout(rvCheck,1400);var rvI=setInterval(function(){rvCheck();if(!pend.length)clearInterval(rvI)},700)}
  // count up
  document.querySelectorAll('.cnt').forEach(function(c){var to=parseFloat(c.dataset.to),dec=(c.dataset.to.split('.')[1]||'').length;if(h.classList.contains('shot')||red)return;c.textContent=(0).toFixed(dec);setTimeout(function(){var t0=performance.now();(function st(t){var k=Math.min(1,(t-t0)/1200),e=1-Math.pow(1-k,3);c.textContent=(to*e).toFixed(dec);if(k<1)requestAnimationFrame(st)})(t0)},1500)});
  // card tilt

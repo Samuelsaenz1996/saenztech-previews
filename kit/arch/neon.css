@@ -35,7 +35,7 @@ html.go .ne-pic{opacity:1;transform:none;transition:opacity 1s .6s,transform 1.2
 .arch-neon .hl .ic,.arch-neon .clist .ic,.arch-neon .card-i .num{background:transparent;border:1px solid var(--accent);color:var(--accent);box-shadow:0 0 10px color-mix(in srgb,var(--accent) 40%,transparent)}
 .arch-neon .card-i.rv.in:hover{box-shadow:0 0 0 1px var(--accent),0 0 30px color-mix(in srgb,var(--accent) 45%,transparent)}
 .arch-neon .rv{filter:blur(12px);transform:translateY(24px) scale(.98)}
-.arch-neon .rv.in{filter:none;transition:opacity .9s,transform .9s cubic-bezier(.2,.9,.2,1),filter .9s}
+.arch-neon .rv.in{opacity:1;transform:none;filter:none;transition:opacity .9s,transform .9s cubic-bezier(.2,.9,.2,1),filter .9s}
 .arch-neon .marq{background:transparent;border-block:1px solid var(--line);color:var(--ink);box-shadow:none}
 .arch-neon .marq.alt{display:none}
 .arch-neon .mq b{color:transparent;-webkit-text-stroke:1.2px var(--accent2);text-shadow:0 0 12px color-mix(in srgb,var(--accent2) 60%,transparent)}
