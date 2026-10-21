@@ -1,0 +1,7 @@
+.intro.ix-px{background:transparent}
+.px-g{position:absolute;inset:0;display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(12,1fr)}
+@media (min-width:700px){.px-g{grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(8,1fr)}}
+.px-g i{background:var(--accent)}
+.px-g i:nth-child(5n){background:var(--accent-dark)}
+.px-n{position:relative;font:{{ th.head_weight }} clamp(32px,7.5vw,84px)/1 "{{ th.head_font }}",sans-serif;color:#fff;text-align:center;padding:0 20px;animation:pop .5s ease .1s both}
+.intro.ix-px.out{transform:none}.intro.ix-px.out .px-g i{transform:scale(0);transition:transform .4s cubic-bezier(.7,0,.3,1) var(--d)}.intro.ix-px.out .px-n{opacity:0;transition:opacity .2s}

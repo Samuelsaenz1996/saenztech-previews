@@ -1,0 +1,14 @@
+.intro.ix-ld{background:#d9cdb4;color:#1a1612;overflow:hidden}
+.ld-grain{position:absolute;inset:-50%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");animation:ldg .2s steps(2) infinite;mix-blend-mode:multiply}
+@keyframes ldg{to{transform:translate(4%,-3%)}}
+.ld-c{position:absolute;width:min(70vmin,520px);opacity:.9}
+.ld-c circle,.ld-c path{fill:none;stroke:#1a1612;stroke-width:2}
+.ld-sweep{fill:rgba(26,22,18,.25)!important;stroke:none!important;transform-origin:100px 100px;animation:lds .7s linear 3}
+@keyframes lds{from{clip-path:polygon(50% 50%,50% 0,50% 0)}25%{clip-path:polygon(50% 50%,50% 0,100% 0,100% 50%)}50%{clip-path:polygon(50% 50%,50% 0,100% 0,100% 100%,50% 100%)}75%{clip-path:polygon(50% 50%,50% 0,100% 0,100% 100%,0 100%,0 50%)}to{clip-path:polygon(50% 50%,50% 0,100% 0,100% 100%,0 100%,0 0,50% 0)}}
+.ld-num{position:relative;width:200px;height:200px;font:700 clamp(90px,22vmin,160px)/1 "{{ th.head_font }}",serif}
+.ld-num span{position:absolute;inset:0;display:grid;place-items:center;opacity:0;animation:ldn .7s steps(1) forwards}
+.ld-num span:nth-child(1){animation-delay:0s}.ld-num span:nth-child(2){animation-delay:.7s}.ld-num span:nth-child(3){animation-delay:1.4s}
+@keyframes ldn{0%{opacity:1}99%{opacity:1}100%{opacity:0}}
+.ld-title{position:absolute;inset:0;display:grid;place-items:center;background:#0b0a09;color:#f3ead8;font:{{ th.head_weight }} clamp(30px,7vw,72px)/1 "{{ th.head_font }}",serif;letter-spacing:.06em;text-align:center;padding:0 20px;opacity:0;animation:ldtt .1s linear 2.1s forwards}
+@keyframes ldtt{to{opacity:1}}
+.intro.ix-ld.out{transform:none;opacity:0;transition:opacity .6s}

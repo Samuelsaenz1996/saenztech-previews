@@ -1,0 +1,11 @@
+<section class="zn wrap">
+ <div class="zn-circle" aria-hidden="true"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="88" pathLength="1"/></svg></div>
+ <div class="zn-in">
+  <span class="zn-tag">{{ L(b.subtitle) }}</span>
+  <h1 class="zn-h">{{ L(b.headline) }}</h1>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+ </div>
+ <div class="zn-img">{{ heroimg() }}</div>
+ {% if b.rating %}<p class="zn-r">{{ b.rating.value }} — {{ b.rating.count }} {{ t('reseñas','reviews') }}</p>{% endif %}
+</section>

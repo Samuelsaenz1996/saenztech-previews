@@ -1,0 +1,15 @@
+<section class="sk">
+ <div class="wrap sk-in">
+  <div class="sk-t">
+   <span class="sk-tag">{{ L(b.subtitle) }}</span>
+   <h1 class="sk-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+   {% if b.rating %}<p class="sk-r"><b>{{ b.rating.value }}</b> ★★★★★ <span>{{ b.rating.count }} {{ t('reseñas','reviews') }}</span></p>{% endif %}
+  </div>
+  <div class="sk-deck" aria-hidden="true">
+   {% set pics = ([hero_photo] if hero_photo else []) + gallery[:4] %}
+   {% for p in pics[:5] %}<div class="sk-card" style="--i:{{ loop.index0 }};--n:{{ pics[:5]|length }}"><img src="{{ root }}{{ p.path }}" alt="" loading="eager"></div>{% endfor %}
+  </div>
+ </div>
+</section>

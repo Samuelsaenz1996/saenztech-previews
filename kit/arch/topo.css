@@ -1,0 +1,25 @@
+.arch-topo .deco{display:none}
+.arch-topo .btn{border-radius:10px}.arch-topo .btn.primary{box-shadow:none}
+.tp{position:relative;overflow:hidden;padding:40px 0 60px;isolation:isolate}
+.tp-lines{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.tp-lines path{fill:none;stroke:var(--accent);stroke-width:1.2;opacity:.35;stroke-dasharray:1;stroke-dashoffset:1}
+html.go .tp-lines path{stroke-dashoffset:0;transition:stroke-dashoffset 2.4s cubic-bezier(.65,0,.35,1) calc(var(--k) * .08s)}
+.tp-pin{fill:var(--accent2);transform:scale(0);transform-origin:560px 250px;transform-box:view-box}html.go .tp-pin{transform:scale(1);transition:transform .6s cubic-bezier(.34,1.56,.64,1) 1.6s}
+.tp-ring{fill:none;stroke:var(--accent2);stroke-width:2;transform-origin:560px 250px;transform-box:view-box;opacity:0}html.go .tp-ring{animation:tpr 2.2s ease-out 2s infinite}
+@keyframes tpr{0%{transform:scale(1);opacity:.9}100%{transform:scale(6);opacity:0}}
+.tp-in{display:grid;gap:18px;max-width:760px}
+.tp-tag{font-size:12.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--accent)}
+.tp-h{font-size:clamp(44px,7vw,96px);line-height:.95;margin:0;letter-spacing:-.02em}
+.tp-h em{font-style:{{ th.em_style }};color:var(--accent)}
+.tp-meta{display:flex;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:14px}.tp-meta b{color:var(--ink)}
+.tp-img{margin-top:40px}.tp-img .ph,.tp-img .art{aspect-ratio:21/9;border-radius:var(--r,14px);clip-path:inset(0 100% 0 0 round 14px)}
+html.go .tp-img .ph,html.go .tp-img .art{clip-path:inset(0 0 0 0 round 14px);transition:clip-path 1.4s cubic-bezier(.7,0,.2,1) .4s}
+@media (max-width:700px){.tp-img .ph,.tp-img .art{aspect-ratio:4/3}}
+.arch-topo .card-i{border-radius:14px;border:1px solid var(--line)}
+.arch-topo .card-i.rv.in:hover{border-color:var(--accent);transform:translateY(-5px)}
+.arch-topo .marq{transform:none;margin:0;background:var(--accent);color:var(--bg)}.arch-topo .marq.alt{display:none}
+.arch-topo .mq i{font-size:0;animation:none;width:auto;height:auto}.arch-topo .mq i::before{content:"▲";font-size:14px}
+.arch-topo .band{background-image:repeating-radial-gradient(circle at 70% 40%,transparent 0 22px,color-mix(in srgb,var(--accent) 12%,transparent) 22px 23px)}
+.arch-topo .cta-box{border-radius:18px}
+.arch-topo .rv{transform:translateY(36px)}.arch-topo .rv.in{opacity:1;transform:none}
+html.shot .tp-lines path{stroke-dashoffset:0}html.shot .tp-pin{transform:scale(1)}html.shot .tp-img .ph,html.shot .tp-img .art{clip-path:inset(0 round 14px)}

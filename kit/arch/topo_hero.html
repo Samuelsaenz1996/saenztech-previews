@@ -1,0 +1,11 @@
+<section class="tp">
+ <svg class="tp-lines" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">{% for k in range(9) %}<path pathLength="1" style="--k:{{ k }}" d="M-50 {{ 80 + k*55 }} C 150 {{ 20 + k*55 }}, 260 {{ 160 + k*50 }}, 420 {{ 90 + k*55 }} S 700 {{ 30 + k*60 }}, 860 {{ 110 + k*52 }}"/>{% endfor %}<circle class="tp-pin" cx="560" cy="250" r="9"/><circle class="tp-ring" cx="560" cy="250" r="9"/></svg>
+ <div class="wrap tp-in">
+  <span class="tp-tag">{{ L(b.subtitle) }}</span>
+  <h1 class="tp-h">{{ L(b.headline) }}</h1>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  <div class="tp-meta">{% if b.rating %}<span><b>{{ b.rating.value }}★</b> {{ b.rating.count }} {{ t('reseñas','reviews') }}</span>{% endif %}{% if b.city %}<span>⌖ {{ b.city }}</span>{% endif %}</div>
+ </div>
+ <div class="wrap"><div class="tp-img">{{ heroimg() }}</div></div>
+</section>

@@ -1,0 +1,5 @@
+.intro.ix-ns{background:#07060b;background-image:radial-gradient(circle at 50% 50%,#1a1430,transparent 60%)}
+.nsx-b{border:3px solid var(--accent);border-radius:24px;padding:24px 34px;box-shadow:0 0 10px var(--accent),0 0 40px var(--accent),inset 0 0 20px color-mix(in srgb,var(--accent) 50%,transparent);animation:flk 1.4s linear both;max-width:90vw}
+.nsx-n{font:{{ th.head_weight }} clamp(28px,7vw,72px)/1.05 "{{ th.head_font }}",sans-serif;color:#fff;text-align:center;text-shadow:0 0 6px #fff,0 0 20px var(--accent),0 0 50px var(--accent)}
+@keyframes flk{0%,8%,14%,30%{opacity:.1}10%,22%,40%,100%{opacity:1}}
+.intro.ix-ns.out{transform:none;opacity:0;transition:opacity .6s}

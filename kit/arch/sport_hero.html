@@ -1,0 +1,15 @@
+<section class="spt">
+ <div class="spt-num" aria-hidden="true">{{ (b.short or b.business.split(' ')[0])|upper }}</div>
+ <div class="wrap spt-in">
+  <div class="spt-l">
+   <span class="spt-tag"><i></i>{{ L(b.subtitle) }}</span>
+   <h1 class="spt-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  </div>
+  <div class="spt-r"><div class="spt-img">{{ heroimg() }}</div>
+   {% if b.rating %}<div class="spt-stat"><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span></b><span>{{ t('CALIFICACIÓN','RATING') }}<br>{{ b.rating.count }} {{ t('reseñas','reviews') }}</span></div>{% endif %}
+  </div>
+ </div>
+ <div class="spt-stripes" aria-hidden="true"><i></i><i></i><i></i></div>
+</section>

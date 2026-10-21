@@ -1,0 +1,6 @@
+.intro.ix-cd{background:var(--bg);overflow:hidden;perspective:1200px}
+.cd-c{position:absolute;width:min(300px,62vw);aspect-ratio:3/4;border-radius:20px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.3);border:6px solid var(--card);transform:translateY(120vh) rotate(calc((var(--i) - 1.5) * 8deg));animation:cdin .6s cubic-bezier(.3,1.3,.5,1) calc(var(--i) * .15s) forwards}
+.cd-c img{width:100%;height:100%;object-fit:cover}
+@keyframes cdin{to{transform:rotate(calc((var(--i) - 1.5) * 8deg))}}
+.cd-n{position:relative;z-index:5;font:{{ th.head_weight }} clamp(32px,7vw,78px)/1 "{{ th.head_font }}",sans-serif;color:#fff;background:var(--accent);padding:12px 22px;border-radius:14px;transform:rotate(-3deg);animation:pop .5s cubic-bezier(.3,1.6,.5,1) .8s both;text-align:center;max-width:90vw}
+.intro.ix-cd.out{transform:none;background:transparent;transition:background .3s .4s}.intro.ix-cd.out .cd-c{transform:translate(calc((var(--i) - 1.5) * 60vw),-130vh) rotate(40deg);transition:transform .8s cubic-bezier(.6,0,.3,1) calc(var(--i) * .06s)}.intro.ix-cd.out .cd-n{transform:scale(0);transition:transform .3s}

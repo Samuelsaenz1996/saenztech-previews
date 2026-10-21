@@ -1,0 +1,28 @@
+.arch-console .deco{display:none}
+.arch-console body,.arch-console{font-feature-settings:"ss01"}
+.arch-console .btn{border-radius:6px;font-family:"{{ th.accent_font or th.head_font }}",monospace;font-size:13.5px}.arch-console .btn.primary{box-shadow:0 0 0 1px var(--accent),0 0 30px color-mix(in srgb,var(--accent) 40%,transparent)}
+.cs{display:grid;gap:22px;padding:30px 20px 60px}
+@media (min-width:900px){.cs{grid-template-columns:1.25fr .75fr;align-items:start}}
+.cs-win{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.4);transform:translateY(30px) scale(.97);opacity:0}
+html.go .cs-win{transform:none;opacity:1;transition:all .8s cubic-bezier(.16,1,.3,1)}
+.cs-bar{display:flex;gap:7px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--line);font:12px "{{ th.accent_font or th.head_font }}",monospace;color:var(--muted)}.cs-bar i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.cs-bar i:nth-child(2){background:#febc2e}.cs-bar i:nth-child(3){background:#28c840}.cs-bar span{margin-left:auto}
+.cs-body{padding:24px clamp(18px,3vw,34px) 30px;display:grid;gap:16px}
+.cs-ln{font:14px "{{ th.accent_font or th.head_font }}",monospace;color:var(--muted);margin:0}.cs-ln b{color:var(--accent)}
+.cs-cur::after{content:"▋";color:var(--accent);animation:csb 1s steps(1) infinite;margin-left:3px}@keyframes csb{50%{opacity:0}}
+.cs-tag{font:13px "{{ th.accent_font or th.head_font }}",monospace;color:var(--accent2)}
+.cs-h{font-size:clamp(36px,5.6vw,72px);line-height:1;margin:0;letter-spacing:-.03em}
+.cs-h em{font-style:normal;color:var(--accent);text-shadow:0 0 30px color-mix(in srgb,var(--accent) 50%,transparent)}
+.cs-side{display:grid;gap:16px}
+.cs-img .ph,.cs-img .art{border-radius:12px;border:1px solid var(--line);aspect-ratio:1}
+.cs-img .ph img{filter:saturate(.9) contrast(1.1)}
+.cs-stat{border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:4px;font:12px "{{ th.accent_font or th.head_font }}",monospace;color:var(--muted)}.cs-stat b{font-size:44px;color:var(--accent);font-family:"{{ th.head_font }}"}
+.arch-console .card-i,.arch-console .hl,.arch-console .card,.arch-console .row{border-radius:10px;border:1px solid var(--line);background:var(--card)}
+.arch-console .card-i.rv.in:hover{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),0 20px 50px color-mix(in srgb,var(--accent) 18%,transparent)}
+.arch-console .kicker{font-family:"{{ th.accent_font or th.head_font }}",monospace}.arch-console .kicker::before{content:"// "}
+.arch-console .marq{transform:none;margin:0;background:var(--card);color:var(--accent);border-block:1px solid var(--line)}.arch-console .marq.alt{display:none}
+.arch-console .mq b{font-family:"{{ th.accent_font or th.head_font }}",monospace;font-weight:500}.arch-console .mq b.o{color:var(--ink);-webkit-text-stroke:0}
+.arch-console .mq i{font-size:0;animation:none;width:auto;height:auto}.arch-console .mq i::before{content:"/";font-size:24px;color:var(--muted)}
+.arch-console .band{background:var(--card)}.arch-console .band::before{display:none}
+.arch-console .cta-box{border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-dark))}.arch-console .cta-box::after{display:none}
+.arch-console .rv{transform:translateY(20px)}.arch-console .rv.in{opacity:1;transform:none}
+html.shot .cs-win{transform:none;opacity:1}

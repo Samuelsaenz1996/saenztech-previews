@@ -1,0 +1,7 @@
+.intro.ix-zb{background:var(--bg);color:var(--ink);gap:16px}
+.zb-c{position:absolute;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 40%,transparent),color-mix(in srgb,var(--accent) 10%,transparent) 70%);animation:zbb 2s ease-in-out forwards}
+@keyframes zbb{0%{transform:scale(.4)}50%{transform:scale(2.6)}100%{transform:scale(1.6)}}
+.zb-n{position:relative;font:{{ th.head_weight }} clamp(30px,7vw,70px)/1 "{{ th.head_font }}",serif;text-align:center;padding:0 20px;animation:edin 1.2s ease .3s both}
+@keyframes edin{from{opacity:0;transform:translateY(20px)}}
+.zb-s{position:relative;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);animation:edin 1s ease .8s both}
+.intro.ix-zb.out{transform:none;opacity:0;transition:opacity 1s}

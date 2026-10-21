@@ -1,0 +1,10 @@
+<section class="gv">
+ <div class="gv-sun" aria-hidden="true">{% for i in range(6) %}<i style="--i:{{ i }}"></i>{% endfor %}</div>
+ <div class="wrap gv-in">
+  <span class="gv-tag">{{ L(b.subtitle) }}</span>
+  <h1 class="gv-h">{{ L(b.headline) }}</h1>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  <div class="gv-img">{{ heroimg() }}{% if b.rating %}<span class="gv-badge"><b>{{ b.rating.value }}★</b>{{ b.rating.count }} {{ t('reseñas','reviews') }}</span>{% endif %}</div>
+ </div>
+</section>

@@ -1,0 +1,38 @@
+.arch-luxe .deco{height:1px;display:block;background:linear-gradient(90deg,transparent,var(--accent2),transparent)}.arch-luxe .deco span{display:none}
+.arch-luxe .top{background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+.arch-luxe .mono{background:transparent;border:1px solid var(--accent2);color:var(--accent2);border-radius:50%;box-shadow:none}
+.arch-luxe .btn{border-radius:0;border-width:1px;letter-spacing:.18em;text-transform:uppercase;font-size:12.5px;font-weight:500;padding:15px 26px}
+.arch-luxe .btn.primary{background:var(--accent2);border-color:var(--accent2);color:#111;box-shadow:none}
+.arch-luxe .btn.ghost{background:transparent;color:var(--ink);border-color:color-mix(in srgb,var(--accent2) 60%,transparent)}
+.lx{position:relative;min-height:min(calc(100svh - 64px),880px);display:grid;align-items:center;overflow:hidden;isolation:isolate;text-align:center}
+.lx-bg{position:absolute;inset:0;z-index:-2}.lx-bg .ph,.lx-bg .art{position:absolute;inset:0;height:100%;border-radius:0}.lx-bg .ph img{height:100%;filter:brightness(.38) saturate(.8);transform:scale(1.12);transition:transform 4s cubic-bezier(.2,.8,.2,1)}
+html.go .lx-bg .ph img{transform:scale(1)}
+.lx::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at center,transparent 20%,var(--bg) 95%)}
+.lx-in{display:grid;justify-items:center;gap:16px;padding:60px 20px}
+.lx-line{width:1px;height:70px;background:linear-gradient(transparent,var(--accent2));transform-origin:top;transform:scaleY(0)}html.go .lx-line{transform:none;transition:transform 1.2s cubic-bezier(.7,0,.2,1) .2s}
+.lx-tag{font-size:11.5px;letter-spacing:.42em;text-transform:uppercase;color:var(--accent2)}
+.lx-h{font-size:clamp(40px,7.6vw,100px);line-height:1;font-weight:{{ th.head_weight }};max-width:14ch;margin:0;color:var(--ink)}
+.lx-h .w>span{transition-duration:1.6s!important}
+@keyframes lxs{0%{background-position:100% 0}60%,100%{background-position:-50% 0}}
+.lx-h em{font-style:italic;color:var(--accent2)}
+.lx-orn{color:var(--accent2);letter-spacing:1em}
+.lx .lead{color:var(--muted);max-width:34em}
+.lx .ctas{justify-content:center}
+.lx-r{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--accent2)}
+.arch-luxe .hl,.arch-luxe .card,.arch-luxe .card-i,.arch-luxe .row{background:var(--card);border:1px solid var(--line);border-radius:0}
+.arch-luxe .hl .ic,.arch-luxe .clist .ic,.arch-luxe .card-i .num{background:transparent;border:1px solid var(--accent2);color:var(--accent2);border-radius:50%}
+.arch-luxe .card-i.rv.in:hover{border-color:var(--accent2);transform:translateY(-4px)}
+.arch-luxe .ph{border-radius:0}
+.arch-luxe .kicker{color:var(--accent2);letter-spacing:.3em;font-weight:500}
+.arch-luxe .sec-head h2{font-weight:{{ th.head_weight }}}
+.arch-luxe .marq{transform:none;margin:0;background:transparent;color:var(--accent2);border-block:1px solid var(--line);box-shadow:none}.arch-luxe .marq.alt{display:none}
+.arch-luxe .mq b{font-family:"{{ th.head_font }}",serif;font-style:italic;text-transform:none;font-weight:{{ th.head_weight }}}.arch-luxe .mq b.o{-webkit-text-stroke:0;color:var(--ink)}
+.arch-luxe .mq i{font-size:0;animation:none;width:auto;height:auto}.arch-luxe .mq i::before{content:"✦";font-size:16px;color:var(--accent2)}
+.arch-luxe .band{background:#000;border-block:1px solid var(--line)}.arch-luxe .band::before{display:none}
+.arch-luxe .chip{border-radius:0;border-color:color-mix(in srgb,var(--accent2) 50%,transparent);background:transparent}
+.arch-luxe .cta-box{border-radius:0;background:var(--card);color:var(--ink);border:1px solid var(--accent2)}.arch-luxe .cta-box::after{display:none}
+.arch-luxe .btn.light{background:var(--accent2);border-color:var(--accent2);color:#111}.arch-luxe .btn.outline-light{border-color:var(--line);color:var(--ink)}
+.arch-luxe footer{background:#000;color:var(--ink);border-top:1px solid var(--line)}
+.arch-luxe .sub-hero{background:transparent}
+.arch-luxe .rv{transform:translateY(24px)}.arch-luxe .rv.in{opacity:1;transform:none;transition:opacity 1.4s,transform 1.4s cubic-bezier(.16,1,.3,1)}
+html.shot .lx-line{transform:none}

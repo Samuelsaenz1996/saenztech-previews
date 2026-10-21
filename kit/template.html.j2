@@ -357,6 +357,7 @@ html.shot h1 .w>span{transform:none;transition:none}html.shot .visual .ph,html.s
  .fe,.float,.rv,.eyebrow,.lead,.hero .ctas,.hero .rating,.sub-hero p,.crumb,h1 .w>span{opacity:1!important;transform:none!important}.visual .ph,.visual .art{clip-path:none!important}.intro{display:none}}
 {% include "arch/" ~ arch ~ ".css" ignore missing %}
 {% if th.sig %}{% include "arch/sig/" ~ th.sig ~ ".css" ignore missing %}{% endif %}
+{% if th.intro %}{% include "arch/intro/" ~ th.intro ~ ".css" ignore missing %}{% endif %}
 {% if bilingual %}
 [data-{{ alt }}]{display:none!important}
 html[lang={{ alt }}] [data-{{ lang }}]{display:none!important}
@@ -365,7 +366,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
 </style>
 </head>
 <body>
-{% if page == 'home' and th.sig %}{% include ["arch/sig/" ~ th.sig ~ "_intro.html", "arch/" ~ arch ~ "_intro.html"] ignore missing %}{% elif page == 'home' %}{% if arch == 'fiesta' %}<div class="intro" aria-hidden="true"><div class="ia">{{ M.ride|safe }}</div><div class="in">{{ b.business }}</div></div>{% else %}{% include "arch/" ~ arch ~ "_intro.html" ignore missing %}{% endif %}{% endif %}
+{% if page == 'home' and th.intro %}{% include "arch/intro/" ~ th.intro ~ ".html" %}{% elif page == 'home' and th.sig %}{% include ["arch/sig/" ~ th.sig ~ "_intro.html", "arch/" ~ arch ~ "_intro.html"] ignore missing %}{% elif page == 'home' %}{% if arch == 'fiesta' %}<div class="intro" aria-hidden="true"><div class="ia">{{ M.ride|safe }}</div><div class="in">{{ b.business }}</div></div>{% else %}{% include "arch/" ~ arch ~ "_intro.html" ignore missing %}{% endif %}{% endif %}
 <div class="deco" aria-hidden="true">{% for i in range(24) %}<span></span>{% endfor %}</div>
 
 <header class="top">
@@ -610,7 +611,7 @@ html[lang={{ alt }}] [data-{{ alt }}]{display:revert!important}
  function go(){h.classList.add('go')}
  var intro=document.querySelector('.intro'),seen=null;try{seen=sessionStorage.getItem('st-intro-{{ b.slug }}')}catch(e){}
  if(intro&&!red&&!h.classList.contains('shot')&&!seen){h.classList.add('intro-on');try{sessionStorage.setItem('st-intro-{{ b.slug }}','1')}catch(e){}
-  setTimeout(function(){intro.classList.add('out');setTimeout(go,250);setTimeout(function(){intro.remove()},900)},1250)}
+  var dur=+(intro.dataset.dur||1250);setTimeout(function(){intro.classList.add('out');setTimeout(go,250);setTimeout(function(){intro.remove()},+(intro.dataset.out||900))},dur)}
  else{requestAnimationFrame(function(){requestAnimationFrame(go)})}
  // reveal on scroll
  var sel='.sec-head,.card-i,.hl,.row,.info>.card,.info>.mapbox,.info>.about,.chip,.grid-g .ph,.gal .ph,.cta-box,.menu-group h3,.band h2';

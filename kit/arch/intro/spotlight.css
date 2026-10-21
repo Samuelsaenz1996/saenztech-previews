@@ -1,0 +1,7 @@
+.intro.ix-sp{background:#000;overflow:hidden}
+.sp-n{font:{{ th.head_weight }} clamp(34px,8vw,92px)/1 "{{ th.head_font }}",serif;color:var(--accent2);text-align:center;padding:0 20px;letter-spacing:.03em}
+.sp-l{position:absolute;inset:0;background:radial-gradient(circle 180px at var(--sx,10%) 50%,transparent 0,transparent 55%,#000 100%);animation:spl 1.5s cubic-bezier(.5,0,.3,1) forwards}
+@keyframes spl{0%{--sx:-10%}100%{--sx:50%}}
+@property --sx{syntax:'<percentage>';inherits:false;initial-value:-10%}
+.intro.ix-sp.out{transform:none;clip-path:circle(0 at 50% 50%);transition:clip-path .8s cubic-bezier(.7,0,.3,1)}
+.intro.ix-sp{clip-path:circle(150% at 50% 50%)}

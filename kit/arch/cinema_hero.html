@@ -1,0 +1,11 @@
+<section class="cn">
+ <div class="cn-bar t"></div>
+ <div class="cn-frame">{{ heroimg() }}<div class="cn-grain" aria-hidden="true"></div></div>
+ <div class="wrap cn-in">
+  <span class="cn-tag">{{ L(b.subtitle) }}</span>
+  <h1 class="cn-h">{{ L(b.headline) }}</h1>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn('light') }}<a class="btn outline-light" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+ </div>
+ <div class="cn-bar b"><span>{{ b.business|upper }}</span>{% if b.rating %}<span>★ {{ b.rating.value }} · {{ b.rating.count }}</span>{% endif %}<span>{{ b.city|default('')|upper }}</span></div>
+</section>

@@ -1,0 +1,12 @@
+.intro.ix-gl{background:#050608;overflow:hidden}
+.gl-t{position:relative;font:{{ th.head_weight }} clamp(34px,8vw,90px)/1 "{{ th.head_font }}",monospace;color:#fff;text-align:center;padding:0 16px;text-transform:uppercase;animation:glj 1.4s steps(12) both}
+.gl-t::before,.gl-t::after{content:attr(data-t);position:absolute;inset:0;padding:0 16px}
+.gl-t::before{color:#ff2a6d;mix-blend-mode:screen;animation:gla .35s steps(4) infinite;clip-path:inset(10% 0 55% 0)}
+.gl-t::after{color:#05d9e8;mix-blend-mode:screen;animation:glb .3s steps(4) infinite reverse;clip-path:inset(55% 0 8% 0)}
+@keyframes gla{0%{transform:translate(-6px,2px)}50%{transform:translate(5px,-2px);clip-path:inset(30% 0 40% 0)}100%{transform:translate(-3px,0)}}
+@keyframes glb{0%{transform:translate(6px,-1px)}50%{transform:translate(-5px,2px);clip-path:inset(62% 0 2% 0)}100%{transform:translate(3px,0)}}
+@keyframes glj{0%{opacity:0;transform:skewX(30deg)}10%{opacity:1}20%{transform:skewX(-12deg)}30%,100%{transform:none}}
+.gl-scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 3px);pointer-events:none}
+.gl-scan::after{content:"";position:absolute;left:0;right:0;height:20%;background:linear-gradient(transparent,rgba(5,217,232,.15),transparent);animation:nsc 1.2s linear infinite}
+@keyframes nsc{from{top:-20%}to{top:100%}}
+.intro.ix-gl.out{transform:scaleY(.004);transition:transform .35s cubic-bezier(.7,0,.3,1),opacity .2s .3s;opacity:0}

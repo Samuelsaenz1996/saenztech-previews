@@ -1,0 +1,1 @@
+<div class="intro ix-cd" aria-hidden="true" data-dur="1700" data-out="900">{% for p in ([hero_photo] + gallery[:3] if hero_photo else gallery[:4])|reverse %}<div class="cd-c" style="--i:{{ loop.index0 }}"><img src="{{ root }}{{ p.path }}" alt=""></div>{% endfor %}<div class="cd-n">{{ b.business }}</div></div>

@@ -1,0 +1,12 @@
+<section class="lx">
+ <div class="lx-bg">{{ heroimg() }}</div>
+ <div class="wrap lx-in">
+  <span class="lx-line"></span>
+  <span class="lx-tag">{{ L(b.subtitle) }}</span>
+  <h1 class="lx-h">{{ L(b.headline) }}</h1>
+  <span class="lx-orn">✦</span>
+  <p class="lead">{{ L(b.lead) }}</p>
+  <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  {% if b.rating %}<p class="lx-r">{{ b.rating.value }} ★ · {{ b.rating.count }} {{ t('reseñas','reviews') }}</p>{% endif %}
+ </div>
+</section>

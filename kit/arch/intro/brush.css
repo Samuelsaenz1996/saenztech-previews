@@ -1,0 +1,6 @@
+.intro.ix-br{background:var(--bg);overflow:hidden}
+.ix-br svg{position:absolute;inset:0;width:100%;height:100%}
+.br-p{fill:none;stroke:var(--accent);stroke-width:220;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw .8s cubic-bezier(.6,0,.3,1) .05s forwards;filter:url(#none)}
+@keyframes draw{to{stroke-dashoffset:0}}
+.br-n{position:relative;font:{{ th.head_weight }} clamp(32px,7.5vw,84px)/1 "{{ th.head_font }}",sans-serif;color:#fff;text-align:center;padding:0 20px;transform:rotate(-3deg);animation:pop .5s ease .6s both}
+.intro.ix-br.out{transform:none;background:transparent;transition:background .2s}.intro.ix-br.out .br-p{stroke-dashoffset:-1;transition:stroke-dashoffset .7s cubic-bezier(.6,0,.3,1)}.intro.ix-br.out .br-n{opacity:0;transition:opacity .2s}

@@ -1,0 +1,28 @@
+.arch-zen .deco{display:none}
+.arch-zen .top{border-bottom:0;background:transparent}
+.arch-zen .mono{background:transparent;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.arch-zen .btn{border-radius:999px;font-weight:500;letter-spacing:.02em}.arch-zen .btn.primary{box-shadow:none}
+.zn{position:relative;display:grid;gap:30px;padding:60px 20px 80px;min-height:min(calc(100svh - 70px),860px);align-content:center}
+.zn-circle{position:absolute;right:-10%;bottom:4%;width:min(80vw,560px);opacity:.5;z-index:-1}
+.zn-circle circle{fill:none;stroke:var(--accent);stroke-width:1;stroke-dasharray:1;stroke-dashoffset:1}
+html.go .zn-circle circle{stroke-dashoffset:0;transition:stroke-dashoffset 3s cubic-bezier(.65,0,.35,1)}
+.zn-in{display:grid;gap:22px;max-width:640px}
+.zn-tag{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+.zn-h{font-size:clamp(40px,6.6vw,88px);line-height:1.04;font-weight:{{ th.head_weight }};margin:0;letter-spacing:-.02em}
+.zn-h em{font-style:italic;color:var(--accent)}
+.zn-h .w{filter:blur(12px);opacity:0}html.go .zn-h .w{filter:none;opacity:1;transition:filter 1.4s,opacity 1.4s}
+.zn-img{max-width:520px;justify-self:end;width:100%}
+.zn-img .ph,.zn-img .art{border-radius:999px 999px 0 0;aspect-ratio:3/4}
+.zn-img .ph img{transform:scale(1.15);transition:transform 3s cubic-bezier(.2,.8,.2,1)}html.go .zn-img .ph img{transform:scale(1)}
+.zn-r{font-size:13px;letter-spacing:.2em;color:var(--muted)}
+@media (min-width:900px){.zn{grid-template-columns:1.1fr .9fr}.zn-r{grid-column:1/-1}}
+.arch-zen .sec{padding-block:clamp(70px,10vw,130px)}
+.arch-zen .card-i,.arch-zen .hl,.arch-zen .card{background:transparent;border:0;border-top:1px solid var(--line);border-radius:0;box-shadow:none}
+.arch-zen .card-i .ph{border-radius:999px 999px 0 0}
+.arch-zen .card-i.rv.in:hover{transform:none}
+.arch-zen .hl .ic,.arch-zen .card-i .num{background:transparent;border:1px solid var(--accent);color:var(--accent);border-radius:50%}
+.arch-zen .marq{display:none}
+.arch-zen .band{background:var(--card)}.arch-zen .band::before{display:none}
+.arch-zen .cta-box{border-radius:300px 300px 30px 30px;background:var(--accent)}.arch-zen .cta-box::after{display:none}
+.arch-zen .rv{transform:none;filter:blur(8px)}.arch-zen .rv.in{opacity:1;filter:none;transform:none;transition:opacity 1.6s,filter 1.6s}
+html.shot .zn-circle circle{stroke-dashoffset:0}html.shot .zn-h .w{filter:none;opacity:1}

@@ -1,0 +1,9 @@
+<section class="sw wrap">
+ <div class="sw-grid">
+  <div class="sw-cell a"><span class="sw-idx">01</span><span class="sw-lbl">{{ L(b.subtitle) }}</span></div>
+  <div class="sw-cell b"><h1 class="sw-h">{{ L(b.headline) }}</h1></div>
+  <div class="sw-cell c">{{ heroimg() }}</div>
+  <div class="sw-cell d"><p class="lead">{{ L(b.lead) }}</p><div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div></div>
+  <div class="sw-cell e">{% if b.rating %}<b class="sw-big"><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span></b><span class="sw-lbl">{{ b.rating.count }} {{ t('reseñas','reviews') }} · {{ b.rating.source }}</span>{% else %}<b class="sw-big">{{ items|length }}</b><span class="sw-lbl">{{ L(th.labels.items_nav) }}</span>{% endif %}</div>
+ </div>
+</section>

@@ -1,0 +1,7 @@
+.intro.ix-dp{background:transparent;overflow:hidden}
+.dp-a,.dp-b{position:absolute;inset:0;background:var(--accent)}
+.dp-a{clip-path:polygon(0 0,100% 0,0 100%)}.dp-b{clip-path:polygon(100% 0,100% 100%,0 100%);background:var(--accent-dark)}
+.dp-n{position:relative;font:{{ th.head_weight }} clamp(32px,8vw,90px)/1 "{{ th.head_font }}",sans-serif;color:#fff;text-align:center;padding:0 16px}
+.dp-n span{display:inline-block;transform:translateY(-110vh);animation:dpd .7s cubic-bezier(.3,1.4,.5,1) calc(var(--i) * .04s) forwards}
+@keyframes dpd{to{transform:none}}
+.intro.ix-dp.out{transform:none}.intro.ix-dp.out .dp-a{transform:translate(-100%,-100%);transition:transform .8s cubic-bezier(.7,0,.2,1)}.intro.ix-dp.out .dp-b{transform:translate(100%,100%);transition:transform .8s cubic-bezier(.7,0,.2,1)}.intro.ix-dp.out .dp-n{opacity:0;transition:opacity .2s}

@@ -1,0 +1,26 @@
+.arch-groovy .deco{display:block;height:18px;background:repeating-linear-gradient(90deg,var(--accent) 0 25%,var(--accent2) 0 50%,var(--accent3) 0 75%,var(--accent4) 0 100%);background-size:200px 100%}.arch-groovy .deco span{display:none}
+.arch-groovy .btn{border-radius:999px;border-width:3px;box-shadow:4px 4px 0 var(--ink);font-weight:700}
+.arch-groovy .btn.primary{box-shadow:4px 4px 0 var(--ink)}
+.gv{position:relative;overflow:hidden;padding:40px 0 70px;text-align:center;isolation:isolate}
+.gv-sun{position:absolute;left:50%;top:42%;opacity:.95;width:min(140vw,1200px);aspect-ratio:1;transform:translateX(-50%);z-index:-1}
+.gv-sun i{position:absolute;inset:calc(var(--i) * 7%);border-radius:50%;background:var(--c);transform:scale(0)}
+.gv-sun i:nth-child(1){--c:var(--accent4)}.gv-sun i:nth-child(2){--c:var(--accent3)}.gv-sun i:nth-child(3){--c:var(--accent2)}.gv-sun i:nth-child(4){--c:var(--accent)}.gv-sun i:nth-child(5){--c:var(--accent3)}.gv-sun i:nth-child(6){--c:var(--bg)}
+html.go .gv-sun i{transform:scale(1);transition:transform 1.2s cubic-bezier(.34,1.56,.64,1) calc(var(--i) * .09s)}
+html.go .gv-sun{animation:gvspin 60s linear infinite}@keyframes gvspin{to{transform:translateX(-50%) rotate(360deg)}}
+.gv-in{display:grid;justify-items:center;gap:18px;padding-top:10px}
+.gv-tag{background:var(--ink);color:var(--bg);padding:6px 16px;border-radius:999px;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.gv-h{font-size:clamp(46px,8vw,110px);line-height:.9;margin:0;color:var(--ink);text-shadow:4px 4px 0 var(--accent),8px 8px 0 var(--accent2);max-width:14ch}
+.gv-h em{font-style:normal;color:var(--accent)}
+.gv-h .w{display:inline-block;transform:translateY(60px) rotate(-8deg);opacity:0}html.go .gv-h .w{transform:none;opacity:1;transition:transform .8s cubic-bezier(.34,1.56,.64,1),opacity .4s}
+.gv .lead{max-width:34em}.gv .ctas{justify-content:center}
+.gv-img{position:relative;width:min(560px,100%);margin-top:14px}
+.gv-img .ph,.gv-img .art{border-radius:240px 240px 24px 24px;border:4px solid var(--ink);aspect-ratio:4/3.4;box-shadow:10px 10px 0 var(--ink)}
+.gv-badge{position:absolute;right:-8px;top:-16px;width:110px;height:110px;border-radius:50%;background:var(--accent2);border:3px solid var(--ink);display:grid;place-content:center;font-size:11px;font-weight:700;animation:gvspin2 12s linear infinite}.gv-badge b{font-size:24px;display:block}
+@keyframes gvspin2{to{transform:rotate(360deg)}}
+.arch-groovy .card-i,.arch-groovy .hl,.arch-groovy .card{border:3px solid var(--ink);border-radius:28px;box-shadow:6px 6px 0 var(--ink)}
+.arch-groovy .card-i:nth-child(4n+1){background:color-mix(in srgb,var(--accent) 18%,var(--card))}.arch-groovy .card-i:nth-child(4n+2){background:color-mix(in srgb,var(--accent2) 22%,var(--card))}.arch-groovy .card-i:nth-child(4n+3){background:color-mix(in srgb,var(--accent3) 22%,var(--card))}
+.arch-groovy .card-i.rv.in:hover{transform:translate(-3px,-3px) rotate(-1deg);box-shadow:9px 9px 0 var(--ink)}
+.arch-groovy .marq{background:var(--accent2);color:var(--ink);border-block:3px solid var(--ink)}.arch-groovy .marq.alt{background:var(--accent3)}
+.arch-groovy .cta-box{border-radius:200px 200px 30px 30px;border:4px solid var(--ink);box-shadow:10px 10px 0 var(--ink)}
+.arch-groovy .rv{transform:translateY(50px) rotate(-3deg)}.arch-groovy .rv.in{opacity:1;transform:none;transition:opacity .6s,transform .8s cubic-bezier(.34,1.56,.64,1)}
+html.shot .gv-sun i{transform:scale(1)}html.shot .gv-h .w{transform:none;opacity:1}

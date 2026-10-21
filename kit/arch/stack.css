@@ -1,0 +1,22 @@
+.arch-stack .deco{display:none}
+.arch-stack .btn{border-radius:14px}.arch-stack .btn.primary{box-shadow:0 14px 30px color-mix(in srgb,var(--accent) 35%,transparent)}
+.sk{padding:30px 0 70px;overflow:hidden}
+.sk-in{display:grid;gap:40px;align-items:center}
+@media (min-width:900px){.sk-in{grid-template-columns:1fr 1fr}}
+.sk-t{display:grid;gap:18px}
+.sk-tag{justify-self:start;padding:7px 14px;border-radius:999px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);font-weight:700;font-size:13px}
+.sk-h{font-size:clamp(42px,6.6vw,86px);line-height:.98;margin:0;letter-spacing:-.03em}
+.sk-h em{font-style:{{ th.em_style }};background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sk-r{color:var(--muted)}.sk-r b{font-size:22px;color:var(--ink)}.sk-r{letter-spacing:.04em}
+.sk-deck{position:relative;height:clamp(340px,52vw,520px);perspective:1400px}
+.sk-card{position:absolute;left:50%;top:50%;width:min(62%,320px);aspect-ratio:3/4;margin:calc(min(62%,320px) * -.667) 0 0 calc(min(62%,320px) * -.5);border-radius:22px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.28);transform:translate3d(0,120%,0) rotate(0);opacity:0;transition:transform 1s cubic-bezier(.16,1,.3,1),opacity .6s;transition-delay:calc(var(--i) * .1s)}
+.sk-card img{width:100%;height:100%;object-fit:cover}
+html.go .sk-card{opacity:1;transform:translate3d(calc((var(--i) - (var(--n) - 1) / 2) * 28%),calc(max(var(--i) - (var(--n) - 1) / 2, (var(--n) - 1) / 2 - var(--i)) * 6%),calc(var(--i) * -10px)) rotate(calc((var(--i) - (var(--n) - 1) / 2) * 7deg));z-index:calc(10 - var(--i))}
+.sk-deck.spin .sk-card{transition:transform .9s cubic-bezier(.16,1,.3,1)}
+.arch-stack .card-i{border-radius:22px;border:0;background:var(--card);box-shadow:0 10px 40px rgba(0,0,0,.07);transform-style:preserve-3d}
+.arch-stack .card-i .ph{border-radius:16px;margin:8px}
+.arch-stack .card-i.rv.in:hover{transform:perspective(800px) rotateX(4deg) rotateY(-6deg) translateY(-6px)}
+.arch-stack .marq{transform:none;margin:0;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff}.arch-stack .marq.alt{display:none}
+.arch-stack .cta-box{border-radius:30px;background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.arch-stack .rv{transform:perspective(900px) rotateX(18deg) translateY(50px)}.arch-stack .rv.in{opacity:1;transform:none;transition:opacity .7s,transform 1s cubic-bezier(.16,1,.3,1)}
+html.shot .sk-card{transition:none}

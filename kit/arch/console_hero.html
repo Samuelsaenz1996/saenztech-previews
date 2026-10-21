@@ -1,0 +1,17 @@
+<section class="cs wrap">
+ <div class="cs-win">
+  <div class="cs-bar"><i></i><i></i><i></i><span>{{ (b.short or b.business)|lower|replace(' ','-') }}.sh</span></div>
+  <div class="cs-body">
+   <p class="cs-ln"><b>$</b> whoami</p>
+   <span class="cs-tag">// {{ L(b.subtitle) }}</span>
+   <h1 class="cs-h">{{ L(b.headline) }}</h1>
+   <p class="lead">{{ L(b.lead) }}</p>
+   <p class="cs-ln"><b>$</b> <span class="cs-cur">{{ t('contactar','contact') }} --{{ t('ahora','now') }}</span></p>
+   <div class="ctas">{{ primary_btn() }}<a class="btn ghost" href="{{ root }}{{ items_page.dir }}/">{{ L(items_page.label) }}{{ icon('arrow') }}</a></div>
+  </div>
+ </div>
+ <div class="cs-side">
+  <div class="cs-img">{{ heroimg() }}</div>
+  {% if b.rating %}<div class="cs-stat"><span>rating</span><b><span class="cnt" data-to="{{ b.rating.value }}">{{ b.rating.value }}</span>/5</b><span>{{ b.rating.count }} {{ t('reseñas','reviews') }} · {{ b.rating.source }}</span></div>{% endif %}
+ </div>
+</section>
