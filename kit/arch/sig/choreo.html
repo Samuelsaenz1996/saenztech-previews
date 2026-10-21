@@ -1,0 +1,7 @@
+<section class="sig sgx sg-choreo">
+ <div class="wrap sgx-in">
+  <div class="sgx-t"><span class="kicker">{{ t('Coreografías','Choreography') }}</span><h2>{{ t('Su vals, perfecto','Your vals, perfected') }}</h2><p class="sgx-p">{{ t('Vals, baile sorpresa y ensayos con toda la corte.','Waltz, surprise dance and rehearsals with the whole court.') }}</p>
+  {% if items %}<ul class="sgx-list">{% for it in items[:6] %}<li style="--i:{{ loop.index0 }}">{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+  <div class="sgx-v" aria-hidden="true"><div class="ch-stage"><i class="ch-spot"></i><div class="ch-count"><span style="--i:0">5</span><span style="--i:1">6</span><span style="--i:2">7</span><span style="--i:3">8</span></div><svg viewBox="0 0 600 300"><path class="ch-path" pathLength="1" d="M80 240 C 160 120, 260 260, 300 160 S 470 80, 520 200"/><circle class="ch-dot" r="12"/></svg><div class="ch-floor"></div></div></div>
+ </div>
+</section>

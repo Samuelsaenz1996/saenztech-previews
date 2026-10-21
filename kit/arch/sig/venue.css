@@ -1,0 +1,8 @@
+{% include "arch/sig/_sgx.css" %}
+.vn-hall{border-radius:var(--r,14px);overflow:hidden;background:radial-gradient(ellipse at 50% 40%,color-mix(in srgb,var(--accent) calc(var(--v) * 45%),#14101c),#0b0910 75%)}
+.vn-wire{fill:none;stroke:#444;stroke-width:2}
+.vn-b{fill:#3a3524;filter:drop-shadow(0 0 0 #ffd36b)}
+.vn-b{fill:color-mix(in srgb,#ffd36b calc(clamp(0,var(--v) * 16 - var(--i),1) * 100%),#3a3524);filter:drop-shadow(0 0 calc(clamp(0,var(--v) * 16 - var(--i),1) * 10px) #ffc94a)}
+.vn-ch path{fill:none;stroke:#c9a54a;stroke-width:4}.vn-cr{stroke:#e9e2c8!important;stroke-width:2!important}
+.vn-fl{fill:#fff6d8;opacity:clamp(.2,var(--v) * 4 - 2,1);filter:drop-shadow(0 0 8px #ffe08a)}
+.vn-t ellipse{fill:#f3efe6}.vn-t path{stroke:#f3efe6;stroke-width:3}.vn-cp{fill:var(--accent2);opacity:clamp(0,var(--v) * 5 - 2 - var(--i) * .4,1)}

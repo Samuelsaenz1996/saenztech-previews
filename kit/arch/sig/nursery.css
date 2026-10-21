@@ -1,0 +1,6 @@
+{% include "arch/sig/_sgx.css" %}
+.nu-sun{fill:var(--accent2);opacity:calc(.3 + var(--v) * .6);transform:translateY(calc((1 - var(--v)) * 80px))}
+.nu-stem{fill:none;stroke:#3f7d3a;stroke-width:8;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--v) * 1.2)}
+.nu-leaf{fill:#5aa04f;transform:scale(clamp(0,var(--v) * 7 - var(--i) * 1.1 - .3,1))}
+.nu-fl{transform-origin:300px 96px;transform:scale(clamp(0,var(--v) * 4 - 2.9,1)) rotate(calc(var(--v) * 90deg))}.nu-fl ellipse{fill:var(--accent)}.nu-fl .nu-c,.nu-fl circle{fill:var(--accent2)}
+.nu-pot{fill:#b8643a}.nu-rim{fill:#9a512d}

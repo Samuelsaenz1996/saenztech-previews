@@ -1,0 +1,9 @@
+{% include "arch/sig/_sgx.css" %}
+.tk-wrap{display:grid;gap:26px}
+.tk-belt{position:relative;height:64px;border-radius:8px;background:var(--bc,#f4f4f4);box-shadow:inset 0 -8px 0 rgba(0,0,0,.15),0 20px 40px rgba(0,0,0,.15);transition:background .4s}
+.tk-belt::before{content:"";position:absolute;inset:14px 0;border-block:2px dashed rgba(255,255,255,.35)}
+.tk-knot{position:absolute;left:50%;top:-14px;width:80px;height:92px;margin-left:-40px;background:var(--bc,#f4f4f4);border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.25);transition:background .4s}
+.tk-steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0;padding:0}
+@media (min-width:600px){.tk-steps{grid-template-columns:repeat(6,1fr)}}
+.tk-steps li{display:grid;gap:6px;justify-items:center;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:clamp(.25,var(--v) * 7 - var(--i),1)}
+.tk-steps i{width:100%;height:12px;border-radius:3px;background:var(--c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}

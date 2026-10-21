@@ -1,0 +1,8 @@
+{% include "arch/sig/_sgx.css" %}
+.ck-plate{fill:color-mix(in srgb,var(--ink) 25%,#ddd)}
+.ck-t{fill:var(--card);stroke:color-mix(in srgb,var(--accent) 40%,#fff);stroke-width:3;transform-box:fill-box;transform-origin:50% 100%;translate:0 calc(clamp(0,1 - (var(--v) * 4 - var(--i) * 1.1),1) * -220px);opacity:clamp(0,var(--v) * 4 - var(--i) * 1.1 + .2,1)}
+.ck-t:nth-of-type(2){fill:color-mix(in srgb,var(--accent) 22%,#fff)}
+.ck-fr{fill:none;stroke:var(--accent);stroke-width:7;stroke-linecap:round;translate:0 calc(clamp(0,1 - (var(--v) * 4 - var(--i) * 1.1),1) * -220px);opacity:clamp(0,var(--v) * 4 - var(--i) * 1.1,1)}
+.ck-c rect{fill:var(--accent2)}.ck-c{opacity:clamp(0,var(--v) * 6 - 4.2,1)}
+.ck-f{fill:#ffb703;transform-box:fill-box;transform-origin:50% 100%;animation:ckf .5s ease-in-out infinite alternate;filter:drop-shadow(0 0 6px #ffd166);opacity:clamp(0,var(--v) * 8 - 6.6 - var(--i) * .3,1)}
+@keyframes ckf{to{transform:scaleY(.8) skewX(6deg)}}

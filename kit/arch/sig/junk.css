@@ -1,0 +1,4 @@
+{% include "arch/sig/_sgx.css" %}
+.jk-bed{fill:var(--accent)}.jk-cab{fill:color-mix(in srgb,var(--accent) 80%,#000)}.jk-win{fill:#d8ecf7}.jk-t{fill:#1a1a1a;stroke:#999;stroke-width:6}.jk-g{stroke:var(--line);stroke-width:4}
+.jk-i{fill:var(--card);stroke:var(--ink);stroke-width:3;opacity:clamp(0,var(--v) * 9 - var(--i) * 1.2,1);translate:0 calc(clamp(0,1 - (var(--v) * 9 - var(--i) * 1.2),1) * -160px)}
+.jk-i:nth-child(2){fill:var(--accent2)}.jk-i:nth-child(4){fill:color-mix(in srgb,var(--accent2) 60%,#fff)}.jk-i:nth-child(5){fill:var(--accent3,#999)}

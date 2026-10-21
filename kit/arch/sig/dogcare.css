@@ -1,0 +1,4 @@
+{% include "arch/sig/_sgx.css" %}
+.dg-path{fill:none;stroke:var(--line);stroke-width:3;stroke-dasharray:.012 .02}
+.dg-paw{fill:var(--accent);opacity:clamp(0,var(--v) * 15 - var(--i),1)}.dg-paw:nth-child(odd){fill:var(--accent2)}
+.dg-bone{fill:var(--accent3,#f2c14e);opacity:clamp(0,var(--v) * 5 - 3.6,1);animation:dgb 1.4s ease-in-out infinite alternate}@keyframes dgb{to{transform:translate(560px,70px) rotate(-10deg)}}

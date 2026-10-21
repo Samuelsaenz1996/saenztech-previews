@@ -1,0 +1,4 @@
+{% include "arch/sig/_sgx.css" %}
+.se-g1 polygon{fill:var(--accent)}.se-g2 polygon{fill:var(--accent2)}.se-g3 polygon{fill:color-mix(in srgb,var(--ink) 70%,#888)}
+.sgx-v circle{fill:var(--bg)}
+.se-g1{transform:rotate(calc(var(--v) * 360deg))}.se-g2{transform:rotate(calc(var(--v) * -620deg))}.se-g3{transform:rotate(calc(var(--v) * 790deg))}

@@ -1,0 +1,8 @@
+<section class="sig sgx sg-pwash">
+ <div class="wrap sgx-in">
+  <div class="sgx-t"><span class="kicker">{{ t('Lavado a presión','Pressure washing') }}</span><h2>{{ t('Mire la diferencia','Watch the grime go') }}</h2><p class="sgx-p">{{ t('De gris a como nuevo, pasada por pasada.','From grey to like-new, one pass at a time.') }}</p>
+  {% if items %}<ul class="sgx-list">{% for it in items[:6] %}<li style="--i:{{ loop.index0 }}">{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+  <div class="sgx-v" aria-hidden="true"><div class="pw-box"><div class="pw-clean"></div><div class="pw-dirty"></div><div class="pw-wand"><i></i><b></b></div></div>
+<div class="sgx-cap"><span>{{ t('Antes','Before') }}</span><b>{{ t('Después','After') }}</b></div></div>
+ </div>
+</section>

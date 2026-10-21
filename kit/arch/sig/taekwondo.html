@@ -1,0 +1,7 @@
+<section class="sig sgx sg-taekwondo">
+ <div class="wrap sgx-in">
+  <div class="sgx-t"><span class="kicker">{{ t('Taekwondo','Taekwondo') }}</span><h2>{{ t('De blanca a negra','White belt to black belt') }}</h2><p class="sgx-p">{{ t('Disciplina, respeto y confianza en cada clase.','Discipline, respect and confidence in every class.') }}</p>
+  {% if items %}<ul class="sgx-list">{% for it in items[:6] %}<li style="--i:{{ loop.index0 }}">{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+  <div class="sgx-v" aria-hidden="true"><div class="tk-wrap"><div class="tk-belt"><i class="tk-knot"></i></div><ol class="tk-steps"><li style="--i:0;--c:#f4f4f4"><i></i>{{ t('Blanca','White') }}</li><li style="--i:1;--c:#f5c518"><i></i>{{ t('Amarilla','Yellow') }}</li><li style="--i:2;--c:#2f9e44"><i></i>{{ t('Verde','Green') }}</li><li style="--i:3;--c:#1c64d1"><i></i>{{ t('Azul','Blue') }}</li><li style="--i:4;--c:#d62828"><i></i>{{ t('Roja','Red') }}</li><li style="--i:5;--c:#111111"><i></i>{{ t('Negra','Black') }}</li></ol></div></div>
+ </div>
+</section>

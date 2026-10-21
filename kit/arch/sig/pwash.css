@@ -1,0 +1,9 @@
+{% include "arch/sig/_sgx.css" %}
+.pw-box{position:relative;aspect-ratio:16/10;border-radius:var(--r,14px);overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.18)}
+.pw-clean,.pw-dirty{position:absolute;inset:0}
+.pw-clean{background:linear-gradient(90deg,transparent 49.5%,rgba(0,0,0,.08) 50%,transparent 50.5%) 0 0/80px 80px,linear-gradient(transparent 49.5%,rgba(0,0,0,.08) 50%,transparent 50.5%) 0 0/80px 80px,linear-gradient(135deg,#e9e6df,#d8d3ca)}
+.pw-dirty{background:radial-gradient(circle at 20% 30%,rgba(40,35,25,.55) 0 8%,transparent 20%),radial-gradient(circle at 70% 60%,rgba(40,35,25,.5) 0 10%,transparent 26%),radial-gradient(circle at 45% 85%,rgba(30,40,20,.45) 0 6%,transparent 18%),linear-gradient(90deg,transparent 49.5%,rgba(0,0,0,.2) 50%,transparent 50.5%) 0 0/80px 80px,linear-gradient(transparent 49.5%,rgba(0,0,0,.2) 50%,transparent 50.5%) 0 0/80px 80px,linear-gradient(135deg,#6f6a5f,#4f4b42);clip-path:inset(0 0 0 calc(var(--v) * 100%))}
+.pw-wand{position:absolute;top:-10%;bottom:-10%;left:calc(var(--v) * 100%);width:0}
+.pw-wand i{position:absolute;left:-40px;top:0;bottom:0;width:80px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.75),transparent);filter:blur(6px);animation:pwj .25s linear infinite alternate}
+.pw-wand b{position:absolute;left:-3px;top:0;bottom:0;width:6px;background:var(--accent);box-shadow:0 0 0 2px #fff}
+@keyframes pwj{to{opacity:.55;transform:scaleX(.8)}}

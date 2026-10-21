@@ -1,0 +1,7 @@
+<section class="sig sgx sg-drywall">
+ <div class="wrap sgx-in">
+  <div class="sgx-t"><span class="kicker">{{ t('Tablaroca y pintura','Drywall & paint') }}</span><h2>{{ t('De pared cruda a terminada','From bare studs to finished') }}</h2><p class="sgx-p">{{ t('Instalación, textura y pintura que no se nota dónde se reparó.','Install, texture and paint so the repair disappears.') }}</p>
+  {% if items %}<ul class="sgx-list">{% for it in items[:6] %}<li style="--i:{{ loop.index0 }}">{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+  <div class="sgx-v" aria-hidden="true"><div class="dw-wall"><div class="dw-studs"></div><div class="dw-boards"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i></div><div class="dw-tape"><i style="--i:0"></i><i style="--i:1"></i></div><div class="dw-paint"></div><i class="dw-roller"></i></div><div class="sgx-cap"><span>{{ t('Montantes · Tablaroca · Cinta · Pintura','Studs · Board · Tape · Paint') }}</span></div></div>
+ </div>
+</section>

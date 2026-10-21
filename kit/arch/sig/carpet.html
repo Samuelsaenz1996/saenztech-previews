@@ -1,0 +1,7 @@
+<section class="sig sgx sg-carpet">
+ <div class="wrap sgx-in">
+  <div class="sgx-t"><span class="kicker">{{ t('Limpieza de alfombras','Carpet cleaning') }}</span><h2>{{ t('Franja por franja','Stripe by stripe') }}</h2><p class="sgx-p">{{ t('Limpieza profunda que saca lo que la aspiradora no puede.','Deep cleaning that pulls out what a vacuum misses.') }}</p>
+  {% if items %}<ul class="sgx-list">{% for it in items[:6] %}<li style="--i:{{ loop.index0 }}">{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+  <div class="sgx-v" aria-hidden="true"><div class="cp-rug"><div class="cp-dirt"></div><div class="cp-clean"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i></div><i class="cp-wand"></i></div></div>
+ </div>
+</section>

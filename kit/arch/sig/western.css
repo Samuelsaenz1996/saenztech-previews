@@ -1,0 +1,6 @@
+{% include "arch/sig/_sgx.css" %}
+.ws-rope{fill:none;stroke:#c8a46a;stroke-width:6;stroke-dasharray:.04 .015;stroke-dashoffset:calc(var(--v) * -1);opacity:.7}
+.ws-brim,.ws-crown{fill:color-mix(in srgb,var(--accent2) calc(var(--v) * 100%),transparent);stroke:var(--ink);stroke-width:4;stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--v) * 1.5)}
+.ws-band{fill:var(--accent);opacity:clamp(0,var(--v) * 3 - 1.4,1)}
+.ws-stitch{fill:none;stroke:#f3e6c8;stroke-width:3;stroke-dasharray:.02 .015;opacity:clamp(0,var(--v) * 3 - 1.6,1)}
+.ws-con{fill:#d9d9d9;stroke:#9a9a9a;stroke-width:3;opacity:clamp(0,var(--v) * 4 - 3,1)}

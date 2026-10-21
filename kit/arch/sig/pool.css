@@ -1,0 +1,7 @@
+{% include "arch/sig/_sgx.css" %}
+.pl-pool{position:relative;aspect-ratio:16/10;border-radius:var(--r,16px);overflow:hidden;background:#e9eef2;border:14px solid #f4f1ea;box-shadow:0 30px 60px rgba(0,0,0,.15)}
+.pl-water{position:absolute;left:0;right:0;bottom:0;height:calc(30% + var(--v) * 70%);background:linear-gradient(#5fd0ef,#1d8fcf)}
+.pl-caus{position:absolute;inset:0;background:radial-gradient(ellipse at 20% 30%,rgba(255,255,255,.45) 0 6%,transparent 14%) 0 0/120px 90px,radial-gradient(ellipse at 70% 70%,rgba(255,255,255,.35) 0 5%,transparent 12%) 0 0/90px 70px;animation:plc 6s linear infinite;mix-blend-mode:screen}
+@keyframes plc{to{background-position:120px 90px,-90px 70px}}
+.pl-ladder{position:absolute;right:12%;top:-4%;width:40px;height:60%;border-inline:5px solid #c8cdd2;background:repeating-linear-gradient(transparent 0 22px,#c8cdd2 22px 27px)}
+.pl-read{position:absolute;left:14px;top:14px;display:grid;gap:4px;background:rgba(255,255,255,.9);padding:10px 14px;border-radius:10px;font:700 13px ui-monospace,monospace;color:#123}.pl-read b{color:var(--accent)}

@@ -1,0 +1,11 @@
+<section class="sig sgx sg-towing">
+ <div class="wrap sgx-in">
+  <div class="sgx-t"><span class="kicker">{{ t('Grúas','Towing') }}</span><h2>{{ t('Ahí vamos por usted','On our way to you') }}</h2><p class="sgx-p">{{ t('Grúa de plataforma, arranques, llantas y más.','Flatbed towing, jump-starts, tire changes and more.') }}</p>
+  {% if items %}<ul class="sgx-list">{% for it in items[:6] %}<li style="--i:{{ loop.index0 }}">{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+  <div class="sgx-v" aria-hidden="true"><div class="tw-road"><svg viewBox="0 0 600 220"><g class="tw-truck">
+<rect x="60" y="92" width="230" height="16" rx="3" class="tw-bed"/><path class="tw-car" d="M90 92c8-24 22-34 46-36h50c18 0 30 12 44 28l26 4c8 1 12 4 12 4H90z"/><path class="tw-glass" d="M140 62h40c10 0 18 8 26 20h-80c4-12 8-20 14-20z"/>
+<path class="tw-cab" d="M290 60h56c16 0 26 10 34 30l14 4v32H290z"/><path class="tw-win" d="M304 70h38c8 0 14 6 18 18h-56z"/><rect x="250" y="108" width="144" height="18" class="tw-chassis"/>
+<g class="tw-w" style="transform-origin:110px 130px"><circle cx="110" cy="130" r="20"/><path d="M110 112v36M92 130h36"/></g><g class="tw-w" style="transform-origin:250px 130px"><circle cx="250" cy="130" r="20"/><path d="M250 112v36M232 130h36"/></g><g class="tw-w" style="transform-origin:360px 130px"><circle cx="360" cy="130" r="20"/><path d="M360 112v36M342 130h36"/></g>
+<rect x="330" y="48" width="22" height="8" rx="3" class="tw-light"/></g></svg><i class="tw-lane"></i></div></div>
+ </div>
+</section>

@@ -1,0 +1,8 @@
+{% include "arch/sig/_sgx.css" %}
+.tr-sky{position:relative;border-radius:var(--r,14px);overflow:hidden;background:linear-gradient(color-mix(in srgb,var(--accent2) 22%,var(--bg)),var(--bg))}
+.tr-hills{position:absolute;left:0;right:0;bottom:20%;height:40%;z-index:-0;background:radial-gradient(ellipse at 20% 100%,color-mix(in srgb,var(--accent) 20%,transparent) 40%,transparent 41%) 0 0/300px 100% repeat-x;background-position:calc(var(--v) * -300px) 0;opacity:.7;pointer-events:none}
+.tr-sky svg{position:relative;z-index:1}
+.tr-rig{transform:translateX(calc(var(--v) * 120px - 80px))}
+.tr-body,.tr-body2{fill:var(--accent)}.tr-win{fill:#d6ecfa}.tr-hitch{stroke:var(--ink);stroke-width:6}.tr-deck{fill:color-mix(in srgb,var(--ink) 70%,#777)}.tr-rail{fill:none;stroke:color-mix(in srgb,var(--ink) 70%,#777);stroke-width:5}
+.tr-w circle{fill:#1d1d1d;stroke:#aaa;stroke-width:5}.tr-w path{stroke:#ccc;stroke-width:3}.tr-w{transform:rotate(calc(var(--v) * 720deg))}
+.tr-ground{stroke:var(--ink);stroke-width:3;stroke-dasharray:14 10;stroke-dashoffset:calc(var(--v) * 300)}

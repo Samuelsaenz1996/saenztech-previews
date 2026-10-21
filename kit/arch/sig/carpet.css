@@ -1,0 +1,7 @@
+{% include "arch/sig/_sgx.css" %}
+.cp-rug{position:relative;aspect-ratio:16/10;border-radius:var(--r,14px);overflow:hidden;background:color-mix(in srgb,var(--accent2) 30%,#d9cbb6);box-shadow:0 30px 60px rgba(0,0,0,.15)}
+.cp-dirt{position:absolute;inset:0;background:radial-gradient(circle at 25% 35%,rgba(70,50,30,.45) 0 7%,transparent 16%),radial-gradient(circle at 65% 65%,rgba(70,50,30,.4) 0 9%,transparent 20%),radial-gradient(circle at 80% 25%,rgba(70,50,30,.35) 0 5%,transparent 12%),repeating-linear-gradient(45deg,rgba(0,0,0,.05) 0 2px,transparent 2px 5px)}
+.cp-clean{position:absolute;inset:0;display:grid;grid-template-columns:repeat(8,1fr)}
+.cp-clean i{background:color-mix(in srgb,var(--accent2) 20%,#efe6d8);transform-origin:top;transform:scaleY(clamp(0,var(--v) * 10 - var(--i) * 1.1,1))}
+.cp-clean i:nth-child(odd){background:color-mix(in srgb,var(--accent2) 26%,#e8dccb)}
+.cp-wand{position:absolute;top:0;height:100%;width:12.5%;left:calc(min(7, var(--v) * 9.1) * 12.5%);background:linear-gradient(transparent 85%,var(--accent) 85%);opacity:calc(1 - var(--v))}

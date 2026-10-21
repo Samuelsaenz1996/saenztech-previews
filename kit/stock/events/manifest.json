@@ -346,5 +346,77 @@
    "tent",
    "explicit"
   ]
+ },
+ {
+  "file": "unsplash-1675247488725-22d1b78e75db.jpg",
+  "alt": {
+   "es": "Salón decorado para fiesta",
+   "en": "Ballroom decorated for a party"
+  },
+  "credit": "Unsplash photo 1675247488725-22d1b78e75db",
+  "tags": [
+   "venue",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1768851142332-75f3d1b47452.jpg",
+  "alt": {
+   "es": "Salón de eventos con candelabros",
+   "en": "Event hall with chandeliers"
+  },
+  "credit": "Unsplash photo 1768851142332-75f3d1b47452",
+  "tags": [
+   "venue",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1768508951405-10e83c4a2872.jpg",
+  "alt": {
+   "es": "Salón con mesas listas para el evento",
+   "en": "Hall with tables set for an event"
+  },
+  "credit": "Unsplash photo 1768508951405-10e83c4a2872",
+  "tags": [
+   "venue",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1779308936221-89739e035a53.jpg",
+  "alt": {
+   "es": "Salón decorado con arco de flores",
+   "en": "Hall decorated with a floral arch"
+  },
+  "credit": "Unsplash photo 1779308936221-89739e035a53",
+  "tags": [
+   "venue",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1775918427144-51f0bf53f8c4.jpg",
+  "alt": {
+   "es": "Salón de banquetes con mesas redondas",
+   "en": "Banquet hall with round tables"
+  },
+  "credit": "Unsplash photo 1775918427144-51f0bf53f8c4",
+  "tags": [
+   "venue",
+   "explicit"
+  ]
+ },
+ {
+  "file": "unsplash-1783314867628-220ab03cac99.jpg",
+  "alt": {
+   "es": "Gran salón preparado para una fiesta",
+   "en": "Large ballroom set for a celebration"
+  },
+  "credit": "Unsplash photo 1783314867628-220ab03cac99",
+  "tags": [
+   "venue",
+   "explicit"
+  ]
  }
 ]

@@ -1,0 +1,5 @@
+{% include "arch/sig/_sgx.css" %}
+.fn-ground{stroke:color-mix(in srgb,var(--accent) 60%,#3b5d2a);stroke-width:8}
+.fn-rail{fill:color-mix(in srgb,var(--accent2) 70%,#6b4a2b);transform-origin:30px 0;transform:scaleX(clamp(0,var(--v) * 2,1))}
+.fn-post{fill:color-mix(in srgb,var(--ink) 60%,#6b4a2b)}
+.fn-p{fill:color-mix(in srgb,var(--accent2) 85%,#fff);stroke:color-mix(in srgb,var(--accent2) 50%,#4a3020);stroke-width:2;transform-box:fill-box;transform-origin:50% 100%;transform:scaleY(clamp(0,var(--v) * 16 - var(--i) - 2,1))}

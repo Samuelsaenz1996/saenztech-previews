@@ -1,0 +1,9 @@
+{% include "arch/sig/_sgx.css" %}
+.dw-wall{position:relative;aspect-ratio:16/10;border-radius:6px;overflow:hidden;background:#3a2f26;box-shadow:0 30px 60px rgba(0,0,0,.18)}
+.dw-studs{position:absolute;inset:0;background:repeating-linear-gradient(90deg,#c79a64 0 24px,transparent 24px 110px)}
+.dw-boards{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.dw-boards i{background:#e5e2dc;box-shadow:inset -2px 0 0 #cfcac1;transform:translateY(calc(clamp(0,1 - (var(--v) * 6 - var(--i) * .7),1) * 110%))}
+.dw-tape{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.dw-tape i{grid-column:calc(var(--i) + 1);justify-self:end;width:18px;margin-right:-9px;background:#f6f4ef;transform-origin:top;transform:scaleY(clamp(0,var(--v) * 6 - 2.4 - var(--i) * .4,1));box-shadow:0 0 6px rgba(0,0,0,.08)}
+.dw-paint{position:absolute;inset:0;background:color-mix(in srgb,var(--accent) 45%,#f4f1ea);clip-path:inset(0 calc(100% - clamp(0,var(--v) * 3 - 1.8,1) * 100%) 0 0)}
+.dw-roller{position:absolute;top:0;bottom:0;width:26px;left:calc(clamp(0,var(--v) * 3 - 1.8,1) * 100% - 13px);background:linear-gradient(90deg,#ddd,#fff,#ddd);opacity:clamp(0,var(--v) * 6 - 3.5,1)}

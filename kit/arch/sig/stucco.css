@@ -1,0 +1,9 @@
+{% include "arch/sig/_sgx.css" %}
+.st-wall{position:relative;aspect-ratio:4/3;display:grid;grid-template-columns:repeat(4,1fr);border-radius:var(--r,10px);overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.15)}
+.st-l{position:relative;display:flex;align-items:flex-end;padding:12px;transform-origin:bottom;transform:scaleY(clamp(.06,var(--v) * 6 - var(--i) * 1.2,1));transition:transform .1s}
+.st-l span{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.85);color:#222;padding:4px 7px;border-radius:4px}
+.st-lath{background:repeating-linear-gradient(45deg,#888 0 2px,transparent 2px 12px),repeating-linear-gradient(-45deg,#888 0 2px,transparent 2px 12px),#5b5148}
+.st-scr{background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 2px,transparent 2px 9px),#9a9286}
+.st-brown{background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.08) 0 2px,transparent 3px) 0 0/10px 10px,#a88e72}
+.st-fin{background:radial-gradient(circle at 40% 40%,rgba(255,255,255,.35) 0 3px,transparent 4px) 0 0/14px 14px,radial-gradient(circle at 70% 60%,rgba(0,0,0,.06) 0 4px,transparent 5px) 0 0/18px 18px,color-mix(in srgb,var(--accent2) 30%,#efe3cf)}
+.st-trowel{position:absolute;bottom:10%;width:18%;height:10%;left:calc(var(--v) * 80%);background:linear-gradient(#cfd4d8,#8b949b);border-radius:4px 30px 4px 4px;box-shadow:0 10px 20px rgba(0,0,0,.25)}

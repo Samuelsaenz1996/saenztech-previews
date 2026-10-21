@@ -1,0 +1,7 @@
+{% include "arch/sig/_sgx.css" %}
+.tw-road{position:relative;background:linear-gradient(transparent 62%,color-mix(in srgb,var(--ink) 85%,#000) 62%);border-radius:var(--r,14px);overflow:hidden;padding-top:10px}
+.tw-lane{position:absolute;left:0;right:0;bottom:16%;height:5px;background:repeating-linear-gradient(90deg,#f5c518 0 40px,transparent 40px 80px);background-position:calc(var(--v) * -800px) 0}
+.tw-truck{transform:translateX(calc(var(--v) * 260px - 200px))}
+.tw-bed,.tw-chassis{fill:color-mix(in srgb,var(--ink) 80%,#555)}.tw-car{fill:var(--accent2)}.tw-glass,.tw-win{fill:#cfe6f5}.tw-cab{fill:var(--accent)}
+.tw-w circle{fill:#1b1b1b;stroke:#999;stroke-width:5}.tw-w path{stroke:#bbb;stroke-width:3}.tw-w{transform:rotate(calc(var(--v) * 900deg))}
+.tw-light{fill:#ffb000;animation:twl .6s steps(2) infinite}@keyframes twl{50%{fill:#ff3b00}}

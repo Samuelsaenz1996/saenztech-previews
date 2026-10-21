@@ -1,0 +1,7 @@
+<section class="sig sgx sg-western">
+ <div class="wrap sgx-in">
+  <div class="sgx-t"><span class="kicker">{{ t('Ropa vaquera','Western wear') }}</span><h2>{{ t('Hecho para lucirse','Dressed for the occasion') }}</h2><p class="sgx-p">{{ t('Botas, sombreros y cintos con el estilo de siempre.','Boots, hats and belts with timeless style.') }}</p>
+  {% if items %}<ul class="sgx-list">{% for it in items[:6] %}<li style="--i:{{ loop.index0 }}">{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+  <div class="sgx-v" aria-hidden="true"><svg viewBox="0 0 600 400"><ellipse class="ws-rope" cx="300" cy="300" rx="250" ry="60" pathLength="1"/><path class="ws-brim" pathLength="1" d="M60 250 C 120 300, 480 300, 540 250 C 500 290, 440 300, 300 300 C 160 300, 100 290, 60 250z"/><path class="ws-crown" pathLength="1" d="M190 262 C 190 160, 220 90, 260 90 C 280 90, 290 110, 300 110 C 310 110, 320 90, 340 90 C 380 90, 410 160, 410 262 C 340 276, 260 276, 190 262z"/><path class="ws-band" d="M196 230 C 260 246, 340 246, 404 230 L406 254 C 340 270, 260 270, 194 254z"/><path class="ws-stitch" pathLength="1" d="M200 250 C 260 264, 340 264, 400 250"/><circle class="ws-con" cx="300" cy="248" r="12"/></svg></div>
+ </div>
+</section>

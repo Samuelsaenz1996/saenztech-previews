@@ -1,0 +1,6 @@
+{% include "arch/sig/_sgx.css" %}
+.mt-face{fill:#0e0f12;stroke:#2b2d33;stroke-width:10}
+.mt-arc{fill:none;stroke:var(--accent);stroke-width:12;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--v) * .75);filter:drop-shadow(0 0 8px var(--accent))}
+.mt-ticks path{stroke:#e7e7e7;stroke-width:3}.mt-ticks .mt-red{stroke:#ff3030}
+.mt-n{transform-origin:300px 220px;transform:rotate(calc(-135deg + var(--v) * 250deg))}.mt-n path{stroke:#ff3b30;stroke-width:5;stroke-linecap:round}.mt-n circle{fill:#e7e7e7}
+.mt-dash{position:relative}.mt-rpm{position:absolute;left:50%;top:72%;transform:translateX(-50%);color:#fff;font:800 44px/1 ui-monospace,monospace;text-align:center}.mt-rpm small{display:block;font-size:11px;letter-spacing:.2em;color:#999;margin-top:6px}

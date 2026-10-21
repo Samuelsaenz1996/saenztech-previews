@@ -1,0 +1,6 @@
+{% include "arch/sig/_sgx.css" %}
+.wr-base{fill:#d9dcdf}.wr-out{fill:none;stroke:var(--ink);stroke-width:3}
+.wr-film{transform:translateX(calc(var(--v) * 600px - 600px))}
+.wr-stripe{fill:#fff;opacity:.85;transform:translateX(calc(var(--v) * 600px - 600px))}
+.wr-win{fill:#1d2733;opacity:.85}.wr-tire{fill:#151515}.wr-hub{fill:#b9bec4}
+.wr-sq{transform:translateX(calc(var(--v) * 600px));fill:var(--ink);opacity:calc(1 - var(--v) * .7)}

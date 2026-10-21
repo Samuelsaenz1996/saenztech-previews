@@ -1,0 +1,9 @@
+{% include "arch/sig/_sgx.css" %}
+.cr-scale{position:relative}
+.cr-body{fill:var(--accent)}.cr-face{fill:#fffdf8;stroke:color-mix(in srgb,var(--ink) 20%,#fff);stroke-width:6}
+.cr-ticks path{stroke:var(--ink);stroke-width:3}
+.cr-arc{fill:none;stroke:var(--accent2);stroke-width:10;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--v) * .78)}
+.cr-needle{transform-origin:300px 210px;transform:rotate(calc(-120deg + var(--v) * 190deg))}.cr-needle path{stroke:#c1121f;stroke-width:5;stroke-linecap:round}.cr-needle circle{fill:var(--ink)}
+.cr-lcd{fill:#1d2b1f}
+.cr-num{position:absolute;left:50%;top:79.5%;transform:translate(-50%,-50%);font:700 20px ui-monospace,monospace;color:#9cff9c;letter-spacing:.06em}
+.cr-paper{position:absolute;left:30%;right:30%;top:-4%;height:16%;background:repeating-linear-gradient(90deg,#f1e2c6 0 10px,#ead7b3 10px 12px);border-radius:4px;transform:translateY(calc((1 - var(--v)) * -60px)) rotate(-3deg);opacity:clamp(0,var(--v) * 3,1);box-shadow:0 8px 16px rgba(0,0,0,.12)}

@@ -1,0 +1,6 @@
+{% include "arch/sig/_sgx.css" %}
+.ag-frame{fill:#1c1f24}
+.ag-glass{fill:#a9d3ec}
+.ag-cr path{fill:none;stroke:#fff;stroke-width:2.2;stroke-dasharray:1;stroke-dashoffset:clamp(0,var(--v) * 1.8 - .2,1)}
+.ag-chip{fill:#fff;opacity:clamp(0,1.6 - var(--v) * 1.6,1)}
+.ag-shine{fill:rgba(255,255,255,.55);transform:skewX(-20deg) translateX(calc(clamp(0,var(--v) * 2 - 1,1) * 900px))}

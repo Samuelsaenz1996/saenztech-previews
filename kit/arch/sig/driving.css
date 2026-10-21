@@ -1,0 +1,7 @@
+{% include "arch/sig/_sgx.css" %}
+.dv-road{fill:none;stroke:color-mix(in srgb,var(--ink) 85%,#333);stroke-width:46;stroke-linecap:round}
+.dv-line{fill:none;stroke:#f5c518;stroke-width:3;stroke-dasharray:14 12}
+.dv-car{offset-path:path("M40 360 C 140 360, 160 250, 260 240 S 420 220, 440 140 S 520 50, 570 40");offset-distance:calc(var(--v) * 100%);offset-rotate:auto;fill:var(--accent)}
+.dv-ws{fill:#cfe8f7}
+.dv-flag path{stroke:var(--ink);stroke-width:3}.dv-fl{fill:var(--accent2);stroke:none!important}
+.dv-flag{opacity:clamp(.25,var(--v) * 4.2 - var(--i),1)}

@@ -1,0 +1,7 @@
+<section class="sig sgx sg-junk">
+ <div class="wrap sgx-in">
+  <div class="sgx-t"><span class="kicker">{{ t('Retiro de basura','Junk removal') }}</span><h2>{{ t('Nosotros lo cargamos','We do the heavy lifting') }}</h2><p class="sgx-p">{{ t('Muebles, escombro, garajes completos: se lo llevamos.','Furniture, debris, whole garages: we haul it away.') }}</p>
+  {% if items %}<ul class="sgx-list">{% for it in items[:6] %}<li style="--i:{{ loop.index0 }}">{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+  <div class="sgx-v" aria-hidden="true"><svg viewBox="0 0 600 320"><g class="jk-load"><rect class="jk-i" style="--i:0" x="150" y="128" width="70" height="56" rx="4"/><rect class="jk-i" style="--i:1" x="228" y="140" width="60" height="44" rx="4"/><rect class="jk-i" style="--i:2" x="296" y="110" width="40" height="74" rx="4"/><rect class="jk-i" style="--i:3" x="160" y="84" width="110" height="40" rx="10"/><circle class="jk-i" style="--i:4" cx="300" cy="90" r="18"/><rect class="jk-i" style="--i:5" x="230" y="60" width="50" height="22" rx="4"/></g><path class="jk-bed" d="M130 184h230v60H130z"/><path class="jk-cab" d="M360 150h80c20 0 30 14 40 40l20 6v48H360z"/><path class="jk-win" d="M376 162h56c10 0 16 10 22 28h-78z"/><circle cx="190" cy="252" r="26" class="jk-t"/><circle cx="430" cy="252" r="26" class="jk-t"/><path class="jk-g" d="M0 278h600"/></svg><div class="sgx-cap"><span>{{ t('Carga','Load') }}</span><b class="jk-pct"></b></div></div>
+ </div>
+</section>

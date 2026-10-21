@@ -1,0 +1,7 @@
+<section class="sig sgx sg-driving">
+ <div class="wrap sgx-in">
+  <div class="sgx-t"><span class="kicker">{{ t('Escuela de manejo','Driving school') }}</span><h2>{{ t('Del permiso a la licencia','From permit to license') }}</h2><p class="sgx-p">{{ t('Clases en línea y al volante, a su ritmo.','Online classes and behind-the-wheel lessons at your pace.') }}</p>
+  {% if items %}<ul class="sgx-list">{% for it in items[:6] %}<li style="--i:{{ loop.index0 }}">{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+  <div class="sgx-v" aria-hidden="true"><svg viewBox="0 0 600 400"><path class="dv-road" d="M40 360 C 140 360, 160 250, 260 240 S 420 220, 440 140 S 520 50, 570 40"/><path class="dv-line" d="M40 360 C 140 360, 160 250, 260 240 S 420 220, 440 140 S 520 50, 570 40"/><g class="dv-flag" style="--i:0" transform="translate(160 300)"><path d="M0 0v-46"/><path class="dv-fl" d="M0 -46h26l-6 9 6 9H0z"/></g><g class="dv-flag" style="--i:1" transform="translate(300 222)"><path d="M0 0v-46"/><path class="dv-fl" d="M0 -46h26l-6 9 6 9H0z"/></g><g class="dv-flag" style="--i:2" transform="translate(460 120)"><path d="M0 0v-46"/><path class="dv-fl" d="M0 -46h26l-6 9 6 9H0z"/></g><g class="dv-flag" style="--i:3" transform="translate(560 30)"><path d="M0 0v-46"/><path class="dv-fl" d="M0 -46h26l-6 9 6 9H0z"/></g><g class="dv-car"><rect x="-22" y="-12" width="44" height="24" rx="7"/><rect class="dv-ws" x="4" y="-9" width="10" height="18" rx="3"/></g></svg></div>
+ </div>
+</section>
