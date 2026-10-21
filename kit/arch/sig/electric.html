@@ -1,0 +1,14 @@
+<section class="sig sg-elec">
+ <div class="wrap el-in">
+  <svg class="el-board" viewBox="0 0 600 320" aria-hidden="true">
+   <rect class="el-panel" x="20" y="90" width="90" height="140" rx="8"/>{% for i in range(5) %}<rect class="el-brk" x="38" y="{{ 104 + i*24 }}" width="54" height="14" rx="3"/>{% endfor %}
+   <path class="el-w" pathLength="1" d="M110 120H220V40H400V100H470"/>
+   <path class="el-w" pathLength="1" d="M110 160H260V200H360V160H470"/>
+   <path class="el-w" pathLength="1" d="M110 200H200V290H420V220H470"/>
+   {% for p in [[220,40],[400,40],[260,200],[360,200],[200,290],[420,290]] %}<circle class="el-node" cx="{{ p[0] }}" cy="{{ p[1] }}" r="6"/>{% endfor %}
+   <g class="el-bulb"><circle class="el-glow" cx="520" cy="160" r="80"/><path class="el-glass" d="M520 100a44 44 0 0 1 26 80v22h-52v-22a44 44 0 0 1 26-80z"/><rect class="el-base" x="496" y="204" width="48" height="22" rx="4"/><path class="el-fil" d="M506 160l8 14 6-18 6 18 8-14"/></g>
+  </svg>
+  <div class="el-t"><span class="kicker">{{ t('Electricidad','Electrical') }}</span><h2>{{ t('Todo conectado, todo seguro','Wired right, wired safe') }}</h2>
+   {% if items %}<ul class="el-list">{% for it in items[:6] %}<li>⚡ {{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

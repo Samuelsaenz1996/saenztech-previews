@@ -1,0 +1,8 @@
+<section class="sig sg-garage">
+ <div class="wrap gd-in">
+  <div class="gd-frame"><div class="gd-in-img">{{ img2() }}</div><div class="gd-door" aria-hidden="true">{% for i in range(7) %}<i></i>{% endfor %}<span class="gd-handle"></span></div></div>
+  <div class="gd-t"><span class="kicker">{{ t('Puertas de garaje','Garage doors') }}</span><h2>{{ t('Abre suave, cierra seguro','Opens smooth, closes tight') }}</h2>
+   {% if b.rating %}<p class="gd-r"><b>{{ b.rating.value }}★</b> · {{ b.rating.count }} {{ t('reseñas en','reviews on') }} {{ b.rating.source }}</p>{% endif %}
+   {% if items %}<ul class="gd-list">{% for it in items[:6] %}<li>{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

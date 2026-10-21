@@ -1,0 +1,17 @@
+.sg-flor{position:relative;overflow:hidden;padding:80px 0;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 8%,var(--bg)),var(--bg))}
+.fl-fall i{position:absolute;top:-40px;left:var(--x);width:16px;height:22px;border-radius:60% 10% 60% 10%;background:color-mix(in srgb,var(--accent) 70%,#fff);opacity:.7;animation:flf var(--d) linear var(--dl) infinite}
+@keyframes flf{to{transform:translate(80px,900px) rotate(calc(var(--r) + 540deg))}}
+.fl-in{position:relative;display:grid;gap:30px;align-items:center}
+.fl-bloom{width:min(380px,90%);display:block;margin:auto;overflow:visible}
+.fl-stem{fill:none;stroke:#4F8A3C;stroke-width:8;stroke-linecap:round}
+.fp{transform-box:view-box;transform-origin:150px 150px;scale:calc(min(1, max(0, var(--p,0) * 1.8 - var(--l) * .25)));transition:scale .2s}
+.fl-list{list-style:none;display:grid;gap:10px;margin-top:18px}
+.fl-list li{display:flex;gap:12px;align-items:center;padding:12px 16px;background:var(--card);border-radius:999px;border:1px solid var(--line)}
+.fl-list span{color:var(--accent);font-size:20px}.fl-list b{flex:1}.fl-list em{font-style:normal;font-weight:700;color:var(--accent)}
+@media (min-width:900px){.fl-in{grid-template-columns:1fr 1fr}}
+.intro.flx{background:var(--bg);overflow:hidden}
+.intro.flx i{position:absolute;left:50%;top:50%;width:46px;height:110px;margin:-110px 0 0 -23px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:color-mix(in srgb,var(--accent) 80%,#fff);transform-origin:50% 100%;transform:rotate(var(--a)) scale(0);animation:flo .8s cubic-bezier(.3,1.4,.5,1) var(--d) forwards;opacity:.85}
+.intro.flx i:nth-child(even){background:var(--accent2)}
+@keyframes flo{to{transform:rotate(var(--a)) scale(2.4)}}
+.flx-n{position:relative;font:{{ th.head_weight }} clamp(30px,7vw,68px)/1.05 "{{ th.head_font }}",serif;color:var(--ink);text-align:center;padding:14px 24px;background:color-mix(in srgb,var(--bg) 85%,transparent);border-radius:20px;animation:pop .5s ease .6s both}
+.intro.flx.out{transform:none;opacity:0;transition:opacity .7s}

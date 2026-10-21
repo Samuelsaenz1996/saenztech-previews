@@ -1,0 +1,8 @@
+.sg-detail{padding:80px 0}
+.dt-in{display:grid;gap:30px;align-items:center}
+.dt-car{position:relative;width:min(600px,100%);justify-self:center}
+.dt-car svg{width:100%;display:block}
+.dt-foam i{position:absolute;left:var(--x);top:var(--y);width:var(--s);height:var(--s);border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff,#e8f4ff 60%,#cfe3f5);box-shadow:0 2px 4px rgba(0,0,0,.08);transform:scale(calc(var(--f,0)));transition:transform .35s cubic-bezier(.3,1.6,.5,1);transition-delay:calc(var(--i) * 12ms)}
+.dt-shine{transform:translateX(calc(var(--s2,0) * 900px))}
+.dt-list{list-style:none;display:grid;gap:10px;margin-top:18px}.dt-list li{padding:12px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;font-weight:600}
+@media (min-width:900px){.dt-in{grid-template-columns:1.2fr .8fr}}

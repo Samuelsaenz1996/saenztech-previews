@@ -1,0 +1,7 @@
+<section class="sig sg-led">
+ <div class="wrap ld-in">
+  <div class="ld-dome" aria-hidden="true"><div class="ld-ring">{% for i in range(24) %}<i style="--a:{{ i * 15 }}deg;--i:{{ i }}"></i>{% endfor %}</div><div class="ld-door"><span class="ld-pose">{{ t('¡POSE!','POSE!') }}</span></div></div>
+  <div class="ld-t"><span class="kicker">{{ t('Cabina de fotos','Photo booth') }}</span><h2>{{ t('Luces, cámara, ¡fiesta!','Lights, camera, party!') }}</h2>
+   {% if items %}<ul class="ld-list">{% for it in items[:6] %}<li>✦ {{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

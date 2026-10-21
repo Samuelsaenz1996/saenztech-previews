@@ -1,0 +1,13 @@
+.sg-hvac{padding:80px 0;background:linear-gradient(120deg,color-mix(in srgb,#E8590C calc((1 - var(--p,0)) * 22%),var(--bg)),color-mix(in srgb,#1C7ED6 calc(var(--p,0) * 22%),var(--bg)));transition:background .3s}
+.hv-in{display:grid;gap:34px;align-items:center}
+.hv-dial{position:relative;width:min(320px,80vw);justify-self:center}
+.hv-dial svg{width:100%;display:block;transform:rotate(calc(var(--p,0) * 30deg))}
+.hv-ring{fill:var(--card);stroke:var(--line);stroke-width:14}
+.hv-arc{fill:none;stroke:color-mix(in srgb,#E8590C calc((1 - var(--p,0)) * 100%),#1C7ED6);stroke-width:14;stroke-linecap:round;stroke-dasharray:.75 1;stroke-dashoffset:calc(.75 - var(--p,0) * .75 + .001);transform:rotate(135deg);transform-origin:110px 110px}
+.hv-tk{stroke:var(--muted);stroke-width:2}
+.hv-face{fill:var(--card);filter:drop-shadow(0 6px 14px rgba(0,0,0,.12))}
+.hv-read{position:absolute;inset:0;display:grid;place-content:center;text-align:center;line-height:1}
+.hv-read b{font:{{ th.head_weight }} clamp(54px,9vw,74px)/1 "{{ th.head_font }}",sans-serif;font-variant-numeric:tabular-nums}
+.hv-read span{font-size:18px;color:var(--muted)}.hv-read small{display:block;margin-top:8px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.hv-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:18px}.hv-list li{padding:12px 16px;background:var(--card);border-radius:12px;border:1px solid var(--line);font-weight:600}
+@media (min-width:900px){.hv-in{grid-template-columns:.8fr 1.2fr}}

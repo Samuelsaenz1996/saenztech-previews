@@ -1,0 +1,7 @@
+<section class="sig sg-conc">
+ <div class="wrap cc-in">
+  <div class="cc-steps" aria-hidden="true">{% for i in range(5) %}<i style="--i:{{ i }}"></i>{% endfor %}<span class="cc-trowel"></span></div>
+  <div class="cc-t"><span class="kicker">{{ t('Concreto','Concrete') }}</span><h2>{{ t('Sólido desde la base','Solid from the ground up') }}</h2>
+   {% if items %}<ul class="cc-list">{% for it in items[:6] %}<li>{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

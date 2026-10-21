@@ -1,0 +1,12 @@
+.sg-shoe{padding:80px 0;background:repeating-linear-gradient(90deg,color-mix(in srgb,var(--accent) 5%,var(--bg)) 0 3px,var(--bg) 3px 9px)}
+.sh-in{display:grid;gap:30px;align-items:center}
+.sh-boot{width:min(480px,100%);justify-self:center}
+.sh-body{fill:var(--accent);stroke:var(--ink);stroke-width:3}
+.sh-sole{fill:var(--ink)}
+.sh-st{fill:none;stroke:var(--accent2);stroke-width:3;stroke-linecap:round}
+.sh-st2{stroke:var(--accent2);stroke-width:2.5}
+.sh-list{list-style:none;display:grid;gap:12px;margin-top:20px}
+.sh-list li{padding:14px 0 14px 34px;border-bottom:2px dashed var(--line);position:relative}
+.sh-list li::before{content:"";position:absolute;left:0;top:20px;width:18px;height:2px;background:var(--accent);box-shadow:0 6px 0 var(--accent),0 -6px 0 var(--accent);transform:rotate(-30deg)}
+.sh-list b{display:block}.sh-list span{color:var(--muted);font-size:14.5px}
+@media (min-width:900px){.sh-in{grid-template-columns:1.1fr .9fr}}

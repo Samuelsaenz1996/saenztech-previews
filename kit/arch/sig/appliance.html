@@ -1,0 +1,10 @@
+<section class="sig sg-appl">
+ <div class="wrap ap-in">
+  <div class="ap-wash" aria-hidden="true">
+   <div class="ap-top"><span class="ap-knob"></span><span class="ap-lcd"><b class="ap-st">ERR</b></span><i></i><i></i></div>
+   <div class="ap-door"><div class="ap-drum">{% for c in ['var(--accent)','var(--accent2)','var(--accent3)','#fff'] %}<span style="--c:{{ c }};--a:{{ loop.index0 * 90 }}deg"></span>{% endfor %}</div></div>
+  </div>
+  <div class="ap-t"><span class="kicker">{{ t('Reparación de electrodomésticos','Appliance repair') }}</span><h2>{{ t('De descompuesto a funcionando','From broken to running again') }}</h2>
+   {% if items %}<ul class="ap-list">{% for it in items[:6] %}<li>🔧 {{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

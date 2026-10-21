@@ -1,0 +1,7 @@
+<section class="sig sg-tailor">
+ <div class="tl-tape" aria-hidden="true"><div class="tl-strip">{% for i in range(0, 151) %}<i class="{{ 'big' if i % 10 == 0 else ('mid' if i % 5 == 0 else '') }}">{% if i % 10 == 0 %}<b>{{ i }}</b>{% endif %}</i>{% endfor %}</div></div>
+ <div class="wrap tl-in">
+  <div class="tl-t"><span class="kicker">{{ t('A la medida','Made to measure') }}</span><h2>{{ t('Que le quede perfecto','A perfect fit') }}</h2></div>
+  <div class="tl-tags">{% for it in items[:6] %}<div class="tl-tag" style="--i:{{ loop.index0 }}"><span class="hole"></span><b>{{ L(it.name) }}</b>{% if it.desc %}<small>{{ L(it.desc) }}</small>{% endif %}</div>{% endfor %}</div>
+ </div>
+</section>

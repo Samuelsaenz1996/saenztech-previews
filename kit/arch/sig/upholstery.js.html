@@ -1,0 +1,2 @@
+<script>(function(){var c=document.querySelector('.up-chair'),bs=[].slice.call(document.querySelectorAll('.up-sw .sw'));if(!c)return;var i=0,auto=true;function set(f){c.setAttribute('class','up-chair f-'+f);bs.forEach(function(b){b.classList.toggle('on',b.dataset.f===f)})}
+bs.forEach(function(b){b.addEventListener('click',function(){auto=false;set(b.dataset.f)})});if(!document.documentElement.classList.contains('shot'))setInterval(function(){if(!auto)return;i=(i+1)%bs.length;set(bs[i].dataset.f)},2200)})();</script>

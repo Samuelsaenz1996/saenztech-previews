@@ -1,0 +1,24 @@
+<section class="sig sg-uph">
+ <div class="wrap up-in">
+  <div class="up-t"><span class="kicker">{{ t('Ejemplo · toque una tela','Example · tap a fabric') }}</span><h2>{{ t('Su interior, como nuevo','Your interior, like new') }}</h2>
+   <div class="up-sw" role="group" aria-label="{{ t('Telas','Fabrics') }}">{% for f in ['leather','quilt','herring','plaid','velvet'] %}<button type="button" class="sw sw-{{ f }}{{ ' on' if loop.first }}" data-f="{{ f }}" aria-label="{{ f }}"></button>{% endfor %}</div>
+   {% if items %}<ul class="up-list">{% for it in items[:6] %}<li>{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}
+  </div>
+  <svg class="up-chair f-leather" viewBox="0 0 380 330" aria-hidden="true">
+   <defs>
+    <pattern id="pv" width="20" height="20" patternUnits="userSpaceOnUse"><rect width="20" height="20" fill="var(--accent)"/><path d="M0 20L20 0" stroke="#000" stroke-opacity=".08" stroke-width="8"/></pattern>
+    <pattern id="ph" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#8C8A84"/><path d="M0 0l8 8-8 8M8 0l8 8-8 8" stroke="#6E6C67" stroke-width="2.5" fill="none"/></pattern>
+    <pattern id="pp" width="36" height="36" patternUnits="userSpaceOnUse"><rect width="36" height="36" fill="#2F4A6B"/><rect width="36" height="10" y="13" fill="#B23A3A" opacity=".7"/><rect width="10" height="36" x="13" fill="#B23A3A" opacity=".7"/><path d="M0 18h36M18 0v36" stroke="#F2D27A" stroke-width="1.2"/></pattern>
+    <pattern id="pq" width="22" height="22" patternUnits="userSpaceOnUse"><rect width="22" height="22" fill="#E9E4DA"/><path d="M0 11L11 0L22 11L11 22Z" fill="none" stroke="#B8AFA0" stroke-width="1.6"/><circle cx="11" cy="11" r="1.4" fill="#9C9284"/></pattern>
+    <linearGradient id="pl" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#7A4A28"/><stop offset=".5" stop-color="#9A6338"/><stop offset="1" stop-color="#5E3519"/></linearGradient>
+   </defs>
+   <rect class="cf" x="140" y="14" width="100" height="58" rx="22"/>
+   <rect x="160" y="70" width="10" height="22" fill="#8a8f96"/><rect x="210" y="70" width="10" height="22" fill="#8a8f96"/>
+   <path class="cf" d="M110 90Q98 90 96 104L88 252Q88 264 102 264H278Q292 264 292 252L284 104Q282 90 270 90Z"/>
+   <rect class="cf in" x="148" y="104" width="84" height="148" rx="10"/>
+   <path class="cf" d="M78 262H302Q320 262 320 280V300Q320 318 302 318H78Q60 318 60 300V280Q60 262 78 262Z"/>
+   <rect class="cf in" x="120" y="270" width="140" height="38" rx="10"/>
+   <path d="M152 108V248M228 108V248M124 274H256M124 304H256" stroke="#fff" stroke-opacity=".55" stroke-width="2" stroke-dasharray="5 5" class="stitch"/>
+  </svg>
+ </div>
+</section>

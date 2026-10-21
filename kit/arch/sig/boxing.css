@@ -1,0 +1,17 @@
+.sg-box{padding:80px 0;background:radial-gradient(ellipse at 30% 30%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 60%)}
+.bx-in{display:grid;gap:30px;align-items:center}
+.bx-bag{position:relative;height:380px;width:200px;justify-self:center}
+.bx-chain{position:absolute;left:50%;top:0;width:4px;height:70px;margin-left:-2px;background:repeating-linear-gradient(180deg,#9aa3ad 0 8px,#5f666d 8px 12px)}
+.bx-b{position:absolute;left:50%;top:66px;width:130px;height:290px;margin-left:-65px;border-radius:40px 40px 54px 54px;background:linear-gradient(90deg,color-mix(in srgb,var(--accent) 70%,#000),var(--accent) 45%,color-mix(in srgb,var(--accent) 60%,#000));box-shadow:inset 0 14px 0 rgba(0,0,0,.25),0 20px 30px rgba(0,0,0,.25);transform-origin:50% -60px;transform:rotate(var(--sw,0deg));transition:transform .5s cubic-bezier(.3,1.6,.5,1);display:grid;place-items:center;cursor:pointer}
+.bx-b b{font:{{ th.head_weight }} 46px "{{ th.head_font }}",sans-serif;color:rgba(255,255,255,.85);letter-spacing:.04em}
+.bx-hit{position:absolute;right:-30px;top:120px;font:900 34px "{{ th.head_font }}",sans-serif;color:var(--accent2);-webkit-text-stroke:2px var(--ink);transform:scale(0) rotate(-15deg);transition:transform .3s cubic-bezier(.3,1.8,.5,1)}
+.bx-bag.hit .bx-hit{transform:scale(1) rotate(-15deg)}
+.bx-timer{display:inline-block;margin-top:12px;background:#111;color:#ff4d4d;font:700 40px "DM Mono",ui-monospace,monospace;padding:8px 18px;border-radius:10px;letter-spacing:.06em;box-shadow:inset 0 0 12px rgba(255,0,0,.25)}
+.bx-list{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.bx-list li{padding:9px 15px;border:2px solid var(--ink);font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:.05em}
+@media (min-width:900px){.bx-in{grid-template-columns:.8fr 1.2fr}}
+.intro.bxx{background:#0b0b0b;gap:10px}
+.bxx-r{font:900 clamp(40px,10vw,110px)/1 "{{ th.head_font }}",sans-serif;color:#fff;letter-spacing:.04em;transform:scale(3);opacity:0;animation:bxs .45s cubic-bezier(.3,1.5,.5,1) .1s forwards}
+.bxx-r b{color:var(--accent)}
+@keyframes bxs{to{transform:none;opacity:1}}
+.bxx-n{font:600 14px "{{ th.body_font }}",sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#bbb;animation:pop .4s ease .5s both}
+.intro.bxx.out{transform:scale(1.4);opacity:0;transition:transform .5s,opacity .5s}

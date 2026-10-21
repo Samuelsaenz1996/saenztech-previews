@@ -1,0 +1,10 @@
+.sg-led{padding:80px 0;background:radial-gradient(ellipse at 30% 50%,color-mix(in srgb,var(--accent) 22%,transparent),transparent 60%)}
+.ld-in{display:grid;gap:30px;align-items:center}
+.ld-dome{position:relative;width:min(320px,80vw);aspect-ratio:1;justify-self:center}
+.ld-ring{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--card) 30%,transparent) 55%,transparent 56%)}
+.ld-ring i{position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px;border-radius:50%;transform:rotate(var(--a)) translateY(calc(min(160px,40vw) * -1));background:hsl(calc(var(--i) * 15 + var(--h,0)) 95% 60%);box-shadow:0 0 14px hsl(calc(var(--i) * 15 + var(--h,0)) 95% 60%)}
+.ld-door{position:absolute;inset:22%;border-radius:50% 50% 16px 16px;background:linear-gradient(180deg,#0d0d14,#25213a);display:grid;place-items:center;box-shadow:inset 0 0 30px rgba(0,0,0,.6)}
+.ld-pose{font:900 30px "{{ th.head_font }}",sans-serif;color:#fff;text-shadow:0 0 12px var(--accent);animation:ldp 1.6s ease-in-out infinite}
+@keyframes ldp{50%{transform:scale(1.12)}}
+.ld-list{list-style:none;display:grid;gap:10px;margin-top:18px}.ld-list li{padding:12px 16px;border-radius:12px;background:var(--card);border:1px solid var(--line);font-weight:600}
+@media (min-width:900px){.ld-in{grid-template-columns:1fr 1fr}}

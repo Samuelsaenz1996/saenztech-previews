@@ -1,0 +1,12 @@
+.sg-bout{position:relative;overflow:hidden;padding:80px 0;background:radial-gradient(ellipse at 30% 50%,color-mix(in srgb,var(--accent) 14%,transparent),transparent 65%)}
+.bt-glit i{position:absolute;left:var(--x);top:var(--y);width:10px;height:10px;background:var(--accent2);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);animation:clsp var(--d) ease-in-out var(--dl) infinite}
+@keyframes clsp{0%,100%{opacity:0;transform:scale(.3)}50%{opacity:1;transform:scale(1) rotate(45deg)}}
+.bt-in{position:relative;display:grid;gap:30px;align-items:center}
+.bt-gown{width:min(320px,80%);display:block;margin:auto;overflow:visible}
+.bt-l{fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:calc(1 - min(1, var(--p,0) * 1.4))}
+.bt-l.t{stroke:var(--accent2);stroke-width:2;stroke-dashoffset:calc(1 - max(0, min(1, var(--p,0) * 1.8 - .6)))}
+.bt-tags{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.bt-tags span{position:relative;padding:12px 20px 12px 30px;background:var(--card);border:1px solid var(--line);border-radius:6px 999px 999px 6px;font-weight:600;transform-origin:0 50%;animation:tlsw 3s ease-in-out calc(var(--i) * -.6s) infinite alternate}
+.bt-tags span::before{content:"";position:absolute;left:10px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;border:2px solid var(--accent)}
+@keyframes tlsw{from{transform:rotate(-2deg)}to{transform:rotate(2deg)}}
+@media (min-width:900px){.bt-in{grid-template-columns:.9fr 1.1fr}}

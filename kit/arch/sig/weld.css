@@ -1,0 +1,8 @@
+.sg-weld{padding:80px 0;background:linear-gradient(180deg,var(--bg),color-mix(in srgb,#000 6%,var(--bg)))}
+.wd-head{text-align:center;margin-bottom:26px}.wd-head h2{font-size:clamp(30px,5vw,54px)}
+.wd-plate{position:relative;height:120px;border-radius:10px;background:linear-gradient(180deg,#9aa3ad,#6b747e 50%,#8b949e);box-shadow:inset 0 2px 0 rgba(255,255,255,.4),0 18px 30px rgba(0,0,0,.18)}
+.wd-plate svg{position:absolute;inset:0;width:100%;height:100%}
+.wd-seam{stroke:#3f464d;stroke-width:4}
+.wd-bead{fill:none;stroke:url(#x);stroke:#d9d2c3;stroke-width:16;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--p,0));filter:drop-shadow(0 0 calc(var(--hot,0) * 14px) #ffb347)}
+.wd-sp{position:absolute;inset:-60px 0;width:100%;height:calc(100% + 120px);pointer-events:none}
+.wd-list{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:28px}.wd-list span{border:2px solid var(--ink);padding:9px 15px;font-weight:700;background:var(--card)}

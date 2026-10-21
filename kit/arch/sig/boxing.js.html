@@ -1,0 +1,4 @@
+{% include "arch/sig/_sigjs.html" %}<script>(function(){var s=document.querySelector('.sg-box');if(!s)return;var bag=s.querySelector('.bx-bag'),b=s.querySelector('.bx-b'),tm=s.querySelector('.bx-tm'),r=s.querySelector('.bx-r'),last=0;
+function hit(dir){b.style.setProperty('--sw',(dir*16)+'deg');bag.classList.add('hit');setTimeout(function(){b.style.setProperty('--sw','0deg');bag.classList.remove('hit')},380)}
+b.addEventListener('click',function(){hit(Math.random()<.5?-1:1)});
+sigOn(s,function(v){var sec=Math.round(180-Math.min(1,v*1.2)*180);tm.textContent=Math.floor(sec/60)+':'+String(sec%60).padStart(2,'0');var step=Math.floor(v*8);if(step!==last){last=step;if(!document.documentElement.classList.contains('shot'))hit(step%2?1:-1)}r.textContent=Math.min(3,1+Math.floor(v*3))})})();</script>

@@ -1,0 +1,7 @@
+<section class="sig sg-weld">
+ <div class="wrap">
+  <div class="wd-head"><span class="kicker">{{ t('Soldadura','Welding') }}</span><h2>{{ t('Fuerte, limpio y a la medida','Strong, clean, built to fit') }}</h2></div>
+  <div class="wd-plate" aria-hidden="true"><svg viewBox="0 0 1000 120" preserveAspectRatio="none"><path class="wd-seam" d="M20 60H980"/><path class="wd-bead" pathLength="1" d="M20 60H980"/></svg><canvas class="wd-sp"></canvas></div>
+  {% if items %}<div class="wd-list">{% for it in items[:6] %}<span>{{ L(it.name) }}</span>{% endfor %}</div>{% endif %}
+ </div>
+</section>

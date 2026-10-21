@@ -13,11 +13,11 @@
   </div>
   <div class="bph-d">
    <div class="bp-frame"><span class="crn c1"></span><span class="crn c2"></span><span class="crn c3"></span><span class="crn c4"></span>
-    <div class="bp-cv">{% include "arch/_car.html" %}
+    {% if motif == 'auto' %}<div class="bp-cv">{% include "arch/_car.html" %}
     {% set ns = namespace(w=[[79,74,'right:-12px','top:40px'],[26,74,'left:-14px','top:40px']], o=[[88,50,'right:-12px','bottom:34px'],[47,30,'right:-14px','bottom:34px'],[9,58,'left:-10px','top:40px']]) %}
     {% for it in items[:3] %}{% set nm = ((it.name.en ~ ' ' ~ it.name.es) if it.name is mapping else it.name)|lower %}
     {% if ns.w and ('brak' in nm or 'fren' in nm or 'tire' in nm or 'llant' in nm or 'align' in nm or 'aline' in nm or 'suspens' in nm or 'wheel' in nm) %}{% set pt = ns.w[0] %}{% set ns.w = ns.w[1:] %}{% else %}{% set pt = ns.o[0] %}{% set ns.o = ns.o[1:] %}{% endif %}
-    <span class="co" style="--x:{{ pt[0] }}%;--y:{{ pt[1] }}%;--cd:{{ 1.7 + loop.index0 * 0.25 }}s"><i></i><b style="{{ pt[2] }};{{ pt[3] }}"><small>0{{ loop.index }}</small>{{ L(it.name) }}</b></span>{% endfor %}</div>
+    <span class="co" style="--x:{{ pt[0] }}%;--y:{{ pt[1] }}%;--cd:{{ 1.7 + loop.index0 * 0.25 }}s"><i></i><b style="{{ pt[2] }};{{ pt[3] }}"><small>0{{ loop.index }}</small>{{ L(it.name) }}</b></span>{% endfor %}</div>{% else %}<div class="bp-ph">{{ heroimg() }}</div>{% endif %}
     <span class="scan"></span>
    </div>
   </div>

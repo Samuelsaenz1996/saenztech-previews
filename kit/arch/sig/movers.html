@@ -1,0 +1,9 @@
+<section class="sig sg-move">
+ <div class="wrap">
+  <div class="mv-head"><span class="kicker">{{ t('Mudanzas','Moving') }}</span><h2>{{ t('Caja por caja, hasta su nueva casa','Box by box, all the way home') }}</h2></div>
+  <div class="mv-scene" aria-hidden="true">
+   <div class="mv-truck"><div class="mv-box-area">{% for it in items[:6] %}<span class="mv-box" style="--i:{{ loop.index0 }}">{{ L(it.name) }}</span>{% endfor %}</div><div class="mv-cab"><i></i></div><b class="mv-w a"></b><b class="mv-w b"></b><b class="mv-w c"></b></div>
+   <div class="mv-road"></div>
+  </div>
+ </div>
+</section>

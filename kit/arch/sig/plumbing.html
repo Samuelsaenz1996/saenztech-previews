@@ -1,0 +1,14 @@
+<section class="sig sg-plumb">
+ <div class="wrap pb-in">
+  <svg class="pb-sys" viewBox="0 0 600 340" aria-hidden="true">
+   <path class="pb-pipe" d="M20 60H180Q210 60 210 90V190Q210 220 240 220H380Q410 220 410 190V110Q410 80 440 80H520V150"/>
+   <path class="pb-water" pathLength="1" d="M20 60H180Q210 60 210 90V190Q210 220 240 220H380Q410 220 410 190V110Q410 80 440 80H520V150"/>
+   {% for p in [[180,60],[210,190],[380,220],[410,110],[520,80]] %}<rect class="pb-j" x="{{ p[0]-13 }}" y="{{ p[1]-13 }}" width="26" height="26" rx="5"/>{% endfor %}
+   <path class="pb-faucet" d="M500 150h40v14h-40z"/><circle class="pb-drop" cx="520" cy="182" r="7"/>
+   <path class="pb-sink" d="M450 250h140l-12 50c-2 8-8 12-16 12h-84c-8 0-14-4-16-12z"/>
+   <rect class="pb-fill" x="462" y="300" width="116" height="0" rx="6"/>
+  </svg>
+  <div class="pb-t"><span class="kicker">{{ t('Plomería','Plumbing') }}</span><h2>{{ t('Que todo fluya como debe','Everything flowing the way it should') }}</h2>
+   {% if items %}<ul class="pb-list">{% for it in items[:6] %}<li>💧 {{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

@@ -1,0 +1,6 @@
+{% include "arch/sig/_sigjs.html" %}<script>(function(){var s=document.querySelector('.sg-weld');if(!s)return;var pl=s.querySelector('.wd-plate'),c=s.querySelector('.wd-sp'),x=c.getContext('2d'),P=[],p=0,last=0,d=Math.min(2,devicePixelRatio||1);
+function rs(){c.width=c.clientWidth*d;c.height=c.clientHeight*d;x.setTransform(d,0,0,d,0,0)}rs();addEventListener('resize',rs);
+sigOn(pl,function(v){p=Math.min(1,v*1.2);pl.style.setProperty('--p',p.toFixed(3));pl.style.setProperty('--hot',Math.abs(p-last)>.001&&p<1?1:0);last=p});
+if(document.documentElement.classList.contains('shot'))return;
+(function f(){var W=c.clientWidth,H=c.clientHeight;x.clearRect(0,0,W,H);if(p>0&&p<1){var tx=20/1000*W+(960/1000*W)*p,ty=H/2;for(var i=0;i<4;i++)P.push({x:tx,y:ty,vx:(Math.random()-.5)*6,vy:-Math.random()*5-1,l:0,m:20+Math.random()*25})}
+P=P.filter(function(o){o.l++;o.vy+=.25;o.x+=o.vx;o.y+=o.vy;var a=1-o.l/o.m;if(a<=0)return false;x.fillStyle='rgba(255,'+(170+Math.random()*60|0)+',60,'+a+')';x.fillRect(o.x,o.y,2,2);return true});requestAnimationFrame(f)})()})();</script>

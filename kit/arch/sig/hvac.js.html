@@ -1,0 +1,2 @@
+{% include "arch/sig/_sigjs.html" %}<script>(function(){var s=document.querySelector('.sg-hvac');if(!s)return;var d=s.querySelector('.hv-deg'),m=s.querySelector('.hv-mode'),es=document.documentElement.lang==='es';
+sigOn(s,function(v){var p=Math.min(1,v*1.2);s.style.setProperty('--p',p.toFixed(3));d.textContent=Math.round(58+p*14);es=document.documentElement.lang==='es';m.textContent=p>.98?(es?'Perfecto':'Just right'):(es?'Ajustando':'Adjusting')})})();</script>

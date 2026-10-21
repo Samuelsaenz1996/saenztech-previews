@@ -1,0 +1,13 @@
+<section class="sig sg-clean">
+ <div class="wrap">
+  <div class="cl-head"><span class="kicker">{{ t('Ejemplo','Example') }}</span><h2>{{ t('Antes y después, sin complicaciones','Before and after, no hassle') }}</h2></div>
+  <div class="cl-box">
+   <div class="cl-img">{{ img2() }}</div>
+   <div class="cl-dirt" aria-hidden="true"></div>
+   <div class="cl-sq" aria-hidden="true"><i></i></div>
+   <span class="cl-lbl a">{{ t('Antes','Before') }}</span><span class="cl-lbl b">{{ t('Después','After') }} ✨</span>
+   <div class="cl-spark" aria-hidden="true">{% for i in range(8) %}<i style="--x:{{ (i*29)%90+5 }}%;--y:{{ (i*41)%80+10 }}%;--d:{{ i*0.2 }}s"></i>{% endfor %}</div>
+  </div>
+  {% if items %}<div class="cl-list">{% for it in items[:4] %}<span>✓ {{ L(it.name) }}</span>{% endfor %}</div>{% endif %}
+ </div>
+</section>

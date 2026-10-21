@@ -1,0 +1,16 @@
+<section class="sig sg-detail">
+ <div class="wrap dt-in">
+  <div class="dt-car" aria-hidden="true">
+   <svg viewBox="0 0 600 230"><defs><linearGradient id="dtg" x1="0" x2="1"><stop offset="0" stop-color="var(--ink)"/><stop offset=".5" stop-color="color-mix(in srgb,var(--ink) 70%,var(--accent))"/><stop offset="1" stop-color="var(--ink)"/></linearGradient><clipPath id="dtc"><path d="M40 150c0-20 14-30 40-34l70-10 60-50c14-12 30-16 50-16h120c20 0 36 6 52 20l52 46 64 10c22 4 32 16 32 34v24H40z"/></clipPath></defs>
+    <path d="M40 150c0-20 14-30 40-34l70-10 60-50c14-12 30-16 50-16h120c20 0 36 6 52 20l52 46 64 10c22 4 32 16 32 34v24H40z" fill="url(#dtg)"/>
+    <path d="M180 104l46-40c10-8 20-10 34-10h56v50zM330 54h50c14 0 24 4 34 12l42 38H330z" fill="color-mix(in srgb,var(--bg) 70%,#7fb3d5)" opacity=".85"/>
+    <g clip-path="url(#dtc)"><rect class="dt-shine" x="-200" y="0" width="120" height="230" fill="url(#dts)"/></g>
+    <defs><linearGradient id="dts" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".75"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+    <circle cx="150" cy="178" r="34" fill="#111"/><circle cx="150" cy="178" r="16" fill="#9aa3ad"/><circle cx="458" cy="178" r="34" fill="#111"/><circle cx="458" cy="178" r="16" fill="#9aa3ad"/>
+   </svg>
+   <div class="dt-foam">{% for i in range(26) %}<i style="--x:{{ (i*37)%96 }}%;--y:{{ 20 + (i*23)%55 }}%;--s:{{ 18 + (i*7)%30 }}px;--i:{{ i }}"></i>{% endfor %}</div>
+  </div>
+  <div class="dt-t"><span class="kicker">{{ t('Detallado','Detailing') }}</span><h2>{{ t('Espuma, brillo y como nuevo','Foam, shine, like new') }}</h2>
+   {% if items %}<ul class="dt-list">{% for it in items[:6] %}<li>✦ {{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

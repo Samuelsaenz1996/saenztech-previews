@@ -1,0 +1,5 @@
+<section class="sig sg-paint">
+ <div class="pt-wall" aria-hidden="true">{% for c in ['var(--accent)','var(--accent2)','var(--accent3)','var(--accent4)','var(--ink)'] %}<span class="pt-band" style="--c:{{ c }};--i:{{ loop.index0 }}"><i class="pt-roll"></i></span>{% endfor %}</div>
+ <div class="wrap pt-in"><span class="kicker">{{ t('Pintura','Painting') }}</span><h2>{{ t('Color que transforma','Color that transforms') }}</h2>
+  {% if items %}<div class="pt-chips">{% for it in items[:6] %}<span style="--c:{{ ['var(--accent)','var(--accent2)','var(--accent3)','var(--accent4)','var(--ink)','var(--accent)'][loop.index0] }}">{{ L(it.name) }}</span>{% endfor %}</div>{% endif %}</div>
+</section>

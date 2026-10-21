@@ -76,3 +76,4 @@ html.go .co b{animation:pop .5s cubic-bezier(.3,1.4,.5,1) calc(var(--cd) + .15s)
 @media (min-width:900px){.bph{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);padding:64px 0 56px}}
 @media (max-width:899px){.co b{font-size:11px;padding:5px 8px}}
 html.shot .bp-car .ln{stroke-dashoffset:0;animation:none}html.shot .co i,html.shot .co b{opacity:1;transform:none;animation:none}
+.bp-ph .ph,.bp-ph .art{border-radius:0;aspect-ratio:4/3;filter:grayscale(.2) contrast(1.05)}.bp-ph{margin:-6% 0 -8%}

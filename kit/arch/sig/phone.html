@@ -1,0 +1,14 @@
+<section class="sig sg-phone">
+ <div class="wrap ph-in">
+  <div class="ph-dev" aria-hidden="true">
+   <div class="ph-scr">
+    <svg class="ph-crack" viewBox="0 0 200 400" preserveAspectRatio="none"><path pathLength="1" d="M120 150 L60 40 M120 150 L180 60 M120 150 L30 220 M120 150 L190 260 M120 150 L100 390 M120 150 L150 20 M60 40 L20 10 M30 220 L4 300 M190 260 L170 390"/><path pathLength="1" d="M90 100 L50 120 M150 200 L190 190 M80 190 L70 260 M140 90 L170 120"/></svg>
+    <div class="ph-ok"><b>✓</b><span>{{ b.business }}</span><small>{{ t('Como nuevo','Good as new') }}</small></div>
+    <div class="ph-bat"><i></i></div>
+   </div>
+  </div>
+  <div class="ph-t"><span class="kicker">{{ t('Reparación','Repair') }}</span><h2>{{ t('De estrellado a como nuevo','From cracked to good as new') }}</h2>
+   {% if items %}<ul class="ph-list">{% for it in items[:5] %}<li><i></i>{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}
+  </div>
+ </div>
+</section>

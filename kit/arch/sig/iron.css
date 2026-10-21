@@ -1,0 +1,12 @@
+.sg-iron{padding:80px 0;background:radial-gradient(ellipse at 30% 60%,color-mix(in srgb,var(--accent) 10%,transparent),transparent 60%)}
+.ir-in{display:grid;gap:30px;align-items:center}
+.ig{width:min(480px,100%);display:block;margin:auto;perspective:900px;overflow:visible}
+.ig-post{fill:var(--ink)}
+.ig-b,.ig-c{fill:none;stroke:var(--ink);stroke-width:5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:calc(1 - min(1,var(--p,0) * 1.5))}
+.ig-c{stroke:var(--accent);stroke-width:4;stroke-dashoffset:calc(1 - max(0,min(1,var(--p,0) * 2 - .6)))}
+.ig-sp{fill:var(--ink);opacity:min(1,var(--p,0) * 2)}
+.ig-leaf{transform-box:view-box;transition:transform .2s}
+.ig-leaf.l{transform-origin:20px 200px;transform:perspective(900px) rotateY(calc(max(0, var(--p,0) - .75) * -160deg))}
+.ig-leaf.r{transform-origin:420px 200px;transform:perspective(900px) rotateY(calc(max(0, var(--p,0) - .75) * 160deg))}
+.ir-list{list-style:none;display:grid;gap:10px;margin-top:18px}.ir-list li{padding:12px 16px;border-left:4px solid var(--accent);background:var(--card);font-weight:600}
+@media (min-width:900px){.ir-in{grid-template-columns:1.1fr .9fr}}

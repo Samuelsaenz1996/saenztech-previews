@@ -1,0 +1,11 @@
+<section class="sig sg-air">
+ <div class="wrap af-in">
+  <div class="af-unit" aria-hidden="true">
+   <div class="af-box"><svg class="af-fan" viewBox="0 0 100 100">{% for a in [0,72,144,216,288] %}<path d="M50 50C46 30 54 12 66 14C72 26 62 40 50 50Z" transform="rotate({{ a }} 50 50)"/>{% endfor %}<circle cx="50" cy="50" r="7"/></svg></div>
+   <div class="af-flow">{% for i in range(6) %}<svg style="--i:{{ i }}" viewBox="0 0 300 40" preserveAspectRatio="none"><path d="M0 20 C 40 0, 80 40, 120 20 S 200 0, 240 20 S 280 40, 300 20"/></svg>{% endfor %}</div>
+  </div>
+  <div class="af-t"><span class="kicker">{{ t('Calefacción y aire','Heating & cooling') }}</span><h2>{{ t('Aire fresco en verano, calor en invierno','Cool in summer, warm in winter') }}</h2>
+   <div class="af-sw" role="group"><button type="button" class="on" data-m="cool">❄ {{ t('Frío','Cool') }}</button><button type="button" data-m="heat">🔥 {{ t('Calor','Heat') }}</button></div>
+   {% if items %}<ul class="af-list">{% for it in items[:5] %}<li>{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

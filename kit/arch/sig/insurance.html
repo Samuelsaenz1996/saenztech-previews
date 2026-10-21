@@ -1,0 +1,7 @@
+<section class="sig sg-ins">
+ <div class="wrap is-in">
+  <div class="is-shield" aria-hidden="true"><svg viewBox="0 0 200 240"><defs><clipPath id="isc"><path d="M100 10l80 30v70c0 60-36 100-80 120C56 210 20 170 20 110V40z"/></clipPath></defs><path d="M100 10l80 30v70c0 60-36 100-80 120C56 210 20 170 20 110V40z" class="is-o"/><g clip-path="url(#isc)"><rect class="is-fill" x="0" y="0" width="200" height="240"/><path class="is-wave" d="M0 20 Q 25 10 50 20 T 100 20 T 150 20 T 200 20 T 250 20 T 300 20 V 260 H 0Z"/></g><path class="is-ck" pathLength="1" d="M64 124l26 26 48-56"/></svg></div>
+  <div class="is-t"><span class="kicker">{{ t('Seguros','Insurance') }}</span><h2>{{ t('Protegido en lo que más importa','Covered where it matters most') }}</h2>
+   {% if items %}<ul class="is-list">{% for it in items[:6] %}<li style="--i:{{ loop.index0 }}"><i>✓</i>{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

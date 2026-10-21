@@ -1,0 +1,12 @@
+.sg-ins{padding:80px 0;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 7%,var(--bg)),var(--bg))}
+.is-in{display:grid;gap:30px;align-items:center}
+.is-shield{width:min(260px,70vw);justify-self:center}
+.is-shield svg{width:100%;display:block;overflow:visible;filter:drop-shadow(0 20px 30px color-mix(in srgb,var(--accent) 30%,transparent))}
+.is-o{fill:var(--card);stroke:var(--ink);stroke-width:5}
+.is-fill{fill:transparent}
+.is-wave{fill:var(--accent)}
+.is-ck{fill:none;stroke:#fff;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:calc(1 - max(0, var(--p,0) * 2 - 1))}
+.is-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:18px}
+.is-list li{display:flex;gap:10px;align-items:center;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:12px;font-weight:600}
+.is-list i{flex:none;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font-style:normal;display:grid;place-items:center;font-size:13px}
+@media (min-width:900px){.is-in{grid-template-columns:.7fr 1.3fr}}

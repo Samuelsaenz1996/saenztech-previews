@@ -1,0 +1,9 @@
+<section class="sig sg-tint">
+ <div class="wrap tn-in">
+  <div class="tn-view"><div class="tn-img">{{ img2() }}</div><div class="tn-film" aria-hidden="true"></div><span class="tn-lbl">{{ t('Ejemplo','Example') }} · <b class="tn-v">35%</b></span></div>
+  <div class="tn-t"><span class="kicker">{{ t('Polarizado','Window tint') }}</span><h2>{{ t('Elija su tono','Pick your shade') }}</h2>
+   <div class="tn-btns" role="group">{% for v in [70,50,35,20,5] %}<button type="button" data-v="{{ v }}" class="{{ 'on' if v == 35 }}">{{ v }}%</button>{% endfor %}</div>
+   <p class="note">{{ t('Porcentaje de luz que pasa. Menor número = más oscuro.','Percent of light that passes through. Lower number = darker.') }}</p>
+   {% if items %}<ul class="tn-list">{% for it in items[:5] %}<li>{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

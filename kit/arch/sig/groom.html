@@ -1,0 +1,8 @@
+<section class="sig sg-groom" aria-label="{{ b.business }}">
+ <div class="gb-bub" aria-hidden="true">{% for i in range(18) %}<i style="--x:{{ (i*47)%100 }}%;--s:{{ 14 + (i*13)%46 }}px;--d:{{ 6 + (i%5)*1.7 }}s;--dl:-{{ (i*0.9)%8 }}s"></i>{% endfor %}</div>
+ <div class="wrap gb-in">
+  <h2 class="gb-h">{{ t('Lo que dicen de','What people say about') }} <em>{{ b.business }}</em></h2>
+  <div class="gb-themes">{% for c in (b.themes or [])[:5] %}<span class="gb-t" style="--i:{{ loop.index0 }}">{{ L(c) }}</span>{% endfor %}{% if b.rating %}<span class="gb-t big" style="--i:5"><b>{{ b.rating.value }}★</b> {{ b.rating.count }} {{ t('reseñas','reviews') }}</span>{% endif %}</div>
+  <div class="gb-paws" aria-hidden="true">{% for i in range(12) %}<svg style="--i:{{ i }}" viewBox="0 0 40 40"><ellipse cx="20" cy="27" rx="9" ry="7.5"/><ellipse cx="9" cy="16" rx="3.6" ry="4.6"/><ellipse cx="16" cy="10" rx="3.6" ry="4.8"/><ellipse cx="24" cy="10" rx="3.6" ry="4.8"/><ellipse cx="31" cy="16" rx="3.6" ry="4.6"/></svg>{% endfor %}</div>
+ </div>
+</section>

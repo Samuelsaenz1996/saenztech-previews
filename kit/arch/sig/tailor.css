@@ -1,0 +1,19 @@
+.sg-tailor{padding:0 0 80px;overflow:hidden}
+.tl-tape{height:64px;background:#F2C94C;border-block:2px solid #C9A02C;box-shadow:0 10px 20px rgba(0,0,0,.08);overflow:hidden;transform:rotate(-1.5deg);margin:30px -20px 50px}
+.tl-strip{display:flex;height:100%;transform:translateX(calc(var(--p,0) * -900px));will-change:transform}
+.tl-strip i{flex:none;width:14px;height:100%;position:relative;border-left:1.5px solid #3A2E10;transform-origin:top;transform:scaleY(.28)}
+.tl-strip i.mid{transform:scaleY(.45)}.tl-strip i.big{transform:none;border-left-width:2px}
+.tl-strip i b{position:absolute;left:4px;bottom:6px;font:700 13px "{{ th.body_font }}",sans-serif;color:#3A2E10;transform-origin:left bottom}
+.tl-in{display:grid;gap:30px}
+.tl-t h2{font-size:clamp(30px,5vw,54px)}
+.tl-tags{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:22px}
+.tl-tag{position:relative;background:var(--card);border:1px solid var(--line);border-radius:6px 6px 6px 6px;padding:30px 18px 18px;clip-path:polygon(16% 0,84% 0,100% 14%,100% 100%,0 100%,0 14%);transform-origin:50% -20px;animation:tlsw 3.2s ease-in-out calc(var(--i) * -.5s) infinite alternate;box-shadow:0 10px 20px rgba(0,0,0,.06)}
+@keyframes tlsw{from{transform:rotate(-2.5deg)}to{transform:rotate(2.5deg)}}
+.tl-tag .hole{position:absolute;left:50%;top:9px;width:12px;height:12px;margin-left:-6px;border-radius:50%;border:2px solid var(--accent)}
+.tl-tag b{display:block;font-size:17px}.tl-tag small{color:var(--muted)}
+.intro.tlx{background:var(--bg);overflow:hidden;gap:22px}
+.tlx-tape{width:0;height:40px;background:#F2C94C repeating-linear-gradient(90deg,#3A2E10 0 1.5px,transparent 1.5px 14px);background-size:14px 40%;background-repeat:repeat-x;background-position:0 0;border-block:2px solid #C9A02C;animation:tlxt .9s cubic-bezier(.7,0,.2,1) forwards}
+@keyframes tlxt{to{width:100vw}}
+.tlx-n{font:{{ th.head_weight }} clamp(32px,7vw,72px)/1 "{{ th.head_font }}",serif;color:var(--ink);text-align:center;padding:0 20px;animation:edin .8s cubic-bezier(.16,1,.3,1) .5s both}
+@keyframes edin{from{opacity:0;transform:translateY(30px)}}
+.intro.tlx.out{transform:translateY(-104%)}

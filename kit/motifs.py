@@ -131,6 +131,8 @@ MOTIFS = {
     "tools":  dict(floaters=[HAMMER, WRENCH, HOUSE, BOLT, PIPE, GEAR2], ride=ROLLER, trail="paint", tick=HAMMER),
     "moon":   dict(floaters=[MOON, CONCHA, STAR, TACO, STAR, CONCHA_Y], ride=MOON, trail="sprinkles", tick=STAR),
     "leafline": dict(floaters=[LEAF_LINE, LEAF_LINE, LEAF_LINE, LEAF_LINE, LEAF_LINE, LEAF_LINE], ride=LEAF_LINE, trail="grass", tick=LEAF_LINE),
+    "paint":  dict(floaters=[ROLLER, DROP, BRUSH, SPARKLE, DROP, ROLLER], ride=ROLLER, trail="paint", tick=DROP),
+    "flower": dict(floaters=[FLOWER, LEAF, SPARKLE, HEART, FLOWER, SPARKLE], ride=FLOWER, trail="grass", tick=FLOWER),
     "clean":  dict(floaters=[BUBBLE, SPARKLE, SPRAY, BUBBLE, SPARKLE, BUBBLE], ride=SQUEEGEE, trail="shine", tick=SPARKLE),
 }
 

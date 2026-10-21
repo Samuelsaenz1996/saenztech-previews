@@ -1,0 +1,7 @@
+<section class="sig sg-booth">
+ <div class="wrap pbo-in">
+  <div class="pbo-cam" aria-hidden="true"><div class="pbo-slot"></div><div class="pbo-strip">{% for p in (gallery[:4] if gallery|length >= 4 else gallery) %}<div class="pbo-f"><img src="{{ root }}{{ p.path }}" alt="" loading="lazy"></div>{% endfor %}<span class="pbo-cap">{{ b.business }}</span></div></div>
+  <div class="pbo-t"><span class="kicker">{{ t('Cabina de fotos','Photo booth') }}</span><h2>{{ t('¡Sonrían! 3 · 2 · 1','Say cheese! 3 · 2 · 1') }}</h2>
+   {% if items %}<ul class="pbo-list">{% for it in items[:5] %}<li><b>{{ L(it.name) }}</b>{% if th.show_price and it.price %}<em>{{ it.price }}</em>{% endif %}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

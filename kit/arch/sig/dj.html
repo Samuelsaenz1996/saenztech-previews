@@ -1,0 +1,10 @@
+<section class="sig sg-dj">
+ <div class="wrap dj-in">
+  <div class="dj-deck" aria-hidden="true">
+   <div class="dj-vinyl"><i></i><b>{{ initials }}</b></div>
+   <div class="dj-eq">{% for i in range(16) %}<span style="--i:{{ i }};--d:{{ 0.35 + (i * 7 % 5) * 0.09 }}s"></span>{% endfor %}</div>
+  </div>
+  <div class="dj-t"><span class="kicker">DJ · {{ t('Sonido e iluminación','Sound & lights') }}</span><h2>{{ t('Que nadie se quede sentado','Nobody stays in their seat') }}</h2>
+   {% if items %}<ul class="dj-list">{% for it in items[:6] %}<li><b>{{ L(it.name) }}</b>{% if th.show_price and it.price %}<em>{{ it.price }}</em>{% endif %}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

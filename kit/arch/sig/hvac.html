@@ -1,0 +1,10 @@
+<section class="sig sg-hvac">
+ <div class="wrap hv-in">
+  <div class="hv-dial" aria-hidden="true">
+   <svg viewBox="0 0 220 220"><circle cx="110" cy="110" r="96" class="hv-ring"/><circle cx="110" cy="110" r="96" class="hv-arc" pathLength="1"/>{% for i in range(37) %}<path d="M110 22v{{ 10 if i % 6 == 0 else 5 }}" transform="rotate({{ -135 + i*7.5 }} 110 110)" class="hv-tk"/>{% endfor %}<circle cx="110" cy="110" r="70" class="hv-face"/></svg>
+   <div class="hv-read"><b class="hv-deg">58</b><span>°F</span><small class="hv-mode">{{ t('Calentando','Heating') }}</small></div>
+  </div>
+  <div class="hv-t"><span class="kicker">{{ t('Calefacción y aire','Heating & cooling') }}</span><h2>{{ t('La temperatura perfecta, todo el año','The right temperature, all year') }}</h2>
+   {% if items %}<ul class="hv-list">{% for it in items[:6] %}<li>{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

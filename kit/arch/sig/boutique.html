@@ -1,0 +1,13 @@
+<section class="sig sg-bout">
+ <div class="bt-glit" aria-hidden="true">{% for i in range(30) %}<i style="--x:{{ (i*37)%100 }}%;--y:{{ (i*53)%100 }}%;--d:{{ 1.2 + (i%5)*0.5 }}s;--dl:-{{ (i*0.37)%2 }}s"></i>{% endfor %}</div>
+ <div class="wrap bt-in">
+  <svg class="bt-gown" viewBox="0 0 300 380" aria-hidden="true">
+   <path class="bt-l" pathLength="1" d="M150 20c-14 0-22 10-22 22s10 20 22 20 22-8 22-20-8-22-22-22z"/>
+   <path class="bt-l" pathLength="1" d="M128 70c-4 30-10 50-26 66l20 10c-30 60-80 120-92 220h240c-12-100-62-160-92-220l20-10c-16-16-22-36-26-66"/>
+   <path class="bt-l t" pathLength="1" d="M60 300c30 20 60 26 90 26s60-6 90-26M80 240c24 14 46 18 70 18s46-4 70-18M104 180c16 10 30 12 46 12s30-2 46-12"/>
+   <path class="bt-l t" pathLength="1" d="M126 8l8 10 8-14 8 14 8-14 8 14 8-10"/>
+  </svg>
+  <div class="bt-t"><span class="kicker">{{ t('Boutique','Boutique') }}</span><h2>{{ t('El vestido de su día especial','The dress for your big day') }}</h2>
+   {% if items %}<div class="bt-tags">{% for it in items[:5] %}<span style="--i:{{ loop.index0 }}">{{ L(it.name) }}</span>{% endfor %}</div>{% endif %}</div>
+ </div>
+</section>

@@ -1,0 +1,14 @@
+<section class="sig sg-shoe">
+ <div class="wrap sh-in">
+  <svg class="sh-boot" viewBox="0 0 400 300" aria-hidden="true">
+   <path class="sh-body" d="M70 30h110v120c0 10 8 18 18 20l120 26c30 6 52 26 52 52v14H60c-14 0-22-10-20-24l14-94V44c0-8 7-14 16-14z"/>
+   <path class="sh-sole" d="M40 262h340v18c0 8-6 14-14 14H52c-8 0-12-6-12-14z"/>
+   <path class="sh-st" d="M80 44v150c0 8 4 14 12 16l90 4c40 2 110 16 148 28c18 6 30 18 32 34"/>
+   <path class="sh-st2" d="M52 252h316" stroke-dasharray="8 8"/>
+   <g class="sh-needle"><path d="M0 -26v52" stroke="var(--muted)" stroke-width="3" stroke-linecap="round"/><circle r="3" cy="-20" fill="none" stroke="var(--muted)" stroke-width="1.5"/></g>
+  </svg>
+  <div class="sh-t"><span class="kicker">{{ t('Hecho a mano','Done by hand') }}</span><h2>{{ t('Puntada por puntada','Stitch by stitch') }}</h2>
+   {% if items %}<ul class="sh-list">{% for it in items[:5] %}<li style="--i:{{ loop.index0 }}"><b>{{ L(it.name) }}</b>{% if it.desc %}<span>{{ L(it.desc) }}</span>{% endif %}</li>{% endfor %}</ul>{% endif %}
+  </div>
+ </div>
+</section>

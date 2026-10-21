@@ -1,0 +1,11 @@
+.sg-tint{padding:80px 0}
+.tn-in{display:grid;gap:30px;align-items:center}
+.tn-view{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:16/10;clip-path:polygon(6% 100%,14% 18%,30% 0,96% 0,100% 100%)}
+.tn-img .ph{position:absolute;inset:0;height:100%;border-radius:0}.tn-img .ph img{height:100%}
+.tn-film{position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.12),transparent 40%),rgba(10,12,16,var(--dark,.55));transition:background .6s}
+.tn-lbl{position:absolute;right:14px;bottom:14px;background:rgba(0,0,0,.55);color:#fff;font-size:13px;padding:6px 12px;border-radius:999px}
+.tn-btns{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 8px}
+.tn-btns button{border:2px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:9px 16px;font:700 14px "{{ th.body_font }}",sans-serif;cursor:pointer}
+.tn-btns button.on{background:var(--ink);color:var(--bg)}
+.tn-list{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.tn-list li{padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);font-weight:600}
+@media (min-width:900px){.tn-in{grid-template-columns:1.2fr .8fr}}

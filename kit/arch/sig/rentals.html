@@ -1,0 +1,14 @@
+<section class="sig sg-rent">
+ <div class="wrap rn-in">
+  <svg class="rn-scene" viewBox="0 0 600 340" aria-hidden="true">
+   <path class="rn-ground" d="M0 310H600"/>
+   <g class="rn-pole" style="--d:0"><rect x="96" y="150" width="8" height="160"/></g><g class="rn-pole" style="--d:1"><rect x="296" y="110" width="8" height="200"/></g><g class="rn-pole" style="--d:2"><rect x="496" y="150" width="8" height="160"/></g>
+   <path class="rn-tent" d="M80 160L300 60L520 160Z"/>
+   <path class="rn-scal" d="M80 160q18 22 36 0t36 0 36 0 36 0 36 0 36 0 36 0 36 0 36 0 36 0 36 0 36 0z"/>
+   {% for x in [170,330] %}<g class="rn-tbl" style="--d:{{ loop.index0 }}"><rect x="{{ x }}" y="250" width="110" height="10" rx="3"/><rect x="{{ x+8 }}" y="260" width="6" height="50"/><rect x="{{ x+96 }}" y="260" width="6" height="50"/><path d="M{{ x+4 }} 250l10-26h82l10 26z" class="rn-cloth"/></g>{% endfor %}
+   {% for x in [140,290,300,450] %}<g class="rn-chair" style="--d:{{ loop.index0 }}"><rect x="{{ x }}" y="268" width="26" height="6" rx="2"/><rect x="{{ x }}" y="240" width="6" height="34"/><rect x="{{ x+20 }}" y="274" width="5" height="36"/><rect x="{{ x+1 }}" y="274" width="5" height="36"/></g>{% endfor %}
+  </svg>
+  <div class="rn-t"><span class="kicker">{{ t('Renta para eventos','Event rentals') }}</span><h2>{{ t('Su fiesta, lista para empezar','Your party, ready to go') }}</h2>
+   {% if items %}<ul class="rn-list">{% for it in items[:6] %}<li><b>{{ L(it.name) }}</b>{% if th.show_price and it.price %}<em>{{ it.price }}</em>{% endif %}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

@@ -1,0 +1,7 @@
+<section class="sig sg-tile">
+ <div class="wrap ti-in">
+  <div class="ti-grid" aria-hidden="true">{% for i in range(36) %}<i style="--i:{{ i }};--r:{{ i // 6 }};--c:{{ i % 6 }}"><b></b></i>{% endfor %}</div>
+  <div class="ti-t"><span class="kicker">{{ t('Azulejo y piedra','Tile & stone') }}</span><h2>{{ t('Pieza por pieza, perfecto','Piece by piece, perfect') }}</h2>
+   {% if items %}<ul class="ti-list">{% for it in items[:6] %}<li>{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>

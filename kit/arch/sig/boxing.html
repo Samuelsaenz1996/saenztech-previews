@@ -1,0 +1,8 @@
+<section class="sig sg-box">
+ <div class="wrap bx-in">
+  <div class="bx-bag" aria-hidden="true"><span class="bx-chain"></span><div class="bx-b"><b>{{ initials }}</b></div><span class="bx-hit">POW!</span></div>
+  <div class="bx-t"><span class="kicker">{{ t('Ronda','Round') }} <b class="bx-r">1</b></span><h2>{{ t('Entrena con propósito','Train with purpose') }}</h2>
+   <div class="bx-timer"><span class="bx-tm">3:00</span></div>
+   {% if items %}<ul class="bx-list">{% for it in items[:6] %}<li>{{ L(it.name) }}</li>{% endfor %}</ul>{% endif %}</div>
+ </div>
+</section>
